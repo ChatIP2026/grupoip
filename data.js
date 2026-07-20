@@ -1,7 +1,7 @@
 /* DATOS DEL NOTICIERO iPARTNER — este archivo lo regenera la tarea nocturna.
    El diseño vive en index.html; aquí solo cambia el contenido. */
 window.NOTICIERO = {
-  generado: "2026-07-20 09:45 (Lima)",
+  generado: "2026-07-20 09:48 (Lima)",
   NEWS: [
   { color:"#E6299C", viz:"chart-up", ammo:true, week:true,
     title:"Lima emplea más y paga mejor",
@@ -29,14 +29,14 @@ window.NOTICIERO = {
 ],
   DATO: "El ingreso promedio en Lima ya llega a <b>S/ 2,343.60</b> y sube 7.9% al año: retener a tu gente cuesta menos que reemplazarla",
   SILVER: [
-  { obj:"“No hay presupuesto”",
-    arg:"<b>+7.5% empleo</b> y <b>+7.9% sueldos</b>: no cubrir una vacante cuesta más.",
-    say:"“Esto es ahorro, no gasto”" },
-  { obj:"“Estamos full con la gratificación”",
-    arg:"<b>98%</b> de inspecciones nace de denuncias · multas hasta <b>S/ 143,660</b>.",
-    say:"“Prevenir cuesta 10 veces menos”" },
-  { obj:"“SUNAFIL está debilitada”",
-    arg:"<b>El riesgo real</b>: el colaborador descontento, no los operativos.",
-    say:"“El riesgo está en casa”" }
+  { obj:"“El mercado está frío”",
+    arg:"<b>US$ 45,128 M</b> exportados este año (+36.7%): tus clientes sí tienen caja.",
+    say:"“El dinero está, muévete ya”" },
+  { obj:"“Retener sale muy caro”",
+    arg:"<b>S/ 2,344</b> paga hoy Lima y sube 7.9%: reponer a alguien cuesta el triple.",
+    say:"“Retener es más barato que reponer”" },
+  { obj:"“SUNAFIL no me tocará”",
+    arg:"<b>S/ 143,660</b> de multa por no pagar bien la gratificación: el riesgo es real.",
+    say:"“Prevenir cuesta una fracción”" }
 ]
 };
