@@ -84,10 +84,10 @@ window.NOTICIERO = {
     periodo:"Junio 2026",
     nota:"Por su destacada labor en el mes de junio",
     cards:[
-      { nombre:"Lender Sayago",  equipo:"Finance",  img:"" },
-      { nombre:"Aixa Enriquez",  equipo:"Business", img:"" },
-      { nombre:"Jorge Gomez",    equipo:"Reports",  img:"" },
-      { nombre:"Darwin Hoyos",   equipo:"Renewals", img:"" }
+      { nombre:"Darwin Hoyos",  equipo:"Renewals", img:"img/extraordinarios/2026-06-1-darwin-hoyos.jpg" },
+      { nombre:"Jorge Gomez",   equipo:"Reports",  img:"img/extraordinarios/2026-06-2-jorge-gomez.jpg" },
+      { nombre:"Aixa Enriquez", equipo:"Business", img:"img/extraordinarios/2026-06-3-aixa-enriquez.jpg" },
+      { nombre:"Lender Sayago", equipo:"Finance",  img:"img/extraordinarios/2026-06-4-lender-sayago.jpg" }
     ]
   },
 
@@ -95,7 +95,7 @@ window.NOTICIERO = {
     { titulo:"Fiestas Patrias 2026",
       bajada:"Cena Criolla + Tómbola Patriótica",
       cuando:"5:00 p.m. · Terraza del piso 10",
-      fecha:"2026-07-24",
+      fecha:"2026-07-22",
       img:"" }
   ]
 
