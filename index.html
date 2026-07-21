@@ -55,6 +55,21 @@ body{
   font-size:.95vw; color:var(--txt2); opacity:.85; pointer-events:none;
 }
 .clockchip b{font-family:'Sora',sans-serif; font-size:1.25vw; color:var(--cyan); letter-spacing:.05em;}
+/* chip EN VIVO (tintinea: punto rojo + texto) */
+.livechip{
+  position:absolute; top:1.6vh; left:1.4vw; z-index:5;
+  display:flex; align-items:center; gap:.55vw; pointer-events:none;
+  animation:liveblink 1.3s ease-in-out infinite;
+}
+.livechip .dot{
+  width:.85vw; height:.85vw; border-radius:50%; background:var(--red);
+  box-shadow:0 0 1.2vw rgba(245,32,85,.95), 0 0 .3vw rgba(255,255,255,.6);
+}
+.livechip .txt{
+  font-family:'Sora',sans-serif; font-weight:800; font-size:1vw; letter-spacing:.16em;
+  color:#fff; text-shadow:0 0 1.2vw rgba(245,32,85,.85);
+}
+@keyframes liveblink{0%,100%{opacity:1} 50%{opacity:.2}}
 
 /* ═════ CARRUSEL minimal ═════ */
 .carousel{position:absolute; inset:0; z-index:3; --dx:0px;}
@@ -145,7 +160,16 @@ body{
   color:#0b0620; background:linear-gradient(90deg, var(--orange), #ffb257);
   border-radius:99px; padding:.9vh 1vw; box-shadow:0 0 1.6vw rgba(255,149,58,.55); flex-shrink:0;
 }
-.silver-stack{display:flex; flex-direction:column; gap:1.1vh; flex:1; min-height:0;}
+/* carrusel del panel: páginas de 3 cajas, mismo diseño de siempre */
+.silver-viewport{flex:1; min-height:0; overflow:hidden; position:relative; touch-action:pan-y; user-select:none; cursor:grab;}
+.silver-viewport:active{cursor:grabbing;}
+.silver-track{display:flex; height:100%; transition:transform .55s cubic-bezier(.22,.8,.3,1); will-change:transform;}
+.silver-track.dragging{transition:none;}
+.silver-page{flex:0 0 100%; height:100%; min-height:0; display:flex; flex-direction:column; gap:1.1vh;}
+.silver-box.ghost{visibility:hidden;}
+.silver-dots{display:flex; justify-content:center; align-items:center; gap:.7vw; flex-shrink:0; height:1vh;}
+.silver-dots i{width:.6vw; height:.6vw; border-radius:50%; background:rgba(255,255,255,.3); transition:.3s;}
+.silver-dots i.on{background:var(--orange); box-shadow:0 0 .8vw var(--orange); transform:scale(1.25);}
 .silver-box{
   flex:1; border-radius:1.2vw; padding:1.7vh 1.4vw; display:flex; flex-direction:column; justify-content:space-between; gap:.8vh; overflow:hidden;
   background:linear-gradient(165deg, rgba(40,22,75,.92), rgba(14,7,34,.94));
@@ -281,6 +305,14 @@ body{
     width:94vw; margin:2.5vh auto 2vh; gap:1.6vh;
   }
   .silver-title{font-size:4.2vw; padding:1.2vh 3vw; border-radius:99px;}
+  .livechip{top:1.2vh; left:3.5vw; gap:1.6vw;}
+  .livechip .dot{width:2.6vw; height:2.6vw;}
+  .livechip .txt{font-size:3vw;}
+  .silver-viewport{flex:none; height:auto; min-height:0;}
+  .silver-track{height:auto;}
+  .silver-page{height:auto; gap:1.6vh;}
+  .silver-dots{height:auto; gap:2.4vw; margin-top:.6vh;}
+  .silver-dots i{width:2vw; height:2vw;}
   .silver-box{flex:none; min-height:20vh; border-radius:4vw; padding:2vh 4vw; gap:1vh;}
   .silver-box .num{width:8vw; height:8vw; font-size:4.5vw;}
   .silver-box .obj{font-size:5vw;}
@@ -323,6 +355,7 @@ body{
     </svg>
   </div>
   <div class="grid"></div>
+  <div class="livechip"><span class="dot"></span><span class="txt">EN VIVO</span></div>
   <div class="clockchip"><span id="fecha">—</span><br><b id="reloj">--:--</b></div>
 
   <div class="carousel" id="carousel"></div>
@@ -334,8 +367,9 @@ body{
 
 <!-- PANEL FIJO: BALAS DE PLATA -->
 <aside class="silver-panel">
-  <div class="silver-title">🎯 ARGUMENTOS DE CIERRE</div>
-  <div class="silver-stack" id="silverStack"></div>
+  <div class="silver-title">ARGUMENTOS DE VENTA</div>
+  <div class="silver-viewport" id="silverViewport"><div class="silver-track" id="silverStack"></div></div>
+  <div class="silver-dots" id="silverDots"></div>
 </aside>
 
 <div class="floor"></div>
@@ -431,7 +465,9 @@ const VIZ = {
 };
 
 /* ══════ NOTICIAS DEL DÍA (titular corto + visual; las llena la tarea diaria) ══════ */
-const NEWS = (window.NOTICIERO&&window.NOTICIERO.NEWS)||[];
+/* las tarjetas "honestas" (sin noticia verificable, p.ej. MUNDO) no se muestran:
+   la categoría aparece solo cuando hay algo real que contar */
+const NEWS = ((window.NOTICIERO&&window.NOTICIERO.NEWS)||[]).filter(n=>!n.honest);
 const DATO = (window.NOTICIERO&&window.NOTICIERO.DATO)||"";
 
 /* BALAS DE PLATA — directas y cortas (se renuevan cada LUNES por la mañana) */
@@ -466,6 +502,7 @@ function slideHTML(n){
 function render(){
   const c = document.getElementById('carousel');
   c.innerHTML = '';
+  if(!N){ document.getElementById('dots').innerHTML=''; return; }
   NEWS.forEach((n,k)=>{
     const s = document.createElement('div');
     const pos = (k-idx+N)%N;
@@ -476,16 +513,64 @@ function render(){
   });
   document.getElementById('dots').innerHTML = NEWS.map((_,k)=>`<i class="${k===idx?'on':''}"></i>`).join('');
 }
-function next(){ idx=(idx+1)%N; t0=Date.now(); render(); }
-function prev(){ idx=(idx-1+N)%N; t0=Date.now(); render(); }
+function next(){ if(!N) return; idx=(idx+1)%N; t0=Date.now(); render(); }
+function prev(){ if(!N) return; idx=(idx-1+N)%N; t0=Date.now(); render(); }
 
-/* panel fijo (sin etiquetas: ritmo visual obj → arg → frase) */
-document.getElementById('silverStack').innerHTML = SILVER.map((b,i)=>`
-  <div class="silver-box">
-    <div class="sb-top"><span class="num">${i+1}</span><div class="obj">${b.obj}</div></div>
-    <div class="arg">${b.arg}</div>
-    <div class="say">${b.say}</div>
+/* ══════ PANEL DE ARGUMENTOS DE VENTA ══════
+   Mismo diseño de 3 cajas: los argumentos se agrupan en páginas de 3 que se
+   deslizan (arrastre, puntos y rotación automática más lenta que las noticias). */
+const SILVER_PER_PAGE = 3;
+const SILVER_MS = ROTATE_MS + 7000;          /* 7 s más que el carrusel de noticias */
+const sPages = [];
+for(let i=0;i<SILVER.length;i+=SILVER_PER_PAGE) sPages.push(SILVER.slice(i,i+SILVER_PER_PAGE));
+const SP = sPages.length;
+let sIdx = 0, s0 = Date.now();
+
+const sTrack = document.getElementById('silverStack');
+const sDots  = document.getElementById('silverDots');
+const sView  = document.getElementById('silverViewport');
+
+sTrack.innerHTML = sPages.map((page,p)=>`
+  <div class="silver-page">
+    ${page.map((b,j)=>`
+      <div class="silver-box">
+        <div class="sb-top"><span class="num">${p*SILVER_PER_PAGE+j+1}</span><div class="obj">${b.obj}</div></div>
+        <div class="arg">${b.arg}</div>
+        <div class="say">${b.say}</div>
+      </div>`).join('')}
+    ${Array.from({length:SILVER_PER_PAGE-page.length}).map(()=>'<div class="silver-box ghost"></div>').join('')}
   </div>`).join('');
+
+function sRender(){
+  sTrack.style.transform = 'translateX(calc(' + (-100*sIdx) + '% + var(--sdx, 0px)))';
+  sDots.innerHTML = SP>1 ? sPages.map((_,k)=>`<i class="${k===sIdx?'on':''}"></i>`).join('') : '';
+}
+function sNext(){ if(SP<2) return; sIdx=(sIdx+1)%SP; s0=Date.now(); sRender(); }
+function sPrev(){ if(SP<2) return; sIdx=(sIdx-1+SP)%SP; s0=Date.now(); sRender(); }
+sRender();
+
+/* arrastre del panel (igual que la pantalla de noticias) */
+let spx=null, sDragging=false;
+sView.addEventListener('pointerdown', e=>{
+  if(SP<2) return;
+  spx=e.clientX; sDragging=true; sTrack.classList.add('dragging');
+});
+sView.addEventListener('pointermove', e=>{
+  if(!sDragging || spx===null) return;
+  sTrack.style.setProperty('--sdx', (e.clientX-spx)+'px');
+});
+function sEndDrag(e){
+  if(!sDragging || spx===null) return;
+  const dx = e.clientX - spx;
+  sDragging=false; spx=null;
+  sTrack.classList.remove('dragging');
+  sTrack.style.setProperty('--sdx','0px');
+  if(dx<-60) sNext(); else if(dx>60) sPrev();
+}
+sView.addEventListener('pointerup', sEndDrag);
+sView.addEventListener('pointercancel', sEndDrag);
+sView.addEventListener('pointerleave', sEndDrag);
+sView.addEventListener('dragstart', e=>e.preventDefault());
 
 /* arrastre en vivo */
 const scr = document.getElementById('screen');
@@ -519,6 +604,8 @@ function loop(){
   const el = Date.now()-t0;
   progEl.style.width = Math.min(100, el/ROTATE_MS*100)+'%';
   if(el>=ROTATE_MS) next();
+  if(sDragging) s0 = Date.now();
+  if(SP>1 && Date.now()-s0 >= SILVER_MS) sNext();
   requestAnimationFrame(loop);
 }
 requestAnimationFrame(loop);
