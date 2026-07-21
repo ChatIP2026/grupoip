@@ -43,11 +43,11 @@ body{
 
 /* ═════ DOS PESTAÑAS: NOTICIAS e iPARTNER ═════ */
 .stage{position:absolute; inset:0; z-index:3; opacity:0; pointer-events:none;
-  transform:translateX(5%) scale(.985);
-  transition:opacity .5s ease, transform .65s cubic-bezier(.22,.8,.3,1);}
-.stage.on{opacity:1; pointer-events:auto; transform:none;}
-#stageIp{transform:translateX(-5%) scale(.985);}
-#stageIp.on{transform:none;}
+  transform:translateX(35%) scale(.84); filter:blur(5px) brightness(.8);
+  transition:opacity .55s ease, transform .6s cubic-bezier(.22,.8,.3,1), filter .55s ease;}
+.stage.from-left{transform:translateX(-35%) scale(.84);}
+.stage.nofx{transition:none;}
+.stage.on{opacity:1; pointer-events:auto; transform:none; filter:none;}
 
 /* al abrir iPartner: se va el panel de argumentos y la pantalla se centra y crece */
 .silver-panel{transition:opacity .45s ease, transform .6s cubic-bezier(.22,.8,.3,1);}
@@ -533,6 +533,7 @@ body.no-ip .tabarrow{display:none;}
     <div class="chev l" id="ipChevL" onclick="ipPrev()">‹</div>
     <div class="chev r" id="ipChevR" onclick="ipNext()">›</div>
     <div class="dots" id="ipDots"></div>
+    <div class="progress" id="ipProgWrap"><i id="ipProg"></i></div>
   </div>
 </div>
 
@@ -974,6 +975,7 @@ function ipRender(){
   const v = IP.length>1 ? '' : 'none';
   document.getElementById('ipChevL').style.display = v;
   document.getElementById('ipChevR').style.display = v;
+  document.getElementById('ipProgWrap').style.display = v;
 }
 function ipNext(){ if(IP.length<2) return; ipIdx=(ipIdx+1)%IP.length; ipT0=Date.now(); ipRender(); }
 function ipPrev(){ if(IP.length<2) return; ipIdx=(ipIdx-1+IP.length)%IP.length; ipT0=Date.now(); ipRender(); }
@@ -990,10 +992,18 @@ let tab = 0, tabT0 = Date.now(), switching = false;
 
 if(!IP_ACTIVE) document.body.classList.add('no-ip');
 
-function setTab(i){
+function setTab(i, dir){
+  const sale = stageEls[tab], entra = stageEls[i];
   tab = i;
   document.body.classList.toggle('tab-ip', tab===1);
-  stageEls.forEach((el,k)=>el.classList.toggle('on', k===tab));
+  /* el entrante se coloca del lado correcto sin animar, y recién ahí entra */
+  entra.classList.add('nofx');
+  entra.classList.toggle('from-left', dir<0);
+  void entra.offsetWidth;
+  entra.classList.remove('nofx');
+  sale.classList.toggle('from-left', dir>0);
+  sale.classList.remove('on');
+  entra.classList.add('on');
   if(tab===1){ ipIdx=0; ipT0=Date.now(); ipRender(); }
   renderTicker();
 }
@@ -1005,7 +1015,7 @@ function switchTab(dir){
   void robotEl.offsetWidth;
   robotEl.classList.add('travel');
   /* el escenario cambia mientras el robot está en el aire */
-  setTimeout(()=> setTab(tab===0 ? 1 : 0), 320);
+  setTimeout(()=> setTab(tab===0 ? 1 : 0, dir), 320);
   /* aterriza y saluda señalando la pantalla */
   setTimeout(()=>{ robotEl.classList.remove('travel'); robotEl.classList.add('waving'); }, 1500);
   setTimeout(()=>{ robotEl.classList.remove('waving'); switching=false; tabT0=Date.now(); }, 3900);
@@ -1039,7 +1049,8 @@ scr.addEventListener('pointerleave', endDrag);
 scr.addEventListener('dragstart', e=>e.preventDefault());
 
 /* rotación + barra fluida */
-const progEl = document.getElementById('prog');
+const progEl   = document.getElementById('prog');
+const ipProgEl = document.getElementById('ipProg');
 function loop(){
   /* lo que no está a la vista no avanza */
   if(dragging || tab!==0){ t0 = Date.now(); }
@@ -1048,8 +1059,11 @@ function loop(){
   progEl.style.width = Math.min(100, el/ROTATE_MS*100)+'%';
   if(tab===0 && el>=ROTATE_MS) next();
   if(tab===0 && SP>1 && Date.now()-s0 >= SILVER_MS) sNext();
-  /* los apartados de iPartner rotan cada 15 s */
-  if(tab===1 && IP.length>1 && Date.now()-ipT0 >= IP_MS) ipNext();
+  /* los apartados de iPartner rotan cada 15 s, con su propia barra */
+  if(tab===1 && IP.length>1){
+    ipProgEl.style.width = Math.min(100, (Date.now()-ipT0)/IP_MS*100)+'%';
+    if(Date.now()-ipT0 >= IP_MS) ipNext();
+  }
   /* la pantalla alterna sola: 5 minutos en cada pestaña */
   if(IP_ACTIVE && !switching && Date.now()-tabT0 >= TAB_MS) switchTab(1);
   requestAnimationFrame(loop);

@@ -99,7 +99,7 @@ window.NOTICIERO = {
     /* JULIO */
     { nombre:"Lender Sayago",       equipo:"Finance",  fecha:"07-04", foto:"" },
     { nombre:"Manuel Jimenez",      equipo:"",         fecha:"07-09", foto:"" },
-    { nombre:"Oscar Montes",        equipo:"",         fecha:"07-23", foto:"" },
+    { nombre:"Oscar Montes",        equipo:"",         fecha:"07-23", foto:"img/avatars/oscar-montes.jpg" },
     /* AGOSTO */
     { nombre:"Romano Alfaro",       equipo:"",         fecha:"08-01", foto:"" },
     { nombre:"Naty",                equipo:"",         fecha:"08-21", foto:"" },
