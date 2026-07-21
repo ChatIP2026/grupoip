@@ -133,7 +133,7 @@ window.NOTICIERO = {
       bajada:"Cena Criolla + Tómbola Patriótica",
       cuando:"5:00 p.m. · Terraza del piso 10",
       fecha:"2026-07-22",
-      img:"" }
+      img:"img/eventos/2026-07-fiestas-patrias.jpg" }
   ]
 
 },
