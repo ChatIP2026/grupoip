@@ -107,7 +107,7 @@ window.NOTICIERO = {
     /* SETIEMBRE */
     { nombre:"Luis Enrique",        equipo:"",         fecha:"09-07", foto:"" },
     /* OCTUBRE */
-    { nombre:"Pierina Ceferatti",   equipo:"",         fecha:"10-24", foto:"" },
+    { nombre:"Pierina Cefaratti",   equipo:"",         fecha:"10-24", foto:"" },
     /* NOVIEMBRE */
     { nombre:"Flor Mendez",         equipo:"",         fecha:"11-05", foto:"" },
     { nombre:"Kassandra Lopez",     equipo:"",         fecha:"11-15", foto:"" },
