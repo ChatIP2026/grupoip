@@ -957,36 +957,75 @@ function relojArena(){ return `
 
 /* ilustración del foco del mes: la escalera de crecimiento del equipo */
 const ADN_VIZ = `
-<svg viewBox="0 0 420 160" aria-hidden="true">
+<svg viewBox="0 0 480 200" aria-hidden="true">
   <defs>
     <linearGradient id="adnG" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#E6299C"/><stop offset=".45" stop-color="#FF953A"/><stop offset="1" stop-color="#07F3F4"/>
+      <stop offset="0" stop-color="#E6299C"/><stop offset=".5" stop-color="#FF953A"/><stop offset="1" stop-color="#07F3F4"/>
     </linearGradient>
   </defs>
-  <path d="M16 136 H80 V108 H160 V80 H240 V50 H318" fill="none" stroke="url(#adnG)"
-        stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
-  <path d="M312 50 l-20 -13 v26 z" fill="#07F3F4"/>
-  <g fill="#E6299C" opacity=".9">
-    <circle cx="34" cy="108" r="7"/><path d="M22 130 a12 11 0 0 1 24 0z"/>
-    <circle cx="56" cy="112" r="6"/><path d="M46 130 a10 9 0 0 1 20 0z"/>
+
+  <!-- escalera de crecimiento -->
+  <path d="M18 150 H98 V124 H178 V98 H258 V72 H338 V46 H386 L406 34"
+        fill="none" stroke="url(#adnG)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(414,29) rotate(-31)"><path d="M0 0 l-20 -8 v16 z" fill="#07F3F4"/></g>
+
+  <!-- equipo que crece en cada escalón -->
+  <g fill="#E6299C">
+    <circle cx="45" cy="126" r="5.5"/><path d="M36 148 C36 136 54 136 54 148 Z"/>
+    <circle cx="68" cy="129" r="5"/><path d="M60 148 C60 138 76 138 76 148 Z"/>
   </g>
-  <g fill="#FF953A" opacity=".9">
-    <circle cx="112" cy="76" r="8"/><path d="M99 101 a13 12 0 0 1 26 0z"/>
-    <circle cx="136" cy="82" r="7"/><path d="M124 101 a12 11 0 0 1 24 0z"/>
+  <g fill="#FF953A">
+    <circle cx="125" cy="99" r="6"/><path d="M115 122 C115 109 135 109 135 122 Z"/>
+    <circle cx="149" cy="103" r="5.5"/><path d="M140 122 C140 111 158 111 158 122 Z"/>
   </g>
-  <g fill="#07F3F4" opacity=".9">
-    <circle cx="196" cy="44" r="9"/><path d="M182 73 a14 13 0 0 1 28 0z"/>
+  <g fill="#07F3F4">
+    <circle cx="215" cy="71" r="6.5"/><path d="M204 96 C204 82 226 82 226 96 Z"/>
   </g>
-  <g transform="translate(252,14)" fill="#07F3F4" opacity=".95">
-    <circle cx="10" cy="8" r="8"/><path d="M2 36 a12 11 0 0 1 20 -6 l6 8 -6 4 -5 -6 z"/>
+  <!-- la persona que ya va caminando hacia la meta -->
+  <g stroke="#07F3F4" stroke-width="4.2" stroke-linecap="round" fill="none">
+    <circle cx="295" cy="42" r="6" fill="#07F3F4" stroke="none"/>
+    <path d="M295 49 V60"/>
+    <path d="M295 60 L287 71 M295 60 L304 70"/>
+    <path d="M295 52 L286 57 M295 52 L305 48"/>
   </g>
-  <g transform="translate(348,10)" fill="none" stroke="#07F3F4" stroke-width="5" stroke-linecap="round">
-    <path d="M18 8 a14 12 0 0 1 22 4 a12 11 0 0 1 -4 20 a13 12 0 0 1 -22 -2 a12 11 0 0 1 4 -22z"/>
-    <path d="M28 10 v26 M20 18 h8 M28 26 h8" stroke-width="3.4" opacity=".85"/>
+
+  <!-- hitos colgados de la escalera -->
+  <g stroke="#E6299C" fill="none" stroke-width="3" stroke-linecap="round">
+    <path d="M160 124 V152"/>
+    <circle cx="160" cy="168" r="15"/>
+    <circle cx="157" cy="163" r="4" fill="#E6299C" stroke="none"/>
+    <path d="M150 176 C150 168 164 168 164 176" stroke-width="2.6"/>
+    <path d="M169 160 l1.6 3.4 3.6 .5 -2.6 2.6 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.6 3.6 -.5z" fill="#E6299C" stroke="none"/>
   </g>
-  <g transform="translate(276,96)" stroke="#FF953A" fill="none" stroke-width="4.5" stroke-linecap="round">
-    <circle cx="18" cy="18" r="17" opacity=".8"/>
-    <path d="M11 10 h14 v7 a7 7 0 0 1 -14 0z M18 24 v4 M13 30 h10" />
+  <g stroke="#FF953A" fill="none" stroke-width="3" stroke-linecap="round">
+    <path d="M240 98 V126"/>
+    <circle cx="240" cy="142" r="15"/>
+    <g fill="#FF953A" stroke="none">
+      <rect x="232" y="143" width="4" height="6" rx="1.4"/>
+      <rect x="238" y="139" width="4" height="10" rx="1.4"/>
+      <rect x="244" y="135" width="4" height="14" rx="1.4"/>
+    </g>
+  </g>
+  <g stroke="#07F3F4" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M320 72 V100"/>
+    <circle cx="320" cy="116" r="15"/>
+    <g stroke-width="2.6">
+      <path d="M313 109 h14 v5 a7 7 0 0 1 -14 0z"/>
+      <path d="M313 110 h-4 a4 4 0 0 0 4 5"/>
+      <path d="M327 110 h4 a4 4 0 0 1 -4 5"/>
+      <path d="M320 121 v3 M315 124 h10"/>
+    </g>
+  </g>
+
+  <!-- la meta: el conocimiento del equipo -->
+  <circle cx="448" cy="22" r="26" fill="#07F3F4" opacity=".13"/>
+  <g stroke="#07F3F4" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+     transform="translate(448,22)">
+    <path d="M0 -15 C-7 -20 -17 -16 -17 -8 C-24 -6 -23 4 -17 6 C-18 14 -8 18 -1 13"/>
+    <path d="M0 -15 C7 -20 17 -16 17 -8 C24 -6 23 4 17 6 C18 14 8 18 1 13"/>
+    <path d="M0 -14 V13" stroke-width="2.4" opacity=".9"/>
+    <path d="M-10 -7 C-5 -5 -5 -1 -10 1" stroke-width="2.2" opacity=".8"/>
+    <path d="M10 -7 C5 -5 5 -1 10 1" stroke-width="2.2" opacity=".8"/>
   </g>
 </svg>`;
 
