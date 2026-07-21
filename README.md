@@ -13,7 +13,7 @@ Proyecto de Ingeniería Comercial · Elaborado por **Hilary S. y Carlos D.**
 | Archivo | Qué es | ¿Quién lo toca? |
 |---|---|---|
 | `index.html` | TODO el diseño: set de TV, robot, carrusel, panel de ventas, colores de marca, versión móvil | Solo humanos/Claude para cambios visuales |
-| `data.js` | El contenido del día: noticias, dato del día, balas de plata | ⚠️ NO editar a mano: lo reescribe una tarea automática cada noche |
+| `data.js` | El contenido del día: noticias y dato del día (`NEWS`, `DATO`) + los argumentos de venta (`SILVER`) | ⚠️ `NEWS` y `DATO` los reescribe la tarea nocturna: no editarlos a mano. `SILVER` es lo contrario: permanente y curado a mano por el equipo comercial, la tarea nunca lo toca |
 
 La página se recarga sola cada 30 minutos, así toma la edición nueva sin tocar la pantalla.
 
@@ -22,12 +22,16 @@ La página se recarga sola cada 30 minutos, así toma la edición nueva sin toca
 | Qué | Cuándo | Cómo |
 |---|---|---|
 | **Noticias diarias + Dato del día** | Domingo a jueves, 10:00 PM (Lima) → la edición amanece lista de lunes a viernes | Tarea programada en Claude (busca, verifica fechas abriendo cada artículo, publica) |
-| **Balas de plata (argumentos de cierre)** | 1 vez por semana: domingo 10:00 PM → lunes amanecen renovadas | Misma tarea nocturna, solo los domingos |
+| **Argumentos de venta** | No rotan: son permanentes | Los cura a mano el equipo comercial (vía Claude + token). La tarea nocturna tiene prohibido tocarlos |
 | **Diseño** | Solo cuando se pide un cambio | Manualmente vía Claude + token |
+
+## 💬 Argumentos de venta (panel derecho)
+
+Seis argumentos permanentes en `SILVER`, agrupados en dos páginas de 3 que se deslizan de arriba a abajo cada 19 segundos (7 s más que las noticias). Formato de cada uno: objeción real del cliente entre comillas → argumento que **abre con la cifra en negrita** → frase de cierre que el vendedor dice en voz alta. Se cambian solo cuando el equipo comercial lo pide.
 
 ## 📋 Categorías de noticias
 
-**Activas:** 🇵🇪 PERÚ·ECONOMÍA (con foco en los 17 rubros donde iPartner tiene clientes, incluido RETAIL) · 💼 RRHH (el corazón: SUNAFIL, normas, talento) · ⚖️ LEGAL · 🌎 MUNDO (solo lo que toca al Perú; si no hay nada verificable, tarjeta honesta) · 🌟 LIBRE (excepcional: solo hitos mundiales de altísimo impacto, puede pasar semanas sin aparecer y eso es correcto).
+**Activas:** 🇵🇪 PERÚ·ECONOMÍA (con foco en los 17 rubros donde iPartner tiene clientes, incluido RETAIL) · 💼 RRHH (el corazón: SUNAFIL, normas, talento) · ⚖️ LEGAL · 🌎 MUNDO (solo lo que toca al Perú; **si no hay nada verificable, la categoría simplemente no sale ese día** — ya no se publican tarjetas vacías) · 🌟 LIBRE (excepcional: solo hitos mundiales de altísimo impacto, puede pasar semanas sin aparecer y eso es correcto).
 
 **Pendientes de aprobación (no implementadas):** 🏢 iPARTNER — noticias internas de eventos del equipo (headline emotivo + frase + foto grupal), publicadas al día siguiente del evento, duran 2 días y luego desaparecen por completo (nunca tarjetas vacías); y el mensaje motivacional de los lunes (sin métricas de ventas — eso fue rechazado explícitamente).
 
@@ -36,6 +40,8 @@ La página se recarga sola cada 30 minutos, así toma la edición nueva sin toca
 - Fecha de publicación VERIFICADA abriendo cada artículo. Sin fecha → no entra.
 - Lo más reciente gana siempre. Fallback semanal etiquetado "de esta semana".
 - Titulares de 5-8 palabras + un visual simbólico + UNA cifra grande (reglas de digital signage).
+- El visual (`viz`) se elige por lo que cuenta la noticia y **debe variar: ningún icono se repite dos días seguidos**. La biblioteca completa está listada en la cabecera de `data.js`.
+- La edición puede tener 4 o 5 noticias en vez de 5: si una categoría no tiene nada verificable, no se rellena.
 - Enlaces del botón a fuentes de acceso libre (Infobae, RPP, Andina, BBC, DW).
 - EXCLUSIÓN ABSOLUTA: Adecco, Manpower y Tawa (clientes actuales).
 - Prohibidos: sensacionalistas, espectáculos, deportivos, blogs de proveedores RRHH.

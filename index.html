@@ -59,7 +59,7 @@ body{
 .livechip{
   position:absolute; top:1.6vh; left:1.4vw; z-index:5;
   display:flex; align-items:center; gap:.55vw; pointer-events:none;
-  animation:liveblink 1.3s ease-in-out infinite;
+  animation:liveblink 3.2s ease-in-out infinite;
 }
 .livechip .dot{
   width:.85vw; height:.85vw; border-radius:50%; background:var(--red);
@@ -69,7 +69,7 @@ body{
   font-family:'Sora',sans-serif; font-weight:800; font-size:1vw; letter-spacing:.16em;
   color:#fff; text-shadow:0 0 1.2vw rgba(245,32,85,.85);
 }
-@keyframes liveblink{0%,100%{opacity:1} 50%{opacity:.2}}
+@keyframes liveblink{0%,100%{opacity:1} 50%{opacity:.28}}
 
 /* ═════ CARRUSEL minimal ═════ */
 .carousel{position:absolute; inset:0; z-index:3; --dx:0px;}
@@ -134,6 +134,10 @@ body{
 .viz-spin{transform-origin:center; animation:vspin 24s linear infinite;}
 @keyframes vspin{to{transform:rotate(360deg)}}
 .viz-pulse{animation:vpulse 2.6s ease-in-out infinite;}
+.viz-arc{animation:arc 1.8s cubic-bezier(.2,.9,.3,1) forwards;}
+@keyframes arc{to{stroke-dashoffset:114}}
+.viz-pop{transform:scale(.6); opacity:0; animation:pop .7s cubic-bezier(.2,1.3,.4,1) .15s forwards;}
+@keyframes pop{to{transform:scale(1); opacity:1}}
 @keyframes vpulse{50%{opacity:.55}}
 
 .chev{
@@ -161,9 +165,9 @@ body{
   border-radius:99px; padding:.9vh 1vw; box-shadow:0 0 1.6vw rgba(255,149,58,.55); flex-shrink:0;
 }
 /* carrusel del panel: páginas de 3 cajas, mismo diseño de siempre */
-.silver-viewport{flex:1; min-height:0; overflow:hidden; position:relative; touch-action:pan-y; user-select:none; cursor:grab;}
+.silver-viewport{flex:1; min-height:0; overflow:hidden; position:relative; touch-action:pan-x; user-select:none; cursor:grab;}
 .silver-viewport:active{cursor:grabbing;}
-.silver-track{display:flex; height:100%; transition:transform .55s cubic-bezier(.22,.8,.3,1); will-change:transform;}
+.silver-track{display:flex; flex-direction:column; height:100%; transition:transform .55s cubic-bezier(.22,.8,.3,1); will-change:transform;}
 .silver-track.dragging{transition:none;}
 .silver-page{flex:0 0 100%; height:100%; min-height:0; display:flex; flex-direction:column; gap:1.1vh;}
 .silver-box.ghost{visibility:hidden;}
@@ -308,12 +312,12 @@ body{
   .livechip{top:1.2vh; left:3.5vw; gap:1.6vw;}
   .livechip .dot{width:2.6vw; height:2.6vw;}
   .livechip .txt{font-size:3vw;}
-  .silver-viewport{flex:none; height:auto; min-height:0;}
-  .silver-track{height:auto;}
-  .silver-page{height:auto; gap:1.6vh;}
+  .silver-viewport{flex:none; height:64vh; touch-action:auto;}
+  .silver-track{height:100%;}
+  .silver-page{gap:1.6vh;}
   .silver-dots{height:auto; gap:2.4vw; margin-top:.6vh;}
   .silver-dots i{width:2vw; height:2vw;}
-  .silver-box{flex:none; min-height:20vh; border-radius:4vw; padding:2vh 4vw; gap:1vh;}
+  .silver-box{flex:1; min-height:0; border-radius:4vw; padding:2vh 4vw; gap:1vh;}
   .silver-box .num{width:8vw; height:8vw; font-size:4.5vw;}
   .silver-box .obj{font-size:5vw;}
   .silver-box .arg{font-size:3.8vw; -webkit-line-clamp:3;}
@@ -453,6 +457,96 @@ const VIZ = {
         <line x1="85" y1="85" x2="215" y2="85" stroke="${c}" stroke-width="3" opacity=".6"/>
       </g>
     </svg>`,
+  'pie': c => `
+    <svg viewBox="0 0 300 170">
+      <circle cx="150" cy="85" r="55" fill="none" stroke="rgba(255,255,255,.13)" stroke-width="26"/>
+      <circle cx="150" cy="85" r="55" fill="none" stroke="${c}" stroke-width="26"
+        stroke-dasharray="345.6" stroke-dashoffset="345.6" transform="rotate(-90 150 85)" class="viz-arc"/>
+      <circle cx="150" cy="85" r="28" fill="none" stroke="${c}" stroke-width="2.5" opacity=".55" class="viz-pulse"/>
+    </svg>`,
+  'layoff': c => `
+    <svg viewBox="0 0 300 170">
+      <g fill="${c}" opacity=".95">
+        <circle cx="70" cy="76" r="25"/>
+        <path d="M27 152 a43 39 0 0 1 86 0z"/>
+      </g>
+      <g class="viz-pop" style="transform-origin:210px 67px">
+        <path d="M150 22 h120 a14 14 0 0 1 14 14 v62 a14 14 0 0 1 -14 14 h-84 l-26 22 v-22 h-10 a14 14 0 0 1 -14 -14 v-62 a14 14 0 0 1 14 -14z" fill="rgba(255,255,255,.13)"/>
+        <circle cx="210" cy="67" r="33" fill="#F52055"/>
+        <path d="M197 54 l26 26 M223 54 l-26 26" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+      </g>
+    </svg>`,
+  'hire': c => `
+    <svg viewBox="0 0 300 170">
+      <g fill="${c}" opacity=".95">
+        <circle cx="70" cy="76" r="25"/>
+        <path d="M27 152 a43 39 0 0 1 86 0z"/>
+      </g>
+      <g class="viz-pop" style="transform-origin:210px 67px">
+        <path d="M150 22 h120 a14 14 0 0 1 14 14 v62 a14 14 0 0 1 -14 14 h-84 l-26 22 v-22 h-10 a14 14 0 0 1 -14 -14 v-62 a14 14 0 0 1 14 -14z" fill="rgba(255,255,255,.13)"/>
+        <circle cx="210" cy="67" r="33" fill="${c}"/>
+        <path d="M194 67 l12 13 l22 -25" fill="none" stroke="#0b0620" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </svg>`,
+  'people': c => `
+    <svg viewBox="0 0 300 170">
+      <g fill="${c}" opacity=".45">
+        <circle cx="72" cy="70" r="21"/><path d="M36 140 a36 33 0 0 1 72 0z"/>
+        <circle cx="228" cy="70" r="21"/><path d="M192 140 a36 33 0 0 1 72 0z"/>
+      </g>
+      <g fill="${c}" class="viz-pop" style="transform-origin:150px 95px">
+        <circle cx="150" cy="62" r="28"/><path d="M102 152 a48 44 0 0 1 96 0z"/>
+      </g>
+    </svg>`,
+  'shield': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M150 16 l66 24 v44 c0 40 -28 64 -66 80 c-38 -16 -66 -40 -66 -80 v-44z"
+        fill="none" stroke="${c}" stroke-width="7" class="viz-pulse"/>
+      <path d="M121 86 l21 21 l42 -44" fill="none" stroke="${c}" stroke-width="10"
+        stroke-linecap="round" stroke-linejoin="round" class="viz-line"/>
+    </svg>`,
+  'doc': c => `
+    <svg viewBox="0 0 300 170">
+      <rect x="97" y="14" width="106" height="142" rx="11" fill="none" stroke="${c}" stroke-width="6"/>
+      <g stroke="${c}" stroke-width="7" stroke-linecap="round" opacity=".85">
+        <line x1="118" y1="48" x2="182" y2="48"/><line x1="118" y1="74" x2="182" y2="74"/>
+        <line x1="118" y1="100" x2="160" y2="100"/>
+      </g>
+      <circle cx="196" cy="128" r="26" fill="none" stroke="${c}" stroke-width="6" class="viz-pulse"/>
+      <path d="M184 128 l9 10 l17 -19" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>`,
+  'cart': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M48 34 h26 l24 78 h96 l22 -58 h-112" fill="none" stroke="${c}" stroke-width="7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="112" cy="138" r="12" fill="${c}"/><circle cx="184" cy="138" r="12" fill="${c}"/>
+      <g fill="${c}" opacity=".9">
+        <rect class="viz-bar" x="226" y="72" width="20" height="46" rx="4"/>
+        <rect class="viz-bar" x="254" y="46" width="20" height="72" rx="4"/>
+      </g>
+    </svg>`,
+  'alert': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M150 20 l72 124 h-144z" fill="none" stroke="${c}" stroke-width="8"
+        stroke-linejoin="round" class="viz-pulse"/>
+      <g stroke="${c}" stroke-width="12" stroke-linecap="round">
+        <line x1="150" y1="70" x2="150" y2="106"/>
+      </g>
+      <circle cx="150" cy="126" r="7" fill="${c}"/>
+    </svg>`,
+  'calendar': c => `
+    <svg viewBox="0 0 300 170">
+      <rect x="82" y="26" width="136" height="126" rx="12" fill="none" stroke="${c}" stroke-width="6"/>
+      <line x1="82" y1="62" x2="218" y2="62" stroke="${c}" stroke-width="6"/>
+      <g stroke="${c}" stroke-width="7" stroke-linecap="round">
+        <line x1="112" y1="14" x2="112" y2="38"/><line x1="188" y1="14" x2="188" y2="38"/>
+      </g>
+      <g fill="${c}" opacity=".45">
+        <rect x="102" y="78" width="20" height="18" rx="4"/><rect x="140" y="78" width="20" height="18" rx="4"/>
+        <rect x="178" y="78" width="20" height="18" rx="4"/><rect x="102" y="110" width="20" height="18" rx="4"/>
+      </g>
+      <rect x="140" y="110" width="20" height="18" rx="4" fill="${c}" class="viz-pulse"/>
+    </svg>`,
   'clock': c => `
     <svg viewBox="0 0 300 170">
       <circle cx="150" cy="85" r="62" fill="none" stroke="${c}" stroke-width="7"/>
@@ -478,19 +572,21 @@ const ROTATE_MS = 12000;
 let idx = 0, t0 = Date.now();
 const N = NEWS.length;
 
+function viz(n){ return (VIZ[n.viz]||VIZ['bars-up'])(n.color); }
+
 function esc(s){const d=document.createElement('div'); d.textContent=s; return d.innerHTML;}
 
 function slideHTML(n){
   if(n.honest){
     return `<div class="headline">${esc(n.title)}</div>
-      <div class="visual-row"><div class="visual">${VIZ[n.viz](n.color)}</div></div>
+      <div class="visual-row"><div class="visual">${viz(n)}</div></div>
       <div class="meta-row"><span class="source"><b>${esc(n.cat)}</b> · ${esc(n.source)}</span></div>`;
   }
   return `
     ${n.ammo ? '<div class="ammo-mark">🎯</div>' : ''}
     <div class="headline">${esc(n.title)}</div>
     <div class="visual-row">
-      <div class="visual">${VIZ[n.viz](n.color)}</div>
+      <div class="visual">${viz(n)}</div>
       <div class="bigfig"><span class="v ${n.fig.length<=8?'fs1':(n.fig.length<=13?'fs2':'fs3')}">${esc(n.fig)}</span><small>${esc(n.figsub)}</small></div>
     </div>
     <div class="meta-row">
@@ -542,30 +638,30 @@ sTrack.innerHTML = sPages.map((page,p)=>`
   </div>`).join('');
 
 function sRender(){
-  sTrack.style.transform = 'translateX(calc(' + (-100*sIdx) + '% + var(--sdx, 0px)))';
+  sTrack.style.transform = 'translateY(calc(' + (-100*sIdx) + '% + var(--sdy, 0px)))';
   sDots.innerHTML = SP>1 ? sPages.map((_,k)=>`<i class="${k===sIdx?'on':''}"></i>`).join('') : '';
 }
 function sNext(){ if(SP<2) return; sIdx=(sIdx+1)%SP; s0=Date.now(); sRender(); }
 function sPrev(){ if(SP<2) return; sIdx=(sIdx-1+SP)%SP; s0=Date.now(); sRender(); }
 sRender();
 
-/* arrastre del panel (igual que la pantalla de noticias) */
+/* arrastre del panel: vertical (las páginas suben y bajan) */
 let spx=null, sDragging=false;
 sView.addEventListener('pointerdown', e=>{
   if(SP<2) return;
-  spx=e.clientX; sDragging=true; sTrack.classList.add('dragging');
+  spx=e.clientY; sDragging=true; sTrack.classList.add('dragging');
 });
 sView.addEventListener('pointermove', e=>{
   if(!sDragging || spx===null) return;
-  sTrack.style.setProperty('--sdx', (e.clientX-spx)+'px');
+  sTrack.style.setProperty('--sdy', (e.clientY-spx)+'px');
 });
 function sEndDrag(e){
   if(!sDragging || spx===null) return;
-  const dx = e.clientX - spx;
+  const dy = e.clientY - spx;
   sDragging=false; spx=null;
   sTrack.classList.remove('dragging');
-  sTrack.style.setProperty('--sdx','0px');
-  if(dx<-60) sNext(); else if(dx>60) sPrev();
+  sTrack.style.setProperty('--sdy','0px');
+  if(dy<-50) sNext(); else if(dy>50) sPrev();
 }
 sView.addEventListener('pointerup', sEndDrag);
 sView.addEventListener('pointercancel', sEndDrag);

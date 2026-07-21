@@ -6,11 +6,32 @@
 
    ⚠️ MUNDO solo aparece cuando hay una noticia real y verificable. Ya no se
    publican tarjetas "honestas" vacías: si no hay nada, la categoría no existe
-   ese día (la edición puede tener 4 o 5 noticias, y eso es correcto). */
+   ese día (la edición puede tener 4 o 5 noticias, y eso es correcto).
+
+   ⚠️ VISUALES (campo "viz"): deben VARIAR. Se elige el que mejor cuente la
+   noticia, no siempre el mismo. Regla: ningún visual puede repetirse dos días
+   seguidos — antes de reescribir este archivo, mira qué "viz" tiene la edición
+   anterior y elige otros.
+   Biblioteca disponible en index.html:
+     chart-up  línea que sube (crecimiento, proyecciones)
+     bars-up   barras que crecen (comparativos, series)
+     pie       gráfico circular (porcentajes, participación)
+     money     monedas + S/ (dinero, sueldos, caja)
+     layoff    persona con una X roja (despidos, ceses, rotación)
+     hire      persona con un check (contratación, empleo formal)
+     people    grupo de personas (talento, planilla, equipos)
+     legal     balanza (normas, sentencias, derechos)
+     shield    escudo con check (cumplimiento, prevención, seguridad)
+     doc       documento validado (decretos, requisitos, trámites)
+     alert     triángulo de alerta (multas, riesgos, sanciones)
+     calendar  calendario (plazos, fechas límite, cronogramas)
+     cart      carrito + barras (retail, consumo, ventas)
+     globe     globo terráqueo (MUNDO)
+     clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
   generado: "2026-07-20 22:06 (Lima)",
   NEWS: [
-  { color:"#E6299C", viz:"money", ammo:true, week:true,
+  { color:"#E6299C", viz:"layoff", ammo:true, week:true,
     title:"Despidos golpean a 7 de cada 10 empresas",
     fig:"68%", figsub:"de empresas despidió personal en el 2026",
     cat:"RRHH", source:"Infobae · 18/07/2026",
@@ -20,12 +41,12 @@ window.NOTICIERO = {
     fig:"S/ 143,660", figsub:"multa SUNAFIL por no pagar la gratificación",
     cat:"LEGAL", source:"RPP · 03/07/2026",
     url:"https://rpp.pe/economia/economia/gratificacion-julio-2026-peru-cuando-se-paga-y-como-calcular-dinero-a-recibir-en-fiestas-patrias-noticia-1695772" },
-  { color:"#FF953A", viz:"money", ammo:false, week:true,
+  { color:"#FF953A", viz:"pie", ammo:false, week:true,
     title:"BCR ancla la tasa: crédito estable",
     fig:"4.25%", figsub:"tasa de referencia, 11 meses sin cambios",
     cat:"ECONOMÍA", source:"Andina · 09/07/2026",
     url:"https://andina.pe/agencia/noticia-bcr-mantiene-tasa-interes-referencia-425-undecimo-mes-consecutivo-1082982.aspx" },
-  { color:"#FF953A", viz:"chart-up", ammo:true, week:true,
+  { color:"#FF953A", viz:"cart", ammo:true, week:true,
     title:"Retail crece hasta 5% por Fiestas Patrias",
     fig:"+5%", figsub:"crecerían las ventas del retail en julio",
     cat:"RETAIL", source:"Perú Retail · 13/07/2026",
