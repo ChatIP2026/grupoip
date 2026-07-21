@@ -55,6 +55,8 @@ body.tab-ip .silver-panel{opacity:0; transform:translateX(8vw); pointer-events:n
 body.tab-ip .wall{left:8vw; width:84vw;}
 body.tab-ip .platform{left:50vw;}
 body.tab-ip .front-stage{left:50vw;}
+body.tab-ip .clockchip{top:2vh; right:2.2vw;}
+body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .wall::after{content:""; position:absolute; inset:0; pointer-events:none;
   background:linear-gradient(90deg, rgba(8,6,40,.55), transparent 9%, transparent 91%, rgba(8,6,40,.55));}
 .wall .map{position:absolute; inset:0; opacity:.22; pointer-events:none;}
@@ -170,7 +172,7 @@ body.tab-ip .front-stage{left:50vw;}
 
 /* ═════ TARJETA iPARTNER (noticias internas del equipo) ═════ */
 .ip-card{
-  position:absolute; top:5vh; left:50%; width:76vw; height:62vh;
+  position:absolute; top:9.5vh; left:50%; width:72vw; height:58vh;
   transform:translateX(-50%) scale(.97); opacity:0; pointer-events:none;
   transition:opacity .5s ease, transform .5s cubic-bezier(.22,.8,.3,1);
   display:flex; align-items:center; gap:2.6vw;
@@ -403,10 +405,10 @@ body.no-ip .tabarrow{display:none;}
   body.tab-ip .wall{left:auto; width:94vw;}
   body.tab-ip .front-stage{left:auto;}
   body.tab-ip .silver-panel{display:none;}
-  .ip-card{display:none; position:relative; top:auto; left:auto; width:86vw; height:auto; margin:5vh auto 0;
+  .ip-card{display:none; position:relative; top:auto; left:auto; width:86vw; height:auto; margin:8vh auto 0;
     transform:scale(.97); flex-direction:column; gap:2vh; border-radius:4vw; padding:2.4vh 4.5vw;}
   .ip-card.on{display:flex; transform:scale(1);}
-  .ip-photo{width:100%; height:26vh; flex:none; border-radius:3vw;}
+  .ip-photo{width:100%; height:20vh; flex:none; border-radius:3vw;}
   .ip-title{font-size:5.6vw; -webkit-line-clamp:3;}
   .ip-phrase{font-size:3.4vw; padding-left:3vw; border-left-width:1vw;}
   .ip-meta{font-size:2.6vw;}
