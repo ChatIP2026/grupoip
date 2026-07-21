@@ -2,7 +2,7 @@
 
 Pantalla táctil de noticias para el equipo de iPartner: noticias diarias verificadas del Perú y el mundo (economía, RRHH, SUNAFIL, retail), con panel fijo de "Argumentos de Cierre" para el equipo de ventas.
 
-**Sitio en vivo:** https://charlydecast.github.io/noticiero-ipartner/
+**Sitio en vivo:** https://chatip2026.github.io/grupoip/
 
 Proyecto de Ingeniería Comercial · Elaborado por **Hilary S. y Carlos D.**
 
@@ -44,7 +44,7 @@ La página se recarga sola cada 30 minutos, así toma la edición nueva sin toca
 ## 🔧 Cómo hacer una modificación (para el equipo de iPartner)
 
 1. Abrir Claude (Cowork) y pegarle:
-   > "Trabaja sobre el repositorio GitHub `Charlydecast/noticiero-ipartner` (clónalo con el token que te doy). `index.html` es el diseño y `data.js` el contenido diario que NO debes tocar. Quiero este cambio: [describirlo]. Al terminar, commit y push a main."
+   > "Trabaja sobre el repositorio GitHub `ChatIP2026/grupoip` (clónalo con el token que te doy). `index.html` es el diseño y `data.js` el contenido diario que NO debes tocar. Quiero este cambio: [describirlo]. Al terminar, commit y push a main."
 2. El token de escritura lo administra el dueño del repo (fine-grained, solo este repo). Pedírselo por canal privado.
 3. El cambio aparece en el sitio en 1-2 minutos. El link NUNCA cambia.
 
