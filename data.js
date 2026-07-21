@@ -1,5 +1,12 @@
-/* DATOS DEL NOTICIERO iPARTNER — este archivo lo regenera la tarea nocturna.
-   El diseño vive en index.html; aquí solo cambia el contenido. */
+/* DATOS DEL NOTICIERO iPARTNER — la tarea nocturna regenera NEWS y DATO.
+   El diseño vive en index.html; aquí solo cambia el contenido.
+
+   ⚠️ SILVER (Argumentos de Venta) es PERMANENTE: lo cura a mano el equipo
+   comercial. La tarea nocturna NO debe tocarlo, reordenarlo ni reemplazarlo.
+
+   ⚠️ MUNDO solo aparece cuando hay una noticia real y verificable. Ya no se
+   publican tarjetas "honestas" vacías: si no hay nada, la categoría no existe
+   ese día (la edición puede tener 4 o 5 noticias, y eso es correcto). */
 window.NOTICIERO = {
   generado: "2026-07-20 22:06 (Lima)",
   NEWS: [
@@ -22,12 +29,11 @@ window.NOTICIERO = {
     title:"Retail crece hasta 5% por Fiestas Patrias",
     fig:"+5%", figsub:"crecerían las ventas del retail en julio",
     cat:"RETAIL", source:"Perú Retail · 13/07/2026",
-    url:"https://www.peru-retail.com/sector-retail-proyecta-un-crecimiento-de-las-ventas-de-hasta-5-durante-las-fiestas-patrias/" },
-  { color:"#07F3F4", viz:"globe", honest:true,
-    title:"Hoy no hay noticias de Mundo verificables del día. Preferimos decírtelo antes que inventar.",
-    fig:"", figsub:"", cat:"MUNDO", source:"Política de honestidad", url:"" }
+    url:"https://www.peru-retail.com/sector-retail-proyecta-un-crecimiento-de-las-ventas-de-hasta-5-durante-las-fiestas-patrias/" }
 ],
   DATO: "Este julio se inyectaron cerca de <b>S/ 10,000 millones</b> en gratificaciones a más de 4 millones de trabajadores formales: hay caja en el mercado para mover soluciones de talento",
+  /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
+     Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
   { obj:"“El mercado está frío”",
     arg:"<b>US$ 45,128 M</b> exportados este año (+36.7%): tus clientes sí tienen caja.",
@@ -37,6 +43,15 @@ window.NOTICIERO = {
     say:"“Retener es más barato que reponer”" },
   { obj:"“SUNAFIL no me tocará”",
     arg:"<b>S/ 143,660</b> de multa por no pagar bien la gratificación: el riesgo es real.",
-    say:"“Prevenir cuesta una fracción”" }
+    say:"“Prevenir cuesta una fracción”" },
+  { obj:"“Nadie está contratando ahora”",
+    arg:"<b>251,000</b> nuevos puestos formales solo en mayo: 26 meses seguidos de alza.",
+    say:"“Tu competencia ya está contratando”" },
+  { obj:"“Yo consigo mi propia gente”",
+    arg:"<b>70.2%</b> del empleo en el Perú es informal: 12.3 de 17.6 millones de ocupados.",
+    say:"“Conseguir es fácil, formalizar no”" },
+  { obj:"“Mi planilla está en orden”",
+    arg:"<b>23,971</b> empleadores recibieron carta inductiva de SUNAFIL solo por la CTS.",
+    say:"“Estar en orden hay que poder probarlo”" }
 ]
 };
