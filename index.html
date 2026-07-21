@@ -38,22 +38,26 @@ body{
   border:2px solid rgba(140,150,255,.35);
   box-shadow:inset 0 0 8vw rgba(10,8,50,.75), inset 0 0 1.5vw rgba(160,190,255,.25), 0 1.5vh 5vh rgba(0,0,10,.5);
 }
-.wall{transition:left .9s cubic-bezier(.22,.8,.3,1), width .9s cubic-bezier(.22,.8,.3,1);}
+.wall{transition:left .6s cubic-bezier(.22,.8,.3,1), width .6s cubic-bezier(.22,.8,.3,1); contain:layout paint;}
 .wall:active{cursor:grabbing;}
 
 /* ═════ DOS PESTAÑAS: NOTICIAS e iPARTNER ═════ */
 .stage{position:absolute; inset:0; z-index:3; opacity:0; pointer-events:none;
-  transform:translateX(35%) scale(.84); filter:blur(5px) brightness(.8);
-  transition:opacity .55s ease, transform .6s cubic-bezier(.22,.8,.3,1), filter .55s ease;}
-.stage.from-left{transform:translateX(-35%) scale(.84);}
+  transform:translate3d(34%,0,0) scale(.88); backface-visibility:hidden;
+  transition:opacity .5s ease, transform .6s cubic-bezier(.22,.8,.3,1);}
+.stage.from-left{transform:translate3d(-34%,0,0) scale(.88);}
 .stage.nofx{transition:none;}
-.stage.on{opacity:1; pointer-events:auto; transform:none; filter:none;}
+.stage.on{opacity:1; pointer-events:auto; transform:translate3d(0,0,0) scale(1);}
+/* solo mientras dura el cruce se pide capa propia a la GPU */
+body.switching .stage{will-change:transform, opacity;}
+body.switching .wall{will-change:left, width;}
 
 /* al abrir iPartner: se va el panel de argumentos y la pantalla se centra y crece */
-.silver-panel{transition:opacity .45s ease, transform .6s cubic-bezier(.22,.8,.3,1);}
+.silver-panel{transition:opacity .35s ease, transform .6s cubic-bezier(.22,.8,.3,1); will-change:transform, opacity;}
 body.tab-ip .silver-panel{opacity:0; transform:translateX(8vw); pointer-events:none;}
 body.tab-ip .wall{left:8vw; width:84vw;}
 body.tab-ip .platform{left:50vw;}
+.platform,.front-stage{transition:left .6s cubic-bezier(.22,.8,.3,1);}
 body.tab-ip .front-stage{left:50vw;}
 body.tab-ip .clockchip{top:2vh; right:2.2vw;}
 body.tab-ip .livechip{top:2vh; left:2.2vw;}
@@ -321,6 +325,7 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 @keyframes hover{0%,100%{transform:translateY(0)} 50%{transform:translateY(-1.2vh)}}
 
 /* el robot salta de alegría, vuela a la otra habitación y aterriza */
+.robot.travel,.robot.waving{filter:none; will-change:transform;}
 .robot.travel{animation:robotTravel 1.5s cubic-bezier(.3,.9,.35,1) forwards;}
 @keyframes robotTravel{
   0%  {transform:translate(0,0) scale(1) rotate(0deg)}
@@ -1010,6 +1015,7 @@ function setTab(i, dir){
 function switchTab(dir){
   if(switching || !IP_ACTIVE) return;
   switching = true;
+  document.body.classList.add('switching');
   robotEl.style.setProperty('--lead', dir<0 ? '-7vw' : '7vw');
   robotEl.classList.remove('waving');
   void robotEl.offsetWidth;
@@ -1018,6 +1024,7 @@ function switchTab(dir){
   setTimeout(()=> setTab(tab===0 ? 1 : 0, dir), 320);
   /* aterriza y saluda señalando la pantalla */
   setTimeout(()=>{ robotEl.classList.remove('travel'); robotEl.classList.add('waving'); }, 1500);
+  setTimeout(()=> document.body.classList.remove('switching'), 1300);
   setTimeout(()=>{ robotEl.classList.remove('waving'); switching=false; tabT0=Date.now(); }, 3900);
   tabT0 = Date.now();
 }
