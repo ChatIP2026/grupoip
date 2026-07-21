@@ -172,16 +172,19 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 
 /* ═════ PESTAÑA iPARTNER: cumpleaños · extraordinarios · eventos ═════ */
 .ip-slide{
-  position:absolute; top:9.5vh; left:50%; width:72vw; height:58vh;
-  transform:translateX(-50%) scale(.97); opacity:0; pointer-events:none;
-  transition:opacity .5s ease, transform .5s cubic-bezier(.22,.8,.3,1);
+  position:absolute; top:9.5vh; left:50%; width:68vw; height:58vh; z-index:2;
+  transform:translateX(-50%) scale(.84); opacity:0; pointer-events:none;
+  filter:blur(5px) brightness(.8);
+  transition:opacity .5s ease, transform .55s cubic-bezier(.22,.8,.3,1), filter .55s ease;
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.8vh;
   border-radius:1.6vw; padding:2.6vh 2.2vw; overflow:hidden;
   background:linear-gradient(165deg, rgba(16,10,50,.92), rgba(24,14,66,.86));
   border:1.5px solid var(--ip,var(--cyan));
   box-shadow:0 0 2.4vw color-mix(in srgb, var(--ip,var(--cyan)) 40%, transparent), inset 0 1px 0 rgba(255,255,255,.1);
 }
-.ip-slide.on{opacity:1; transform:translateX(-50%) scale(1); pointer-events:auto;}
+.ip-slide.on{opacity:1; transform:translateX(-50%) scale(1); filter:none; z-index:3; pointer-events:auto;}
+.ip-slide.prev{opacity:.85; transform:translateX(calc(-50% - 45vw)) scale(.84);}
+.ip-slide.next{opacity:.85; transform:translateX(calc(-50% + 45vw)) scale(.84);}
 .ip-kicker{
   font-family:'Sora',sans-serif; font-weight:800; font-size:1.05vw; letter-spacing:.18em;
   color:var(--ip,var(--cyan)); flex-shrink:0; text-align:center;
@@ -209,6 +212,20 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
   border-left:.26vw solid var(--ip,var(--cyan)); padding-left:1vw;
   display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;}
 .cum-team{font-size:1.05vw; font-weight:700; letter-spacing:.08em; color:var(--txt2);}
+
+/* reloj de arena: la arena cae y al vaciarse el reloj gira */
+.cum-hg{flex-shrink:0; width:13vw; display:flex; align-items:center; justify-content:center;}
+.cum-hg svg{width:100%; height:auto; max-height:40vh; overflow:visible;
+  filter:drop-shadow(0 0 1.6vw rgba(255,149,58,.55));}
+.hg{animation:hgSpin 6s cubic-bezier(.75,0,.25,1) infinite; transform-origin:50% 50%;}
+@keyframes hgSpin{0%,86%{transform:rotate(0deg)} 100%{transform:rotate(360deg)}}
+.hg rect{transform-box:view-box; transform-origin:0 0;}
+.hg-top{animation:hgTop 6s linear infinite;}
+@keyframes hgTop{from{transform:translateY(0)} to{transform:translateY(128px)}}
+.hg-bot{animation:hgBot 6s linear infinite;}
+@keyframes hgBot{from{transform:translateY(128px)} to{transform:translateY(0)}}
+.hg-stream{animation:hgStream .5s linear infinite;}
+@keyframes hgStream{from{transform:translateY(-16px); opacity:.15} 45%{opacity:1} to{transform:translateY(16px); opacity:.15}}
 
 /* extraordinarios del mes: los 4 a la vez */
 .ex-grid{flex:1; min-height:0; width:100%; display:flex; gap:1.1vw; align-items:stretch; justify-content:center;}
@@ -448,6 +465,7 @@ body.no-ip .tabarrow{display:none;}
   .ip-h{font-size:5.4vw;}
   .cum-body .ip-kicker,.cum-body .ip-h{text-align:center;}
   .cum-photo{width:38vw; height:38vw; max-width:none; max-height:none;}
+  .cum-hg{width:30vw;} .cum-hg svg{max-height:26vh;}
   .cum-count{font-size:12vw; text-align:center;}
   .cum-count small{font-size:3.2vw;}
   .cum-msg{font-size:3.4vw; padding-left:3vw; border-left-width:1vw;}
@@ -858,6 +876,22 @@ sView.addEventListener('pointerleave', sEndDrag);
 sView.addEventListener('dragstart', e=>e.preventDefault());
 
 /* ══════ PESTAÑA iPARTNER: render de los tres apartados ══════ */
+function relojArena(id){ return `
+  <div class="cum-hg"><svg class="hg" viewBox="0 0 200 300" aria-hidden="true">
+    <defs>
+      <clipPath id="hgT${id}"><path d="M54 22 L146 22 L104 150 L96 150 Z"/></clipPath>
+      <clipPath id="hgB${id}"><path d="M54 278 L146 278 L104 150 L96 150 Z"/></clipPath>
+    </defs>
+    <g clip-path="url(#hgT${id})"><rect class="hg-top" x="40" y="22" width="120" height="128" fill="#FF953A" opacity=".85"/></g>
+    <g clip-path="url(#hgB${id})"><rect class="hg-bot" x="40" y="150" width="120" height="128" fill="#FF953A" opacity=".85"/></g>
+    <rect class="hg-stream" x="97" y="144" width="6" height="34" rx="3" fill="#FF953A"/>
+    <g fill="none" stroke="#FF953A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M54 22 L146 22 L104 150 L146 278 L54 278 L96 150 Z"/>
+      <line x1="42" y1="14" x2="158" y2="14"/>
+      <line x1="42" y1="286" x2="158" y2="286"/>
+    </g>
+  </svg></div>`; }
+
 const AVATAR_PH = `
   <svg viewBox="0 0 200 200" fill="#cfe9ff">
     <circle cx="100" cy="76" r="38"/><path d="M28 190 a72 66 0 0 1 144 0z"/>
@@ -874,7 +908,7 @@ function ipTitulo(sl){
   return sl.ev.titulo || 'Evento del mes';
 }
 
-function ipSlideHTML(sl){
+function ipSlideHTML(sl, k){
   if(sl.tipo==='cumple'){
     const p = sl.p, hoy = sl.dias===0;
     const foto = p.foto ? `<img src="${p.foto}" alt="">` : AVATAR_PH;
@@ -891,6 +925,7 @@ function ipSlideHTML(sl){
              <h2 class="ip-h">${esc(p.nombre)}</h2>
              ${p.equipo?`<div class="cum-team">EQUIPO ${esc(p.equipo).toUpperCase()}</div>`:''}`}
       </div>
+      ${hoy ? '' : relojArena(k)}
     </div>`;
   }
   if(sl.tipo==='extra'){
@@ -918,9 +953,14 @@ function ipSlideHTML(sl){
   </div>`;
 }
 
-ipStack.innerHTML = IP.map(ipSlideHTML).join('');
+ipStack.innerHTML = IP.map((sl,k)=>ipSlideHTML(sl,k)).join('');
 function ipRender(){
-  ipStack.querySelectorAll('.ip-slide').forEach((c,k)=>c.classList.toggle('on', k===ipIdx));
+  const n = IP.length;
+  ipStack.querySelectorAll('.ip-slide').forEach((c,k)=>{
+    const pos = (k-ipIdx+n)%n;
+    c.className = 'ip-slide' + (sl_cum(k)?' cum':'') +
+      (pos===0 ? ' on' : pos===1 ? ' next' : pos===n-1 ? ' prev' : '');
+  });
   ipDots.innerHTML = IP.length>1 ? IP.map((_,k)=>`<i class="${k===ipIdx?'on':''}"></i>`).join('') : '';
   const v = IP.length>1 ? '' : 'none';
   document.getElementById('ipChevL').style.display = v;
@@ -928,6 +968,7 @@ function ipRender(){
 }
 function ipNext(){ if(IP.length<2) return; ipIdx=(ipIdx+1)%IP.length; ipT0=Date.now(); ipRender(); }
 function ipPrev(){ if(IP.length<2) return; ipIdx=(ipIdx-1+IP.length)%IP.length; ipT0=Date.now(); ipRender(); }
+function sl_cum(k){ return IP[k] && IP[k].tipo==='cumple'; }
 let ipT0 = Date.now();
 ipRender();
 
