@@ -213,19 +213,18 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
   display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;}
 .cum-team{font-size:1.05vw; font-weight:700; letter-spacing:.08em; color:var(--txt2);}
 
-/* reloj de arena: la arena cae y al vaciarse el reloj gira */
-.cum-hg{flex-shrink:0; width:13vw; display:flex; align-items:center; justify-content:center;}
-.cum-hg svg{width:100%; height:auto; max-height:40vh; overflow:visible;
-  filter:drop-shadow(0 0 1.6vw rgba(255,149,58,.55));}
-.hg{animation:hgSpin 6s cubic-bezier(.75,0,.25,1) infinite; transform-origin:50% 50%;}
-@keyframes hgSpin{0%,86%{transform:rotate(0deg)} 100%{transform:rotate(360deg)}}
-.hg rect{transform-box:view-box; transform-origin:0 0;}
-.hg-top{animation:hgTop 6s linear infinite;}
-@keyframes hgTop{from{transform:translateY(0)} to{transform:translateY(128px)}}
-.hg-bot{animation:hgBot 6s linear infinite;}
-@keyframes hgBot{from{transform:translateY(128px)} to{transform:translateY(0)}}
-.hg-stream{animation:hgStream .5s linear infinite;}
-@keyframes hgStream{from{transform:translateY(-16px); opacity:.15} 45%{opacity:1} to{transform:translateY(16px); opacity:.15}}
+/* reloj de arena: quieto, con la arena cayendo por el cuello (solo simulación) */
+.cum-hg{flex-shrink:0; width:12.5vw; display:flex; align-items:center; justify-content:center;}
+.cum-hg svg{width:100%; height:auto; max-height:40vh;
+  filter:drop-shadow(0 0 1.4vw rgba(255,149,58,.5));}
+.hg-grain{transform-box:view-box; transform-origin:0 0; animation:hgGrain 1.15s linear infinite;}
+.hg-grain.g2{animation-delay:.38s} .hg-grain.g3{animation-delay:.76s}
+@keyframes hgGrain{
+  0%{transform:translateY(0); opacity:0}
+  14%{opacity:1}
+  82%{opacity:1}
+  100%{transform:translateY(86px); opacity:0}
+}
 
 /* extraordinarios del mes: los 4 a la vez */
 .ex-grid{flex:1; min-height:0; width:100%; display:flex; gap:1.1vw; align-items:stretch; justify-content:center;}
@@ -802,19 +801,28 @@ function slideHTML(n){
     </div>`;
 }
 
-function render(){
+/* las tarjetas se crean UNA vez; después solo cambian de clase, y así la
+   transición de una noticia a otra es suave en vez de un salto seco */
+function buildNews(){
   const c = document.getElementById('carousel');
-  c.innerHTML = '';
-  if(!N){ document.getElementById('dots').innerHTML=''; return; }
-  NEWS.forEach((n,k)=>{
-    const s = document.createElement('div');
+  c.innerHTML = NEWS.map(n=>
+    `<div class="slide${n.honest?' honest':''}" style="--cat:${n.color}">${slideHTML(n)}</div>`
+  ).join('');
+}
+function render(){
+  const dotsEl = document.getElementById('dots');
+  if(!N){ dotsEl.innerHTML=''; return; }
+  document.querySelectorAll('#carousel .slide').forEach((s,k)=>{
     const pos = (k-idx+N)%N;
-    s.className = 'slide ' + (pos===0?'center': pos===1?'right': pos===N-1?'left':'hidden') + (n.honest?' honest':'');
-    s.style.setProperty('--cat', n.color);
-    s.innerHTML = slideHTML(n);
-    c.appendChild(s);
+    const sitio = pos===0?'center': pos===1?'right': pos===N-1?'left':'hidden';
+    s.className = 'slide' + (NEWS[k].honest?' honest':'') + ' ' + sitio;
+    /* al quedar al centro, su gráfico vuelve a animarse desde cero */
+    if(pos===0){
+      const v = s.querySelector('.visual');
+      if(v){ const svg = v.innerHTML; v.innerHTML=''; void v.offsetWidth; v.innerHTML = svg; }
+    }
   });
-  document.getElementById('dots').innerHTML = NEWS.map((_,k)=>`<i class="${k===idx?'on':''}"></i>`).join('');
+  dotsEl.innerHTML = NEWS.map((_,k)=>`<i class="${k===idx?'on':''}"></i>`).join('');
 }
 function next(){ if(!N) return; idx=(idx+1)%N; t0=Date.now(); render(); }
 function prev(){ if(!N) return; idx=(idx-1+N)%N; t0=Date.now(); render(); }
@@ -876,19 +884,20 @@ sView.addEventListener('pointerleave', sEndDrag);
 sView.addEventListener('dragstart', e=>e.preventDefault());
 
 /* ══════ PESTAÑA iPARTNER: render de los tres apartados ══════ */
-function relojArena(id){ return `
-  <div class="cum-hg"><svg class="hg" viewBox="0 0 200 300" aria-hidden="true">
-    <defs>
-      <clipPath id="hgT${id}"><path d="M54 22 L146 22 L104 150 L96 150 Z"/></clipPath>
-      <clipPath id="hgB${id}"><path d="M54 278 L146 278 L104 150 L96 150 Z"/></clipPath>
-    </defs>
-    <g clip-path="url(#hgT${id})"><rect class="hg-top" x="40" y="22" width="120" height="128" fill="#FF953A" opacity=".85"/></g>
-    <g clip-path="url(#hgB${id})"><rect class="hg-bot" x="40" y="150" width="120" height="128" fill="#FF953A" opacity=".85"/></g>
-    <rect class="hg-stream" x="97" y="144" width="6" height="34" rx="3" fill="#FF953A"/>
-    <g fill="none" stroke="#FF953A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
-      <path d="M54 22 L146 22 L104 150 L146 278 L54 278 L96 150 Z"/>
-      <line x1="42" y1="14" x2="158" y2="14"/>
-      <line x1="42" y1="286" x2="158" y2="286"/>
+function relojArena(){ return `
+  <div class="cum-hg"><svg viewBox="0 0 200 300" aria-hidden="true">
+    <g fill="#FF953A">
+      <rect x="26" y="6"   width="148" height="26" rx="9"/>
+      <rect x="26" y="268" width="148" height="26" rx="9"/>
+      <path d="M60 60 L140 60 C140 104 108 126 100 150 C92 126 60 104 60 60 Z" opacity=".9"/>
+      <path d="M58 262 C80 224 120 224 142 262 Z" opacity=".9"/>
+      <circle class="hg-grain"    cx="100" cy="158" r="5"/>
+      <circle class="hg-grain g2" cx="100" cy="158" r="4"/>
+      <circle class="hg-grain g3" cx="100" cy="158" r="4.5"/>
+    </g>
+    <g fill="none" stroke="#FF953A" stroke-width="11" stroke-linecap="round">
+      <path d="M50 32 C50 104 100 122 100 150 C100 178 50 196 50 268"/>
+      <path d="M150 32 C150 104 100 122 100 150 C100 178 150 196 150 268"/>
     </g>
   </svg></div>`; }
 
@@ -908,7 +917,7 @@ function ipTitulo(sl){
   return sl.ev.titulo || 'Evento del mes';
 }
 
-function ipSlideHTML(sl, k){
+function ipSlideHTML(sl){
   if(sl.tipo==='cumple'){
     const p = sl.p, hoy = sl.dias===0;
     const foto = p.foto ? `<img src="${p.foto}" alt="">` : AVATAR_PH;
@@ -925,7 +934,7 @@ function ipSlideHTML(sl, k){
              <h2 class="ip-h">${esc(p.nombre)}</h2>
              ${p.equipo?`<div class="cum-team">EQUIPO ${esc(p.equipo).toUpperCase()}</div>`:''}`}
       </div>
-      ${hoy ? '' : relojArena(k)}
+      ${hoy ? '' : relojArena()}
     </div>`;
   }
   if(sl.tipo==='extra'){
@@ -953,7 +962,7 @@ function ipSlideHTML(sl, k){
   </div>`;
 }
 
-ipStack.innerHTML = IP.map((sl,k)=>ipSlideHTML(sl,k)).join('');
+ipStack.innerHTML = IP.map(ipSlideHTML).join('');
 function ipRender(){
   const n = IP.length;
   ipStack.querySelectorAll('.ip-slide').forEach((c,k)=>{
@@ -1074,6 +1083,7 @@ function renderTicker(){
 }
 renderTicker();
 
+buildNews();
 render();
 </script>
 </body>
