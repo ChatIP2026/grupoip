@@ -256,6 +256,8 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .adn-foco .tit{font-family:'Sora',sans-serif; font-weight:800; font-size:1.7vw; line-height:1.15;}
 .adn-foco .txt{font-size:1.15vw; line-height:1.42; color:#dcd6ff;}
 .adn-foco .txt b{color:var(--cyan); font-weight:800;}
+.adn-viz{margin-top:auto; padding-top:1.2vh; width:100%;}
+.adn-viz svg{width:100%; height:auto; max-height:17vh; display:block;}
 .adn-hitos{flex:1.3; min-width:0; display:flex; flex-direction:column; gap:1vh;}
 .adn-item{
   flex:1; min-height:0; display:flex; gap:.9vw; align-items:flex-start;
@@ -515,6 +517,7 @@ body.no-ip .tabarrow{display:none;}
   .adn-cols{flex-direction:column; gap:1.6vh;}
   .adn-foco{padding:2vh 4vw; border-radius:3vw;}
   .adn-foco .lab{font-size:2.6vw;} .adn-foco .tit{font-size:4.4vw;} .adn-foco .txt{font-size:3.2vw;}
+  .adn-viz svg{max-height:14vh;}
   .adn-item{padding:1.6vh 3vw; border-radius:3vw; gap:3vw;}
   .adn-item .n{width:7vw; height:7vw; font-size:3.4vw;}
   .adn-item .t{font-size:3.4vw;} .adn-item .d{font-size:2.9vw; -webkit-line-clamp:3;}
@@ -952,6 +955,41 @@ function relojArena(){ return `
     </g>
   </svg></div>`; }
 
+/* ilustración del foco del mes: la escalera de crecimiento del equipo */
+const ADN_VIZ = `
+<svg viewBox="0 0 420 160" aria-hidden="true">
+  <defs>
+    <linearGradient id="adnG" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#E6299C"/><stop offset=".45" stop-color="#FF953A"/><stop offset="1" stop-color="#07F3F4"/>
+    </linearGradient>
+  </defs>
+  <path d="M16 136 H80 V108 H160 V80 H240 V50 H318" fill="none" stroke="url(#adnG)"
+        stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+  <path d="M312 50 l-20 -13 v26 z" fill="#07F3F4"/>
+  <g fill="#E6299C" opacity=".9">
+    <circle cx="34" cy="108" r="7"/><path d="M22 130 a12 11 0 0 1 24 0z"/>
+    <circle cx="56" cy="112" r="6"/><path d="M46 130 a10 9 0 0 1 20 0z"/>
+  </g>
+  <g fill="#FF953A" opacity=".9">
+    <circle cx="112" cy="76" r="8"/><path d="M99 101 a13 12 0 0 1 26 0z"/>
+    <circle cx="136" cy="82" r="7"/><path d="M124 101 a12 11 0 0 1 24 0z"/>
+  </g>
+  <g fill="#07F3F4" opacity=".9">
+    <circle cx="196" cy="44" r="9"/><path d="M182 73 a14 13 0 0 1 28 0z"/>
+  </g>
+  <g transform="translate(252,14)" fill="#07F3F4" opacity=".95">
+    <circle cx="10" cy="8" r="8"/><path d="M2 36 a12 11 0 0 1 20 -6 l6 8 -6 4 -5 -6 z"/>
+  </g>
+  <g transform="translate(348,10)" fill="none" stroke="#07F3F4" stroke-width="5" stroke-linecap="round">
+    <path d="M18 8 a14 12 0 0 1 22 4 a12 11 0 0 1 -4 20 a13 12 0 0 1 -22 -2 a12 11 0 0 1 4 -22z"/>
+    <path d="M28 10 v26 M20 18 h8 M28 26 h8" stroke-width="3.4" opacity=".85"/>
+  </g>
+  <g transform="translate(276,96)" stroke="#FF953A" fill="none" stroke-width="4.5" stroke-linecap="round">
+    <circle cx="18" cy="18" r="17" opacity=".8"/>
+    <path d="M11 10 h14 v7 a7 7 0 0 1 -14 0z M18 24 v4 M13 30 h10" />
+  </g>
+</svg>`;
+
 const AVATAR_PH = `
   <svg viewBox="0 0 200 200" fill="#cfe9ff">
     <circle cx="100" cy="76" r="38"/><path d="M28 190 a72 66 0 0 1 144 0z"/>
@@ -998,6 +1036,7 @@ function ipSlideHTML(sl){
           <div class="lab">FOCO DEL MES</div>
           <div class="tit">${esc(a.foco||'')}</div>
           <div class="txt"><b>Mindset:</b> ${esc(a.mindset||'')}</div>
+          <div class="adn-viz">${ADN_VIZ}</div>
         </div>
         <div class="adn-hitos">
           ${(a.hitos||[]).map((h,i)=>`
@@ -1136,6 +1175,8 @@ function loop(){
   progEl.style.width = Math.min(100, el/ROTATE_MS*100)+'%';
   if(tab===0 && el>=ROTATE_MS) next();
   if(tab===0 && SP>1 && Date.now()-s0 >= SILVER_MS) sNext();
+  /* mientras alguien tiene la pantalla agarrada, no corre ningún reloj */
+  if(dragging){ ipT0 = Date.now(); tabT0 = Date.now(); }
   /* los apartados de iPartner rotan cada 15 s, con su propia barra */
   if(tab===1 && IP.length>1){
     ipProgEl.style.width = Math.min(100, (Date.now()-ipT0)/IP_MS*100)+'%';
