@@ -77,7 +77,44 @@ window.NOTICIERO = {
 
   /* fecha:"MM-DD" · foto: avatar cuadrado en img/avatars/ */
   CUMPLES: [
-    { nombre:"NOMBRE DEL COLABORADOR", equipo:"", fecha:"07-24", foto:"" }
+    /* ENERO */
+    { nombre:"Sofía Salcedo",       equipo:"",         fecha:"01-30", foto:"" },
+    /* MARZO */
+    { nombre:"Mauricio",            equipo:"",         fecha:"03-17", foto:"" },
+    { nombre:"Nicol de la Cruz",    equipo:"",         fecha:"03-23", foto:"" },
+    /* ABRIL */
+    { nombre:"Darwin Hoyos",        equipo:"Renewals", fecha:"04-07", foto:"" },
+    { nombre:"Miryan Mendo",        equipo:"",         fecha:"04-09", foto:"" },
+    { nombre:"Jorge Luis Gomez",    equipo:"Reports",  fecha:"04-25", foto:"" },
+    /* MAYO */
+    { nombre:"Carlos Daniel del Castillo Vergara", equipo:"", fecha:"05-11", foto:"" },
+    { nombre:"Brenda Sanchez",      equipo:"",         fecha:"05-14", foto:"" },
+    { nombre:"Andres Castillo",     equipo:"",         fecha:"05-16", foto:"" },
+    /* JUNIO */
+    { nombre:"Aixa Enriquez",       equipo:"Business", fecha:"06-01", foto:"" },
+    { nombre:"Hilary Salazar",      equipo:"",         fecha:"06-05", foto:"" },
+    { nombre:"Evelýn",              equipo:"",         fecha:"06-20", foto:"" },
+    { nombre:"Mario Mendez",        equipo:"",         fecha:"06-20", foto:"" },
+    { nombre:"José Salazar",        equipo:"",         fecha:"06-30", foto:"" },
+    /* JULIO */
+    { nombre:"Lender Sayago",       equipo:"Finance",  fecha:"07-04", foto:"" },
+    { nombre:"Manuel Jimenez",      equipo:"",         fecha:"07-09", foto:"" },
+    { nombre:"Naty",                equipo:"",         fecha:"07-21", foto:"" },
+    { nombre:"Oscar Montes",        equipo:"",         fecha:"07-23", foto:"" },
+    /* AGOSTO */
+    { nombre:"Romano Alfaro",       equipo:"",         fecha:"08-01", foto:"" },
+    { nombre:"Alonso Inga",         equipo:"",         fecha:"08-25", foto:"" },
+    /* SETIEMBRE */
+    { nombre:"Luis Enrique",        equipo:"",         fecha:"09-07", foto:"" },
+    /* OCTUBRE */
+    { nombre:"Pierina Ceferatti",   equipo:"",         fecha:"10-24", foto:"" },
+    /* NOVIEMBRE */
+    { nombre:"Flor Mendez",         equipo:"",         fecha:"11-05", foto:"" },
+    { nombre:"Kassandra Lopez",     equipo:"",         fecha:"11-15", foto:"" },
+    /* DICIEMBRE */
+    { nombre:"Gustavo Aspajo",      equipo:"",         fecha:"12-05", foto:"" },
+    { nombre:"Paola Quevedo",       equipo:"",         fecha:"12-13", foto:"" },
+    { nombre:"Susana Mora",         equipo:"",         fecha:"12-13", foto:"" }
   ],
 
   EXTRA: {
