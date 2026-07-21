@@ -244,6 +244,39 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .ex-ph span{font-size:.9vw; letter-spacing:.08em; color:var(--ip,var(--cyan)); font-weight:700;}
 .ex-ph i{font-size:.8vw; color:var(--txt2); font-style:normal; opacity:.8;}
 
+/* nuestro ADN comercial: foco del mes + hitos de desarrollo */
+.adn-cols{flex:1; min-height:0; width:100%; display:flex; gap:1.4vw;}
+.adn-foco{
+  flex:1; min-width:0; display:flex; flex-direction:column; gap:1.4vh; justify-content:center;
+  border-radius:1vw; padding:2vh 1.4vw;
+  background:rgba(7,243,244,.06); border:1.5px solid rgba(7,243,244,.45);
+}
+.adn-foco .lab{font-family:'Sora',sans-serif; font-weight:800; font-size:.95vw;
+  letter-spacing:.14em; color:var(--cyan);}
+.adn-foco .tit{font-family:'Sora',sans-serif; font-weight:800; font-size:1.7vw; line-height:1.15;}
+.adn-foco .txt{font-size:1.15vw; line-height:1.42; color:#dcd6ff;}
+.adn-foco .txt b{color:var(--cyan); font-weight:800;}
+.adn-hitos{flex:1.3; min-width:0; display:flex; flex-direction:column; gap:1vh;}
+.adn-item{
+  flex:1; min-height:0; display:flex; gap:.9vw; align-items:flex-start;
+  border-radius:.9vw; padding:1.3vh 1.1vw; overflow:hidden;
+  background:linear-gradient(165deg, rgba(40,22,75,.85), rgba(14,7,34,.9));
+  border:1px solid rgba(255,149,58,.45);
+}
+.adn-item .n{
+  flex-shrink:0; width:1.9vw; height:1.9vw; border-radius:50%;
+  background:linear-gradient(160deg, var(--orange), #ffb257); color:#0b0620;
+  font-family:'Sora',sans-serif; font-weight:800; font-size:1.05vw;
+  display:flex; align-items:center; justify-content:center;
+}
+.adn-item .b{flex:1; min-width:0; display:flex; flex-direction:column; gap:.5vh;}
+.adn-item .t{font-family:'Sora',sans-serif; font-weight:800; font-size:1.2vw;
+  line-height:1.1; color:var(--orange);}
+.adn-item .d{font-size:.98vw; line-height:1.32; color:var(--txt2);
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
+.adn-item .f{font-size:1.02vw; line-height:1.25; font-weight:700; color:var(--cyan);
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
+
 /* evento del mes */
 .ev-img{flex:1; min-height:0; width:100%; display:flex; align-items:center; justify-content:center;}
 .ev-img img{max-width:100%; max-height:100%; object-fit:contain; border-radius:.8vw;
@@ -479,6 +512,13 @@ body.no-ip .tabarrow{display:none;}
   .ex-item img{height:auto; width:100%;}
   .ex-ph{height:auto; width:100%; padding:2vh 2vw;}
   .ex-ph b{font-size:3.2vw;} .ex-ph span{font-size:2.6vw;} .ex-ph i{font-size:2.4vw;}
+  .adn-cols{flex-direction:column; gap:1.6vh;}
+  .adn-foco{padding:2vh 4vw; border-radius:3vw;}
+  .adn-foco .lab{font-size:2.6vw;} .adn-foco .tit{font-size:4.4vw;} .adn-foco .txt{font-size:3.2vw;}
+  .adn-item{padding:1.6vh 3vw; border-radius:3vw; gap:3vw;}
+  .adn-item .n{width:7vw; height:7vw; font-size:3.4vw;}
+  .adn-item .t{font-size:3.4vw;} .adn-item .d{font-size:2.9vw; -webkit-line-clamp:3;}
+  .adn-item .f{font-size:3vw;}
   .ev-img{height:auto;} .ev-img img{max-height:34vh;}
   .ev-ph{width:100%; height:22vh;}
   .ev-when{font-size:3.2vw;}
@@ -771,7 +811,12 @@ const IP = [];
   .forEach(x=>IP.push({tipo:'cumple', dias:x.dias, p:x.p}));
 /* 2) extraordinarios del mes: todo el mes que corresponda */
 if(IPD.EXTRA && (IPD.EXTRA.cards||[]).length) IP.push({tipo:'extra', e:IPD.EXTRA});
-/* 3) eventos: hasta el día del evento */
+/* 3) ADN comercial: encendido todo el mes */
+if(IPD.ADN && (IPD.ADN.hitos||[]).length){
+  const f = fechaDia(IPD.ADN.hasta);
+  if(!f || f>=hoyLima()) IP.push({tipo:'adn', a:IPD.ADN});
+}
+/* 4) eventos: hasta el día del evento */
 (IPD.EVENTOS||[]).filter(ev=>{ const f=fechaDia(ev.fecha); return !f || f>=hoyLima(); })
   .forEach(ev=>IP.push({tipo:'evento', ev}));
 const IP_ACTIVE = IP.length>0;
@@ -920,6 +965,7 @@ function ipTitulo(sl){
     return sl.dias===0 ? '¡Feliz cumpleaños, '+sl.p.nombre+'!'
                        : (sl.dias===1?'Mañana':'Faltan '+sl.dias+' días') + ' para el cumpleaños de '+sl.p.nombre;
   if(sl.tipo==='extra') return 'Los extraordinarios del mes · ' + (sl.e.periodo||'');
+  if(sl.tipo==='adn') return 'Foco del mes: ' + (sl.a.foco||'Nuestro ADN comercial');
   return sl.ev.titulo || 'Evento del mes';
 }
 
@@ -941,6 +987,30 @@ function ipSlideHTML(sl){
              ${p.equipo?`<div class="cum-team">EQUIPO ${esc(p.equipo).toUpperCase()}</div>`:''}`}
       </div>
       ${hoy ? '' : relojArena()}
+    </div>`;
+  }
+  if(sl.tipo==='adn'){
+    const a = sl.a;
+    return `<div class="ip-slide" style="--ip:#07F3F4">
+      <div class="ip-kicker">${esc(a.kicker||'NUESTRO ADN COMERCIAL')}</div>
+      <div class="adn-cols">
+        <div class="adn-foco">
+          <div class="lab">FOCO DEL MES</div>
+          <div class="tit">${esc(a.foco||'')}</div>
+          <div class="txt"><b>Mindset:</b> ${esc(a.mindset||'')}</div>
+        </div>
+        <div class="adn-hitos">
+          ${(a.hitos||[]).map((h,i)=>`
+            <div class="adn-item">
+              <span class="n">${i+1}</span>
+              <div class="b">
+                <div class="t">${esc(h.titulo||'')}</div>
+                <div class="d">${esc(h.desc||'')}</div>
+                <div class="f">${esc(h.frase||'')}</div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>
     </div>`;
   }
   if(sl.tipo==='extra'){
