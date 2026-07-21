@@ -216,6 +216,8 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
   border-left:.26vw solid var(--ip,var(--cyan)); padding-left:1vw;
   display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;}
 .cum-team{font-size:1.05vw; font-weight:700; letter-spacing:.08em; color:var(--txt2);}
+.cum-date{font-family:'Sora',sans-serif; font-weight:800; font-size:1.5vw; letter-spacing:.02em;
+  color:var(--ip,var(--orange)); text-shadow:0 0 1.4vw color-mix(in srgb, var(--ip,var(--orange)) 45%, transparent);}
 
 /* reloj de arena: quieto, con la arena cayendo por el cuello (solo simulación) */
 .cum-hg{flex-shrink:0; width:12.5vw; display:flex; align-items:center; justify-content:center;}
@@ -273,7 +275,7 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 }
 .adn-item .b{flex:1; min-width:0; display:flex; flex-direction:column; gap:.5vh;}
 .adn-item .t{font-family:'Sora',sans-serif; font-weight:800; font-size:1.2vw;
-  line-height:1.1; color:var(--orange);}
+  line-height:1.1; color:var(--orange); text-transform:uppercase; letter-spacing:.04em;}
 .adn-item .d{font-size:.98vw; line-height:1.32; color:var(--txt2);
   display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
 .adn-item .f{font-size:1.02vw; line-height:1.25; font-weight:700; color:var(--cyan);
@@ -509,6 +511,7 @@ body.no-ip .tabarrow{display:none;}
   .cum-count small{font-size:3.2vw;}
   .cum-msg{font-size:3.4vw; padding-left:3vw; border-left-width:1vw;}
   .cum-team{font-size:2.8vw; text-align:center;}
+  .cum-date{font-size:4vw; text-align:center;}
   .ex-grid{flex-wrap:wrap; height:auto; gap:2vw;}
   .ex-item{height:auto; width:40vw;}
   .ex-item img{height:auto; width:100%;}
@@ -828,7 +831,7 @@ const IP_ACTIVE = IP.length>0;
 const SILVER = (window.NOTICIERO&&window.NOTICIERO.SILVER)||[];
 
 /* ══════ MOTOR ══════ */
-const ROTATE_MS = 12000;
+const ROTATE_MS = 15000;                  /* cada noticia, 15 s */
 let idx = 0, t0 = Date.now();
 const N = NEWS.length;
 
@@ -885,7 +888,8 @@ function prev(){ if(!N) return; idx=(idx-1+N)%N; t0=Date.now(); render(); }
    Mismo diseño de 3 cajas: los argumentos se agrupan en páginas de 3 que se
    deslizan (arrastre, puntos y rotación automática más lenta que las noticias). */
 const SILVER_PER_PAGE = 3;
-const SILVER_MS = ROTATE_MS + 7000;          /* 7 s más que el carrusel de noticias */
+/* los argumentos NO tienen reloj propio: avanzan cuando las noticias completan
+   una vuelta entera (tras rotar todas, recién ahí se desliza el panel) */
 const sPages = [];
 for(let i=0;i<SILVER.length;i+=SILVER_PER_PAGE) sPages.push(SILVER.slice(i,i+SILVER_PER_PAGE));
 const SP = sPages.length;
@@ -1037,6 +1041,12 @@ const ipStack = document.getElementById('ipStack');
 const ipDots  = document.getElementById('ipDots');
 let ipIdx = 0;
 
+const MESES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+function fechaCumple(mmdd){
+  const [m,d]=String(mmdd||'').split('-').map(Number);
+  if(!m||!d) return '';
+  return d+' de '+MESES[m-1];
+}
 function ipTitulo(sl){
   if(sl.tipo==='cumple')
     return sl.dias===0 ? '¡Feliz cumpleaños, '+sl.p.nombre+'!'
@@ -1061,7 +1071,8 @@ function ipSlideHTML(sl){
              <p class="cum-msg">${esc(dedic)}</p>`
           : `<div class="cum-count">${sl.dias===1?'Mañana':sl.dias+' días'}<small>para el cumpleaños de</small></div>
              <h2 class="ip-h">${esc(p.nombre)}</h2>
-             ${p.equipo?`<div class="cum-team">EQUIPO ${esc(p.equipo).toUpperCase()}</div>`:''}`}
+             ${p.equipo?`<div class="cum-team">EQUIPO ${esc(p.equipo).toUpperCase()}</div>`:''}
+             <div class="cum-date">${fechaCumple(p.fecha)}</div>`}
       </div>
       ${hoy ? '' : relojArena()}
     </div>`;
@@ -1209,11 +1220,9 @@ const ipProgEl = document.getElementById('ipProg');
 function loop(){
   /* lo que no está a la vista no avanza */
   if(dragging || tab!==0){ t0 = Date.now(); }
-  if(sDragging || tab!==0){ s0 = Date.now(); }
   const el = Date.now()-t0;
   progEl.style.width = Math.min(100, el/ROTATE_MS*100)+'%';
-  if(tab===0 && el>=ROTATE_MS) next();
-  if(tab===0 && SP>1 && Date.now()-s0 >= SILVER_MS) sNext();
+  if(tab===0 && el>=ROTATE_MS){ next(); if(idx===0 && SP>1) sNext(); }
   /* mientras alguien tiene la pantalla agarrada, no corre ningún reloj */
   if(dragging){ ipT0 = Date.now(); tabT0 = Date.now(); }
   /* los apartados de iPartner rotan cada 15 s, con su propia barra */

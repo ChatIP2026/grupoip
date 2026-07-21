@@ -38,7 +38,7 @@ La página se recarga sola cada 30 minutos, así toma la edición nueva sin toca
 
 ## 💬 Argumentos de venta (panel derecho)
 
-Seis argumentos permanentes en `SILVER`, agrupados en dos páginas de 3 que se deslizan de arriba a abajo cada 19 segundos (7 s más que las noticias). Formato de cada uno: objeción real del cliente entre comillas → argumento que **abre con la cifra en negrita** → frase de cierre que el vendedor dice en voz alta. Se cambian solo cuando el equipo comercial lo pide.
+Seis argumentos permanentes en `SILVER`, agrupados en dos páginas de 3 que se deslizan de arriba a abajo. El panel avanza a la página siguiente cada vez que las noticias completan una vuelta entera (rotan todas y vuelven a la primera), no con un reloj propio. Formato de cada uno: objeción real del cliente entre comillas → argumento que **abre con la cifra en negrita** → frase de cierre que el vendedor dice en voz alta. Se cambian solo cuando el equipo comercial lo pide.
 
 ## 🏢 Noticias internas (pestaña iPartner)
 
@@ -60,7 +60,7 @@ El mensaje motivacional de los lunes sigue pendiente de aprobación, y sin métr
 - **Sin emojis en las noticias**: ni en el titular, ni en el subtexto de la cifra, ni marcas decorativas en la esquina de la tarjeta.
 - El visual (`viz`) se elige por lo que cuenta la noticia y **debe variar: ningún icono se repite dos días seguidos**. La biblioteca completa está listada en la cabecera de `data.js`.
 - La edición puede tener 4 o 5 noticias en vez de 5: si una categoría no tiene nada verificable, no se rellena.
-- Enlaces del botón a fuentes de acceso libre (Infobae, RPP, Andina, BBC, DW).
+- Enlaces del botón a fuentes de acceso libre (Infobae, RPP, Andina, BBC, DW, Forbes Perú, Approlog).
 - EXCLUSIÓN ABSOLUTA: Adecco, Manpower y Tawa (clientes actuales).
 - Prohibidos: sensacionalistas, espectáculos, deportivos, blogs de proveedores RRHH.
 - Toda noticia debe permitir una acción comercial o de empresa.

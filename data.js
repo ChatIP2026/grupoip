@@ -21,6 +21,10 @@
      EVENTOS   se muestran hasta el día del evento y luego desaparecen. Si hay
                varios en el mes, cada uno es su propio slide.
 
+   ⚠️ FUENTES de acceso libre para las noticias: Infobae, RPP, Andina, BBC,
+   DW, Forbes Perú (forbes.pe) y Approlog (approlog.org/articulos).
+   EXCLUSIÓN ABSOLUTA como fuente o mención: Adecco, Manpower y Tawa.
+
    ⚠️ SIN EMOJIS. Ninguna noticia lleva emojis: ni en el titular (`title`), ni
    en `figsub`, ni en `cat`, ni marcas en la esquina de la tarjeta. La tarjeta
    es titular + visual + cifra + fuente, nada más.
@@ -138,10 +142,10 @@ window.NOTICIERO = {
         desc:"Dedicamos la primera hora del día a simular llamadas, corregirnos entre nosotras y afinar argumentos.",
         frase:"“Los partidos se ganan en la práctica, no en la cancha.”" },
       { titulo:"El Ritmo",
-        desc:"El éxito B2B no es suerte, es matemática: cumplir los bloques de gestión blinda el embudo de ventas.",
+        desc:"El éxito B2B no es suerte, es matemática: cumplir los bloques de gestión blinda el funnel de ventas.",
         frase:"“La constancia vence al talento, cuando el talento se cansa.”" },
       { titulo:"La Revisión",
-        desc:"Cada semana analizamos nuestras propias llamadas para ver qué salió bien y qué toca mejorar.",
+        desc:"Cada semana la IA analiza nuestras llamadas para ver qué salió bien y qué toca mejorar.",
         frase:"“Mirar la repetición de la jugada nos hace invencibles.”" }
     ]
   },
