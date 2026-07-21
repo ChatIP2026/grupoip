@@ -96,7 +96,6 @@ body{
   font-family:'Sora',sans-serif; font-weight:800; font-size:2.9vw; line-height:1.14; letter-spacing:-.015em;
   display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; flex-shrink:0;
 }
-.ammo-mark{position:absolute; top:2vh; right:1.6vw; font-size:1.5vw; filter:drop-shadow(0 0 .8vw rgba(255,149,58,.9));}
 
 /* zona visual: imagen simbólica + cifra gigante */
 .visual-row{flex:1; display:flex; align-items:center; gap:2vw; min-height:0;}
@@ -295,7 +294,6 @@ body{
   .slide.right{transform:translateX(calc(70vw + var(--dx))) scale(.84);}
   .headline{font-size:6vw;}
   .slide.honest .headline{font-size:4.6vw;}
-  .ammo-mark{font-size:4.5vw; top:1.4vh; right:3vw;}
   .visual-row{flex-direction:column; gap:1vh;}
   .visual svg{max-height:20vh;}
   .bigfig .fs1{font-size:11vw;} .bigfig .fs2{font-size:8vw;} .bigfig .fs3{font-size:6.5vw;}
@@ -582,8 +580,8 @@ function slideHTML(n){
       <div class="visual-row"><div class="visual">${viz(n)}</div></div>
       <div class="meta-row"><span class="source"><b>${esc(n.cat)}</b> · ${esc(n.source)}</span></div>`;
   }
+  /* sin emojis ni marcas: la tarjeta es titular + visual + cifra + fuente */
   return `
-    ${n.ammo ? '<div class="ammo-mark">🎯</div>' : ''}
     <div class="headline">${esc(n.title)}</div>
     <div class="visual-row">
       <div class="visual">${viz(n)}</div>

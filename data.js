@@ -8,6 +8,10 @@
    publican tarjetas "honestas" vacías: si no hay nada, la categoría no existe
    ese día (la edición puede tener 4 o 5 noticias, y eso es correcto).
 
+   ⚠️ SIN EMOJIS. Ninguna noticia lleva emojis: ni en el titular (`title`), ni
+   en `figsub`, ni en `cat`, ni marcas en la esquina de la tarjeta. La tarjeta
+   es titular + visual + cifra + fuente, nada más.
+
    ⚠️ VISUALES (campo "viz"): deben VARIAR. Se elige el que mejor cuente la
    noticia, no siempre el mismo. Regla: ningún visual puede repetirse dos días
    seguidos — antes de reescribir este archivo, mira qué "viz" tiene la edición
@@ -31,22 +35,22 @@
 window.NOTICIERO = {
   generado: "2026-07-20 22:06 (Lima)",
   NEWS: [
-  { color:"#E6299C", viz:"layoff", ammo:true, week:true,
+  { color:"#E6299C", viz:"layoff",  week:true,
     title:"Despidos golpean a 7 de cada 10 empresas",
     fig:"68%", figsub:"de empresas despidió personal en el 2026",
     cat:"RRHH", source:"Infobae · 18/07/2026",
     url:"https://www.infobae.com/peru/2026/07/18/crisis-laboral-en-peru-siete-de-cada-diez-entidades-despidieron-trabajadores-por-estas-dos-razones/" },
-  { color:"#F52055", viz:"legal", ammo:true, week:true,
+  { color:"#F52055", viz:"legal",  week:true,
     title:"Grati vencida: multa de hasta S/143 mil",
     fig:"S/ 143,660", figsub:"multa SUNAFIL por no pagar la gratificación",
     cat:"LEGAL", source:"RPP · 03/07/2026",
     url:"https://rpp.pe/economia/economia/gratificacion-julio-2026-peru-cuando-se-paga-y-como-calcular-dinero-a-recibir-en-fiestas-patrias-noticia-1695772" },
-  { color:"#FF953A", viz:"pie", ammo:false, week:true,
+  { color:"#FF953A", viz:"pie",  week:true,
     title:"BCR ancla la tasa: crédito estable",
     fig:"4.25%", figsub:"tasa de referencia, 11 meses sin cambios",
     cat:"ECONOMÍA", source:"Andina · 09/07/2026",
     url:"https://andina.pe/agencia/noticia-bcr-mantiene-tasa-interes-referencia-425-undecimo-mes-consecutivo-1082982.aspx" },
-  { color:"#FF953A", viz:"cart", ammo:true, week:true,
+  { color:"#FF953A", viz:"cart",  week:true,
     title:"Retail crece hasta 5% por Fiestas Patrias",
     fig:"+5%", figsub:"crecerían las ventas del retail en julio",
     cat:"RETAIL", source:"Perú Retail · 13/07/2026",

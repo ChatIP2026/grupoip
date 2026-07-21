@@ -40,6 +40,7 @@ Seis argumentos permanentes en `SILVER`, agrupados en dos páginas de 3 que se d
 - Fecha de publicación VERIFICADA abriendo cada artículo. Sin fecha → no entra.
 - Lo más reciente gana siempre. Fallback semanal etiquetado "de esta semana".
 - Titulares de 5-8 palabras + un visual simbólico + UNA cifra grande (reglas de digital signage).
+- **Sin emojis en las noticias**: ni en el titular, ni en el subtexto de la cifra, ni marcas decorativas en la esquina de la tarjeta.
 - El visual (`viz`) se elige por lo que cuenta la noticia y **debe variar: ningún icono se repite dos días seguidos**. La biblioteca completa está listada en la cabecera de `data.js`.
 - La edición puede tener 4 o 5 noticias en vez de 5: si una categoría no tiene nada verificable, no se rellena.
 - Enlaces del botón a fuentes de acceso libre (Infobae, RPP, Andina, BBC, DW).
