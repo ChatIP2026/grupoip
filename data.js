@@ -119,7 +119,6 @@ window.NOTICIERO = {
 
   EXTRA: {
     periodo:"Junio 2026",
-    nota:"Por su destacada labor en el mes de junio",
     cards:[
       { nombre:"Darwin Hoyos",  equipo:"Renewals", img:"img/extraordinarios/2026-06-1-darwin-hoyos.jpg" },
       { nombre:"Jorge Gomez",   equipo:"Reports",  img:"img/extraordinarios/2026-06-2-jorge-gomez.jpg" },
