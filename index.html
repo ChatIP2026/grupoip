@@ -550,7 +550,9 @@ body.no-ip .tabarrow{display:none;}
   <div class="track" id="tickerTrack"></div>
 </div>
 
-<script>document.write('<scr'+'ipt src="data.js?d='+new Date().toISOString().slice(0,10)+'"></scr'+'ipt>');</script>
+<script>/* el sufijo cambia cada 30 min (igual que la recarga), así cada recarga
+   toma la edición nueva y no una copia vieja guardada en caché */
+document.write('<scr'+'ipt src="data.js?v='+Math.floor(Date.now()/1800000)+'"></scr'+'ipt>');</script>
 <script>
 /* recarga la pantalla cada 30 min para tomar la edición nueva del día */
 setTimeout(function(){ location.reload(true); }, 30*60*1000);
