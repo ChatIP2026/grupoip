@@ -8,6 +8,17 @@ Proyecto de Ingeniería Comercial · Elaborado por **Hilary S. y Carlos D.**
 
 ---
 
+## 🖥️ Dos pantallas
+
+La pizarra tiene dos pestañas y el robot viaja de una a otra: salta de su mesa, cruza a la otra "habitación", aterriza en el centro y saluda señalando la pantalla.
+
+| Pestaña | Qué muestra | Cómo se llega |
+|---|---|---|
+| **Noticias** | Carrusel de noticias + panel de Argumentos de Venta a la derecha | Es la pantalla por defecto |
+| **iPartner** | Noticias internas del equipo, tarjeta ancha y centrada (sin panel de argumentos: la pantalla se centra y crece) | Flechas cian a los lados de la mesa del robot |
+
+Además alterna sola: **5 minutos en cada pestaña**. Si no hay ninguna noticia interna vigente, la pestaña iPartner no existe y las flechas se ocultan.
+
 ## 🗂️ Arquitectura (2 archivos)
 
 | Archivo | Qué es | ¿Quién lo toca? |
@@ -28,6 +39,12 @@ La página se recarga sola cada 30 minutos, así toma la edición nueva sin toca
 ## 💬 Argumentos de venta (panel derecho)
 
 Seis argumentos permanentes en `SILVER`, agrupados en dos páginas de 3 que se deslizan de arriba a abajo cada 19 segundos (7 s más que las noticias). Formato de cada uno: objeción real del cliente entre comillas → argumento que **abre con la cifra en negrita** → frase de cierre que el vendedor dice en voz alta. Se cambian solo cuando el equipo comercial lo pide.
+
+## 🏢 Noticias internas (pestaña iPartner)
+
+Viven en `IPARTNER` dentro de `data.js` y las cura el equipo, no la tarea nocturna. Formato: titular emotivo + una frase + foto grupal (si no hay foto, sale un marco con siluetas). Cada item se publica con el campo `pub` y **dura 2 días**: el de publicación y el siguiente. Después desaparece solo. Nunca se deja una tarjeta vacía ni un relleno.
+
+El mensaje motivacional de los lunes sigue pendiente de aprobación, y sin métricas de ventas.
 
 ## 📋 Categorías de noticias
 

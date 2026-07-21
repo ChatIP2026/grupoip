@@ -8,6 +8,15 @@
    publican tarjetas "honestas" vacías: si no hay nada, la categoría no existe
    ese día (la edición puede tener 4 o 5 noticias, y eso es correcto).
 
+   ⚠️ iPARTNER es la segunda pantalla (noticias internas del equipo). Cada item
+   vive 2 días: el de publicación (`pub`) y el siguiente; después desaparece
+   solo. Si no queda ninguno vigente, la pestaña no se muestra y las flechas
+   junto a la mesa del robot se ocultan: nunca hay tarjetas vacías.
+   Campos: pub (YYYY-MM-DD, cuándo se publica) · fecha (texto visible del
+   evento) · title (titular emotivo) · frase (una línea) · foto (ruta o URL de
+   la foto grupal; si va vacía sale un marco con siluetas).
+   Lo cura el equipo: la tarea nocturna NO lo toca.
+
    ⚠️ SIN EMOJIS. Ninguna noticia lleva emojis: ni en el titular (`title`), ni
    en `figsub`, ni en `cat`, ni marcas en la esquina de la tarjeta. La tarjeta
    es titular + visual + cifra + fuente, nada más.
@@ -55,6 +64,13 @@ window.NOTICIERO = {
     fig:"+5%", figsub:"crecerían las ventas del retail en julio",
     cat:"RETAIL", source:"Perú Retail · 13/07/2026",
     url:"https://www.peru-retail.com/sector-retail-proyecta-un-crecimiento-de-las-ventas-de-hasta-5-durante-las-fiestas-patrias/" }
+],
+  /* ═══ iPARTNER — noticias internas (permanente, curado por el equipo) ═══ */
+  IPARTNER: [
+  { pub:"2026-07-21", fecha:"20 de julio de 2026",
+    title:"El equipo comercial cerró julio antes de tiempo",
+    frase:"Una tarde de trabajo en la que nadie miró el reloj. Gracias por eso.",
+    foto:"" }
 ],
   DATO: "Este julio se inyectaron cerca de <b>S/ 10,000 millones</b> en gratificaciones a más de 4 millones de trabajadores formales: hay caja en el mercado para mover soluciones de talento",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
