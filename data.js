@@ -8,14 +8,18 @@
    publican tarjetas "honestas" vacías: si no hay nada, la categoría no existe
    ese día (la edición puede tener 4 o 5 noticias, y eso es correcto).
 
-   ⚠️ iPARTNER es la segunda pantalla (noticias internas del equipo). Cada item
-   vive 2 días: el de publicación (`pub`) y el siguiente; después desaparece
-   solo. Si no queda ninguno vigente, la pestaña no se muestra y las flechas
-   junto a la mesa del robot se ocultan: nunca hay tarjetas vacías.
-   Campos: pub (YYYY-MM-DD, cuándo se publica) · fecha (texto visible del
-   evento) · title (titular emotivo) · frase (una línea) · foto (ruta o URL de
-   la foto grupal; si va vacía sale un marco con siluetas).
-   Lo cura el equipo: la tarea nocturna NO lo toca.
+   ⚠️ iPARTNER es la segunda pantalla, con tres apartados que rotan cada 15 s.
+   Lo cura el equipo: la tarea nocturna NO lo toca. Cada apartado aparece solo
+   mientras está vigente, y si no queda ninguno la pestaña entera desaparece
+   junto con las flechas de la mesa del robot.
+     CUMPLES   avisa 4 días antes y sigue hasta el día del cumpleaños; ese día
+               cambia al saludo con la dedicatoria. Al día siguiente desaparece.
+               fecha en formato "MM-DD" (sin año: se repite cada año).
+     EXTRA     los 4 trabajadores del mes, los 4 juntos en un solo slide.
+               Se mantiene visible todo el mes; se reemplaza cuando llegan los
+               nuevos (los de un mes se muestran durante el mes siguiente).
+     EVENTOS   se muestran hasta el día del evento y luego desaparecen. Si hay
+               varios en el mes, cada uno es su propio slide.
 
    ⚠️ SIN EMOJIS. Ninguna noticia lleva emojis: ni en el titular (`title`), ni
    en `figsub`, ni en `cat`, ni marcas en la esquina de la tarjeta. La tarjeta
@@ -65,13 +69,37 @@ window.NOTICIERO = {
     cat:"RETAIL", source:"Perú Retail · 13/07/2026",
     url:"https://www.peru-retail.com/sector-retail-proyecta-un-crecimiento-de-las-ventas-de-hasta-5-durante-las-fiestas-patrias/" }
 ],
-  /* ═══ iPARTNER — noticias internas (permanente, curado por el equipo) ═══ */
-  IPARTNER: [
-  { pub:"2026-07-21", fecha:"20 de julio de 2026",
-    title:"El equipo comercial cerró julio antes de tiempo",
-    frase:"Una tarde de trabajo en la que nadie miró el reloj. Gracias por eso.",
-    foto:"" }
-],
+  /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
+  IPARTNER: {
+
+  /* mensaje fijo de la empresa; {nombre} se reemplaza solo */
+  DEDICATORIA: "De parte de todo el equipo de iPartner nos enorgullece celebrar contigo. Gracias por lo que sumas cada día: ¡que este nuevo año te traiga todo lo que te propongas, {nombre}!",
+
+  /* fecha:"MM-DD" · foto: avatar cuadrado en img/avatars/ */
+  CUMPLES: [
+    { nombre:"NOMBRE DEL COLABORADOR", equipo:"", fecha:"07-24", foto:"" }
+  ],
+
+  EXTRA: {
+    periodo:"Junio 2026",
+    nota:"Por su destacada labor en el mes de junio",
+    cards:[
+      { nombre:"Lender Sayago",  equipo:"Finance",  img:"" },
+      { nombre:"Aixa Enriquez",  equipo:"Business", img:"" },
+      { nombre:"Jorge Gomez",    equipo:"Reports",  img:"" },
+      { nombre:"Darwin Hoyos",   equipo:"Renewals", img:"" }
+    ]
+  },
+
+  EVENTOS: [
+    { titulo:"Fiestas Patrias 2026",
+      bajada:"Cena Criolla + Tómbola Patriótica",
+      cuando:"5:00 p.m. · Terraza del piso 10",
+      fecha:"2026-07-24",
+      img:"" }
+  ]
+
+},
   DATO: "Este julio se inyectaron cerca de <b>S/ 10,000 millones</b> en gratificaciones a más de 4 millones de trabajadores formales: hay caja en el mercado para mover soluciones de talento",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */

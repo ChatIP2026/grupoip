@@ -170,36 +170,70 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .progress{position:absolute; left:0; right:0; bottom:0; height:.7vh; background:rgba(255,255,255,.08); z-index:5;}
 .progress i{display:block; height:100%; width:0; background:linear-gradient(90deg, var(--red), var(--pink), var(--cyan));}
 
-/* ═════ TARJETA iPARTNER (noticias internas del equipo) ═════ */
-.ip-card{
+/* ═════ PESTAÑA iPARTNER: cumpleaños · extraordinarios · eventos ═════ */
+.ip-slide{
   position:absolute; top:9.5vh; left:50%; width:72vw; height:58vh;
   transform:translateX(-50%) scale(.97); opacity:0; pointer-events:none;
   transition:opacity .5s ease, transform .5s cubic-bezier(.22,.8,.3,1);
-  display:flex; align-items:center; gap:2.6vw;
-  border-radius:1.6vw; padding:3vh 2.6vw; overflow:hidden;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.8vh;
+  border-radius:1.6vw; padding:2.6vh 2.2vw; overflow:hidden;
   background:linear-gradient(165deg, rgba(16,10,50,.92), rgba(24,14,66,.86));
-  border:1.5px solid var(--cyan);
-  box-shadow:0 0 2.4vw rgba(7,243,244,.4), inset 0 1px 0 rgba(255,255,255,.1);
+  border:1.5px solid var(--ip,var(--cyan));
+  box-shadow:0 0 2.4vw color-mix(in srgb, var(--ip,var(--cyan)) 40%, transparent), inset 0 1px 0 rgba(255,255,255,.1);
 }
-.ip-card.on{opacity:1; transform:translateX(-50%) scale(1); pointer-events:auto;}
-.ip-photo{
-  flex:1.15; height:100%; border-radius:1.2vw; overflow:hidden; flex-shrink:0;
-  background:rgba(255,255,255,.05); border:1px solid rgba(160,190,255,.25);
+.ip-slide.on{opacity:1; transform:translateX(-50%) scale(1); pointer-events:auto;}
+.ip-kicker{
+  font-family:'Sora',sans-serif; font-weight:800; font-size:1.05vw; letter-spacing:.18em;
+  color:var(--ip,var(--cyan)); flex-shrink:0; text-align:center;
+}
+.ip-h{font-family:'Sora',sans-serif; font-weight:800; font-size:2.6vw; line-height:1.12;
+  letter-spacing:-.015em; text-align:center; flex-shrink:0;}
+
+/* cumpleaños */
+.ip-slide.cum{flex-direction:row; gap:3vw; justify-content:center;}
+.cum-photo{
+  width:19vw; height:19vw; max-width:42vh; max-height:42vh; flex-shrink:0;
+  border-radius:50%; overflow:hidden; background:rgba(255,255,255,.06);
+  border:.3vw solid var(--ip,var(--cyan)); box-shadow:0 0 2.6vw color-mix(in srgb, var(--ip,var(--cyan)) 55%, transparent);
   display:flex; align-items:center; justify-content:center;
 }
-.ip-photo img{width:100%; height:100%; object-fit:cover; display:block;}
-.ip-photo svg{width:64%; height:64%; opacity:.5;}
-.ip-body{flex:1; min-width:0; display:flex; flex-direction:column; justify-content:center; gap:2.2vh;}
-.ip-title{
-  font-family:'Sora',sans-serif; font-weight:800; font-size:2.7vw; line-height:1.13; letter-spacing:-.015em;
-  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+.cum-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+.cum-photo svg{width:62%; height:62%; opacity:.55;}
+.cum-body{flex:1; min-width:0; display:flex; flex-direction:column; justify-content:center; gap:1.4vh;}
+.cum-body .ip-kicker,.cum-body .ip-h{text-align:left;}
+.cum-count{font-family:'Sora',sans-serif; font-weight:800; font-size:4.6vw; line-height:1;
+  color:var(--ip,var(--cyan)); text-shadow:0 0 2.4vw color-mix(in srgb, var(--ip,var(--cyan)) 55%, transparent);}
+.cum-count small{display:block; font-family:'Inter Tight',sans-serif; font-weight:600;
+  font-size:1.25vw; color:var(--txt); margin-top:.6vh; text-shadow:none;}
+.cum-msg{font-size:1.3vw; line-height:1.42; font-style:italic; color:#cfe9ff;
+  border-left:.26vw solid var(--ip,var(--cyan)); padding-left:1vw;
+  display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;}
+.cum-team{font-size:1.05vw; font-weight:700; letter-spacing:.08em; color:var(--txt2);}
+
+/* extraordinarios del mes: los 4 a la vez */
+.ex-grid{flex:1; min-height:0; width:100%; display:flex; gap:1.1vw; align-items:stretch; justify-content:center;}
+.ex-item{height:100%; display:flex; align-items:center; justify-content:center; min-width:0;}
+.ex-item img{height:100%; width:auto; max-width:100%; object-fit:contain; border-radius:.7vw;
+  box-shadow:0 .9vh 2.2vh rgba(0,0,20,.55);}
+.ex-ph{
+  height:100%; aspect-ratio:1/1.414; border-radius:.7vw; padding:1.5vh 1vw; text-align:center;
+  border:1.5px dashed rgba(207,233,255,.45); background:rgba(255,255,255,.04);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1vh;
 }
-.ip-phrase{
-  font-size:1.45vw; line-height:1.42; font-style:italic; color:#cfe9ff;
-  border-left:.28vw solid var(--cyan); padding-left:1vw;
-  display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;
+.ex-ph b{font-family:'Sora',sans-serif; font-weight:800; font-size:1.1vw; line-height:1.15;}
+.ex-ph span{font-size:.9vw; letter-spacing:.08em; color:var(--ip,var(--cyan)); font-weight:700;}
+.ex-ph i{font-size:.8vw; color:var(--txt2); font-style:normal; opacity:.8;}
+
+/* evento del mes */
+.ev-img{flex:1; min-height:0; width:100%; display:flex; align-items:center; justify-content:center;}
+.ev-img img{max-width:100%; max-height:100%; object-fit:contain; border-radius:.8vw;
+  box-shadow:0 .9vh 2.4vh rgba(0,0,20,.5);}
+.ev-ph{
+  width:86%; height:100%; border-radius:.8vw; border:1.5px dashed rgba(207,233,255,.45);
+  background:rgba(255,255,255,.04); display:flex; flex-direction:column;
+  align-items:center; justify-content:center; gap:1.4vh; padding:2vh;
 }
-.ip-meta{font-size:1vw; font-weight:800; letter-spacing:.1em; color:var(--cyan);}
+.ev-when{font-size:1.2vw; font-weight:700; color:#cfe9ff; text-align:center;}
 
 /* ═════ PANEL FIJO "BALAS DE PLATA" — directo, sin etiquetas ═════ */
 .silver-panel{
@@ -405,13 +439,26 @@ body.no-ip .tabarrow{display:none;}
   body.tab-ip .wall{left:auto; width:94vw;}
   body.tab-ip .front-stage{left:auto;}
   body.tab-ip .silver-panel{display:none;}
-  .ip-card{display:none; position:relative; top:auto; left:auto; width:86vw; height:auto; margin:8vh auto 0;
-    transform:scale(.97); flex-direction:column; gap:2vh; border-radius:4vw; padding:2.4vh 4.5vw;}
-  .ip-card.on{display:flex; transform:scale(1);}
-  .ip-photo{width:100%; height:20vh; flex:none; border-radius:3vw;}
-  .ip-title{font-size:5.6vw; -webkit-line-clamp:3;}
-  .ip-phrase{font-size:3.4vw; padding-left:3vw; border-left-width:1vw;}
-  .ip-meta{font-size:2.6vw;}
+  .ip-slide{display:none; position:relative; top:auto; left:auto; width:86vw; height:auto;
+    margin:7vh auto 0; transform:scale(.97); gap:1.6vh; border-radius:4vw; padding:2.4vh 4.5vw;}
+  .ip-slide.on{display:flex; transform:scale(1);}
+  .ip-slide.cum{flex-direction:column;}
+  .ip-kicker{font-size:2.8vw;}
+  .ip-h{font-size:5.4vw;}
+  .cum-body .ip-kicker,.cum-body .ip-h{text-align:center;}
+  .cum-photo{width:38vw; height:38vw; max-width:none; max-height:none;}
+  .cum-count{font-size:12vw; text-align:center;}
+  .cum-count small{font-size:3.2vw;}
+  .cum-msg{font-size:3.4vw; padding-left:3vw; border-left-width:1vw;}
+  .cum-team{font-size:2.8vw; text-align:center;}
+  .ex-grid{flex-wrap:wrap; height:auto; gap:2vw;}
+  .ex-item{height:auto; width:40vw;}
+  .ex-item img{height:auto; width:100%;}
+  .ex-ph{height:auto; width:100%; padding:2vh 2vw;}
+  .ex-ph b{font-size:3.2vw;} .ex-ph span{font-size:2.6vw;} .ex-ph i{font-size:2.4vw;}
+  .ev-img{height:auto;} .ev-img img{max-height:34vh;}
+  .ev-ph{width:100%; height:22vh;}
+  .ev-when{font-size:3.2vw;}
   .tabarrow{font-size:11vw; bottom:8vh;}
   .floor,.platform{display:none;}
   .front-stage{
@@ -465,6 +512,8 @@ body.no-ip .tabarrow{display:none;}
   <!-- PESTAÑA 2: iPARTNER (noticias internas del equipo) -->
   <div class="stage" id="stageIp">
     <div class="ip-stack" id="ipStack"></div>
+    <div class="chev l" id="ipChevL" onclick="ipPrev()">‹</div>
+    <div class="chev r" id="ipChevR" onclick="ipNext()">›</div>
     <div class="dots" id="ipDots"></div>
   </div>
 </div>
@@ -666,21 +715,39 @@ const VIZ = {
 const NEWS = ((window.NOTICIERO&&window.NOTICIERO.NEWS)||[]).filter(n=>!n.honest);
 const DATO = (window.NOTICIERO&&window.NOTICIERO.DATO)||"";
 
-/* iPARTNER — noticias internas del equipo. Viven 2 días (el de publicación y
-   el siguiente) y luego desaparecen solas: nunca queda una tarjeta vacía. */
-const IP_ALL = (window.NOTICIERO&&window.NOTICIERO.IPARTNER)||[];
+/* ══════ iPARTNER: cumpleaños · extraordinarios del mes · eventos ══════
+   Cada apartado aparece solo mientras está vigente; si no hay nada, la pestaña
+   entera desaparece. Nunca se muestra una tarjeta vacía. */
+const IPD = (window.NOTICIERO&&window.NOTICIERO.IPARTNER)||{};
 function hoyLima(){
   const h = new Date(new Date().toLocaleString('en-US',{timeZone:'America/Lima'}));
   h.setHours(0,0,0,0); return h;
 }
-const IP = IP_ALL.filter(it=>{
-  if(!it.pub) return false;
-  const [y,m,d] = String(it.pub).split('-').map(Number);
-  if(!y||!m||!d) return false;
-  const p = new Date(y, m-1, d); p.setHours(0,0,0,0);
-  const dias = Math.round((hoyLima()-p)/86400000);
-  return dias>=0 && dias<=1;
-});
+function fechaDia(txt){                       /* "YYYY-MM-DD" → Date local */
+  const [y,m,d] = String(txt||'').split('-').map(Number);
+  if(!y||!m||!d) return null;
+  const f = new Date(y, m-1, d); f.setHours(0,0,0,0); return f;
+}
+function diasHastaCumple(mmdd){               /* "MM-DD" → días que faltan */
+  const h = hoyLima();
+  const [m,d] = String(mmdd||'').split('-').map(Number);
+  if(!m||!d) return -1;
+  let f = new Date(h.getFullYear(), m-1, d); f.setHours(0,0,0,0);
+  if(f < h) f = new Date(h.getFullYear()+1, m-1, d);
+  return Math.round((f-h)/86400000);
+}
+
+const IP = [];
+/* 1) cumpleaños: avisa 4 días antes y acompaña hasta el día */
+(IPD.CUMPLES||[]).map(p=>({p, dias:diasHastaCumple(p.fecha)}))
+  .filter(x=>x.dias>=0 && x.dias<=4)
+  .sort((a,b)=>a.dias-b.dias)
+  .forEach(x=>IP.push({tipo:'cumple', dias:x.dias, p:x.p}));
+/* 2) extraordinarios del mes: todo el mes que corresponda */
+if(IPD.EXTRA && (IPD.EXTRA.cards||[]).length) IP.push({tipo:'extra', e:IPD.EXTRA});
+/* 3) eventos: hasta el día del evento */
+(IPD.EVENTOS||[]).filter(ev=>{ const f=fechaDia(ev.fecha); return !f || f>=hoyLima(); })
+  .forEach(ev=>IP.push({tipo:'evento', ev}));
 const IP_ACTIVE = IP.length>0;
 
 /* ARGUMENTOS DE VENTA — permanentes, los cura el equipo comercial */
@@ -787,38 +854,84 @@ sView.addEventListener('pointercancel', sEndDrag);
 sView.addEventListener('pointerleave', sEndDrag);
 sView.addEventListener('dragstart', e=>e.preventDefault());
 
-/* ══════ PESTAÑA iPARTNER ══════ */
-const FOTO_PLACEHOLDER = `
-  <svg viewBox="0 0 300 200" fill="#cfe9ff">
-    <rect x="14" y="20" width="272" height="160" rx="14" fill="none" stroke="#cfe9ff" stroke-width="4" opacity=".7"/>
-    <circle cx="96" cy="86" r="24"/><path d="M56 152 a40 36 0 0 1 80 0z"/>
-    <circle cx="168" cy="78" r="20" opacity=".8"/><path d="M134 146 a34 31 0 0 1 68 0z" opacity=".8"/>
-    <circle cx="228" cy="88" r="18" opacity=".6"/><path d="M198 150 a30 28 0 0 1 60 0z" opacity=".6"/>
+/* ══════ PESTAÑA iPARTNER: render de los tres apartados ══════ */
+const AVATAR_PH = `
+  <svg viewBox="0 0 200 200" fill="#cfe9ff">
+    <circle cx="100" cy="76" r="38"/><path d="M28 190 a72 66 0 0 1 144 0z"/>
   </svg>`;
 const ipStack = document.getElementById('ipStack');
 const ipDots  = document.getElementById('ipDots');
 let ipIdx = 0;
 
-ipStack.innerHTML = IP.map(it=>`
-  <article class="ip-card">
-    <div class="ip-photo">${it.foto ? `<img src="${it.foto}" alt="">` : FOTO_PLACEHOLDER}</div>
-    <div class="ip-body">
-      <h2 class="ip-title">${esc(it.title||'')}</h2>
-      <p class="ip-phrase">${esc(it.frase||'')}</p>
-      <div class="ip-meta">iPARTNER${it.fecha ? ' · '+esc(it.fecha) : ''}</div>
-    </div>
-  </article>`).join('');
-
-function ipRender(){
-  const cards = ipStack.querySelectorAll('.ip-card');
-  cards.forEach((c,k)=>c.classList.toggle('on', k===ipIdx));
-  ipDots.innerHTML = IP.length>1 ? IP.map((_,k)=>`<i class="${k===ipIdx?'on':''}"></i>`).join('') : '';
+function ipTitulo(sl){
+  if(sl.tipo==='cumple')
+    return sl.dias===0 ? '¡Feliz cumpleaños, '+sl.p.nombre+'!'
+                       : (sl.dias===1?'Mañana':'Faltan '+sl.dias+' días') + ' para el cumpleaños de '+sl.p.nombre;
+  if(sl.tipo==='extra') return 'Los extraordinarios del mes · ' + (sl.e.periodo||'');
+  return sl.ev.titulo || 'Evento del mes';
 }
-function ipNext(){ if(IP.length<2) return; ipIdx=(ipIdx+1)%IP.length; ipRender(); }
+
+function ipSlideHTML(sl){
+  if(sl.tipo==='cumple'){
+    const p = sl.p, hoy = sl.dias===0;
+    const foto = p.foto ? `<img src="${p.foto}" alt="">` : AVATAR_PH;
+    const dedic = hoy ? (IPD.DEDICATORIA||'').replace(/\{nombre\}/g, p.nombre) : '';
+    return `<div class="ip-slide cum" style="--ip:${hoy?'#E6299C':'#FF953A'}">
+      <div class="cum-photo">${foto}</div>
+      <div class="cum-body">
+        <div class="ip-kicker">${hoy?'HOY CUMPLE AÑOS':'SE VIENE UN CUMPLEAÑOS'}</div>
+        ${hoy
+          ? `<h2 class="ip-h">¡Feliz cumpleaños, ${esc(p.nombre)}!</h2>
+             ${p.equipo?`<div class="cum-team">EQUIPO ${esc(p.equipo).toUpperCase()}</div>`:''}
+             <p class="cum-msg">${esc(dedic)}</p>`
+          : `<div class="cum-count">${sl.dias===1?'Mañana':sl.dias+' días'}<small>para el cumpleaños de</small></div>
+             <h2 class="ip-h">${esc(p.nombre)}</h2>
+             ${p.equipo?`<div class="cum-team">EQUIPO ${esc(p.equipo).toUpperCase()}</div>`:''}`}
+      </div>
+    </div>`;
+  }
+  if(sl.tipo==='extra'){
+    const e = sl.e;
+    return `<div class="ip-slide" style="--ip:#FF953A">
+      <div class="ip-kicker">LOS EXTRAORDINARIOS DEL MES${e.periodo?' · '+esc(e.periodo).toUpperCase():''}</div>
+      <div class="ex-grid">
+        ${(e.cards||[]).map(c=>`
+          <div class="ex-item">${c.img
+            ? `<img src="${c.img}" alt="${esc(c.nombre||'')}">`
+            : `<div class="ex-ph"><b>${esc(c.nombre||'')}</b><span>${esc((c.equipo||'').toUpperCase())}</span><i>foto pendiente</i></div>`}
+          </div>`).join('')}
+      </div>
+      ${e.nota?`<div class="ev-when">${esc(e.nota)}</div>`:''}
+    </div>`;
+  }
+  const ev = sl.ev;
+  return `<div class="ip-slide" style="--ip:#07F3F4">
+    <div class="ip-kicker">EVENTO DEL MES${ev.cuando?' · '+esc(ev.cuando).toUpperCase():''}</div>
+    <div class="ev-img">${ev.img
+      ? `<img src="${ev.img}" alt="${esc(ev.titulo||'')}">`
+      : `<div class="ev-ph"><h2 class="ip-h">${esc(ev.titulo||'')}</h2>
+           ${ev.bajada?`<div class="ev-when">${esc(ev.bajada)}</div>`:''}
+           <i style="font-size:.9vw;opacity:.7">arte del evento pendiente</i></div>`}
+    </div>
+  </div>`;
+}
+
+ipStack.innerHTML = IP.map(ipSlideHTML).join('');
+function ipRender(){
+  ipStack.querySelectorAll('.ip-slide').forEach((c,k)=>c.classList.toggle('on', k===ipIdx));
+  ipDots.innerHTML = IP.length>1 ? IP.map((_,k)=>`<i class="${k===ipIdx?'on':''}"></i>`).join('') : '';
+  const v = IP.length>1 ? '' : 'none';
+  document.getElementById('ipChevL').style.display = v;
+  document.getElementById('ipChevR').style.display = v;
+}
+function ipNext(){ if(IP.length<2) return; ipIdx=(ipIdx+1)%IP.length; ipT0=Date.now(); ipRender(); }
+function ipPrev(){ if(IP.length<2) return; ipIdx=(ipIdx-1+IP.length)%IP.length; ipT0=Date.now(); ipRender(); }
+let ipT0 = Date.now();
 ipRender();
 
 /* ══════ CAMBIO DE PESTAÑA (el robot se muda de habitación) ══════ */
 const TAB_MS = 5*60*1000;                 /* 5 minutos en cada pantalla */
+const IP_MS  = 15000;                     /* cada apartado interno, 15 s */
 const robotEl  = document.querySelector('.robot');
 const stageEls = [document.getElementById('stageNews'), document.getElementById('stageIp')];
 let tab = 0, tabT0 = Date.now(), switching = false;
@@ -829,7 +942,7 @@ function setTab(i){
   tab = i;
   document.body.classList.toggle('tab-ip', tab===1);
   stageEls.forEach((el,k)=>el.classList.toggle('on', k===tab));
-  if(tab===1){ ipIdx=0; ipRender(); }
+  if(tab===1){ ipIdx=0; ipT0=Date.now(); ipRender(); }
   renderTicker();
 }
 function switchTab(dir){
@@ -865,7 +978,8 @@ function endDrag(e){
   dragging=false; px=null;
   car.classList.remove('dragging');
   car.style.setProperty('--dx','0px');
-  if(dx<-70) next(); else if(dx>70) prev();
+  if(dx<-70){ tab===1 ? ipNext() : next(); }
+  else if(dx>70){ tab===1 ? ipPrev() : prev(); }
 }
 scr.addEventListener('pointerup', endDrag);
 scr.addEventListener('pointercancel', endDrag);
@@ -882,8 +996,8 @@ function loop(){
   progEl.style.width = Math.min(100, el/ROTATE_MS*100)+'%';
   if(tab===0 && el>=ROTATE_MS) next();
   if(tab===0 && SP>1 && Date.now()-s0 >= SILVER_MS) sNext();
-  /* la tarjeta interna rota al mismo ritmo que las noticias */
-  if(tab===1 && IP.length>1 && Date.now()-tabT0 >= ROTATE_MS*(ipIdx+1)) ipNext();
+  /* los apartados de iPartner rotan cada 15 s */
+  if(tab===1 && IP.length>1 && Date.now()-ipT0 >= IP_MS) ipNext();
   /* la pantalla alterna sola: 5 minutos en cada pestaña */
   if(IP_ACTIVE && !switching && Date.now()-tabT0 >= TAB_MS) switchTab(1);
   requestAnimationFrame(loop);
@@ -907,7 +1021,7 @@ const tkLabel = document.getElementById('tickerLabel');
 function renderTicker(){
   if(tab===1 && IP_ACTIVE){
     tkLabel.textContent = 'iPARTNER';
-    tkTrack.innerHTML = IP.map(i=>esc(i.title)).join('<span class="sep">◆</span>') + FIRMA;
+    tkTrack.innerHTML = IP.map(sl=>esc(ipTitulo(sl))).join('<span class="sep">◆</span>') + FIRMA;
   }else{
     tkLabel.innerHTML = '💡 DATO DEL DÍA';
     tkTrack.innerHTML = DATO + '<span class="sep">◆</span>' +
