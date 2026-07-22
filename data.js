@@ -56,26 +56,26 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-07-20 22:06 (Lima)",
+  generado: "2026-07-22 (Lima) — edición manual de puesta al día",
   NEWS: [
-  { color:"#E6299C", viz:"layoff",  week:true,
-    title:"Despidos golpean a 7 de cada 10 empresas",
-    fig:"68%", figsub:"de empresas despidió personal en el 2026",
-    cat:"RRHH", source:"Infobae · 18/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/18/crisis-laboral-en-peru-siete-de-cada-diez-entidades-despidieron-trabajadores-por-estas-dos-razones/" },
-  { color:"#F52055", viz:"legal",  week:true,
-    title:"Grati vencida: multa de hasta S/143 mil",
-    fig:"S/ 143,660", figsub:"multa SUNAFIL por no pagar la gratificación",
-    cat:"LEGAL", source:"RPP · 03/07/2026",
-    url:"https://rpp.pe/economia/economia/gratificacion-julio-2026-peru-cuando-se-paga-y-como-calcular-dinero-a-recibir-en-fiestas-patrias-noticia-1695772" },
-  { color:"#FF953A", viz:"pie",  week:true,
-    title:"BCR ancla la tasa: crédito estable",
-    fig:"4.25%", figsub:"tasa de referencia, 11 meses sin cambios",
-    cat:"ECONOMÍA", source:"Andina · 09/07/2026",
-    url:"https://andina.pe/agencia/noticia-bcr-mantiene-tasa-interes-referencia-425-undecimo-mes-consecutivo-1082982.aspx" },
-  { color:"#FF953A", viz:"cart",  week:true,
-    title:"Retail crece hasta 5% por Fiestas Patrias",
-    fig:"+5%", figsub:"crecerían las ventas del retail en julio",
+  { color:"#E6299C", viz:"calendar", week:true,
+    title:"Feriados de julio: trabajar cuesta el triple",
+    fig:"x3", figsub:"se paga el feriado laborado sin descanso sustitutorio",
+    cat:"RRHH", source:"Infobae · 21/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/21/los-feriados-en-peru-del-23-28-y-29-de-julio-activan-un-pago-triple-para-los-trabajadores-si-se-cumple-esto/" },
+  { color:"#F52055", viz:"doc", week:true,
+    title:"Grati CAS: 10% este año, 100% recién en 2030",
+    fig:"10%", figsub:"de la remuneración cobrarán los CAS este 2026",
+    cat:"LEGAL", source:"Infobae · 22/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/22/decretan-gratificacion-para-trabajadores-cas-se-paga-el-10-este-ano-sin-bono-essalud/" },
+  { color:"#FF953A", viz:"chart-up", week:true,
+    title:"Exportaciones rumbo a récord histórico en 2026",
+    fig:"+20%", figsub:"proyecta ADEX: superarían los US$ 107,000 millones",
+    cat:"ECONOMÍA", source:"Andina · 16/07/2026",
+    url:"https://andina.pe/agencia/noticia-adex-proyecta-exportaciones-peruanas-superarian-los-107000-millones-este-ano-1083977.aspx" },
+  { color:"#07F3F4", viz:"bars-up", week:true,
+    title:"Retail crecería hasta 5% por Fiestas Patrias",
+    fig:"+5%", figsub:"proyectan que crezcan las ventas del retail en julio",
     cat:"RETAIL", source:"Perú Retail · 13/07/2026",
     url:"https://www.peru-retail.com/sector-retail-proyecta-un-crecimiento-de-las-ventas-de-hasta-5-durante-las-fiestas-patrias/" }
 ],
@@ -165,7 +165,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "Este julio se inyectaron cerca de <b>S/ 10,000 millones</b> en gratificaciones a más de 4 millones de trabajadores formales: hay caja en el mercado para mover soluciones de talento",
+  DATO: "Las exportaciones peruanas van rumbo a un récord de <b>US$ 107,000 millones</b> este 2026 (+20%): hay caja en las regiones para mover soluciones de talento",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
