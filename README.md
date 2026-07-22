@@ -32,7 +32,7 @@ La página se recarga sola cada 30 minutos, así toma la edición nueva sin toca
 
 | Qué | Cuándo | Cómo |
 |---|---|---|
-| **Noticias diarias + Dato del día** | Domingo a jueves, 10:00 PM (Lima) → la edición amanece lista de lunes a viernes | Tarea programada en Claude (busca, verifica fechas abriendo cada artículo, publica) |
+| **Noticias diarias + Dato del día** | Lunes a viernes, 8:40 AM (Lima) → la edición se publica esa misma mañana | Tarea programada en Claude (busca, verifica fechas abriendo cada artículo, publica). ⚠️ Requiere que la app Claude esté abierta en la computadora a esa hora; si estaba cerrada, corre al abrirla |
 | **Argumentos de venta** | No rotan: son permanentes | Los cura a mano el equipo comercial (vía Claude + token). La tarea nocturna tiene prohibido tocarlos |
 | **Diseño** | Solo cuando se pide un cambio | Manualmente vía Claude + token |
 
