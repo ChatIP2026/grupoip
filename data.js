@@ -25,6 +25,12 @@
    DW, Forbes Perú (forbes.pe) y Approlog (approlog.org/articulos).
    EXCLUSIÓN ABSOLUTA como fuente o mención: Adecco, Manpower y Tawa.
 
+   ⚠️ ESTILO SPANGLISH (norma de marca): usar términos en inglés ya comunes en
+   ventas/RRHH (funnel, mindset, lead, pipeline, insight, target, coaching,
+   feedback, deal, follow-up, performance…) en NEWS y en IPARTNER, cuando fluya
+   natural. Sin forzar: si el término en español es el que se usa de verdad, se
+   deja en español.
+
    ⚠️ SIN EMOJIS. Ninguna noticia lleva emojis: ni en el titular (`title`), ni
    en `figsub`, ni en `cat`, ni marcas en la esquina de la tarjeta. La tarjeta
    es titular + visual + cifra + fuente, nada más.

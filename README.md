@@ -64,6 +64,7 @@ El mensaje motivacional de los lunes sigue pendiente de aprobación, y sin métr
 - EXCLUSIÓN ABSOLUTA: Adecco, Manpower y Tawa (clientes actuales).
 - Prohibidos: sensacionalistas, espectáculos, deportivos, blogs de proveedores RRHH.
 - Toda noticia debe permitir una acción comercial o de empresa.
+- **Estilo de marca — spanglish:** iPartner gusta de usar términos en inglés ya comunes en el mundo comercial/RRHH (funnel, mindset, lead, pipeline, insight, target, coaching, feedback, deal, follow-up, performance…). Úsalos en AMBAS pestañas cuando fluya natural y aporte, sin forzar ni sonar postizo. Si el término en español es el que se usa de verdad, se deja en español. El criterio: que suene a como habla el equipo, no a traducción.
 
 ## 🔧 Cómo hacer una modificación (para el equipo de iPartner)
 
@@ -79,3 +80,16 @@ El mensaje motivacional de los lunes sigue pendiente de aprobación, y sin métr
 3. Activar Pages: Settings → Pages → Deploy from a branch → main → / (root) → Save.
 4. Nuevo link: `usuario.github.io/nombre-repo` → actualizarlo en la pantalla.
 5. Recrear la tarea nocturna en el Claude propio con el PROMPT MAESTRO (documento de traspaso) apuntando al repo nuevo.
+
+## 🗒️ Bitácora de cambios
+
+Registro de las decisiones de diseño y contenido, para no perder el porqué.
+
+**22/07/2026 — cierre de la remodelación (antes de la tarea nocturna)**
+- Repo y sitio migrados a `ChatIP2026/grupoip` → https://chatip2026.github.io/grupoip/
+- Pantalla de NOTICIAS: chip **EN VIVO** (parpadeo lento), sin emojis ni marcas en las tarjetas, biblioteca de 15 visuales que rotan sin repetir dos días seguidos, tarjeta de MUNDO ya no sale vacía. Cada noticia dura **15 s**.
+- Panel **ARGUMENTOS DE VENTA** (antes "de cierre"): 6 permanentes, 2 páginas de 3, deslizamiento vertical; **avanza cuando las noticias completan una vuelta**, no con reloj propio. La tarea nocturna no lo toca.
+- Segunda pantalla **iPARTNER** con robot que viaja entre pestañas; alterna sola cada 5 min. Apartados: **Cumpleaños** (aviso 4 días antes con reloj de arena + fecha en naranja; saludo el día; se va al día siguiente), **Extraordinarios del mes** (los 4, todo el mes siguiente), **Nuestro ADN comercial** (foco + 3 hitos, todo el mes), **Eventos** (hasta el día del evento). Rotan cada 15 s.
+- Fuentes de noticias ampliadas con **Forbes Perú** y **Approlog**.
+- **Estilo spanglish** adoptado como norma de marca (ver Reglas editoriales).
+- Caché: `data.js` se refresca en cada recarga de 30 min.
