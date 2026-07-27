@@ -56,28 +56,33 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-07-24 10:29 (Lima) — tarea nocturna",
+  generado: "2026-07-27 09:05 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"hire", week:true,
-    title:"Pymes dinamizan el empleo temporal por Fiestas Patrias",
-    fig:"+12%", figsub:"crecerían las contrataciones temporales en pymes, prevé la CCL",
-    cat:"RRHH", source:"Andina · 24/07/2026",
-    url:"https://andina.pe/agencia/noticia-pymes-proyectan-crecimiento-hasta-8-fiestas-patrias-dinamizan-empleo-temporal-1084840.aspx" },
-  { color:"#FF953A", viz:"people", week:true,
-    title:"Empleo formal privado sube 5.4% a mayo",
-    fig:"+5.4%", figsub:"creció el empleo formal privado interanual, según el BCRP",
-    cat:"ECONOMÍA", source:"Infobae · 19/07/2026",
-    url:"https://www.infobae.com/america/agencias/2026/07/19/el-empleo-formal-en-peru-acumula-26-meses-de-crecimiento-a-mayo-pasado/" },
-  { color:"#FF953A", viz:"cart", week:true,
-    title:"Retail moverá S/ 4,600 millones en Fiestas Patrias",
-    fig:"S/ 4,600 M", figsub:"prevé la CCL para la campaña; crecería entre 3% y 5%",
-    cat:"RETAIL", source:"Infobae · 14/07/2026",
-    url:"https://www.infobae.com/america/agencias/2026/07/15/minoristas-esperan-mover-mas-de-1300-millones-de-dolares-por-fiesta-nacional-de-peru/" },
-  { color:"#FF953A", viz:"money", week:false,
-    title:"BCR eleva a 3.4% el crecimiento del Perú",
-    fig:"3.4%", figsub:"proyecta el BCR para el PBI 2026; consumo privado subiría 3.6%",
-    cat:"ECONOMÍA", source:"RPP · 19/06/2026",
-    url:"https://rpp.pe/economia/economia/bcr-eleva-proyeccion-de-crecimiento-de-la-economia-peruana-a-34-para-2026-pese-a-nino-costero-noticia-1693784" }
+  { color:"#E6299C", viz:"bars-up", week:true,
+    title:"Talent gap: Perú forma la mitad de técnicos",
+    fig:"300 mil", figsub:"técnicos al año necesita el país, pero solo egresan 100 mil",
+    cat:"RRHH", source:"Infobae · 26/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/26/el-talento-tambien-atrae-inversiones/" },
+  { color:"#FF953A", viz:"pie", week:true,
+    title:"Exportaciones sostienen 1 de cada 3 empleos formales",
+    fig:"33.1%", figsub:"del empleo formal privado depende ya de las exportaciones: 1.5 millones de puestos, según Adex",
+    cat:"ECONOMÍA", source:"Infobae · 23/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/23/empleos-vinculados-a-las-exportaciones-crecieron-89-y-superaron-los-15-millones/" },
+  { color:"#FF953A", viz:"chart-up", week:true,
+    title:"Gamarra proyecta S/ 18 millones diarios en campaña",
+    fig:"S/ 18 M", figsub:"diarios proyecta Gamarra para la campaña de Fiestas Patrias, en plena recuperación de ventas",
+    cat:"RETAIL", source:"Infobae · 25/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/25/gamarra-espera-recuperarse-en-ventas-de-fiestas-patrias-tras-baja-demanda-por-efectos-del-fenomeno-el-nino/" },
+  { color:"#F52055", viz:"legal", week:false,
+    title:"Sunafil endurece la fiscalización del trabajo del hogar",
+    fig:"5 días", figsub:"tendrá Sunafil para calificar cada denuncia; la nueva directiva sube el riesgo de multas al empleador",
+    cat:"LEGAL", source:"Infobae · 13/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/13/el-uso-obligatorio-de-uniformes-para-trabajadoras-del-hogar-quedara-prohibido-en-espacios-publicos-de-peru/" },
+  { color:"#07F3F4", viz:"globe", week:true,
+    title:"Arancel de EE. UU. golpea al agro peruano",
+    fig:"12.5%", figsub:"pagarán uvas, arándanos y espárragos peruanos al entrar a Estados Unidos",
+    cat:"MUNDO", source:"RPP · 24/07/2026",
+    url:"https://rpp.pe/economia/economia/aranceles-de-trump-afectaran-a-las-estrellas-del-agro-peruano-uvas-arandanos-y-esparragos-pagaran-el-impuesto-del-125-noticia-1698708" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -165,7 +170,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El consumo privado crecería <b>3.6%</b> este 2026, con la economía peruana en 3.4% (BCR): hay caja y confianza en las empresas para invertir en talento y retención",
+  DATO: "El Perú ya suma <b>4.58 millones</b> de empleos formales privados y sigue creciendo: cada nueva planilla es un lead para vender servicios de gestión y retención de talento",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
