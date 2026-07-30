@@ -56,33 +56,33 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-07-27 09:05 (Lima) — tarea nocturna",
+  generado: "2026-07-30 09:27 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"bars-up", week:true,
-    title:"Talent gap: Perú forma la mitad de técnicos",
-    fig:"300 mil", figsub:"técnicos al año necesita el país, pero solo egresan 100 mil",
-    cat:"RRHH", source:"Infobae · 26/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/26/el-talento-tambien-atrae-inversiones/" },
-  { color:"#FF953A", viz:"pie", week:true,
-    title:"Exportaciones sostienen 1 de cada 3 empleos formales",
-    fig:"33.1%", figsub:"del empleo formal privado depende ya de las exportaciones: 1.5 millones de puestos, según Adex",
-    cat:"ECONOMÍA", source:"Infobae · 23/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/23/empleos-vinculados-a-las-exportaciones-crecieron-89-y-superaron-los-15-millones/" },
-  { color:"#FF953A", viz:"chart-up", week:true,
-    title:"Gamarra proyecta S/ 18 millones diarios en campaña",
-    fig:"S/ 18 M", figsub:"diarios proyecta Gamarra para la campaña de Fiestas Patrias, en plena recuperación de ventas",
-    cat:"RETAIL", source:"Infobae · 25/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/25/gamarra-espera-recuperarse-en-ventas-de-fiestas-patrias-tras-baja-demanda-por-efectos-del-fenomeno-el-nino/" },
-  { color:"#F52055", viz:"legal", week:false,
-    title:"Sunafil endurece la fiscalización del trabajo del hogar",
-    fig:"5 días", figsub:"tendrá Sunafil para calificar cada denuncia; la nueva directiva sube el riesgo de multas al empleador",
-    cat:"LEGAL", source:"Infobae · 13/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/13/el-uso-obligatorio-de-uniformes-para-trabajadoras-del-hogar-quedara-prohibido-en-espacios-publicos-de-peru/" },
-  { color:"#07F3F4", viz:"globe", week:true,
-    title:"Arancel de EE. UU. golpea al agro peruano",
-    fig:"12.5%", figsub:"pagarán uvas, arándanos y espárragos peruanos al entrar a Estados Unidos",
-    cat:"MUNDO", source:"RPP · 24/07/2026",
-    url:"https://rpp.pe/economia/economia/aranceles-de-trump-afectaran-a-las-estrellas-del-agro-peruano-uvas-arandanos-y-esparragos-pagaran-el-impuesto-del-125-noticia-1698708" }
+  { color:"#E6299C", viz:"money", week:true,
+    title:"El sueldo mínimo sube a S/ 1,300",
+    fig:"S/ 1,300", figsub:"será la nueva remuneración mínima vital, S/ 170 más que encarece cada planilla del país",
+    cat:"RRHH", source:"Andina · 28/07/2026",
+    url:"https://andina.pe/agencia/noticia-gobierno-anuncia-elevara-remuneracion-minima-vital-a-s-1300-mensuales-1085394.aspx" },
+  { color:"#F52055", viz:"shield", week:false,
+    title:"Ley Silla obliga a dar descanso sentado",
+    fig:"360 días", figsub:"tienen las empresas para adecuar sus centros; incumplir es infracción grave que fiscaliza Sunafil",
+    cat:"LEGAL", source:"Infobae · 08/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/08/la-ley-silla-ya-es-una-realidad-congreso-promulga-norma-para-el-descanso-sentado-de-trabajadores/" },
+  { color:"#FF953A", viz:"hire", week:false,
+    title:"El empleo formal privado no para de crecer",
+    fig:"+5.4%", figsub:"creció el empleo formal privado en mayo, con más puestos en servicios, comercio y agro",
+    cat:"ECONOMÍA", source:"Infobae · 19/07/2026",
+    url:"https://www.infobae.com/america/agencias/2026/07/19/el-empleo-formal-en-peru-acumula-26-meses-de-crecimiento-a-mayo-pasado/" },
+  { color:"#E6299C", viz:"people", week:true,
+    title:"Las mypes ya pagan más que el mínimo",
+    fig:"S/ 2,000", figsub:"es el sueldo promedio en las mypes con años de operación: el gremio dice que no colapsará por el alza",
+    cat:"RRHH", source:"Infobae · 29/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/29/mypes-no-estan-asustadas-por-incremento-del-sueldo-minimo-todo-dependera-del-bono-anunciado-por-keiko-fujimori/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"La gratificación movió S/ 4,600 millones en retail",
+    fig:"S/ 4,600 M", figsub:"movió el retail en la campaña de Fiestas Patrias, impulsado por la liquidez de la gratificación",
+    cat:"RETAIL", source:"Infobae · 15/07/2026",
+    url:"https://www.infobae.com/america/agencias/2026/07/15/minoristas-esperan-mover-mas-de-1300-millones-de-dolares-por-fiesta-nacional-de-peru/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -170,7 +170,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El Perú ya suma <b>4.58 millones</b> de empleos formales privados y sigue creciendo: cada nueva planilla es un lead para vender servicios de gestión y retención de talento",
+  DATO: "Solo en mayo el sector servicios sumó <b>98,000</b> nuevos puestos formales: cada nueva planilla es un lead para vender servicios de gestión y retención de talento",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
