@@ -116,7 +116,7 @@ window.NOTICIERO = {
     { nombre:"Manuel Jimenez",      equipo:"",         fecha:"07-09", foto:"" },
     { nombre:"Oscar Montes",        equipo:"",         fecha:"07-23", foto:"img/avatars/oscar-montes.jpg" },
     /* AGOSTO */
-    { nombre:"Romano Alfaro",       equipo:"",         fecha:"08-01", foto:"" },
+    { nombre:"Romano Alfaro",       equipo:"Renewals", fecha:"08-01", foto:"img/avatars/romano-alfaro.jpg" },
     { nombre:"Naty",                equipo:"",         fecha:"08-21", foto:"" },
     { nombre:"Alonso Inga",         equipo:"",         fecha:"08-25", foto:"" },
     /* SETIEMBRE */
