@@ -56,28 +56,28 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-07-31 08:55 (Lima) — tarea nocturna",
+  generado: "2026-08-03 08:55 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#FF953A", viz:"chart-up", week:false,
-    title:"Superávit comercial récord da confianza para invertir",
-    fig:"US$ 44,000 M", figsub:"de superávit comercial en 12 meses, con reservas y riesgo país en mínimos: hay caja en el mercado para invertir y contratar",
-    cat:"ECONOMÍA", source:"Infobae · 12/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/12/superavit-comercial-de-peru-marca-maximo-historico-de-usd-44000-millones-en-12-meses/" },
-  { color:"#E6299C", viz:"doc", week:true,
-    title:"La asignación familiar sube a S/ 130",
-    fig:"S/ 130", figsub:"pagará cada empresa por hijo tras el alza del mínimo a S/ 1,300: toca recalcular la planilla ya",
-    cat:"RRHH", source:"Infobae · 29/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/29/asignacion-familiar-aumenta-tras-incremento-del-sueldo-minimo-este-es-el-nuevo-monto-que-recibiran-los-padres-y-madres-en-peru/" },
-  { color:"#07F3F4", viz:"globe", week:false,
-    title:"Arancel de Trump golpea al agro peruano",
-    fig:"12.5%", figsub:"pagarán uvas, arándanos y espárragos al entrar a EE.UU.: los agroexportadores verán caer sus márgenes",
-    cat:"MUNDO", source:"RPP · 24/07/2026",
-    url:"https://rpp.pe/economia/economia/aranceles-de-trump-afectaran-a-las-estrellas-del-agro-peruano-uvas-arandanos-y-esparragos-pagaran-el-impuesto-del-125-noticia-1698708" },
-  { color:"#F52055", viz:"legal", week:true,
-    title:"Reforma laboral graduaría CTS y gratificación por sueldo",
-    fig:"S/ 38,500", figsub:"sería el sueldo anual (7 UIT) desde el cual se accedería a CTS y gratificación completas, según la propuesta al Congreso",
-    cat:"LEGAL", source:"Infobae · 30/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/30/ejecutivo-busca-recortar-cts-y-gratificaciones-solo-quienes-ganen-mas-recibirian-los-beneficios-completos/" }
+  { color:"#FF953A", viz:"hire", week:true,
+    title:"Pymes venderían hasta 8% más esta campaña",
+    fig:"8%", figsub:"crecerán las ventas de las pymes según la CCL, con mejor performance en comercio, gastronomía, confecciones y logística: más volumen exige más manos",
+    cat:"ECONOMÍA", source:"Andina · 24/07/2026",
+    url:"https://andina.pe/agencia/noticia-pymes-proyectan-crecimiento-hasta-8-fiestas-patrias-dinamizan-empleo-temporal-1084840.aspx" },
+  { color:"#E6299C", viz:"money", week:true,
+    title:"Sueldo mínimo a S/ 1,300 encarece cada planilla",
+    fig:"S/ 2,800", figsub:"de sobrecosto anual por trabajador en el régimen general, y más de S/ 2,500 en el régimen MYPE: toca rehacer el presupuesto de planilla",
+    cat:"RRHH", source:"Infobae · 28/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/28/aumento-del-sueldo-minimo-a-s-1300-puede-generar-mayor-informalidad-laboral/" },
+  { color:"#F52055", viz:"calendar", week:true,
+    title:"Ejecutivo pide 120 días para flexibilizar beneficios",
+    fig:"120 días", figsub:"duraría la delegación de facultades para legislar sobre vacaciones, horas extras, utilidades, gratificaciones y CTS: ventana corta para prepararse",
+    cat:"LEGAL", source:"RPP · 30/07/2026",
+    url:"https://rpp.pe/politica/gobierno/las-claves-del-pedido-de-facultades-legislativas-de-keiko-fujimori-que-reformas-busca-implementar-el-ejecutivo-noticia-1699321" },
+  { color:"#E6299C", viz:"shield", week:true,
+    title:"Gobiernos regionales fiscalizarán a las microempresas",
+    fig:"184-2026-TR", figsub:"la resolución ministerial que traslada la inspección de microempresas a las regiones este año fiscal: el compliance laboral cambia de interlocutor",
+    cat:"RRHH", source:"Infobae · 27/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/27/la-descentralizacion-de-la-inspeccion-laboral-fortalecera-la-proteccion-de-los-trabajadores/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -165,7 +165,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El Perú acumula <b>US$ 99,700 millones</b> en reservas internacionales, un récord: hay músculo financiero en el mercado para invertir en formalizar y retener talento",
+  DATO: "Las pymes proyectan elevar sus contrataciones temporales entre <b>8% y 12%</b> esta campaña en comercio, restaurantes, hoteles, transporte y logística: cada pyme que vende más es un lead de staffing formal",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
