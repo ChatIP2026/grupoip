@@ -56,28 +56,28 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-08-04 08:45 (Lima) — tarea nocturna",
+  generado: "2026-08-04 22:10 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"chart-up", week:true,
-    title:"Sueldo pretendido llega a S/ 3,475 mensuales",
-    fig:"S/ 3,475", figsub:"pide en promedio un postulante peruano tras subir 1.19% en el semestre; para jefaturas la expectativa trepa a S/ 5,569: el target salarial ya no es el de enero",
-    cat:"RRHH", source:"Infobae \u00b7 03/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/03/cuanto-deberias-pedir-de-sueldo-en-2026-pretensiones-salariales-por-experiencia-profesion-y-genero-en-peru-segun-bumeran/" },
-  { color:"#F52055", viz:"doc", week:true,
-    title:"Proponen un r\u00e9gimen laboral \u00fanico y progresivo",
-    fig:"1 r\u00e9gimen", figsub:"reemplazar\u00eda a micro, peque\u00f1a y general: CTS, gratificaciones, utilidades y aportes se grad\u00faan por nivel salarial, no por tama\u00f1o de empresa",
-    cat:"LEGAL", source:"Infobae \u00b7 01/08/2026",
-    url:"https://www.infobae.com/peru/2026/07/31/trabajadores-privados-podrian-pasar-a-nuevo-regimen-laboral-con-beneficios-y-aportes-a-pensiones-progresivos/" },
-  { color:"#E6299C", viz:"alert", week:true,
-    title:"Trabajar el feriado del jueves se paga triple",
-    fig:"S/ 240,000", figsub:"puede superar la multa de SUNAFIL por no pagar el triple del 6 de agosto sin descanso sustitutorio: infracci\u00f3n muy grave, revisa tu planilla antes del jueves",
+  { color:"#F52055", viz:"shield", week:true,
+    title:"MTPE apunta a formalizar sin recortar derechos",
+    fig:"99.7%", figsub:"del tejido empresarial peruano son micro y pequeñas empresas: el plan contra la informalidad arranca por ahi, con CTS, gratificaciones y pensión como gancho para formalizar planilla",
+    cat:"LEGAL", source:"Andina \u00b7 01/08/2026",
+    url:"https://andina.pe/agencia/noticia-mtpe-priorizara-lucha-contra-informalidad-sin-recortar-derechos-laborales-1085937.aspx" },
+  { color:"#FF953A", viz:"money", week:true,
+    title:"Bono compensatorio para mypes por el sueldo mínimo",
+    fig:"1 bono", figsub:"acompañaría el alza de la RMV, junto con la reactivación de ProMype, Compras MyPerú y más factoring vía Cofide: caja fresca para el pipeline de pequeñas empresas",
+    cat:"ECONOM\u00cdA", source:"Andina \u00b7 29/07/2026",
+    url:"https://andina.pe/agencia/noticia-pymes-destacan-reactivacion-promype-impulso-compras-publicas-y-apoyo-al-credito-1085496.aspx" },
+  { color:"#E6299C", viz:"people", week:true,
+    title:"Las habilidades que la IA no puede reemplazar",
+    fig:"3 perfiles", figsub:"concentran la demanda: contención emocional, ética digital y visión estratégica; el target ya no es velocidad sino empatía, pensamiento crítico y criterio para decidir",
+    cat:"RRHH", source:"Andina \u00b7 01/08/2026",
+    url:"https://andina.pe/agencia/noticia-empleo-estas-son-las-habilidades-que-inteligencia-artificial-no-podra-reemplazar-1085883.aspx" },
+  { color:"#E6299C", viz:"hire", week:true,
+    title:"MTPE articula empleo temporal con municipios",
+    fig:"2 distritos", figsub:"de Huancavelica y Ayacucho abren la ronda de acuerdos del ministro Sheput para generar empleo temporal local: se viene demanda de reclutamiento fuera de Lima",
     cat:"RRHH", source:"Andina \u00b7 03/08/2026",
-    url:"https://andina.pe/agencia/noticia-este-6-agosto-es-feriado-conoce-se-conmemora-y-derechos-laborales-tienes-1085986.aspx" },
-  { color:"#FF953A", viz:"bars-up", week:true,
-    title:"MTPE ratifica sueldo m\u00ednimo de S/ 1,300",
-    fig:"S/ 1,300", figsub:"ir\u00eda la RMV desde S/ 1,130 con un bono para la mype como medida complementaria; pasa por el Consejo Nacional del Trabajo: hay ventana para renegociar planillas",
-    cat:"ECONOM\u00cdA", source:"Andina \u00b7 03/08/2026",
-    url:"https://andina.pe/agencia/noticia-mtpe-incremento-del-sueldo-minimo-permitira-recuperar-capacidad-adquisitiva-2020-1086077.aspx" }
+    url:"https://andina.pe/agencia/noticia-mtpe-fortalece-alianzas-gobiernos-locales-para-impulsar-empleo-temporal-1086158.aspx" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -165,7 +165,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El sueldo promedio que piden los postulantes en el Perú llegó a <b>S/ 3,475</b> en junio, su pico del semestre: el talento formal se encareció y el que no ajusta su banda salarial pierde el lead",
+  DATO: "Las micro y pequeñas empresas son el <b>99.7%</b> de las empresas del Perú y son la prioridad del plan de formalización: ahí está el mercado más grande y menos atendido para un lead de RRHH",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
