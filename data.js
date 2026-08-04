@@ -56,28 +56,28 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-08-03 08:55 (Lima) — tarea nocturna",
+  generado: "2026-08-04 08:45 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#FF953A", viz:"hire", week:true,
-    title:"Pymes venderían hasta 8% más esta campaña",
-    fig:"8%", figsub:"crecerán las ventas de las pymes según la CCL, con mejor performance en comercio, gastronomía, confecciones y logística: más volumen exige más manos",
-    cat:"ECONOMÍA", source:"Andina · 24/07/2026",
-    url:"https://andina.pe/agencia/noticia-pymes-proyectan-crecimiento-hasta-8-fiestas-patrias-dinamizan-empleo-temporal-1084840.aspx" },
-  { color:"#E6299C", viz:"money", week:true,
-    title:"Sueldo mínimo a S/ 1,300 encarece cada planilla",
-    fig:"S/ 2,800", figsub:"de sobrecosto anual por trabajador en el régimen general, y más de S/ 2,500 en el régimen MYPE: toca rehacer el presupuesto de planilla",
-    cat:"RRHH", source:"Infobae · 28/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/28/aumento-del-sueldo-minimo-a-s-1300-puede-generar-mayor-informalidad-laboral/" },
-  { color:"#F52055", viz:"calendar", week:true,
-    title:"Ejecutivo pide 120 días para flexibilizar beneficios",
-    fig:"120 días", figsub:"duraría la delegación de facultades para legislar sobre vacaciones, horas extras, utilidades, gratificaciones y CTS: ventana corta para prepararse",
-    cat:"LEGAL", source:"RPP · 30/07/2026",
-    url:"https://rpp.pe/politica/gobierno/las-claves-del-pedido-de-facultades-legislativas-de-keiko-fujimori-que-reformas-busca-implementar-el-ejecutivo-noticia-1699321" },
-  { color:"#E6299C", viz:"shield", week:true,
-    title:"Gobiernos regionales fiscalizarán a las microempresas",
-    fig:"184-2026-TR", figsub:"la resolución ministerial que traslada la inspección de microempresas a las regiones este año fiscal: el compliance laboral cambia de interlocutor",
-    cat:"RRHH", source:"Infobae · 27/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/27/la-descentralizacion-de-la-inspeccion-laboral-fortalecera-la-proteccion-de-los-trabajadores/" }
+  { color:"#E6299C", viz:"chart-up", week:true,
+    title:"Sueldo pretendido llega a S/ 3,475 mensuales",
+    fig:"S/ 3,475", figsub:"pide en promedio un postulante peruano tras subir 1.19% en el semestre; para jefaturas la expectativa trepa a S/ 5,569: el target salarial ya no es el de enero",
+    cat:"RRHH", source:"Infobae \u00b7 03/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/03/cuanto-deberias-pedir-de-sueldo-en-2026-pretensiones-salariales-por-experiencia-profesion-y-genero-en-peru-segun-bumeran/" },
+  { color:"#F52055", viz:"doc", week:true,
+    title:"Proponen un r\u00e9gimen laboral \u00fanico y progresivo",
+    fig:"1 r\u00e9gimen", figsub:"reemplazar\u00eda a micro, peque\u00f1a y general: CTS, gratificaciones, utilidades y aportes se grad\u00faan por nivel salarial, no por tama\u00f1o de empresa",
+    cat:"LEGAL", source:"Infobae \u00b7 01/08/2026",
+    url:"https://www.infobae.com/peru/2026/07/31/trabajadores-privados-podrian-pasar-a-nuevo-regimen-laboral-con-beneficios-y-aportes-a-pensiones-progresivos/" },
+  { color:"#E6299C", viz:"alert", week:true,
+    title:"Trabajar el feriado del jueves se paga triple",
+    fig:"S/ 240,000", figsub:"puede superar la multa de SUNAFIL por no pagar el triple del 6 de agosto sin descanso sustitutorio: infracci\u00f3n muy grave, revisa tu planilla antes del jueves",
+    cat:"RRHH", source:"Andina \u00b7 03/08/2026",
+    url:"https://andina.pe/agencia/noticia-este-6-agosto-es-feriado-conoce-se-conmemora-y-derechos-laborales-tienes-1085986.aspx" },
+  { color:"#FF953A", viz:"bars-up", week:true,
+    title:"MTPE ratifica sueldo m\u00ednimo de S/ 1,300",
+    fig:"S/ 1,300", figsub:"ir\u00eda la RMV desde S/ 1,130 con un bono para la mype como medida complementaria; pasa por el Consejo Nacional del Trabajo: hay ventana para renegociar planillas",
+    cat:"ECONOM\u00cdA", source:"Andina \u00b7 03/08/2026",
+    url:"https://andina.pe/agencia/noticia-mtpe-incremento-del-sueldo-minimo-permitira-recuperar-capacidad-adquisitiva-2020-1086077.aspx" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -165,7 +165,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "Las pymes proyectan elevar sus contrataciones temporales entre <b>8% y 12%</b> esta campaña en comercio, restaurantes, hoteles, transporte y logística: cada pyme que vende más es un lead de staffing formal",
+  DATO: "El sueldo promedio que piden los postulantes en el Perú llegó a <b>S/ 3,475</b> en junio, su pico del semestre: el talento formal se encareció y el que no ajusta su banda salarial pierde el lead",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
