@@ -56,28 +56,33 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-08-04 08:45 (Lima) — tarea nocturna",
+  generado: "2026-08-05 12:23 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"chart-up", week:true,
-    title:"Sueldo pretendido llega a S/ 3,475 mensuales",
-    fig:"S/ 3,475", figsub:"pide en promedio un postulante peruano tras subir 1.19% en el semestre; para jefaturas la expectativa trepa a S/ 5,569: el target salarial ya no es el de enero",
-    cat:"RRHH", source:"Infobae \u00b7 03/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/03/cuanto-deberias-pedir-de-sueldo-en-2026-pretensiones-salariales-por-experiencia-profesion-y-genero-en-peru-segun-bumeran/" },
-  { color:"#F52055", viz:"doc", week:true,
-    title:"Proponen un r\u00e9gimen laboral \u00fanico y progresivo",
-    fig:"1 r\u00e9gimen", figsub:"reemplazar\u00eda a micro, peque\u00f1a y general: CTS, gratificaciones, utilidades y aportes se grad\u00faan por nivel salarial, no por tama\u00f1o de empresa",
-    cat:"LEGAL", source:"Infobae \u00b7 01/08/2026",
-    url:"https://www.infobae.com/peru/2026/07/31/trabajadores-privados-podrian-pasar-a-nuevo-regimen-laboral-con-beneficios-y-aportes-a-pensiones-progresivos/" },
-  { color:"#E6299C", viz:"alert", week:true,
-    title:"Trabajar el feriado del jueves se paga triple",
-    fig:"S/ 240,000", figsub:"puede superar la multa de SUNAFIL por no pagar el triple del 6 de agosto sin descanso sustitutorio: infracci\u00f3n muy grave, revisa tu planilla antes del jueves",
-    cat:"RRHH", source:"Andina \u00b7 03/08/2026",
-    url:"https://andina.pe/agencia/noticia-este-6-agosto-es-feriado-conoce-se-conmemora-y-derechos-laborales-tienes-1085986.aspx" },
-  { color:"#FF953A", viz:"bars-up", week:true,
-    title:"MTPE ratifica sueldo m\u00ednimo de S/ 1,300",
-    fig:"S/ 1,300", figsub:"ir\u00eda la RMV desde S/ 1,130 con un bono para la mype como medida complementaria; pasa por el Consejo Nacional del Trabajo: hay ventana para renegociar planillas",
-    cat:"ECONOM\u00cdA", source:"Andina \u00b7 03/08/2026",
-    url:"https://andina.pe/agencia/noticia-mtpe-incremento-del-sueldo-minimo-permitira-recuperar-capacidad-adquisitiva-2020-1086077.aspx" }
+  { color:"#E6299C", viz:"money", week:true,
+    title:"Sueldo mínimo a S/ 1,300 inicia su evaluación",
+    fig:"S/ 170", figsub:"subiría la RMV, de S/ 1,130 a S/ 1,300: el MTPE ya activó el Consejo Nacional de Trabajo y abre un proceso tripartito de 60 a 90 días, con vigencia hacia diciembre o enero; ventana para recalcular tu planilla con tiempo",
+    cat:"RRHH", source:"Infobae \u00b7 05/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/05/aumento-del-sueldo-minimo-da-el-primer-paso-mtpe-ratifica-a-secretario-del-consejo-nacional-de-trabajo/" },
+  { color:"#F52055", viz:"legal", week:true,
+    title:"Gratificación CAS no puede bajar de S/ 300",
+    fig:"S/ 300", figsub:"es el piso legal de la grati CAS por la Ley 32563, pero áreas de RRHH de algunas entidades abonaron hasta S/ 150 por mala lectura de la norma: revisa el cálculo antes del depósito",
+    cat:"LEGAL", source:"Infobae \u00b7 04/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/01/alertan-que-trabajadores-cas-estan-recibiendo-gratificacion-menor-a-s300-por-mala-interpretacion/" },
+  { color:"#FF953A", viz:"pie", week:true,
+    title:"Vacancia de oficinas en Lima cae a 7.8%",
+    fig:"7.8%", figsub:"de vacancia en oficinas Clase B al 2T 2026, con alquileres +31.9% interanual y absorción neta +147.6% (Cushman & Wakefield): las empresas se expanden y necesitan equipos para llenar esos metros",
+    cat:"ECONOMÍA", source:"Infobae \u00b7 05/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/05/una-zona-de-lima-se-esta-quedando-sin-oficinas-disponibles-y-no-es-san-isidro-ni-miraflores/" },
+  { color:"#FF953A", viz:"layoff", week:true,
+    title:"El Niño amenaza 78,000 empleos en pesca",
+    fig:"78,000", figsub:"empleos pesqueros en riesgo este 2026 por el Fenómeno El Niño (Apoyo Consultoría); el sector aporta 2.1% del PBI y mueve S/ 80 extra por cada S/ 100: planifica tu staffing en zonas costeras",
+    cat:"ECONOMÍA", source:"RPP \u00b7 03/08/2026",
+    url:"https://rpp.pe/economia/economia/fenomeno-el-nino-pondria-en-riesgo-mas-de-78000-empleos-pesqueros-advierte-la-sociedad-nacional-de-pesqueria-noticia-1699989" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Retail peruano venderá S/ 55,000 millones en 2026",
+    fig:"S/ 55,000 M", figsub:"facturaría el retail este 2026, un 4% más que el año pasado (Forbes Perú): consumo con caja para campañas y un target claro para reforzar equipos de tienda y ventas",
+    cat:"RETAIL", source:"Forbes Perú \u00b7 10/02/2026",
+    url:"https://forbes.pe/economia-y-finanzas/2026-02-10/ventas-minoristas-en-peru-crecerian-alrededor-de-4-este-2026-y-alcanzarian-los-s-55-000-millones" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -165,7 +170,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El sueldo promedio que piden los postulantes en el Perú llegó a <b>S/ 3,475</b> en junio, su pico del semestre: el talento formal se encareció y el que no ajusta su banda salarial pierde el lead",
+  DATO: "El alquiler de oficinas Clase B en Lima subió <b>31.9%</b> en un año y la vacancia cayó a mínimos: las empresas se expanden y salen a contratar para llenar esos metros, un lead directo para colocar talento",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
