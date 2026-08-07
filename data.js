@@ -128,31 +128,12 @@ window.NOTICIERO = {
   ],
 
   EXTRA: {
-    periodo:"Junio 2026",
+    periodo:"Julio 2026",
     cards:[
-      { nombre:"Darwin Hoyos",  equipo:"Renewals", img:"img/extraordinarios/2026-06-1-darwin-hoyos.jpg" },
-      { nombre:"Jorge Gomez",   equipo:"Reports",  img:"img/extraordinarios/2026-06-2-jorge-gomez.jpg" },
-      { nombre:"Aixa Enriquez", equipo:"Business", img:"img/extraordinarios/2026-06-3-aixa-enriquez.jpg" },
-      { nombre:"Lender Sayago", equipo:"Finance",  img:"img/extraordinarios/2026-06-4-lender-sayago.jpg" }
-    ]
-  },
-
-  /* Nuestro ADN comercial: encendido todo el mes. Al pasar "hasta" desaparece. */
-  ADN: {
-    kicker:"NUESTRO ADN COMERCIAL",
-    hasta:"2026-07-31",
-    foco:"La disciplina es nuestro escudo",
-    mindset:"La motivación da el primer impulso, pero la rutina diaria es la que asegura los cierres: cada “No” es entrenamiento y cada llamada contestada, una oportunidad.",
-    hitos:[
-      { titulo:"El Entrenamiento",
-        desc:"Dedicamos la primera hora del día a simular llamadas, corregirnos entre nosotras y afinar argumentos.",
-        frase:"“Los partidos se ganan en la práctica, no en la cancha.”" },
-      { titulo:"El Ritmo",
-        desc:"El éxito B2B no es suerte, es matemática: cumplir los bloques de gestión blinda el funnel de ventas.",
-        frase:"“La constancia vence al talento, cuando el talento se cansa.”" },
-      { titulo:"La Revisión",
-        desc:"Cada semana la IA analiza nuestras llamadas para ver qué salió bien y qué toca mejorar.",
-        frase:"“Mirar la repetición de la jugada nos hace invencibles.”" }
+      { nombre:"Alonso Inga",     equipo:"Renewals", img:"img/extraordinarios/2026-07-1-alonso-inga.jpg" },
+      { nombre:"Andres Castillo", equipo:"Reports",  img:"img/extraordinarios/2026-07-2-andres-castillo.jpg" },
+      { nombre:"Luis Cabanillas", equipo:"Finance",  img:"img/extraordinarios/2026-07-3-luis-cabanillas.jpg" },
+      { nombre:"Hilary Salazar",  equipo:"Business", img:"img/extraordinarios/2026-07-4-hilary-salazar.jpg" }
     ]
   },
 
