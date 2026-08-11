@@ -56,28 +56,28 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-08-07 09:10 (Lima) — tarea nocturna",
+  generado: "2026-08-11 21:40 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"shield", week:true,
-    title:"Sunafil estrena jefatura con enfoque preventivo",
-    fig:"3 AÑOS", figsub:"dura el mandato de Evelin Coloma Cieza como nueva superintendente de Sunafil (RS 030-2026-TR): cambio de gestión con foco en fiscalización preventiva y formalización, momento ideal para ordenar el compliance laboral antes de la primera inspección",
-    cat:"RRHH", source:"Andina \u00b7 05/08/2026",
-    url:"https://andina.pe/agencia/noticia-ministerio-trabajo-designo-a-evelin-coloma-cieza-como-nueva-jefa-sunafil-1086341.aspx" },
-  { color:"#E6299C", viz:"chart-up", week:true,
-    title:"Pretensión salarial sube y marca récord semestral",
-    fig:"S/ 3,475", figsub:"es el sueldo promedio pretendido en junio, el más alto del semestre (+1.19% acumulado, Index de Bumeran); jefaturas piden S/ 5,569 y Sistemas llega a S/ 12,000: insight directo para calibrar bandas salariales y no perder al candidato en la oferta",
-    cat:"RRHH", source:"Infobae \u00b7 03/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/03/cuanto-deberias-pedir-de-sueldo-en-2026-pretensiones-salariales-por-experiencia-profesion-y-genero-en-peru-segun-bumeran/" },
-  { color:"#F52055", viz:"doc", week:true,
-    title:"Gobierno evalúa un régimen laboral único progresivo",
-    fig:"6 CAMBIOS", figsub:"contempla el borrador de facultades legislativas: unificar los regímenes de micro, pequeña y gran empresa y graduar CTS, gratificaciones, utilidades y aportes según el sueldo; conviene revisar hoy la estructura de tu planilla ante el escenario",
-    cat:"LEGAL", source:"Infobae \u00b7 31/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/31/trabajadores-privados-podrian-pasar-a-nuevo-regimen-laboral-con-beneficios-y-aportes-a-pensiones-progresivos/" },
-  { color:"#FF953A", viz:"bars-up", week:false,
-    title:"Inversión privada acelera y arrastra empleo formal",
-    fig:"12.5%", figsub:"crecería la inversión privada total en 2026 según el BCRP, empujada por minería e infraestructura; JCR Latam advierte que el talento técnico especializado será determinante: pipeline claro para colocar perfiles en minería, energía, logística y agroindustria",
-    cat:"ECONOMÍA", source:"Andina \u00b7 25/07/2026",
-    url:"https://andina.pe/agencia/noticia-peru-presenta-condiciones-para-captar-una-mayor-atencion-inversionistas-internacionales-1085025.aspx" }
+  { color:"#E6299C", viz:"calendar", week:true,
+    title:"Sueldo mínimo sube a S/ 1,300 en tramos",
+    fig:"+S/ 170", figsub:"sube la Remuneración Mínima Vital de forma escalonada: S/ 100 entre octubre y noviembre de 2026 y S/ 70 entre noviembre y abril de 2027, según el ministro de Economía Elmer Cuba; el timing ya está sobre la mesa para recalcular planilla, costos laborales y bandas salariales antes de octubre",
+    cat:"RRHH", source:"Infobae \u00b7 10/08/2026",
+    url:"https://www.infobae.com/america/agencias/2026/08/10/peru-subira-el-salario-minimo-en-4357-euros-de-manera-escalonada-para-no-alimentar-la-inflacion/" },
+  { color:"#F52055", viz:"legal", week:true,
+    title:"Reforma laboral apunta a Sunafil y beneficios",
+    fig:"120 DÍAS", figsub:"pide el Ejecutivo de facultades legislativas para reformar el empleo: ampliar el rol preventivo de Sunafil, flexibilizar vacaciones, horas extras, gratificaciones y CTS por acuerdo, y crear bonos de productividad no remunerativos; el compliance laboral entra en revisión y ese es el mejor gancho para un follow-up con el cliente",
+    cat:"LEGAL", source:"RPP \u00b7 07/08/2026",
+    url:"https://rpp.pe/economia/economia/ministerio-de-trabajo-completa-su-equipo-que-tendra-a-cargo-el-incremento-del-sueldo-minimo-y-la-reforma-laboral-noticia-1700366" },
+  { color:"#FF953A", viz:"money", week:true,
+    title:"Inversión minera crecerá y supera US$ 6,800 millones",
+    fig:"8%", figsub:"crecerá la inversión minera en 2026 según el MEF, por encima de US$ 6,800 millones con San Gabriel, Reposición Antamina y Corani; el ministro Elmer Cuba proyecta que la economía cierre el año entre 3.5% y 4%: pipeline de prospección en minería, energía y servicios en regiones",
+    cat:"ECONOMÍA", source:"Andina \u00b7 11/08/2026",
+    url:"https://andina.pe/agencia/noticia-por-que-peru-sigue-siendo-atractivo-para-las-inversiones-1087031.aspx" },
+  { color:"#FF953A", viz:"people", week:true,
+    title:"Un tercio del empleo formal privado es exportador",
+    fig:"1,516,000", figsub:"puestos directos generaron las exportaciones a mayo 2026 (+8.9%, Adex): son el 33.1% del empleo formal privado del país, con agroindustria, minería y agro tradicional concentrando el 84.7%; target claro por región (Lima, Ica, La Libertad, Cajamarca, Piura) para armar el funnel",
+    cat:"ECONOMÍA", source:"Infobae \u00b7 23/07/2026",
+    url:"https://www.infobae.com/peru/2026/07/23/empleos-vinculados-a-las-exportaciones-crecieron-89-y-superaron-los-15-millones/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -146,7 +146,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "La inversión minera creció <b>43.5%</b> de enero a abril de 2026 (US$ 2,051 millones) y marca el mayor ritmo de la década: cada proyecto que arranca abre demanda de perfiles técnicos y de servicios en regiones, un target de prospección listo para trabajar",
+  DATO: "El empleo formal privado en el Perú llegó a <b>4,584,000</b> puestos a mayo de 2026 y un tercio depende de la actividad exportadora: cada nuevo proyecto de agroindustria o minería abre demanda real de perfiles técnicos y de servicios en regiones, un target de prospección listo para trabajar",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
