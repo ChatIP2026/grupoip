@@ -56,28 +56,33 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-08-11 21:40 (Lima) — tarea nocturna",
+  generado: "2026-08-12 21:40 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"calendar", week:true,
-    title:"Sueldo mínimo sube a S/ 1,300 en tramos",
-    fig:"+S/ 170", figsub:"sube la Remuneración Mínima Vital de forma escalonada: S/ 100 entre octubre y noviembre de 2026 y S/ 70 entre noviembre y abril de 2027, según el ministro de Economía Elmer Cuba; el timing ya está sobre la mesa para recalcular planilla, costos laborales y bandas salariales antes de octubre",
-    cat:"RRHH", source:"Infobae \u00b7 10/08/2026",
-    url:"https://www.infobae.com/america/agencias/2026/08/10/peru-subira-el-salario-minimo-en-4357-euros-de-manera-escalonada-para-no-alimentar-la-inflacion/" },
-  { color:"#F52055", viz:"legal", week:true,
-    title:"Reforma laboral apunta a Sunafil y beneficios",
-    fig:"120 DÍAS", figsub:"pide el Ejecutivo de facultades legislativas para reformar el empleo: ampliar el rol preventivo de Sunafil, flexibilizar vacaciones, horas extras, gratificaciones y CTS por acuerdo, y crear bonos de productividad no remunerativos; el compliance laboral entra en revisión y ese es el mejor gancho para un follow-up con el cliente",
-    cat:"LEGAL", source:"RPP \u00b7 07/08/2026",
-    url:"https://rpp.pe/economia/economia/ministerio-de-trabajo-completa-su-equipo-que-tendra-a-cargo-el-incremento-del-sueldo-minimo-y-la-reforma-laboral-noticia-1700366" },
-  { color:"#FF953A", viz:"money", week:true,
-    title:"Inversión minera crecerá y supera US$ 6,800 millones",
-    fig:"8%", figsub:"crecerá la inversión minera en 2026 según el MEF, por encima de US$ 6,800 millones con San Gabriel, Reposición Antamina y Corani; el ministro Elmer Cuba proyecta que la economía cierre el año entre 3.5% y 4%: pipeline de prospección en minería, energía y servicios en regiones",
-    cat:"ECONOMÍA", source:"Andina \u00b7 11/08/2026",
-    url:"https://andina.pe/agencia/noticia-por-que-peru-sigue-siendo-atractivo-para-las-inversiones-1087031.aspx" },
-  { color:"#FF953A", viz:"people", week:true,
-    title:"Un tercio del empleo formal privado es exportador",
-    fig:"1,516,000", figsub:"puestos directos generaron las exportaciones a mayo 2026 (+8.9%, Adex): son el 33.1% del empleo formal privado del país, con agroindustria, minería y agro tradicional concentrando el 84.7%; target claro por región (Lima, Ica, La Libertad, Cajamarca, Piura) para armar el funnel",
-    cat:"ECONOMÍA", source:"Infobae \u00b7 23/07/2026",
-    url:"https://www.infobae.com/peru/2026/07/23/empleos-vinculados-a-las-exportaciones-crecieron-89-y-superaron-los-15-millones/" }
+  { color:"#FF953A", viz:"chart-up", week:true,
+    title:"Interbank firma alianza directa con Anthropic",
+    fig:"1er BANCO", figsub:"del Perú en cerrar un acuerdo directo con Anthropic para desplegar Claude AI: arrancó con Claude Enterprise para equipos de tecnología y especialistas, más programas de formación y acompañamiento; la banca ya movió ficha en IA y eso abre conversación de upskilling y nuevos perfiles con cualquier cliente corporativo",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 12/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/12/un-banco-de-peru-ha-suscrito-una-alianza-con-anthropic-para-desplegar-ia-generativa-en-sus-operaciones-como-la-usara/" },
+  { color:"#FF953A", viz:"cart", week:true,
+    title:"Exportaciones peruanas marcan récord histórico semestral",
+    fig:"US$ 54,049 M", figsub:"exportó el Perú en el primer semestre 2026 (+34%, Mincetur), con minería en US$ 39,875 M (+49%) y arándano, palta y uva liderando el agro; 7,798 empresas exportadoras y 65% son mypes: hay caja y hay pipeline de clientes medianos que van a necesitar personal",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 07/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/07/cobre-oro-arandanos-y-paltas-son-de-los-productos-peruanos-mas-demandados-en-el-extranjero/" },
+  { color:"#F52055", viz:"doc", week:true,
+    title:"MEF llevará cuatro leyes al Tribunal Constitucional",
+    fig:"4 LEYES", figsub:"impugnará el MEF ante el TC por su costo fiscal, entre ellas la Ley 32563 de gratificación y CTS para trabajadores CAS, ya vigente; el ministro Elmer Cuba advierte que cumplirlas obligaría a subir el IGV dos puntos: el marco de beneficios sigue en movimiento y conviene revisar supuestos de costo laboral",
+    cat:"LEGAL", source:"Infobae \u00b7 08/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/08/adios-a-la-gratificacion-cas-aumento-de-pensiones-a-maestros-y-militares-y-homologacion-cafae-mef-las-llevara-al-tc/" },
+  { color:"#E6299C", viz:"pie", week:true,
+    title:"Agentes de IA ya atienden siete de diez consultas",
+    fig:"70%", figsub:"de las interacciones de atención al cliente ya las gestionan agentes de IA, según el índice de Salesforce; la habilidad promedio de un agente pasó de dos a seis funciones en un año y en retail llegó a nueve acciones en campaña: el performance sube, pero el reto de RRHH es formar y gobernar ese talento",
+    cat:"RRHH", source:"Infobae \u00b7 07/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/07/inteligencia-artificial-en-la-empresa-mas-agentes-mayor-productividad-y-nuevos-retos-en-peru/" },
+  { color:"#FF953A", viz:"alert", week:true,
+    title:"Conflictos sociales frenan cartera minera de US$ 64,000 millones",
+    fig:"151", figsub:"conflictos sociales activos registró la Defensoría del Pueblo a junio 2026, 96 de ellos socioambientales, frente a una cartera minera de US$ 64,000 millones en 66 proyectos y 19 departamentos; la minería transfirió S/ 10,045 millones en 2025: gestión social y clima laboral en regiones son insight de venta",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 10/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/10/el-camino-hacia-el-dorado-151-conflictos-mineros-amenazan-una-cartera-de-usd-64-mil-millones-en-peru/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -146,7 +151,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El empleo formal privado en el Perú llegó a <b>4,584,000</b> puestos a mayo de 2026 y un tercio depende de la actividad exportadora: cada nuevo proyecto de agroindustria o minería abre demanda real de perfiles técnicos y de servicios en regiones, un target de prospección listo para trabajar",
+  DATO: "El Perú exhibió <b>7,798</b> empresas exportadoras en el primer semestre de 2026 y el 65% son mypes: compañías que crecen rápido, todavía sin estructura de RRHH propia, y que necesitan reclutar y formalizar personal para sostener el ritmo; ese es el target más accionable del funnel hoy",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
