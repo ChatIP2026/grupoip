@@ -56,33 +56,28 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-08-12 21:40 (Lima) — tarea nocturna",
+  generado: "2026-08-13 21:40 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#FF953A", viz:"chart-up", week:true,
-    title:"Interbank firma alianza directa con Anthropic",
-    fig:"1er BANCO", figsub:"del Perú en cerrar un acuerdo directo con Anthropic para desplegar Claude AI: arrancó con Claude Enterprise para equipos de tecnología y especialistas, más programas de formación y acompañamiento; la banca ya movió ficha en IA y eso abre conversación de upskilling y nuevos perfiles con cualquier cliente corporativo",
+  { color:"#FF953A", viz:"money", week:true,
+    title:"Sueldo mínimo subirá en dos tramos hasta 2027",
+    fig:"S/ 1,300", figsub:"será la nueva remuneración mínima vital, pero en dos tramos según el MEF: S/100 tentativamente en noviembre de 2026 y S/70 en abril de 2027; el ministro Elmer Cuba aclaró que aún no está definido y el MTPE convocará al Consejo Nacional de Trabajo, aunque la palabra final la tiene el Gobierno: hay que recalcular costo de planilla con cada cliente antes de noviembre",
     cat:"ECONOM\u00cdA", source:"Infobae \u00b7 12/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/12/un-banco-de-peru-ha-suscrito-una-alianza-con-anthropic-para-desplegar-ia-generativa-en-sus-operaciones-como-la-usara/" },
-  { color:"#FF953A", viz:"cart", week:true,
-    title:"Exportaciones peruanas marcan récord histórico semestral",
-    fig:"US$ 54,049 M", figsub:"exportó el Perú en el primer semestre 2026 (+34%, Mincetur), con minería en US$ 39,875 M (+49%) y arándano, palta y uva liderando el agro; 7,798 empresas exportadoras y 65% son mypes: hay caja y hay pipeline de clientes medianos que van a necesitar personal",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 07/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/07/cobre-oro-arandanos-y-paltas-son-de-los-productos-peruanos-mas-demandados-en-el-extranjero/" },
-  { color:"#F52055", viz:"doc", week:true,
-    title:"MEF llevará cuatro leyes al Tribunal Constitucional",
-    fig:"4 LEYES", figsub:"impugnará el MEF ante el TC por su costo fiscal, entre ellas la Ley 32563 de gratificación y CTS para trabajadores CAS, ya vigente; el ministro Elmer Cuba advierte que cumplirlas obligaría a subir el IGV dos puntos: el marco de beneficios sigue en movimiento y conviene revisar supuestos de costo laboral",
-    cat:"LEGAL", source:"Infobae \u00b7 08/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/08/adios-a-la-gratificacion-cas-aumento-de-pensiones-a-maestros-y-militares-y-homologacion-cafae-mef-las-llevara-al-tc/" },
-  { color:"#E6299C", viz:"pie", week:true,
-    title:"Agentes de IA ya atienden siete de diez consultas",
-    fig:"70%", figsub:"de las interacciones de atención al cliente ya las gestionan agentes de IA, según el índice de Salesforce; la habilidad promedio de un agente pasó de dos a seis funciones en un año y en retail llegó a nueve acciones en campaña: el performance sube, pero el reto de RRHH es formar y gobernar ese talento",
-    cat:"RRHH", source:"Infobae \u00b7 07/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/07/inteligencia-artificial-en-la-empresa-mas-agentes-mayor-productividad-y-nuevos-retos-en-peru/" },
-  { color:"#FF953A", viz:"alert", week:true,
-    title:"Conflictos sociales frenan cartera minera de US$ 64,000 millones",
-    fig:"151", figsub:"conflictos sociales activos registró la Defensoría del Pueblo a junio 2026, 96 de ellos socioambientales, frente a una cartera minera de US$ 64,000 millones en 66 proyectos y 19 departamentos; la minería transfirió S/ 10,045 millones en 2025: gestión social y clima laboral en regiones son insight de venta",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 10/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/10/el-camino-hacia-el-dorado-151-conflictos-mineros-amenazan-una-cartera-de-usd-64-mil-millones-en-peru/" }
+    url:"https://www.infobae.com/peru/2026/08/12/sueldo-minimo-de-s1300-cuando-se-darian-los-dos-aumentos-según-el-gobierno/" },
+  { color:"#F52055", viz:"legal", week:true,
+    title:"MEF evalúa régimen laboral con beneficios graduales",
+    fig:"90%", figsub:"de informalidad hay en la microempresa peruana, cifra con la que el MEF sustenta que la Ley MYPE fracasó; el borrador del pedido de facultades plantea graduar CTS, gratificaciones y aportes según nivel salarial y unificar los régimenes: si sale, cambia el cálculo de costo laboral de todo cliente pyme y abre conversacion de formalización",
+    cat:"LEGAL", source:"Infobae \u00b7 07/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/07/mef-si-evalúara-propuesta-de-nuevo-régimen-laboral-con-gratificacion-cts-y-aportes-a-pensiones-graduales/" },
+  { color:"#E6299C", viz:"people", week:true,
+    title:"Pretensión salarial peruana toca su nivel más alto",
+    fig:"S/ 3,475", figsub:"pidieron en promedio los postulantes en junio, el pico del semestre (+1.19% acumulado), según el Index del Mercado Laboral de Bumeran; jefaturas piden S/5,569, semi senior y senior S/3,535 y junior S/2,365, y la brecha de género bajó a 6.77%: el target sube de precio, retener sale más barato que reponer",
+    cat:"RRHH", source:"RPP \u00b7 31/07/2026",
+    url:"https://rpp.pe/economia/economia/sueldo-en-peru-trabajadores-elevan-expectativas-salariales-promedio-supera-los-3400-soles-mensual-noticia-1699645" },
+  { color:"#E6299C", viz:"bars-up", week:true,
+    title:"Talento joven innova solo, no en equipo",
+    fig:"66.35", figsub:"puntos sobre 100 marca el primer Índice de Innovación Ciudadana de la UPC e Ipsos Perú entre 1,000 personas de 18 a 45 años: 88% quiere aprender cosas nuevas y 70% propone mejoras, pero solo 56% participa en proyectos colaborativos; ese gap entre mindset individual y trabajo en equipo se cierra con onboarding, coaching y cultura",
+    cat:"RRHH", source:"RPP \u00b7 12/08/2026",
+    url:"https://rpp.pe/economia/economia/innovacion-en-peru-1-de-cada-3-jovenes-tiene-ideas-para-mejorar-su-comunidad-pero-no-son-implementadas-noticia-1701184" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -151,7 +146,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El Perú exhibió <b>7,798</b> empresas exportadoras en el primer semestre de 2026 y el 65% son mypes: compañías que crecen rápido, todavía sin estructura de RRHH propia, y que necesitan reclutar y formalizar personal para sostener el ritmo; ese es el target más accionable del funnel hoy",
+  DATO: "El <b>8.4%</b> de las vacantes publicadas en el Perú durante el primer semestre 2026 fueron del área Comercial y otro 7.9% de Ventas, los dos rubros con más demanda del mercado segun Bumeran: son justo los perfiles que más rotan y más cuesta cubrir, y ahí esta el lead mas caliente del funnel de iPartner",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
