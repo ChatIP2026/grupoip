@@ -56,28 +56,33 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-08-13 21:40 (Lima) — tarea nocturna",
+  generado: "2026-08-14 21:40 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#FF953A", viz:"money", week:true,
-    title:"Sueldo mínimo subirá en dos tramos hasta 2027",
-    fig:"S/ 1,300", figsub:"será la nueva remuneración mínima vital, pero en dos tramos según el MEF: S/100 tentativamente en noviembre de 2026 y S/70 en abril de 2027; el ministro Elmer Cuba aclaró que aún no está definido y el MTPE convocará al Consejo Nacional de Trabajo, aunque la palabra final la tiene el Gobierno: hay que recalcular costo de planilla con cada cliente antes de noviembre",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 12/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/12/sueldo-minimo-de-s1300-cuando-se-darian-los-dos-aumentos-según-el-gobierno/" },
-  { color:"#F52055", viz:"legal", week:true,
-    title:"MEF evalúa régimen laboral con beneficios graduales",
-    fig:"90%", figsub:"de informalidad hay en la microempresa peruana, cifra con la que el MEF sustenta que la Ley MYPE fracasó; el borrador del pedido de facultades plantea graduar CTS, gratificaciones y aportes según nivel salarial y unificar los régimenes: si sale, cambia el cálculo de costo laboral de todo cliente pyme y abre conversacion de formalización",
-    cat:"LEGAL", source:"Infobae \u00b7 07/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/07/mef-si-evalúara-propuesta-de-nuevo-régimen-laboral-con-gratificacion-cts-y-aportes-a-pensiones-graduales/" },
-  { color:"#E6299C", viz:"people", week:true,
-    title:"Pretensión salarial peruana toca su nivel más alto",
-    fig:"S/ 3,475", figsub:"pidieron en promedio los postulantes en junio, el pico del semestre (+1.19% acumulado), según el Index del Mercado Laboral de Bumeran; jefaturas piden S/5,569, semi senior y senior S/3,535 y junior S/2,365, y la brecha de género bajó a 6.77%: el target sube de precio, retener sale más barato que reponer",
-    cat:"RRHH", source:"RPP \u00b7 31/07/2026",
-    url:"https://rpp.pe/economia/economia/sueldo-en-peru-trabajadores-elevan-expectativas-salariales-promedio-supera-los-3400-soles-mensual-noticia-1699645" },
-  { color:"#E6299C", viz:"bars-up", week:true,
-    title:"Talento joven innova solo, no en equipo",
-    fig:"66.35", figsub:"puntos sobre 100 marca el primer Índice de Innovación Ciudadana de la UPC e Ipsos Perú entre 1,000 personas de 18 a 45 años: 88% quiere aprender cosas nuevas y 70% propone mejoras, pero solo 56% participa en proyectos colaborativos; ese gap entre mindset individual y trabajo en equipo se cierra con onboarding, coaching y cultura",
-    cat:"RRHH", source:"RPP \u00b7 12/08/2026",
-    url:"https://rpp.pe/economia/economia/innovacion-en-peru-1-de-cada-3-jovenes-tiene-ideas-para-mejorar-su-comunidad-pero-no-son-implementadas-noticia-1701184" }
+  { color:"#FF953A", viz:"chart-up", week:true,
+    title:"Moody's eleva proyeccion de crecimiento del Peru",
+    fig:"3,5%", figsub:"crecera el PBI peruano en 2026 segun Moody's, que sube su estimado desde 3% por el repunte de la inversion privada y la resiliencia del consumo interno; Renzo Merino, VP de riesgo soberano, dijo que sin El Nino el pais podria superar el 4% anual y proyecta un potencial de 3,5% a 4% en los proximos anios: empresa que crece contrata, y ese es el mejor momento para abrir el pipeline",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 13/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/13/moodys-eleva-proyeccion-de-crecimiento-de-peru-a-35-en-2026-incluso-con-un-incumplimiento-fiscal-mas-pronunciado/" },
+  { color:"#F52055", viz:"calendar", week:true,
+    title:"Feriado del 30 de agosto cae domingo",
+    fig:"Pago triple", figsub:"le corresponde a quien trabaje el domingo 30 por Santa Rosa de Lima sin descanso sustitutorio: el Decreto Legislativo 713 obliga a pagar el feriado, la jornada y una sobretasa del 100%, y Sunafil recibe la denuncia si la empresa no cumple; toca revisar turnos y planilla antes de fin de mes con cada cliente que opera fines de semana",
+    cat:"LEGAL", source:"Infobae \u00b7 13/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/13/que-dia-cae-el-feriado-el-30-de-agosto-y-cuanto-te-deben-pagar-si-trabajas-el-dia-de-santa-rosa-de-lima/" },
+  { color:"#E6299C", viz:"pie", week:true,
+    title:"Empresas peruanas gastan S/150 en alimentacion",
+    fig:"S/ 150", figsub:"destinan al mes por trabajador las empresas en Peru en beneficios alimentarios, sobre todo tarjetas de alimentos, segun ONURA; la norma permite que lleguen al 20% de la remuneracion bruta y la alimentacion pesa 40% del gasto del hogar: es el beneficio no remunerativo con mejor performance para retener talento sin tocar el sueldo base",
+    cat:"RRHH", source:"Infobae \u00b7 10/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/10/que-tanto-te-quiere-tu-jefe-este-es-el-monto-que-las-empresas-en-peru-destinan-para-beneficios-alimentarios/" },
+  { color:"#FF953A", viz:"cart", week:true,
+    title:"Solo 12% de bodegas accede a credito",
+    fig:"440 mil", figsub:"bodegas peruanas no acceden a credito formal porque los bancos las consideran de alto riesgo por las extorsiones, alerta Agremub en el Dia del Bodeguero; las mas de 500 mil bodegas del pais generan unos 870 mil puestos de trabajo y lideran la formalizacion entre las mypes: el canal tradicional sigue siendo un target enorme y sin cubrir",
+    cat:"RETAIL", source:"Infobae \u00b7 12/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/12/mas-de-440-mil-bodegas-no-acceden-a-creditos-bancos-las-consideran-de-alto-riesgo-por-extorsiones/" },
+  { color:"#07F3F4", viz:"shield", week:true,
+    title:"Pagos digitales incluyen a siete millones",
+    fig:"7 millones", figsub:"de peruanos entraron al sistema financiero gracias a la digitalizacion, segun el CEO de Yape en el Inside LatAm de Moody's: 4 millones de micronegocios ya cobran por la app y hay mas de 200 millones de transacciones interoperables al mes, aunque el efectivo aun mueve entre 80% y 90% de la economia; bancarizar al colaborador simplifica planilla y abre el insight de formalizacion",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 13/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/13/peru-supera-los-200-millones-de-transacciones-interoperables-al-mes-pero-el-80-de-los-pagos-aun-son-en-efectivo/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -146,7 +151,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El <b>8.4%</b> de las vacantes publicadas en el Perú durante el primer semestre 2026 fueron del área Comercial y otro 7.9% de Ventas, los dos rubros con más demanda del mercado segun Bumeran: son justo los perfiles que más rotan y más cuesta cubrir, y ahí esta el lead mas caliente del funnel de iPartner",
+  DATO: "Las mas de <b>500 mil</b> bodegas del Peru generan alrededor de 870 mil puestos de trabajo y encabezan la formalizacion entre las mypes, pero solo el 12% llega al credito bancario: es un mercado enorme, formal y desatendido, justo el tipo de lead que el funnel de iPartner puede trabajar con propuesta de planilla y cumplimiento",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
