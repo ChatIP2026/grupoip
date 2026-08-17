@@ -56,33 +56,28 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-08-14 21:40 (Lima) — tarea nocturna",
+  generado: "2026-08-17 21:40 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#FF953A", viz:"chart-up", week:true,
-    title:"Moody's eleva proyeccion de crecimiento del Peru",
-    fig:"3,5%", figsub:"crecera el PBI peruano en 2026 segun Moody's, que sube su estimado desde 3% por el repunte de la inversion privada y la resiliencia del consumo interno; Renzo Merino, VP de riesgo soberano, dijo que sin El Nino el pais podria superar el 4% anual y proyecta un potencial de 3,5% a 4% en los proximos anios: empresa que crece contrata, y ese es el mejor momento para abrir el pipeline",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 13/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/13/moodys-eleva-proyeccion-de-crecimiento-de-peru-a-35-en-2026-incluso-con-un-incumplimiento-fiscal-mas-pronunciado/" },
-  { color:"#F52055", viz:"calendar", week:true,
-    title:"Feriado del 30 de agosto cae domingo",
-    fig:"Pago triple", figsub:"le corresponde a quien trabaje el domingo 30 por Santa Rosa de Lima sin descanso sustitutorio: el Decreto Legislativo 713 obliga a pagar el feriado, la jornada y una sobretasa del 100%, y Sunafil recibe la denuncia si la empresa no cumple; toca revisar turnos y planilla antes de fin de mes con cada cliente que opera fines de semana",
-    cat:"LEGAL", source:"Infobae \u00b7 13/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/13/que-dia-cae-el-feriado-el-30-de-agosto-y-cuanto-te-deben-pagar-si-trabajas-el-dia-de-santa-rosa-de-lima/" },
-  { color:"#E6299C", viz:"pie", week:true,
-    title:"Empresas peruanas gastan S/150 en alimentacion",
-    fig:"S/ 150", figsub:"destinan al mes por trabajador las empresas en Peru en beneficios alimentarios, sobre todo tarjetas de alimentos, segun ONURA; la norma permite que lleguen al 20% de la remuneracion bruta y la alimentacion pesa 40% del gasto del hogar: es el beneficio no remunerativo con mejor performance para retener talento sin tocar el sueldo base",
-    cat:"RRHH", source:"Infobae \u00b7 10/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/10/que-tanto-te-quiere-tu-jefe-este-es-el-monto-que-las-empresas-en-peru-destinan-para-beneficios-alimentarios/" },
-  { color:"#FF953A", viz:"cart", week:true,
-    title:"Solo 12% de bodegas accede a credito",
-    fig:"440 mil", figsub:"bodegas peruanas no acceden a credito formal porque los bancos las consideran de alto riesgo por las extorsiones, alerta Agremub en el Dia del Bodeguero; las mas de 500 mil bodegas del pais generan unos 870 mil puestos de trabajo y lideran la formalizacion entre las mypes: el canal tradicional sigue siendo un target enorme y sin cubrir",
-    cat:"RETAIL", source:"Infobae \u00b7 12/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/12/mas-de-440-mil-bodegas-no-acceden-a-creditos-bancos-las-consideran-de-alto-riesgo-por-extorsiones/" },
-  { color:"#07F3F4", viz:"shield", week:true,
-    title:"Pagos digitales incluyen a siete millones",
-    fig:"7 millones", figsub:"de peruanos entraron al sistema financiero gracias a la digitalizacion, segun el CEO de Yape en el Inside LatAm de Moody's: 4 millones de micronegocios ya cobran por la app y hay mas de 200 millones de transacciones interoperables al mes, aunque el efectivo aun mueve entre 80% y 90% de la economia; bancarizar al colaborador simplifica planilla y abre el insight de formalizacion",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 13/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/13/peru-supera-los-200-millones-de-transacciones-interoperables-al-mes-pero-el-80-de-los-pagos-aun-son-en-efectivo/" }
+  { color:"#F52055", viz:"money", week:true,
+    title:"Sueldo minimo sube en dos tramos",
+    fig:"S/ 1.300", figsub:"sera la nueva remuneracion minima vital: la presidenta Keiko Fujimori confirmo que el alza va en dos tramos, primero S/100 este 2026 y luego S/70 cuando pase el fenomeno El Nino, con un bono del MEF para amortiguar el golpe en las mypes; el Consejo Nacional del Trabajo se convoca este mes: toca sentarse con cada cliente a recalcular planilla, CTS y gratificaciones antes de que salga el decreto",
+    cat:"LEGAL", source:"Infobae \u00b7 17/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/17/keiko-fujimori-confirma-que-sueldo-minimo-subira-en-dos-tramos-la-segunda-etapa-sera-despues-del-fenomeno-el-nino/" },
+  { color:"#E6299C", viz:"doc", week:true,
+    title:"MEF alista combo tributario laboral para formalizar",
+    fig:"Sin recortes", figsub:"de gratificaciones ni de CTS, aclaro el ministro de Economia Elmer Cuba al anunciar el paquete que ira al Congreso para que sea mas facil ser formal en el Peru, sobre todo para el microempresario; el foco esta en el aporte excesivo que pagan los trabajadores de menores ingresos: si formalizar se abarata, el pipeline de planilla y cumplimiento se abre solo",
+    cat:"RRHH", source:"Andina \u00b7 17/08/2026",
+    url:"https://andina.pe/agencia/noticia-mef-alista-combo-tributariolaboral-para-facilitar-formalizacion-1087878.aspx" },
+  { color:"#FF953A", viz:"people", week:true,
+    title:"Mercado laboral empuja el credito de consumo",
+    fig:"12%", figsub:"crece el credito de consumo y cerca de 7% el hipotecario gracias a la reactivacion del mercado laboral, senalo el CEO de BBVA Peru en el Moody's Inside LatAm 2026; las expectativas empresariales a 12 meses estan en su nivel mas alto desde 2017 y los ahorros de personas naturales suben 28%: hay caja y hay mindset de contratar, buen momento para tocar puertas",
+    cat:"ECONOM\u00cdA", source:"Andina \u00b7 17/08/2026",
+    url:"https://andina.pe/agencia/noticia-agentes-economicos-confianza-y-consumo-impulsan-economia-peruana-1087850.aspx" },
+  { color:"#FF953A", viz:"bars-up", week:true,
+    title:"Economia peruana crecio 3,05% en el semestre",
+    fig:"3,05%", figsub:"avanzo el PBI peruano en el primer semestre de 2026 segun el INEI, con junio en 1,75% empujado por Construccion, Comercio y Servicios, mientras Pesca cayo 51,94%; el BCRP recoge expectativas de 3,1% a 3,3% para el ano y el MEF apunta a 4%: los rubros que jalan son los que estan contratando, y ahi debe apuntar el target comercial",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 15/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/15/economia-peruana-crecio-mediocre-305-este-primer-semestre-y-aun-se-viene-el-fenomeno-el-nino-global/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -151,7 +146,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "Las mas de <b>500 mil</b> bodegas del Peru generan alrededor de 870 mil puestos de trabajo y encabezan la formalizacion entre las mypes, pero solo el 12% llega al credito bancario: es un mercado enorme, formal y desatendido, justo el tipo de lead que el funnel de iPartner puede trabajar con propuesta de planilla y cumplimiento",
+  DATO: "El credito de consumo en el Peru crece a <b>12%</b> y los depositos de ahorro de personas naturales suben 28%, con expectativas empresariales a 12 meses en su mejor nivel desde 2017: hay caja en los hogares y apetito de inversion en las empresas, el escenario ideal para abrir un funnel de planilla, seleccion y cumplimiento antes de que llegue el fenomeno El Nino",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
