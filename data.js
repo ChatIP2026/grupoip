@@ -59,23 +59,23 @@ window.NOTICIERO = {
   generado: "2026-08-18 21:40 (Lima) — tarea nocturna",
   NEWS: [
   { color:"#E6299C", viz:"shield", week:true,
-    title:"Sunafil estrena jefatura por tres anos",
-    fig:"3 anos", figsub:"dura el mandato de Evelin Coloma Cieza, designada superintendente de Sunafil por Resolucion Suprema 030-2026-TR en reemplazo de Edgar Vallejos; nueva gestion significa nuevas prioridades de fiscalizacion y planes de inspeccion, asi que toca revisar con cada cliente que su planilla, sus contratos y su SST esten en orden antes de que llegue el inspector: el compliance preventivo cuesta una fraccion de la multa",
+    title:"Sunafil estrena jefatura por tres años",
+    fig:"3 años", figsub:"dura el mandato de Evelin Coloma Cieza, designada superintendente de Sunafil por Resolución Suprema 030-2026-TR en reemplazo de Edgar Vallejos; nueva gestión significa nuevas prioridades de fiscalización y planes de inspección, así que toca revisar con cada cliente que su planilla, sus contratos y su SST estén en orden antes de que llegue el inspector: el compliance preventivo cuesta una fracción de la multa",
     cat:"RRHH", source:"Andina \u00b7 05/08/2026",
     url:"https://andina.pe/agencia/noticia-ministerio-trabajo-designo-a-evelin-coloma-cieza-como-nueva-jefa-sunafil-1086341.aspx" },
   { color:"#FF953A", viz:"chart-up", week:true,
     title:"MEF proyecta crecimiento estable hasta el 2029",
-    fig:"3,2%", figsub:"crecera la economia peruana este 2026 y mantendra ese mismo ritmo promedio entre 2027 y 2029, segun el Informe de Actualizacion de Proyecciones Macroeconomicas del MEF; la inversion minera sube 8% y superara los US$ 6,800 millones con San Gabriel, Reposicion Antamina y Corani en cartera: proyectos de esa escala significan planillas nuevas, y ahi hay pipeline de seleccion y outsourcing",
+    fig:"3,2%", figsub:"crecerá la economía peruana este 2026 y mantendrá ese mismo ritmo promedio entre 2027 y 2029, según el Informe de Actualización de Proyecciones Macroeconómicas del MEF; la inversión minera sube 8% y superará los US$ 6,800 millones con San Gabriel, Reposición Antamina y Corani en cartera: proyectos de esa escala significan planillas nuevas, y ahí hay pipeline de selección y outsourcing",
     cat:"ECONOM\u00cdA", source:"Infobae \u00b7 09/08/2026",
     url:"https://www.infobae.com/peru/2026/08/09/economia-peruana-crecera-32-en-2026-y-mantendra-ritmo-similar-hasta-2029-segun-el-mef/" },
   { color:"#FF953A", viz:"calendar", week:true,
-    title:"Subsidio al diesel corre por tres meses",
-    fig:"S/ 105 M", figsub:"transfiere el Gobierno via Decreto de Urgencia 007-2026 para el transporte terrestre: S/60 millones al META-Nacional (S/4 por galon de diesel B5 o B20) y S/45 millones al META-Lima y Callao por kilometro recorrido, en tres periodos que van del 16 de agosto al 15 de noviembre; el transportista necesita RUC activo, condicion de habido y autorizacion vigente, un target claro para ordenar tramites y planilla",
+    title:"Subsidio al diésel corre por tres meses",
+    fig:"S/ 105 M", figsub:"transfiere el Gobierno vía Decreto de Urgencia 007-2026 para el transporte terrestre: S/60 millones al META-Nacional (S/4 por galón de diésel B5 o B20) y S/45 millones al META-Lima y Callao por kilómetro recorrido, en tres periodos que van del 16 de agosto al 15 de noviembre; el transportista necesita RUC activo, condición de habido y autorización vigente, un target claro para ordenar trámites y planilla",
     cat:"ECONOM\u00cdA", source:"RPP \u00b7 15/08/2026",
     url:"https://rpp.pe/economia/economia/el-gobierno-oficializo-un-subsidio-de-s-105-millones-para-el-transporte-terrestre-ante-el-incremento-en-el-costo-del-combustible-noticia-1701819" },
   { color:"#07F3F4", viz:"globe", week:true,
-    title:"Arancel de EEUU aprieta margenes exportadores peruanos",
-    fig:"12,5%", figsub:"paga el Peru desde el 24 de julio por arandanos, uvas, esparragos, mandarinas y confecciones enviadas a Estados Unidos; el importador lo paga en el papel pero el costo se reparte en toda la cadena y los compradores exigen mejores precios, con contratos que pueden migrar a otros paises: la respuesta no es vender mas barato sino subir la performance, y eso pasa por productividad, tecnologia y gente bien formada",
+    title:"Arancel de EEUU aprieta márgenes exportadores peruanos",
+    fig:"12,5%", figsub:"paga el Perú desde el 24 de julio por arándanos, uvas, espárragos, mandarinas y confecciones enviadas a Estados Unidos; el importador lo paga en el papel pero el costo se reparte en toda la cadena y los compradores exigen mejores precios, con contratos que pueden migrar a otros países: la respuesta no es vender más barato sino subir la performance, y eso pasa por productividad, tecnología y gente bien formada",
     cat:"MUNDO", source:"Infobae \u00b7 17/08/2026",
     url:"https://www.infobae.com/peru/2026/08/18/aranceles-de-estados-unidos-como-puede-el-peru-proteger-la-competitividad-de-sus-exportaciones/" }
 ],
@@ -145,7 +145,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El Estado inyecta <b>S/ 105 millones</b> en tres meses para sostener al transporte terrestre y evitar que el alza del diesel se traslade a fletes y pasajes: caja fresca y reglas nuevas para un rubro que mueve planillas grandes, con requisitos de RUC activo y autorizacion vigente que abren la conversacion de formalizacion, seleccion y cumplimiento",
+  DATO: "El Estado inyecta <b>S/ 105 millones</b> en tres meses para sostener al transporte terrestre y evitar que el alza del diésel se traslade a fletes y pasajes: caja fresca y reglas nuevas para un rubro que mueve planillas grandes, con requisitos de RUC activo y autorización vigente que abren la conversación de formalización, selección y cumplimiento",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
