@@ -31,6 +31,13 @@
    natural. Sin forzar: si el término en español es el que se usa de verdad, se
    deja en español.
 
+   ⚠️ AL EDITAR ESTE ARCHIVO: nunca reemplaces un rango que abarque varios
+   bloques (así se borró ADN por accidente el 07/08 y estuvo perdido 12 días).
+   Edita el fragmento exacto y comprueba al final que IPARTNER conserve sus
+   CINCO bloques: DEDICATORIA, CUMPLES, EXTRA, ADN, EVENTOS.
+   El detalle de este y otros errores ya cometidos está en el README,
+   sección "Errores ya cometidos — NO repetir".
+
    ⚠️ SIN EMOJIS. Ninguna noticia lleva emojis: ni en el titular (`title`), ni
    en `figsub`, ni en `cat`, ni marcas en la esquina de la tarjeta. La tarjeta
    es titular + visual + cifra + fuente, nada más.

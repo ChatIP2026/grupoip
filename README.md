@@ -93,3 +93,55 @@ Registro de las decisiones de diseño y contenido, para no perder el porqué.
 - Fuentes de noticias ampliadas con **Forbes Perú** y **Approlog**.
 - **Estilo spanglish** adoptado como norma de marca (ver Reglas editoriales).
 - Caché: `data.js` se refresca en cada recarga de 30 min.
+
+---
+
+## ⚙️ Estado actual de la configuración (19/08/2026)
+
+Fotografía de cómo está todo hoy. Si algo se comporta distinto a lo que dice aquí, es un bug.
+
+| Qué | Valor |
+|---|---|
+| Rotación de cada noticia | 15 s |
+| Panel de argumentos | avanza al completar una vuelta de noticias (no tiene reloj propio) |
+| Apartados de iPartner | 15 s cada uno |
+| Alternancia entre pestañas | 5 min |
+| Recarga de la pantalla | 30 min (y `data.js` se refresca en cada recarga) |
+| Parpadeo del chip EN VIVO | 3.2 s |
+| Tarea automática | lun-vie 8:40 AM (Lima), publica sola |
+| Biblioteca de iconos | 30 |
+| Cumpleaños cargados | 26 personas (con avatar: Oscar Montes, Romano Alfaro, Alonso Inga) |
+| Extraordinarios vigentes | Julio 2026 |
+| ADN comercial | **apagado** (`hasta:"2026-07-31"` vencido; el bloque existe, solo falta renovar la fecha o el contenido) |
+
+## 🚨 Errores ya cometidos — NO repetir
+
+Cada punto corresponde a un fallo real que costó tiempo. Léelos antes de editar.
+
+**1. Nunca reemplazar rangos de `data.js` que abarquen otros bloques.**
+El 07/08 se actualizó `EXTRA` reemplazando todo el texto entre `EXTRA: {` y `EVENTOS:`, y en medio vivía `ADN`: se borró sin que nadie lo notara durante 12 días. Editar siempre de forma quirúrgica (buscar y reemplazar el fragmento exacto) y, al terminar, comprobar que `IPARTNER` conserva sus **cinco** bloques: `DEDICATORIA`, `CUMPLES`, `EXTRA`, `ADN`, `EVENTOS`. La tarea automática ya valida esto y aborta si falta alguno.
+
+**2. Capas: todo lo que flota sobre la pantalla debe llevar `pointer-events:none`.**
+`.wall` (la pantalla, con sus botones y flechas) está en `z-index:2`. Por encima flotan `.floor` (3), `.platform` (3), `.front-stage` (4) y `.ticker` (7). Sus cajas son rectángulos invisibles mucho más grandes que el dibujo que se ve, y si reciben clics **se los roban al botón "Ver noticia" y a las flechas**. Todos deben tener `pointer-events:none`; solo `.tabarrow` (las flechas de cambio de pestaña) lleva `pointer-events:auto`.
+
+**3. El contenido de la tarjeta no puede desbordarse sobre el botón.**
+Al agrandar la tipografía del subtexto (`.bigfig small`), el bloque de la cifra se desbordó y tapó "Ver noticia": solo respondía una esquina y aparecía el cursor de arrastre. `.visual-row` lleva `overflow:hidden` para impedirlo. Si en el futuro se agranda cualquier texto de la tarjeta, verificar que el botón siga siendo clicable **en toda su superficie**.
+
+**4. Los controles se detectan por coordenadas, no por `e.target`.**
+`controlBajoPuntero()` comprueba si el puntero cae dentro del rectángulo del botón o de las flechas. Así responden en toda su área aunque algo quede pintado encima, y sobre ellos **nunca** se activa el arrastre ni el cursor de "agarrar". No sustituir esta lógica por `e.target.closest()`, que fue justo lo que falló.
+
+**5. Ortografía: la tarea automática tiende a escribir sin tildes.**
+El 18/08 publicó la edición entera sin tildes ni eñes ("anos", "economia", "gestion"). El prompt de la tarea incluye ahora una lista de palabras críticas y una validación que **aborta la publicación** si detecta alguna sin tilde.
+
+**6. Longitud de los textos: es digital signage, no un artículo.**
+La tarea llegó a escribir subtextos de más de 400 caracteres. Límites obligatorios, verificados por código antes de publicar: `title` ≤ 48 caracteres, `fig` ≤ 12, `figsub` ≤ 90, `DATO` ≤ 200.
+
+**7. Recencia: nunca rellenar con noticias viejas.**
+Se llegaron a publicar notas de hasta un mes de antigüedad para completar el cupo. Ahora hay límite duro de **7 días**; si no hay 4 noticias frescas, se publican 3.
+
+**8. "Ejecutar ahora" no cancela la corrida programada.**
+Si se dispara la tarea a mano por la mañana, la corrida automática de las 8:40 igual se ejecutará y **sobrescribirá** la edición manual.
+
+**9. La tarea necesita la app de Claude abierta.**
+Corre sola si la app está abierta a las 8:40. Si estaba cerrada, no siempre se pone al día al abrirla: puede hacer falta "Ejecutar ahora".
+
