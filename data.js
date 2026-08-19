@@ -39,41 +39,56 @@
    noticia, no siempre el mismo. Regla: ningún visual puede repetirse dos días
    seguidos — antes de reescribir este archivo, mira qué "viz" tiene la edición
    anterior y elige otros.
-   Biblioteca disponible en index.html:
-     chart-up  línea que sube (crecimiento, proyecciones)
-     bars-up   barras que crecen (comparativos, series)
-     pie       gráfico circular (porcentajes, participación)
-     money     monedas + S/ (dinero, sueldos, caja)
-     layoff    persona con una X roja (despidos, ceses, rotación)
-     hire      persona con un check (contratación, empleo formal)
-     people    grupo de personas (talento, planilla, equipos)
-     legal     balanza (normas, sentencias, derechos)
-     shield    escudo con check (cumplimiento, prevención, seguridad)
-     doc       documento validado (decretos, requisitos, trámites)
-     alert     triángulo de alerta (multas, riesgos, sanciones)
-     calendar  calendario (plazos, fechas límite, cronogramas)
-     cart      carrito + barras (retail, consumo, ventas)
-     globe     globo terráqueo (MUNDO)
-     clock     reloj (tiempo, jornada, demoras) */
+   Biblioteca disponible en index.html — 30 iconos:
+     chart-up    línea que sube (crecimiento, proyecciones al alza)
+     chart-down  línea que baja (caída, contracción, retroceso)
+     bars-up     barras que crecen (comparativos, series)
+     pie         gráfico circular (porcentajes, participación)
+     target      diana con flecha (metas, objetivos, proyecciones)
+     money       monedas + S/ (dinero, sueldos, caja)
+     piggy       alcancía (ahorro, CTS, AFP, gratificación)
+     bank        edificio con columnas (BCR, banca, tasas, política monetaria)
+     layoff      persona con X roja (despidos, ceses, rotación)
+     hire        persona con check (contratación, empleo formal)
+     people      grupo de personas (talento, planilla, equipos)
+     search      lupa con persona (selección, búsqueda de talento, inspección)
+     training    birrete (capacitación, formación, becas)
+     handshake   apretón de manos (acuerdos, alianzas, negociación, contratos)
+     legal       balanza (normas, derechos)
+     gavel       martillo judicial (sentencias, leyes, facultades, fallos)
+     shield      escudo con check (cumplimiento, prevención, seguridad)
+     doc         documento validado (decretos, requisitos, trámites)
+     alert       triángulo de alerta (multas, riesgos, sanciones, paros)
+     calendar    calendario (plazos, feriados, fechas límite, cronogramas)
+     clock       reloj (tiempo, jornada, demoras)
+     health      corazón con pulso (SST, EsSalud, bienestar, seguridad y salud)
+     building    edificios (empresas, sedes, oficinas)
+     cart        carrito + barras (retail, consumo, ventas)
+     truck       camión (transporte, logística, fletes, paros de transportistas)
+     ship        barco (comercio exterior, puertos, exportaciones, aranceles)
+     mining      cerros con pico (minería, inversión minera)
+     agro        brote (agroexportación, agricultura, campo)
+     ai          chip sonriente (IA, tecnología, automatización, digitalización)
+     globe       globo terráqueo (MUNDO) */
 window.NOTICIERO = {
   generado: "2026-08-19 08:40 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"money", week:true,
+  { color:"#E6299C", viz:"calendar", week:true,
     title:"Feriado del 30 cae domingo: pago triple",
     fig:"+100%", figsub:"de sobretasa si se trabaja el feriado sin descanso sustitutorio",
     cat:"RRHH", source:"Infobae \u00b7 13/08/2026",
     url:"https://www.infobae.com/peru/2026/08/13/que-dia-cae-el-feriado-el-30-de-agosto-y-cuanto-te-deben-pagar-si-trabajas-el-dia-de-santa-rosa-de-lima/" },
-  { color:"#F52055", viz:"doc", week:true,
+  { color:"#F52055", viz:"gavel", week:true,
     title:"Formalizaci\u00f3n entra al pedido de facultades",
     fig:"70%", figsub:"de informalidad laboral apunta a corregir el nuevo r\u00e9gimen que eval\u00faa el MEF",
     cat:"LEGAL", source:"Infobae \u00b7 15/08/2026",
     url:"https://www.infobae.com/peru/2026/08/15/estos-son-los-ejes-del-mef-en-el-pedido-de-facultades-que-presentara-el-gobierno/" },
-  { color:"#FF953A", viz:"bars-up", week:true,
+  { color:"#FF953A", viz:"bank", week:true,
     title:"BCR mantiene su tasa doce meses seguidos",
     fig:"4,25%", figsub:"sigue la tasa de referencia: el cr\u00e9dito empresarial no se abarata todav\u00eda",
     cat:"ECONOM\u00cdA", source:"Infobae \u00b7 14/08/2026",
     url:"https://www.infobae.com/peru/2026/08/14/bcr-deja-tasa-de-referencia-en-425-y-ya-van-12-meses-que-se-mantiene/" },
-  { color:"#FF953A", viz:"alert", week:true,
+  { color:"#FF953A", viz:"truck", week:true,
     title:"Paro total de transportes el 25 de agosto",
     fig:"25/08", figsub:"paran Lima y Callao: planifica desde ya turnos, rutas y asistencia",
     cat:"ECONOM\u00cdA", source:"Infobae \u00b7 18/08/2026",
@@ -133,6 +148,25 @@ window.NOTICIERO = {
       { nombre:"Andres Castillo", equipo:"Reports",  img:"img/extraordinarios/2026-07-2-andres-castillo.jpg" },
       { nombre:"Luis Cabanillas", equipo:"Finance",  img:"img/extraordinarios/2026-07-3-luis-cabanillas.jpg" },
       { nombre:"Hilary Salazar",  equipo:"Business", img:"img/extraordinarios/2026-07-4-hilary-salazar.jpg" }
+    ]
+  },
+
+  /* Nuestro ADN comercial: encendido todo el mes. Al pasar "hasta" desaparece. */
+  ADN: {
+    kicker:"NUESTRO ADN COMERCIAL",
+    hasta:"2026-07-31",
+    foco:"La disciplina es nuestro escudo",
+    mindset:"La motivación da el primer impulso, pero la rutina diaria es la que asegura los cierres: cada “No” es entrenamiento y cada llamada contestada, una oportunidad.",
+    hitos:[
+      { titulo:"El Entrenamiento",
+        desc:"Dedicamos la primera hora del día a simular llamadas, corregirnos entre nosotras y afinar argumentos.",
+        frase:"“Los partidos se ganan en la práctica, no en la cancha.”" },
+      { titulo:"El Ritmo",
+        desc:"El éxito B2B no es suerte, es matemática: cumplir los bloques de gestión blinda el funnel de ventas.",
+        frase:"“La constancia vence al talento, cuando el talento se cansa.”" },
+      { titulo:"La Revisión",
+        desc:"Cada semana la IA analiza nuestras llamadas para ver qué salió bien y qué toca mejorar.",
+        frase:"“Mirar la repetición de la jugada nos hace invencibles.”" }
     ]
   },
 

@@ -770,6 +770,150 @@ const VIZ = {
       </g>
       <rect x="140" y="110" width="20" height="18" rx="4" fill="${c}" class="viz-pulse"/>
     </svg>`,
+  'chart-down': c => `
+    <svg viewBox="0 0 300 170">
+      <g stroke="rgba(255,255,255,.12)" stroke-width="1">
+        <line x1="20" y1="140" x2="290" y2="140"/><line x1="20" y1="95" x2="290" y2="95"/><line x1="20" y1="50" x2="290" y2="50"/>
+      </g>
+      <path d="M25 35 L85 58 L140 48 L200 98 L275 138" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" class="viz-line"/>
+      <circle cx="275" cy="138" r="10" fill="${c}" class="viz-pulse"/>
+      <path d="M258 146 l17 -8 -4 18z" fill="${c}"/>
+    </svg>`,
+  'handshake': c => `
+    <svg viewBox="0 0 300 170">
+      <g fill="none" stroke="${c}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 62 L74 62 L118 92"/>
+        <path d="M282 62 L226 62 L182 92"/>
+        <path d="M118 92 q14 -14 32 -4 q10 6 18 12 q10 8 20 4 q10 -4 12 -16" class="viz-pop" style="transform-origin:150px 96px"/>
+        <path d="M132 112 q16 12 34 6" opacity=".85"/>
+        <path d="M126 130 q14 10 30 4" opacity=".6"/>
+      </g>
+      <g fill="${c}"><rect x="6" y="50" width="26" height="24" rx="6"/><rect x="268" y="50" width="26" height="24" rx="6"/></g>
+    </svg>`,
+  'mining': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M30 140 L96 52 L138 106 L182 44 L270 140 Z" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M96 52 L118 82 L74 82 Z" fill="${c}" opacity=".75"/>
+      <path d="M182 44 L206 78 L158 78 Z" fill="${c}" opacity=".75"/>
+      <g class="viz-pulse" stroke="${c}" stroke-width="6" stroke-linecap="round" fill="none">
+        <path d="M196 118 L246 96"/><path d="M214 92 a26 26 0 0 1 26 44" />
+      </g>
+      <rect x="24" y="140" width="252" height="10" rx="5" fill="${c}"/>
+    </svg>`,
+  'agro': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M150 148 L150 74" stroke="${c}" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M150 96 C110 96 88 74 86 42 C126 42 148 62 150 96 Z" fill="${c}" opacity=".9" class="viz-pop" style="transform-origin:150px 90px"/>
+      <path d="M150 110 C190 110 212 88 214 58 C174 58 152 78 150 110 Z" fill="${c}" opacity=".65" class="viz-pop" style="transform-origin:150px 100px"/>
+      <path d="M96 150 q54 -22 108 0" stroke="${c}" stroke-width="7" stroke-linecap="round" fill="none"/>
+    </svg>`,
+  'ship': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M52 104 L248 104 L214 140 L86 140 Z" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M150 96 L150 30" stroke="${c}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M158 34 L214 62 L158 82 Z" fill="${c}" class="viz-pop" style="transform-origin:158px 58px"/>
+      <g stroke="${c}" stroke-width="5" stroke-linecap="round" class="viz-pulse" fill="none">
+        <path d="M34 156 q22 -12 44 0 t44 0 t44 0 t44 0"/>
+      </g>
+    </svg>`,
+  'truck': c => `
+    <svg viewBox="0 0 300 170">
+      <rect x="26" y="52" width="130" height="70" rx="8" fill="none" stroke="${c}" stroke-width="7"/>
+      <path d="M156 74 L214 74 L246 106 L246 122 L156 122 Z" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round"/>
+      <circle cx="86" cy="134" r="16" fill="none" stroke="${c}" stroke-width="7"/>
+      <circle cx="212" cy="134" r="16" fill="none" stroke="${c}" stroke-width="7"/>
+      <g stroke="${c}" stroke-width="6" stroke-linecap="round" class="viz-pulse" opacity=".7">
+        <line x1="10" y1="68" x2="-14" y2="68"/><line x1="16" y1="92" x2="-8" y2="92"/>
+      </g>
+    </svg>`,
+  'bank': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M150 22 L266 70 L34 70 Z" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round"/>
+      <g fill="${c}">
+        <rect class="viz-bar" x="66"  y="84" width="20" height="46" rx="4"/>
+        <rect class="viz-bar" x="112" y="84" width="20" height="46" rx="4"/>
+        <rect class="viz-bar" x="168" y="84" width="20" height="46" rx="4"/>
+        <rect class="viz-bar" x="214" y="84" width="20" height="46" rx="4"/>
+      </g>
+      <rect x="34" y="138" width="232" height="12" rx="6" fill="${c}"/>
+    </svg>`,
+  'piggy': c => `
+    <svg viewBox="0 0 300 170">
+      <g fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round">
+        <path d="M92 122 a54 46 0 0 1 -14 -34 a54 46 0 0 1 56 -44 h26 a54 46 0 0 1 50 34 l24 8 v26 l-18 4 a54 46 0 0 1 -22 24"/>
+        <path d="M92 122 v20 h20 v-16"/>
+        <path d="M194 138 v14 h20 v-22"/>
+        <path d="M118 46 l-8 -22 l30 12"/>
+      </g>
+      <ellipse cx="228" cy="98" rx="12" ry="15" fill="none" stroke="${c}" stroke-width="6"/>
+      <circle cx="228" cy="98" r="4" fill="${c}"/>
+      <circle cx="150" cy="86" r="7" fill="${c}"/>
+      <rect x="128" y="46" width="40" height="8" rx="4" fill="${c}"/>
+      <circle class="viz-coin" cx="148" cy="26" r="11" fill="${c}"/>
+      <style>.viz-coin{animation:coinDrop 2.2s ease-in infinite}@keyframes coinDrop{0%{transform:translateY(-16px);opacity:0}25%{opacity:1}100%{transform:translateY(22px);opacity:0}}</style>
+    </svg>`,
+  'search': c => `
+    <svg viewBox="0 0 300 170">
+      <circle cx="132" cy="76" r="52" fill="none" stroke="${c}" stroke-width="8" class="viz-pulse"/>
+      <line x1="170" y1="114" x2="228" y2="148" stroke="${c}" stroke-width="12" stroke-linecap="round"/>
+      <g fill="${c}" opacity=".9">
+        <circle cx="132" cy="62" r="15"/><path d="M106 106 a26 24 0 0 1 52 0z"/>
+      </g>
+    </svg>`,
+  'ai': c => `
+    <svg viewBox="0 0 300 170">
+      <rect x="96" y="46" width="108" height="86" rx="16" fill="none" stroke="${c}" stroke-width="7"/>
+      <g stroke="${c}" stroke-width="6" stroke-linecap="round">
+        <line x1="126" y1="46" x2="126" y2="24"/><line x1="150" y1="46" x2="150" y2="18"/><line x1="174" y1="46" x2="174" y2="24"/>
+        <line x1="126" y1="132" x2="126" y2="152"/><line x1="150" y1="132" x2="150" y2="158"/><line x1="174" y1="132" x2="174" y2="152"/>
+        <line x1="96" y1="72" x2="72" y2="72"/><line x1="96" y1="106" x2="72" y2="106"/>
+        <line x1="204" y1="72" x2="228" y2="72"/><line x1="204" y1="106" x2="228" y2="106"/>
+      </g>
+      <g fill="${c}" class="viz-pulse"><circle cx="128" cy="80" r="9"/><circle cx="172" cy="80" r="9"/></g>
+      <path d="M126 108 q24 16 48 0" fill="none" stroke="${c}" stroke-width="6" stroke-linecap="round"/>
+    </svg>`,
+  'training': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M150 34 L268 76 L150 118 L32 76 Z" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M92 96 v30 q58 30 116 0 v-30" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round"/>
+      <line x1="252" y1="82" x2="252" y2="132" stroke="${c}" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="252" cy="140" r="9" fill="${c}" class="viz-pulse"/>
+    </svg>`,
+  'health': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M150 146 C96 112 56 92 56 62 a34 34 0 0 1 64 -16 a34 34 0 0 1 64 16 c0 30 -40 50 -94 84 Z"
+        transform="translate(30,0)" fill="none" stroke="${c}" stroke-width="7" class="viz-pulse"/>
+      <path d="M40 92 h44 l14 -26 l20 52 l16 -34 h50" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" class="viz-line"/>
+    </svg>`,
+  'building': c => `
+    <svg viewBox="0 0 300 170">
+      <rect x="58" y="34" width="86" height="116" rx="6" fill="none" stroke="${c}" stroke-width="7"/>
+      <rect x="156" y="70" width="86" height="80" rx="6" fill="none" stroke="${c}" stroke-width="7"/>
+      <g fill="${c}" opacity=".8">
+        <rect class="viz-bar" x="76" y="52" width="16" height="16" rx="3"/><rect class="viz-bar" x="110" y="52" width="16" height="16" rx="3"/>
+        <rect class="viz-bar" x="76" y="84" width="16" height="16" rx="3"/><rect class="viz-bar" x="110" y="84" width="16" height="16" rx="3"/>
+        <rect class="viz-bar" x="174" y="90" width="16" height="16" rx="3"/><rect class="viz-bar" x="208" y="90" width="16" height="16" rx="3"/>
+        <rect class="viz-bar" x="174" y="118" width="16" height="16" rx="3"/><rect class="viz-bar" x="208" y="118" width="16" height="16" rx="3"/>
+      </g>
+      <rect x="40" y="150" width="220" height="10" rx="5" fill="${c}"/>
+    </svg>`,
+  'target': c => `
+    <svg viewBox="0 0 300 170">
+      <circle cx="140" cy="86" r="58" fill="none" stroke="${c}" stroke-width="7" opacity=".55"/>
+      <circle cx="140" cy="86" r="36" fill="none" stroke="${c}" stroke-width="7" opacity=".8"/>
+      <circle cx="140" cy="86" r="13" fill="${c}" class="viz-pulse"/>
+      <path d="M140 86 L246 34" stroke="${c}" stroke-width="7" stroke-linecap="round" class="viz-line"/>
+      <path d="M246 34 l-26 2 l8 16 z" fill="${c}"/>
+    </svg>`,
+  'gavel': c => `
+    <svg viewBox="0 0 300 170">
+      <g class="viz-gavel" style="transform-origin:118px 60px">
+        <rect x="60" y="34" width="86" height="34" rx="10" transform="rotate(-38 103 51)" fill="none" stroke="${c}" stroke-width="7"/>
+        <line x1="120" y1="66" x2="182" y2="112" stroke="${c}" stroke-width="9" stroke-linecap="round"/>
+      </g>
+      <rect x="130" y="132" width="128" height="14" rx="7" fill="${c}"/>
+      <style>.viz-gavel{animation:gav 2.6s ease-in-out infinite}@keyframes gav{0%,60%,100%{transform:rotate(0)}30%{transform:rotate(-24deg)}45%{transform:rotate(4deg)}}</style>
+    </svg>`,
   'clock': c => `
     <svg viewBox="0 0 300 170">
       <circle cx="150" cy="85" r="62" fill="none" stroke="${c}" stroke-width="7"/>
