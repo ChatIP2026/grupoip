@@ -140,6 +140,7 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
   background:linear-gradient(90deg, var(--cyan), var(--teal)); border:none; cursor:pointer;
   padding:1.5vh 2.2vw; border-radius:99px; letter-spacing:.02em;
   box-shadow:0 0 1.8vw rgba(7,243,244,.55); transition:transform .12s ease; white-space:nowrap;
+  touch-action:manipulation; position:relative; z-index:7;
 }
 .btn-news:active{transform:scale(.94);}
 
@@ -163,6 +164,7 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 
 .chev{
   position:absolute; top:44%; transform:translateY(-50%); z-index:6; cursor:pointer;
+  pointer-events:auto; touch-action:manipulation;
   font-size:3.2vw; color:#cfeaff; opacity:.65; user-select:none;
   text-shadow:0 0 1.5vw rgba(160,220,255,.9); padding:3vh 1.2vw;
 }
@@ -356,7 +358,8 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
   background:radial-gradient(ellipse at 50% 35%, #7a52e0 0%, #4a2f9e 55%, #2c1a6e 100%);
   box-shadow:0 1vh 3vh rgba(0,0,20,.5), inset 0 .6vh 1.5vh rgba(230,215,255,.4);
 }
-.front-stage{position:fixed; left:34vw; transform:translateX(-50%); bottom:5.4vh; z-index:4; display:flex; flex-direction:column; align-items:center;}
+.front-stage{position:fixed; left:34vw; transform:translateX(-50%); bottom:5.4vh; z-index:4; display:flex; flex-direction:column; align-items:center;
+  pointer-events:none;}  /* la caja del robot no debe robar clics a la pantalla */
 .robot-wrap{position:relative; margin-bottom:-2.8vh; z-index:1;}
 .robot{width:7.2vw; display:block; transform-origin:50% 100%; animation:hover 4.5s ease-in-out infinite; filter:drop-shadow(0 1.2vh 2.2vh rgba(0,0,20,.55));}
 @keyframes hover{0%,100%{transform:translateY(0)} 50%{transform:translateY(-1.2vh)}}
@@ -386,7 +389,7 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
   position:absolute; bottom:6.5vh; z-index:6; cursor:pointer;
   background:none; border:none; padding:1.4vh 1vw; line-height:.62;
   font-family:'Sora',sans-serif; font-weight:600; font-size:4.6vw; color:var(--cyan);
-  text-shadow:0 0 1.8vw rgba(7,243,244,.9); opacity:.85;
+  text-shadow:0 0 1.8vw rgba(7,243,244,.9); opacity:.85; pointer-events:auto;
   transition:transform .16s ease, opacity .2s ease;
 }
 .tabarrow:hover{opacity:1;}
@@ -440,7 +443,7 @@ body.no-ip .tabarrow{display:none;}
 .ticker{
   position:fixed; left:0; right:0; bottom:0; height:5vh; display:flex; align-items:center; overflow:hidden; z-index:7;
   background:linear-gradient(90deg, var(--navy), #3a2781 30%, #85207b);
-  border-top:2px solid var(--pink); box-shadow:0 -1vh 3vh rgba(20,10,60,.6);
+  border-top:2px solid var(--pink); box-shadow:0 -1vh 3vh rgba(20,10,60,.6); pointer-events:none;
 }
 .ticker .label{
   flex:0 0 auto; height:100%; display:flex; align-items:center; padding:0 1.6vw; z-index:2;
