@@ -56,28 +56,28 @@
      globe     globo terráqueo (MUNDO)
      clock     reloj (tiempo, jornada, demoras) */
 window.NOTICIERO = {
-  generado: "2026-08-18 21:40 (Lima) — tarea nocturna",
+  generado: "2026-08-19 08:40 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"shield", week:true,
-    title:"Sunafil estrena jefatura por tres años",
-    fig:"3 años", figsub:"dura el mandato de la nueva jefa de Sunafil: cambian las prioridades de fiscalización",
-    cat:"RRHH", source:"Andina \u00b7 05/08/2026",
-    url:"https://andina.pe/agencia/noticia-ministerio-trabajo-designo-a-evelin-coloma-cieza-como-nueva-jefa-sunafil-1086341.aspx" },
-  { color:"#FF953A", viz:"chart-up", week:true,
-    title:"MEF proyecta crecimiento estable hasta el 2029",
-    fig:"3,2%", figsub:"crecerá la economía peruana en 2026 y hasta 2029, según el MEF",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 09/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/09/economia-peruana-crecera-32-en-2026-y-mantendra-ritmo-similar-hasta-2029-segun-el-mef/" },
-  { color:"#FF953A", viz:"calendar", week:true,
-    title:"Subsidio al diésel corre por tres meses",
-    fig:"S/ 105 M", figsub:"transfiere el Gobierno al transporte terrestre hasta el 15 de noviembre",
-    cat:"ECONOM\u00cdA", source:"RPP \u00b7 15/08/2026",
-    url:"https://rpp.pe/economia/economia/el-gobierno-oficializo-un-subsidio-de-s-105-millones-para-el-transporte-terrestre-ante-el-incremento-en-el-costo-del-combustible-noticia-1701819" },
-  { color:"#07F3F4", viz:"globe", week:true,
-    title:"Arancel de EEUU aprieta márgenes exportadores peruanos",
-    fig:"12,5%", figsub:"de arancel paga el Perú por agroexportaciones y confecciones a EEUU",
-    cat:"MUNDO", source:"Infobae \u00b7 17/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/18/aranceles-de-estados-unidos-como-puede-el-peru-proteger-la-competitividad-de-sus-exportaciones/" }
+  { color:"#E6299C", viz:"money", week:true,
+    title:"Feriado del 30 cae domingo: pago triple",
+    fig:"+100%", figsub:"de sobretasa si se trabaja el feriado sin descanso sustitutorio",
+    cat:"RRHH", source:"Infobae \u00b7 13/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/13/que-dia-cae-el-feriado-el-30-de-agosto-y-cuanto-te-deben-pagar-si-trabajas-el-dia-de-santa-rosa-de-lima/" },
+  { color:"#F52055", viz:"doc", week:true,
+    title:"Formalizaci\u00f3n entra al pedido de facultades",
+    fig:"70%", figsub:"de informalidad laboral apunta a corregir el nuevo r\u00e9gimen que eval\u00faa el MEF",
+    cat:"LEGAL", source:"Infobae \u00b7 15/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/15/estos-son-los-ejes-del-mef-en-el-pedido-de-facultades-que-presentara-el-gobierno/" },
+  { color:"#FF953A", viz:"bars-up", week:true,
+    title:"BCR mantiene su tasa doce meses seguidos",
+    fig:"4,25%", figsub:"sigue la tasa de referencia: el cr\u00e9dito empresarial no se abarata todav\u00eda",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 14/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/14/bcr-deja-tasa-de-referencia-en-425-y-ya-van-12-meses-que-se-mantiene/" },
+  { color:"#FF953A", viz:"alert", week:true,
+    title:"Paro total de transportes el 25 de agosto",
+    fig:"25/08", figsub:"paran Lima y Callao: planifica desde ya turnos, rutas y asistencia",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 18/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/18/anuncian-paro-de-transportistas-para-el-martes-25-de-agosto-ante-nula-comunicacion-con-keiko-fujimori/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -145,7 +145,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El Estado inyecta <b>S/ 105 millones</b> en el transporte terrestre por tres meses: caja fresca y nuevos requisitos de formalización en un rubro que mueve planillas grandes",
+  DATO: "Con la tasa del BCR clavada en <b>4,25%</b> doce meses seguidos, el cr\u00e9dito no se abarata solo: el margen sale de la eficiencia en planilla, no del banco",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
