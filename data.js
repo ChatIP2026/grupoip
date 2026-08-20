@@ -78,28 +78,28 @@
      ai          chip sonriente (IA, tecnología, automatización, digitalización)
      globe       globo terráqueo (MUNDO) */
 window.NOTICIERO = {
-  generado: "2026-08-19 08:40 (Lima) — tarea nocturna",
+  generado: "2026-08-20 09:30 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"calendar", week:true,
-    title:"Feriado del 30 cae domingo: pago triple",
-    fig:"+100%", figsub:"de sobretasa si se trabaja el feriado sin descanso sustitutorio",
-    cat:"RRHH", source:"Infobae \u00b7 13/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/13/que-dia-cae-el-feriado-el-30-de-agosto-y-cuanto-te-deben-pagar-si-trabajas-el-dia-de-santa-rosa-de-lima/" },
-  { color:"#F52055", viz:"gavel", week:true,
-    title:"Formalizaci\u00f3n entra al pedido de facultades",
-    fig:"70%", figsub:"de informalidad laboral apunta a corregir el nuevo r\u00e9gimen que eval\u00faa el MEF",
-    cat:"LEGAL", source:"Infobae \u00b7 15/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/15/estos-son-los-ejes-del-mef-en-el-pedido-de-facultades-que-presentara-el-gobierno/" },
-  { color:"#FF953A", viz:"bank", week:true,
-    title:"BCR mantiene su tasa doce meses seguidos",
-    fig:"4,25%", figsub:"sigue la tasa de referencia: el cr\u00e9dito empresarial no se abarata todav\u00eda",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 14/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/14/bcr-deja-tasa-de-referencia-en-425-y-ya-van-12-meses-que-se-mantiene/" },
-  { color:"#FF953A", viz:"truck", week:true,
-    title:"Paro total de transportes el 25 de agosto",
-    fig:"25/08", figsub:"paran Lima y Callao: planifica desde ya turnos, rutas y asistencia",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 18/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/18/anuncian-paro-de-transportistas-para-el-martes-25-de-agosto-ante-nula-comunicacion-con-keiko-fujimori/" }
+  { color:"#E6299C", viz:"search", week:true,
+    title:"La IA entra a la selecci\u00f3n de personal",
+    fig:"77%", figsub:"de empleadores capacitar\u00e1 a su equipo para trabajar con estas herramientas",
+    cat:"RRHH", source:"Infobae \u00b7 19/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/19/reclutamiento-con-inteligencia-artificial-como-la-tecnologia-esta-cambiando-la-seleccion-de-personal/" },
+  { color:"#FF953A", viz:"mining", week:true,
+    title:"Inversi\u00f3n minera crece 42,7% en el semestre",
+    fig:"USD 3.304 M", figsub:"Southern, Shougang y Las Bambas lideran: se abre pipeline de perfiles t\u00e9cnicos",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 19/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/19/inversion-minera-supera-los-usd-3300-millones-y-crece-427-en-el-primer-semestre-de-2026/" },
+  { color:"#FF953A", viz:"target", week:true,
+    title:"MEF apunta a 4%, el mercado ve 3,3%",
+    fig:"3,05%", figsub:"creci\u00f3 la econom\u00eda en el primer semestre: el target oficial luce optimista",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 15/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/15/mef-ve-posible-lograr-pbi-de-4-para-2026-pero-analistas-y-empresas-no-opinan-lo-mismo/" },
+  { color:"#FF953A", viz:"building", week:true,
+    title:"Brecha de vivienda frena la meta del sector",
+    fig:"140,000", figsub:"viviendas al a\u00f1o faltan: construcci\u00f3n formal demandar\u00e1 m\u00e1s planilla",
+    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 20/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/20/meta-de-125-millones-de-viviendas-capeco-pide-ampliar-oferta-de-suelo-servicios-e-infraestructura/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -186,7 +186,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "Con la tasa del BCR clavada en <b>4,25%</b> doce meses seguidos, el cr\u00e9dito no se abarata solo: el margen sale de la eficiencia en planilla, no del banco",
+  DATO: "La inversi\u00f3n minera suma <b>USD 3.304 millones</b> en el semestre y crece 42,7%: cada proyecto que arranca abre planilla t\u00e9cnica que hay que formalizar",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
