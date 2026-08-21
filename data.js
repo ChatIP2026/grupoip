@@ -78,28 +78,28 @@
      ai          chip sonriente (IA, tecnología, automatización, digitalización)
      globe       globo terráqueo (MUNDO) */
 window.NOTICIERO = {
-  generado: "2026-08-20 09:30 (Lima) — tarea nocturna",
+  generado: "2026-08-21 21:30 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"search", week:true,
-    title:"La IA entra a la selecci\u00f3n de personal",
-    fig:"77%", figsub:"de empleadores capacitar\u00e1 a su equipo para trabajar con estas herramientas",
-    cat:"RRHH", source:"Infobae \u00b7 19/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/19/reclutamiento-con-inteligencia-artificial-como-la-tecnologia-esta-cambiando-la-seleccion-de-personal/" },
-  { color:"#FF953A", viz:"mining", week:true,
-    title:"Inversi\u00f3n minera crece 42,7% en el semestre",
-    fig:"USD 3.304 M", figsub:"Southern, Shougang y Las Bambas lideran: se abre pipeline de perfiles t\u00e9cnicos",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 19/08/2026",
+  { color:"#E6299C", viz:"bars-up", week:true,
+    title:"Empleo crece 1,8% entre desigualdades regionales",
+    fig:"315.900", figsub:"ocupados más en Q2: Arequipa lidera avance con 8,9%, Cajamarca cae 4,9%",
+    cat:"RRHH", source:"La República · 18/08/2026",
+    url:"https://larepublica.pe/economia/2026/08/18/empleo-en-peru-crece-18-pero-nueve-ciudades-pierden-trabajadores-cajamarca-lidera-la-caida-hnews-1500480" },
+  { color:"#FF953A", viz:"chart-up", week:true,
+    title:"Minería alcanza USD 3.304 millones en semestre",
+    fig:"42,7%", figsub:"crece inversión impulsada por Southern Perú, Shougang y Las Bambas",
+    cat:"ECONOMÍA", source:"Infobae · 19/08/2026",
     url:"https://www.infobae.com/peru/2026/08/19/inversion-minera-supera-los-usd-3300-millones-y-crece-427-en-el-primer-semestre-de-2026/" },
-  { color:"#FF953A", viz:"target", week:true,
-    title:"MEF apunta a 4%, el mercado ve 3,3%",
-    fig:"3,05%", figsub:"creci\u00f3 la econom\u00eda en el primer semestre: el target oficial luce optimista",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 15/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/15/mef-ve-posible-lograr-pbi-de-4-para-2026-pero-analistas-y-empresas-no-opinan-lo-mismo/" },
-  { color:"#FF953A", viz:"building", week:true,
-    title:"Brecha de vivienda frena la meta del sector",
-    fig:"140,000", figsub:"viviendas al a\u00f1o faltan: construcci\u00f3n formal demandar\u00e1 m\u00e1s planilla",
-    cat:"ECONOM\u00cdA", source:"Infobae \u00b7 20/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/20/meta-de-125-millones-de-viviendas-capeco-pide-ampliar-oferta-de-suelo-servicios-e-infraestructura/" }
+  { color:"#F52055", viz:"alert", week:true,
+    title:"Transportistas paran: 460 empresas por seguridad",
+    fig:"20.000", figsub:"unidades detenidas; ultimátum de 30 días al Ejecutivo para combatir criminalidad",
+    cat:"LEGAL", source:"RPP · 20/08/2026",
+    url:"https://rpp.pe/lima/actualidad/sector-de-transportistas-anuncia-paro-para-este-21-de-agosto-noticia-1651315" },
+  { color:"#FF953A", viz:"money", week:true,
+    title:"Credicorp: utilidad neta sube 8,8%, PBI 3,2%",
+    fig:"8,8%", figsub:"crece ganancia del holding; crecimiento moderado proyectado para fin de año",
+    cat:"ECONOMÍA", source:"Forbes Perú · 17/08/2026",
+    url:"https://forbes.pe/negocios/2026-08-17/credicorp-reporto-que-su-utilidad-neta-crecio-88-en-el-segundo-trimestre/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -186,7 +186,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "La inversi\u00f3n minera suma <b>USD 3.304 millones</b> en el semestre y crece 42,7%: cada proyecto que arranca abre planilla t\u00e9cnica que hay que formalizar",
+  DATO: "El mercado laboral peruano sumó <b>315.900</b> ocupados en Q2 y creció 1,8%, pero la minería sigue siendo motor con inversión de USD 3.304 millones: cada proyecto abre oportunidades de formalización",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
