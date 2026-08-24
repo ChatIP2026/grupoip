@@ -178,11 +178,11 @@ window.NOTICIERO = {
   },
 
   EVENTOS: [
-    { titulo:"Fiestas Patrias 2026",
-      bajada:"Cena Criolla + Tómbola Patriótica",
-      cuando:"5:00 p.m. · Terraza del piso 10",
-      fecha:"2026-07-22",
-      img:"img/eventos/2026-07-fiestas-patrias.jpg" }
+    { titulo:"iPartner Awards 2026",
+      bajada:"Una noche para inspirar, conectar y celebrar",
+      cuando:"Viernes 4 de setiembre · 6 a 11 p.m.",
+      fecha:"2026-09-04",
+      img:"img/eventos/2026-09-ipartner-awards.jpg" }
   ]
 
 },
