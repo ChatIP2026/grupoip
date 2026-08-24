@@ -78,28 +78,28 @@
      ai          chip sonriente (IA, tecnología, automatización, digitalización)
      globe       globo terráqueo (MUNDO) */
 window.NOTICIERO = {
-  generado: "2026-08-21 21:30 (Lima) — tarea nocturna",
+  generado: "2026-08-24 08:40 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"bars-up", week:true,
-    title:"Empleo crece 1,8% entre desigualdades regionales",
-    fig:"315.900", figsub:"ocupados más en Q2: Arequipa lidera avance con 8,9%, Cajamarca cae 4,9%",
-    cat:"RRHH", source:"La República · 18/08/2026",
-    url:"https://larepublica.pe/economia/2026/08/18/empleo-en-peru-crece-18-pero-nueve-ciudades-pierden-trabajadores-cajamarca-lidera-la-caida-hnews-1500480" },
-  { color:"#FF953A", viz:"chart-up", week:true,
-    title:"Minería alcanza USD 3.304 millones en semestre",
-    fig:"42,7%", figsub:"crece inversión impulsada por Southern Perú, Shougang y Las Bambas",
-    cat:"ECONOMÍA", source:"Infobae · 19/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/19/inversion-minera-supera-los-usd-3300-millones-y-crece-427-en-el-primer-semestre-de-2026/" },
-  { color:"#F52055", viz:"alert", week:true,
-    title:"Transportistas paran: 460 empresas por seguridad",
-    fig:"20.000", figsub:"unidades detenidas; ultimátum de 30 días al Ejecutivo para combatir criminalidad",
-    cat:"LEGAL", source:"RPP · 20/08/2026",
-    url:"https://rpp.pe/lima/actualidad/sector-de-transportistas-anuncia-paro-para-este-21-de-agosto-noticia-1651315" },
-  { color:"#FF953A", viz:"money", week:true,
-    title:"Credicorp: utilidad neta sube 8,8%, PBI 3,2%",
-    fig:"8,8%", figsub:"crece ganancia del holding; crecimiento moderado proyectado para fin de año",
-    cat:"ECONOMÍA", source:"Forbes Perú · 17/08/2026",
-    url:"https://forbes.pe/negocios/2026-08-17/credicorp-reporto-que-su-utilidad-neta-crecio-88-en-el-segundo-trimestre/" }
+  { color:"#E6299C", viz:"people", week:true,
+    title:"Job hugging: 78% teme perder su empleo",
+    fig:"78%", figsub:"de los trabajadores en el Perú teme quedarse sin empleo; el 46% se aferra al puesto",
+    cat:"RRHH", source:"Infobae · 23/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/23/el-miedo-a-perder-el-empleo-domina-a-los-trabajadores-de-peru-segun-estudio-regional-8-de-cada-10-teme-quedarse-en-la-calle/" },
+  { color:"#E6299C", viz:"handshake", week:true,
+    title:"Sueldo mínimo a S/ 1.300 entra a debate",
+    fig:"S/ 1.300", figsub:"el MTPE convoca al Consejo Nacional de Trabajo; el alza llegaría en dos tramos",
+    cat:"RRHH", source:"Infobae · 22/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/22/aumento-de-sueldo-minimo-cuando-iniciarian-las-discusiones-en-el-consejo-nacional-de-trabajo/" },
+  { color:"#F52055", viz:"gavel", week:true,
+    title:"Demanda busca gratificación CAS al 100%",
+    fig:"10%", figsub:"es lo que se paga hoy; el MEF tiene 10 días para responder ante el Poder Judicial",
+    cat:"LEGAL", source:"Infobae · 21/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/21/gratificacion-y-cts-para-cas-poder-judicial-admite-demanda-que-busca-eliminar-la-gradualidad-del-pago/" },
+  { color:"#FF953A", viz:"agro", week:true,
+    title:"Fibra de vicuña supera USD 330 por kilo",
+    fig:"USD 334,7", figsub:"precio por kilo en 2025; 1.070 familias altoandinas ya viven de la cadena",
+    cat:"ECONOMÍA", source:"Infobae · 24/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/24/oro-de-los-andes-la-fibra-de-vicuna-rompe-la-barrera-de-usd-330-por-kilo-y-pone-a-peru-al-centro-del-mercado-textil-de-lujo/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -186,7 +186,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El mercado laboral peruano sumó <b>315.900</b> ocupados en Q2 y creció 1,8%, pero la minería sigue siendo motor con inversión de USD 3.304 millones: cada proyecto abre oportunidades de formalización",
+  DATO: "El Perú discute subir el sueldo mínimo a <b>S/ 1.300</b> en dos tramos: cada alza mueve toda la escala de planilla y abre pipeline de formalización para las empresas.",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
