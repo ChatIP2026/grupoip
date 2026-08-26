@@ -917,23 +917,39 @@ const VIZ = {
       <rect x="130" y="132" width="128" height="14" rx="7" fill="${c}"/>
       <style>.viz-gavel{animation:gav 2.6s ease-in-out infinite}@keyframes gav{0%,60%,100%{transform:rotate(0)}30%{transform:rotate(-24deg)}45%{transform:rotate(4deg)}}</style>
     </svg>`,
-  'claude': c => `
+  'claude': c => { const u = 'cl'+Math.random().toString(36).slice(2,8); return `
     <svg viewBox="0 0 300 170">
-      <g stroke="${c}" stroke-width="11" stroke-linecap="round" class="viz-pop" style="transform-origin:150px 86px">
-        <line x1="150" y1="71" x2="150" y2="22"/>
-        <line x1="158" y1="73" x2="175" y2="43"/>
-        <line x1="163" y1="78" x2="205" y2="54"/>
-        <line x1="165" y1="86" x2="200" y2="86"/>
-        <line x1="163" y1="94" x2="205" y2="118"/>
-        <line x1="158" y1="99" x2="175" y2="129"/>
-        <line x1="150" y1="101" x2="150" y2="150"/>
-        <line x1="142" y1="99" x2="125" y2="129"/>
-        <line x1="137" y1="94" x2="95" y2="118"/>
-        <line x1="135" y1="86" x2="100" y2="86"/>
-        <line x1="137" y1="78" x2="95" y2="54"/>
-        <line x1="142" y1="73" x2="125" y2="43"/>
-      </g>
-    </svg>`,
+      <defs>
+        <radialGradient id="g${u}" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="${c}" stop-opacity=".34"/>
+          <stop offset="55%" stop-color="${c}" stop-opacity=".10"/>
+          <stop offset="100%" stop-color="${c}" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="f${u}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#fff" stop-opacity=".28"/>
+          <stop offset="45%" stop-color="#fff" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#000" stop-opacity=".22"/>
+        </linearGradient>
+        <filter id="b${u}" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="3" result="bl"/>
+          <feComponentTransfer in="bl" result="soft"><feFuncA type="linear" slope=".45"/></feComponentTransfer>
+          <feMerge><feMergeNode in="soft"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <circle class="cl-halo" cx="150" cy="86" r="78" fill="url(#g${u})" style="transform-origin:150px 86px"/>
+      <g class="cl-pop" style="transform-origin:150px 86px"><g class="cl-star" style="transform-origin:150px 86px">
+        <path d="M146.5 155.1L143.1 152.6L141.1 148.3L149.7 105.1L148.9 105.2L128.0 133.6L118.1 144.0L115.5 144.9L111.7 143.0L112.0 139.0L136.2 107.4L141.6 101.1L141.6 100.3L105.2 123.8L98.3 124.8L95.4 122.2L95.8 117.8L97.1 116.6L108.1 108.9L135.3 93.7L135.7 92.3L135.3 91.6L88.1 89.8L84.2 89.1L81.1 84.9L81.3 82.8L84.1 81.0L135.8 84.8L136.0 83.9L134.8 82.9L106.5 64.1L94.6 55.5L92.5 52.9L91.7 47.0L95.4 42.9L101.8 43.6L134.0 68.1L135.2 67.8L126.3 51.5L114.5 31.4L112.9 23.7L117.2 17.9L119.6 17.0L125.4 17.9L127.8 19.9L137.2 41.2L148.6 63.6L150.5 69.8L151.4 69.8L151.6 68.0L155.3 27.3L157.6 21.9L161.9 19.1L165.2 20.6L167.9 24.5L166.1 37.5L160.7 65.8L161.9 65.8L178.8 44.6L187.6 35.0L190.8 32.5L196.7 32.5L200.9 38.9L199.1 45.8L180.5 69.8L176.1 77.7L177.6 78.2L194.1 74.6L213.4 71.3L218.3 73.5L218.7 76.0L216.9 80.4L172.3 90.8L181.9 92.0L193.5 92.2L212.0 93.4L216.6 96.5L219.1 99.9L219.1 100.9L218.8 103.0L211.4 106.4L171.7 97.2L171.6 97.6L178.9 104.7L204.0 127.7L204.6 131.2L202.9 133.8L201.1 133.6L188.3 123.9L172.1 110.2L171.5 110.3L171.6 111.3L187.6 135.3L188.2 141.8L187.3 143.5L184.0 144.6L180.1 144.1L171.9 133.0L157.1 109.2L156.5 109.9L152.6 151.4L150.7 153.6Z" fill="${c}" filter="url(#b${u})"/>
+        <path d="M146.5 155.1L143.1 152.6L141.1 148.3L149.7 105.1L148.9 105.2L128.0 133.6L118.1 144.0L115.5 144.9L111.7 143.0L112.0 139.0L136.2 107.4L141.6 101.1L141.6 100.3L105.2 123.8L98.3 124.8L95.4 122.2L95.8 117.8L97.1 116.6L108.1 108.9L135.3 93.7L135.7 92.3L135.3 91.6L88.1 89.8L84.2 89.1L81.1 84.9L81.3 82.8L84.1 81.0L135.8 84.8L136.0 83.9L134.8 82.9L106.5 64.1L94.6 55.5L92.5 52.9L91.7 47.0L95.4 42.9L101.8 43.6L134.0 68.1L135.2 67.8L126.3 51.5L114.5 31.4L112.9 23.7L117.2 17.9L119.6 17.0L125.4 17.9L127.8 19.9L137.2 41.2L148.6 63.6L150.5 69.8L151.4 69.8L151.6 68.0L155.3 27.3L157.6 21.9L161.9 19.1L165.2 20.6L167.9 24.5L166.1 37.5L160.7 65.8L161.9 65.8L178.8 44.6L187.6 35.0L190.8 32.5L196.7 32.5L200.9 38.9L199.1 45.8L180.5 69.8L176.1 77.7L177.6 78.2L194.1 74.6L213.4 71.3L218.3 73.5L218.7 76.0L216.9 80.4L172.3 90.8L181.9 92.0L193.5 92.2L212.0 93.4L216.6 96.5L219.1 99.9L219.1 100.9L218.8 103.0L211.4 106.4L171.7 97.2L171.6 97.6L178.9 104.7L204.0 127.7L204.6 131.2L202.9 133.8L201.1 133.6L188.3 123.9L172.1 110.2L171.5 110.3L171.6 111.3L187.6 135.3L188.2 141.8L187.3 143.5L184.0 144.6L180.1 144.1L171.9 133.0L157.1 109.2L156.5 109.9L152.6 151.4L150.7 153.6Z" fill="url(#f${u})"/>
+      </g></g>
+      <style>
+        .cl-pop{animation:clPop .8s cubic-bezier(.2,1.3,.4,1) both}
+        .cl-star{animation:clSway 9s ease-in-out infinite}
+        .cl-halo{animation:clGlow 3.4s ease-in-out infinite}
+        @keyframes clSway{0%,100%{transform:rotate(-7deg) scale(.985)}50%{transform:rotate(7deg) scale(1.015)}}
+        @keyframes clPop{from{transform:scale(.55);opacity:0}to{transform:scale(1);opacity:1}}
+        @keyframes clGlow{0%,100%{opacity:.55;transform:scale(.94)}50%{opacity:1;transform:scale(1.06)}}
+      </style>
+    </svg>`; },
   'openai': c => `
     <svg viewBox="0 0 300 170">
       <g fill="none" stroke="${c}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" class="viz-spin" style="transform-origin:150px 86px; animation-duration:34s">
