@@ -75,11 +75,26 @@
      ship        barco (comercio exterior, puertos, exportaciones, aranceles)
      mining      cerros con pico (minería, inversión minera)
      agro        brote (agroexportación, agricultura, campo)
-     ai          chip sonriente (IA, tecnología, automatización, digitalización)
-     globe       globo terráqueo (MUNDO) */
+     ai          chip sonriente (IA genérica, tecnología, automatización)
+     globe       globo terráqueo (MUNDO)
+     claude      isotipo de Claude/Anthropic (usar color #D97757)
+     openai      isotipo de ChatGPT/OpenAI (usar color #10A37F)
+     gemini      isotipo de Gemini/Google (usar color #4C8DF6)
+     grok        isotipo de Grok/xAI (usar color #C9D1D9)
+
+   CATEGORIA "IA" (siempre activa): ultimas noticias y rumores de las IA mas
+   importantes. PRIORIDAD: Claude/Anthropic primero; si hay algo de Claude
+   interesante, va antes que otra IA. Luego ChatGPT, Gemini, Grok, etc. El icono
+   debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
+   tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
   generado: "2026-08-26 08:40 (Lima) — tarea nocturna",
   NEWS: [
+  { color:"#D97757", viz:"claude", week:true,
+    title:"Claude marcará sus textos con marca de agua",
+    fig:"Invisible", figsub:"la marca oculta identifica lo escrito por Claude, sin coste ni datos guardados",
+    cat:"IA", source:"Infobae · 17/08/2026",
+    url:"https://www.infobae.com/america/agencias/2026/08/17/anthropic-aclara-las-dudas-sobre-la-marca-de-agua-que-claude-aplicara-a-sus-textos/" },
   { color:"#FF953A", viz:"chart-up", week:true,
     title:"Inversión privada crece 17,6% en el año",
     fig:"17,6%", figsub:"mayor avance desde 2010: minería e infraestructura suman diez trimestres al alza",

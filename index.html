@@ -917,6 +917,45 @@ const VIZ = {
       <rect x="130" y="132" width="128" height="14" rx="7" fill="${c}"/>
       <style>.viz-gavel{animation:gav 2.6s ease-in-out infinite}@keyframes gav{0%,60%,100%{transform:rotate(0)}30%{transform:rotate(-24deg)}45%{transform:rotate(4deg)}}</style>
     </svg>`,
+  'claude': c => `
+    <svg viewBox="0 0 300 170">
+      <g stroke="${c}" stroke-width="11" stroke-linecap="round" class="viz-pop" style="transform-origin:150px 86px">
+        <line x1="150" y1="71" x2="150" y2="22"/>
+        <line x1="158" y1="73" x2="175" y2="43"/>
+        <line x1="163" y1="78" x2="205" y2="54"/>
+        <line x1="165" y1="86" x2="200" y2="86"/>
+        <line x1="163" y1="94" x2="205" y2="118"/>
+        <line x1="158" y1="99" x2="175" y2="129"/>
+        <line x1="150" y1="101" x2="150" y2="150"/>
+        <line x1="142" y1="99" x2="125" y2="129"/>
+        <line x1="137" y1="94" x2="95" y2="118"/>
+        <line x1="135" y1="86" x2="100" y2="86"/>
+        <line x1="137" y1="78" x2="95" y2="54"/>
+        <line x1="142" y1="73" x2="125" y2="43"/>
+      </g>
+    </svg>`,
+  'openai': c => `
+    <svg viewBox="0 0 300 170">
+      <g fill="none" stroke="${c}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" class="viz-spin" style="transform-origin:150px 86px; animation-duration:34s">
+        <path d="M150 40 a30 30 0 0 1 30 52 a30 30 0 0 1 -60 0 a30 30 0 0 1 30 -52z"/>
+        <path d="M99 71 a30 30 0 0 1 60 -6 a30 30 0 0 1 -30 52 a30 30 0 0 1 -30 -46z" transform="rotate(120 150 86)"/>
+        <path d="M99 71 a30 30 0 0 1 60 -6 a30 30 0 0 1 -30 52 a30 30 0 0 1 -30 -46z" transform="rotate(240 150 86)"/>
+      </g>
+      <circle cx="150" cy="86" r="6" fill="${c}"/>
+    </svg>`,
+  'gemini': c => `
+    <svg viewBox="0 0 300 170">
+      <path d="M150 24 C154 62 168 82 226 86 C168 90 154 110 150 148 C146 110 132 90 74 86 C132 82 146 62 150 24 Z"
+        fill="${c}" class="viz-pop" style="transform-origin:150px 86px"/>
+    </svg>`,
+  'grok': c => `
+    <svg viewBox="0 0 300 170">
+      <g fill="${c}">
+        <path d="M108 34 h30 l58 100 h-30 z"/>
+        <path d="M192 34 h30 l-40 68 -15 -26 z"/>
+        <path d="M108 138 h30 l22 -38 -15 -26 z"/>
+      </g>
+    </svg>`,
   'clock': c => `
     <svg viewBox="0 0 300 170">
       <circle cx="150" cy="85" r="62" fill="none" stroke="${c}" stroke-width="7"/>

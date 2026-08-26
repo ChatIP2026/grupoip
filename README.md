@@ -48,7 +48,7 @@ El mensaje motivacional de los lunes sigue pendiente de aprobación, y sin métr
 
 ## 📋 Categorías de noticias
 
-**Activas:** 🇵🇪 PERÚ·ECONOMÍA (con foco en los 17 rubros donde iPartner tiene clientes, incluido RETAIL) · 💼 RRHH (el corazón: SUNAFIL, normas, talento) · ⚖️ LEGAL · 🌎 MUNDO (solo lo que toca al Perú; **si no hay nada verificable, la categoría simplemente no sale ese día** — ya no se publican tarjetas vacías) · 🌟 LIBRE (excepcional: solo hitos mundiales de altísimo impacto, puede pasar semanas sin aparecer y eso es correcto).
+**Activas:** 🇵🇪 PERÚ·ECONOMÍA (con foco en los 17 rubros donde iPartner tiene clientes, incluido RETAIL) · 💼 RRHH (el corazón: SUNAFIL, normas, talento) · ⚖️ LEGAL · 🤖 IA (últimas noticias y rumores de las IA más importantes; **Claude/Anthropic siempre primero**, luego ChatGPT, Gemini, Grok, etc.; siempre activa, mínimo una por edición; el icono es el isotipo de la IA de la nota con su color de marca) · 🌎 MUNDO (solo lo que toca al Perú; **si no hay nada verificable, la categoría simplemente no sale ese día**) · 🌟 LIBRE (excepcional: solo hitos mundiales de altísimo impacto, puede pasar semanas sin aparecer y eso es correcto).
 
 **Pendientes de aprobación (no implementadas):** 🏢 iPARTNER — noticias internas de eventos del equipo (headline emotivo + frase + foto grupal), publicadas al día siguiente del evento, duran 2 días y luego desaparecen por completo (nunca tarjetas vacías); y el mensaje motivacional de los lunes (sin métricas de ventas — eso fue rechazado explícitamente).
 
