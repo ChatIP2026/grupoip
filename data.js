@@ -78,28 +78,28 @@
      ai          chip sonriente (IA, tecnología, automatización, digitalización)
      globe       globo terráqueo (MUNDO) */
 window.NOTICIERO = {
-  generado: "2026-08-24 08:40 (Lima) — tarea nocturna",
+  generado: "2026-08-26 08:40 (Lima) — tarea nocturna",
   NEWS: [
-  { color:"#E6299C", viz:"people", week:true,
-    title:"Job hugging: 78% teme perder su empleo",
-    fig:"78%", figsub:"de los trabajadores en el Perú teme quedarse sin empleo; el 46% se aferra al puesto",
-    cat:"RRHH", source:"Infobae · 23/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/23/el-miedo-a-perder-el-empleo-domina-a-los-trabajadores-de-peru-segun-estudio-regional-8-de-cada-10-teme-quedarse-en-la-calle/" },
-  { color:"#E6299C", viz:"handshake", week:true,
-    title:"Sueldo mínimo a S/ 1.300 entra a debate",
-    fig:"S/ 1.300", figsub:"el MTPE convoca al Consejo Nacional de Trabajo; el alza llegaría en dos tramos",
-    cat:"RRHH", source:"Infobae · 22/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/22/aumento-de-sueldo-minimo-cuando-iniciarian-las-discusiones-en-el-consejo-nacional-de-trabajo/" },
-  { color:"#F52055", viz:"gavel", week:true,
-    title:"Demanda busca gratificación CAS al 100%",
-    fig:"10%", figsub:"es lo que se paga hoy; el MEF tiene 10 días para responder ante el Poder Judicial",
-    cat:"LEGAL", source:"Infobae · 21/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/21/gratificacion-y-cts-para-cas-poder-judicial-admite-demanda-que-busca-eliminar-la-gradualidad-del-pago/" },
-  { color:"#FF953A", viz:"agro", week:true,
-    title:"Fibra de vicuña supera USD 330 por kilo",
-    fig:"USD 334,7", figsub:"precio por kilo en 2025; 1.070 familias altoandinas ya viven de la cadena",
+  { color:"#FF953A", viz:"chart-up", week:true,
+    title:"Inversión privada crece 17,6% en el año",
+    fig:"17,6%", figsub:"mayor avance desde 2010: minería e infraestructura suman diez trimestres al alza",
     cat:"ECONOMÍA", source:"Infobae · 24/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/24/oro-de-los-andes-la-fibra-de-vicuna-rompe-la-barrera-de-usd-330-por-kilo-y-pone-a-peru-al-centro-del-mercado-textil-de-lujo/" }
+    url:"https://www.infobae.com/peru/2026/08/24/imparable-la-fiebre-por-invertir-en-peru-alcanza-su-mayor-nivel-en-16-anos-segun-el-gobierno-gracias-a-estas-dos-razones/" },
+  { color:"#F52055", viz:"alert", week:true,
+    title:"Feriado del 30: pago triple o multa",
+    fig:"S/ 240.000", figsub:"tope de multa de SUNAFIL si no hay sobretasa ni descanso sustitutorio",
+    cat:"LEGAL", source:"Infobae · 26/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/26/feriado-por-santa-rosa-de-lima-este-30-de-agosto-aplica-para-trabajadores-publicos-y-privados/" },
+  { color:"#E6299C", viz:"clock", week:true,
+    title:"Marcaciones mal registradas suben el costo",
+    fig:"3 claves", figsub:"verificar antes de descontar, centralizar incidencias y dejar trazabilidad auditable",
+    cat:"RRHH", source:"Infobae · 25/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/25/olvidaste-marcar-ingreso-tranquilo-si-cumpliste-tu-jornada-la-ley-te-protege-el-sueldo/" },
+  { color:"#FF953A", viz:"bank", week:true,
+    title:"Dólar toca su nivel más bajo en seis años",
+    fig:"S/ 3,3440", figsub:"mínimo desde enero de 2020; el cobre firme respalda al sol y abarata importar",
+    cat:"ECONOMÍA", source:"Infobae · 25/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/25/dolar-cae-a-su-valor-mas-bajo-en-peru-en-mas-de-seis-anos-antes-del-inicio-de-la-pandemia/" }
 ],
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -186,7 +186,7 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El Perú discute subir el sueldo mínimo a <b>S/ 1.300</b> en dos tramos: cada alza mueve toda la escala de planilla y abre pipeline de formalización para las empresas.",
+  DATO: "El empleo formal en planilla subió <b>4,1%</b> entre abril y junio y los ingresos formales 4,3%: más planilla significa más pipeline para servicios de personas.",
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
