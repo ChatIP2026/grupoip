@@ -88,34 +88,35 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-08-26 08:40 (Lima) — tarea nocturna",
+  generado: "2026-08-27 08:50 (Lima) — tarea automática",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Claude marcará sus textos con marca de agua",
-    fig:"Invisible", figsub:"la marca oculta identifica lo escrito por Claude, sin coste ni datos guardados",
-    cat:"IA", source:"Infobae · 17/08/2026",
-    url:"https://www.infobae.com/america/agencias/2026/08/17/anthropic-aclara-las-dudas-sobre-la-marca-de-agua-que-claude-aplicara-a-sus-textos/" },
-  { color:"#FF953A", viz:"chart-up", week:true,
-    title:"Inversión privada crece 17,6% en el año",
-    fig:"17,6%", figsub:"mayor avance desde 2010: minería e infraestructura suman diez trimestres al alza",
-    cat:"ECONOMÍA", source:"Infobae · 24/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/24/imparable-la-fiebre-por-invertir-en-peru-alcanza-su-mayor-nivel-en-16-anos-segun-el-gobierno-gracias-a-estas-dos-razones/" },
-  { color:"#F52055", viz:"alert", week:true,
-    title:"Feriado del 30: pago triple o multa",
-    fig:"S/ 240.000", figsub:"tope de multa de SUNAFIL si no hay sobretasa ni descanso sustitutorio",
-    cat:"LEGAL", source:"Infobae · 26/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/26/feriado-por-santa-rosa-de-lima-este-30-de-agosto-aplica-para-trabajadores-publicos-y-privados/" },
-  { color:"#E6299C", viz:"clock", week:true,
-    title:"Marcaciones mal registradas suben el costo",
-    fig:"3 claves", figsub:"verificar antes de descontar, centralizar incidencias y dejar trazabilidad auditable",
-    cat:"RRHH", source:"Infobae · 25/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/25/olvidaste-marcar-ingreso-tranquilo-si-cumpliste-tu-jornada-la-ley-te-protege-el-sueldo/" },
-  { color:"#FF953A", viz:"bank", week:true,
-    title:"Dólar toca su nivel más bajo en seis años",
-    fig:"S/ 3,3440", figsub:"mínimo desde enero de 2020; el cobre firme respalda al sol y abarata importar",
-    cat:"ECONOMÍA", source:"Infobae · 25/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/25/dolar-cae-a-su-valor-mas-bajo-en-peru-en-mas-de-seis-anos-antes-del-inicio-de-la-pandemia/" }
+    title:"Anthropic va a Wall Street este año",
+    fig:"2 billones", figsub:"de dólares valdría: busca levantar US$ 100.000 M y batir el récord de SpaceX",
+    cat:"IA", source:"Infobae · 26/08/2026",
+    url:"https://www.infobae.com/economia/2026/08/26/anthropic-se-prepara-para-salir-a-cotizar-en-wall-street-este-ano-y-busca-batir-el-record-de-spacex/" },
+  { color:"#E6299C", viz:"money", week:true,
+    title:"Sueldo mínimo sube a S/ 1.300 sin fecha",
+    fig:"S/ 1.300", figsub:"desde S/ 1.130 y en dos tramos; el Consejo Nacional de Trabajo lo debate el 3 de setiembre",
+    cat:"RRHH", source:"RPP · 26/08/2026",
+    url:"https://rpp.pe/economia/economia/sueldo-minimo-en-peru-a-1300-soles-ministro-juan-sheput-asegura-no-tiene-fecha-definida-aun-noticia-1703873" },
+  { color:"#F52055", viz:"doc", week:true,
+    title:"El MEF anuncia el fin del RUS y el RER",
+    fig:"30 años", figsub:"los regímenes de mypes se rediseñan con factura electrónica y data de la SUNAT",
+    cat:"LEGAL", source:"RPP · 26/08/2026",
+    url:"https://rpp.pe/economia/economia/elmer-cuba-anuncia-fin-de-regimenes-tributarios-para-mypes-como-el-rus-y-el-rer-ha-llegado-la-hora-de-cambiarlos-noticia-1703727" },
+  { color:"#FF953A", viz:"truck", week:true,
+    title:"Anillo Vial cierra US$ 190 M para terrenos",
+    fig:"US$ 190 M", figsub:"BBVA, MUFG y Cofide financian los tramos 1, 2 y 3: obra para 4,5 millones",
+    cat:"ECONOMÍA", source:"Andina · 26/08/2026",
+    url:"https://andina.pe/agencia/noticia-proinversion-anillo-vial-asegura-190-millones-para-liberar-terrenos-y-avanzar-obras-1089183.aspx" },
+  { color:"#E6299C", viz:"people", week:true,
+    title:"La mitad de los mayores de 60 sigue activa",
+    fig:"50,5%", figsub:"pero el 77,6% trabaja en informalidad: un target de formalización que nadie mira",
+    cat:"RRHH", source:"RPP · 26/08/2026",
+    url:"https://rpp.pe/economia/economia/dia-del-adulto-mayor-la-mitad-de-peruanos-de-mas-de-60-anos-siguen-trabajando-y-uno-de-cada-cuatro-es-jefe-de-hogar-noticia-1703750" }
 ],
+
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
 
@@ -201,7 +202,8 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El empleo formal en planilla subió <b>4,1%</b> entre abril y junio y los ingresos formales 4,3%: más planilla significa más pipeline para servicios de personas.",
+  DATO: "El 77,6% de los peruanos mayores de 60 que siguen trabajando lo hace en informalidad: <b>1,5 millones</b> de personas fuera de planilla, y fuera de tu pipeline.",
+
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
   SILVER: [
