@@ -203,7 +203,7 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 /* apartado de VIDEO: ocupa toda la pantalla del set, sin marco */
 .ip-slide.vid{top:0; width:100%; height:100%; padding:0; gap:0; border:none;
   border-radius:0; background:#05030f; box-shadow:none;}
-.ip-slide.vid video{width:100%; height:100%; object-fit:cover; display:block; background:#05030f;}
+.ip-slide.vid video,.ip-slide.vid img{width:100%; height:100%; object-fit:cover; display:block; background:#05030f;}
 .ip-slide.vid .vid-kicker{position:absolute; left:2.2vw; bottom:4.5vh; z-index:4;
   font-size:.82vw; letter-spacing:.22em; font-weight:800; color:#fff;
   text-transform:uppercase; padding:.6vh 1vw; border-radius:99px;
@@ -1324,10 +1324,14 @@ function ipSlideHTML(sl){
   }
   if(sl.tipo==='video'){
     const v = sl.v;
+    const esImagen = /\.(png|jpe?g|webp|gif|avif)$/i.test(v.src||'');
+    const medio = esImagen
+      ? `<img src="${v.src}" alt="${esc(v.titulo||'')}">`
+      : `<video src="${v.src}" muted loop playsinline preload="auto"
+                ${v.poster?`poster="${v.poster}"`:''}></video>`;
     return `<div class="ip-slide vid" style="--ip:#07F3F4">
       ${v.kicker!==false ? `<div class="vid-kicker">${esc(v.titulo||'Video del mes')}</div>` : ''}
-      <video src="${v.src}" muted loop playsinline preload="auto"
-             ${v.poster?`poster="${v.poster}"`:''}></video>
+      ${medio}
     </div>`;
   }
   if(sl.tipo==='extra'){
@@ -1381,6 +1385,7 @@ function ipDurMs(){
     const vd = ipStack.querySelectorAll('.ip-slide')[ipIdx].querySelector('video');
     if(vd && vd.duration && isFinite(vd.duration)) return vd.duration*1000 + 400;
     if(s.v.segundos) return s.v.segundos*1000 + 400;
+    return 20000;   /* imagen sin "segundos" declarados */
   }
   return IP_MS;
 }

@@ -203,11 +203,13 @@ window.NOTICIERO = {
   ],
 
   /* ═══ VIDEO DEL MES ═══
-     Aparece como un apartado más de iPartner: a pantalla completa, en bucle y
-     sin sonido. Para cambiarlo, sube el nuevo .mp4 al repositorio (nombre sin
-     espacios ni tildes) y cambia "src". Para sacarlo del aire, deja src:"" y
-     desaparece solo. "segundos" es la duración real, sirve de respaldo. */
-  VIDEO: { src:"Cronograma2x1.mp4", titulo:"Cronograma iPartner", segundos:50 }
+     Aparece como un apartado más de iPartner, a pantalla completa. Acepta una
+     IMAGEN (.png o .jpg) o un VIDEO (.mp4, que va en bucle y sin sonido): se
+     detecta solo por la extensión de "src". Medida ideal: 2160x1080 (2:1).
+     Para cambiarlo, sube el archivo nuevo al repositorio (nombre sin espacios
+     ni tildes) y cambia "src". Para sacarlo del aire, deja src:"" y desaparece
+     solo. "segundos" es cuánto dura en pantalla; en video, su duración manda. */
+  VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
   DATO: "El <b>99,8%</b> de los locales de restaurantes y afines del Perú son mypes: 161.000 establecimientos formales que casi nadie está trabajando como cartera.",
