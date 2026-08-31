@@ -200,6 +200,21 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 
 /* cumpleaños */
 .ip-slide.cum{flex-direction:row; gap:3vw; justify-content:center;}
+/* apartado de VIDEO: ocupa toda la pantalla del set, sin marco */
+.ip-slide.vid{top:0; width:100%; height:100%; padding:0; gap:0; border:none;
+  border-radius:0; background:#05030f; box-shadow:none;}
+.ip-slide.vid video{width:100%; height:100%; object-fit:cover; display:block;}
+.ip-slide.vid .vid-kicker{position:absolute; left:2.2vw; bottom:4.5vh; z-index:4;
+  font-size:.82vw; letter-spacing:.22em; font-weight:800; color:#fff;
+  text-transform:uppercase; padding:.6vh 1vw; border-radius:99px;
+  background:rgba(5,3,15,.55); border:1px solid rgba(255,255,255,.28);
+  backdrop-filter:blur(6px);}
+.ip-slide.vid::after{content:''; position:absolute; inset:0; pointer-events:none;
+  box-shadow:inset 0 0 9vw rgba(5,3,25,.55);}
+@media (max-width:820px){
+  .ip-slide.vid{height:52vh;}
+  .ip-slide.vid .vid-kicker{font-size:3vw;}
+}
 .cum-photo{
   width:19vw; height:19vw; max-width:42vh; max-height:42vh; flex-shrink:0;
   border-radius:50%; overflow:hidden; background:rgba(255,255,255,.06);
@@ -1027,6 +1042,8 @@ if(IPD.ADN && (IPD.ADN.hitos||[]).length){
 /* 4) eventos: hasta el día del evento */
 (IPD.EVENTOS||[]).filter(ev=>{ const f=fechaDia(ev.fecha); return !f || f>=hoyLima(); })
   .forEach(ev=>IP.push({tipo:'evento', ev}));
+/* 5) video institucional: se muestra si existe IPARTNER.VIDEO.src */
+if(IPD.VIDEO && IPD.VIDEO.src) IP.push({tipo:'video', v:IPD.VIDEO});
 const IP_ACTIVE = IP.length>0;
 
 /* ARGUMENTOS DE VENTA — permanentes, los cura el equipo comercial */
@@ -1255,6 +1272,7 @@ function ipTitulo(sl){
                        : (sl.dias===1?'Mañana':'Faltan '+sl.dias+' días') + ' para el cumpleaños de '+sl.p.nombre;
   if(sl.tipo==='extra') return 'Los extraordinarios del mes · ' + (sl.e.periodo||'');
   if(sl.tipo==='adn') return 'Foco del mes: ' + (sl.a.foco||'Nuestro ADN comercial');
+  if(sl.tipo==='video') return sl.v.titulo || 'Video del mes';
   return sl.ev.titulo || 'Evento del mes';
 }
 
@@ -1304,6 +1322,14 @@ function ipSlideHTML(sl){
       </div>
     </div>`;
   }
+  if(sl.tipo==='video'){
+    const v = sl.v;
+    return `<div class="ip-slide vid" style="--ip:#07F3F4">
+      ${v.kicker!==false ? `<div class="vid-kicker">${esc(v.titulo||'Video del mes')}</div>` : ''}
+      <video src="${v.src}" muted loop playsinline preload="auto"
+             ${v.poster?`poster="${v.poster}"`:''}></video>
+    </div>`;
+  }
   if(sl.tipo==='extra'){
     const e = sl.e;
     return `<div class="ip-slide" style="--ip:#FF953A">
@@ -1334,8 +1360,13 @@ function ipRender(){
   const n = IP.length;
   ipStack.querySelectorAll('.ip-slide').forEach((c,k)=>{
     const pos = (k-ipIdx+n)%n;
-    c.className = 'ip-slide' + (sl_cum(k)?' cum':'') +
+    c.className = 'ip-slide' + (sl_cum(k)?' cum':'') + (sl_vid(k)?' vid':'') +
       (pos===0 ? ' on' : pos===1 ? ' next' : pos===n-1 ? ' prev' : '');
+  });
+  ipStack.querySelectorAll('.ip-slide.vid video').forEach(vd=>{
+    if(vd.closest('.ip-slide').classList.contains('on')){
+      try{ vd.currentTime = 0; const pr = vd.play(); if(pr && pr.catch) pr.catch(()=>{}); }catch(e){}
+    } else { try{ vd.pause(); }catch(e){} }
   });
   ipDots.innerHTML = IP.length>1 ? IP.map((_,k)=>`<i class="${k===ipIdx?'on':''}"></i>`).join('') : '';
   const v = IP.length>1 ? '' : 'none';
@@ -1343,9 +1374,20 @@ function ipRender(){
   document.getElementById('ipChevR').style.display = v;
   document.getElementById('ipProgWrap').style.display = v;
 }
+/* el video dura lo suyo; el resto de apartados, 15 s */
+function ipDurMs(){
+  const s = IP[ipIdx];
+  if(s && s.tipo==='video'){
+    const vd = ipStack.querySelectorAll('.ip-slide')[ipIdx].querySelector('video');
+    if(vd && vd.duration && isFinite(vd.duration)) return vd.duration*1000 + 400;
+    if(s.v.segundos) return s.v.segundos*1000 + 400;
+  }
+  return IP_MS;
+}
 function ipNext(){ if(IP.length<2) return; ipIdx=(ipIdx+1)%IP.length; ipT0=Date.now(); ipRender(); }
 function ipPrev(){ if(IP.length<2) return; ipIdx=(ipIdx-1+IP.length)%IP.length; ipT0=Date.now(); ipRender(); }
 function sl_cum(k){ return IP[k] && IP[k].tipo==='cumple'; }
+function sl_vid(k){ return IP[k] && IP[k].tipo==='video'; }
 let ipT0 = Date.now();
 ipRender();
 
@@ -1371,6 +1413,7 @@ function setTab(i, dir){
   sale.classList.remove('on');
   entra.classList.add('on');
   if(tab===1){ ipIdx=0; ipT0=Date.now(); ipRender(); }
+  else ipStack.querySelectorAll('video').forEach(vd=>{ try{ vd.pause(); }catch(e){} });
   renderTicker();
 }
 function switchTab(dir){
@@ -1459,8 +1502,9 @@ function loop(){
   if(dragging){ ipT0 = Date.now(); tabT0 = Date.now(); }
   /* los apartados de iPartner rotan cada 15 s, con su propia barra */
   if(tab===1 && IP.length>1){
-    ipProgEl.style.width = Math.min(100, (Date.now()-ipT0)/IP_MS*100)+'%';
-    if(Date.now()-ipT0 >= IP_MS) ipNext();
+    const dur = ipDurMs();
+    ipProgEl.style.width = Math.min(100, (Date.now()-ipT0)/dur*100)+'%';
+    if(Date.now()-ipT0 >= dur) ipNext();
   }
   /* la pantalla alterna sola: 5 minutos en cada pestaña */
   if(IP_ACTIVE && !switching && Date.now()-tabT0 >= TAB_MS) switchTab(1);

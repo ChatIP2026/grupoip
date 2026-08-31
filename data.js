@@ -34,7 +34,7 @@
    ⚠️ AL EDITAR ESTE ARCHIVO: nunca reemplaces un rango que abarque varios
    bloques (así se borró ADN por accidente el 07/08 y estuvo perdido 12 días).
    Edita el fragmento exacto y comprueba al final que IPARTNER conserve sus
-   CINCO bloques: DEDICATORIA, CUMPLES, EXTRA, ADN, EVENTOS.
+   SEIS bloques: DEDICATORIA, CUMPLES, EXTRA, ADN, EVENTOS y VIDEO.
    El detalle de este y otros errores ya cometidos está en el README,
    sección "Errores ya cometidos — NO repetir".
 
@@ -200,7 +200,14 @@ window.NOTICIERO = {
       cuando:"Viernes 4 de setiembre · 6 a 11 p.m.",
       fecha:"2026-09-04",
       img:"img/eventos/2026-09-ipartner-awards.jpg" }
-  ]
+  ],
+
+  /* ═══ VIDEO DEL MES ═══
+     Aparece como un apartado más de iPartner: a pantalla completa, en bucle y
+     sin sonido. Para cambiarlo, sube el nuevo .mp4 al repositorio (nombre sin
+     espacios ni tildes) y cambia "src". Para sacarlo del aire, deja src:"" y
+     desaparece solo. "segundos" es la duración real, sirve de respaldo. */
+  VIDEO: { src:"Cronograma.mp4", titulo:"Cronograma iPartner", segundos:50 }
 
 },
   DATO: "El <b>99,8%</b> de los locales de restaurantes y afines del Perú son mypes: 161.000 establecimientos formales que casi nadie está trabajando como cartera.",
