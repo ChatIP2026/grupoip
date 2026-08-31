@@ -88,34 +88,35 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-08-27 08:50 (Lima) — tarea automática",
+  generado: "2026-08-31 11:30 (Lima) — edición manual",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Anthropic va a Wall Street este año",
-    fig:"2 billones", figsub:"de dólares valdría: busca levantar US$ 100.000 M y batir el récord de SpaceX",
-    cat:"IA", source:"Infobae · 26/08/2026",
-    url:"https://www.infobae.com/economia/2026/08/26/anthropic-se-prepara-para-salir-a-cotizar-en-wall-street-este-ano-y-busca-batir-el-record-de-spacex/" },
-  { color:"#E6299C", viz:"money", week:true,
-    title:"Sueldo mínimo sube a S/ 1.300 sin fecha",
-    fig:"S/ 1.300", figsub:"desde S/ 1.130 y en dos tramos; el Consejo Nacional de Trabajo lo debate el 3 de setiembre",
-    cat:"RRHH", source:"RPP · 26/08/2026",
-    url:"https://rpp.pe/economia/economia/sueldo-minimo-en-peru-a-1300-soles-ministro-juan-sheput-asegura-no-tiene-fecha-definida-aun-noticia-1703873" },
-  { color:"#F52055", viz:"doc", week:true,
-    title:"El MEF anuncia el fin del RUS y el RER",
-    fig:"30 años", figsub:"los regímenes de mypes se rediseñan con factura electrónica y data de la SUNAT",
-    cat:"LEGAL", source:"RPP · 26/08/2026",
-    url:"https://rpp.pe/economia/economia/elmer-cuba-anuncia-fin-de-regimenes-tributarios-para-mypes-como-el-rus-y-el-rer-ha-llegado-la-hora-de-cambiarlos-noticia-1703727" },
-  { color:"#FF953A", viz:"truck", week:true,
-    title:"Anillo Vial cierra US$ 190 M para terrenos",
-    fig:"US$ 190 M", figsub:"BBVA, MUFG y Cofide financian los tramos 1, 2 y 3: obra para 4,5 millones",
-    cat:"ECONOMÍA", source:"Andina · 26/08/2026",
-    url:"https://andina.pe/agencia/noticia-proinversion-anillo-vial-asegura-190-millones-para-liberar-terrenos-y-avanzar-obras-1089183.aspx" },
-  { color:"#E6299C", viz:"people", week:true,
-    title:"La mitad de los mayores de 60 sigue activa",
-    fig:"50,5%", figsub:"pero el 77,6% trabaja en informalidad: un target de formalización que nadie mira",
-    cat:"RRHH", source:"RPP · 26/08/2026",
-    url:"https://rpp.pe/economia/economia/dia-del-adulto-mayor-la-mitad-de-peruanos-de-mas-de-60-anos-siguen-trabajando-y-uno-de-cada-cuatro-es-jefe-de-hogar-noticia-1703750" }
+    title:"Claude vuelve al Gobierno de Estados Unidos",
+    fig:"Ilegal", figsub:"así declaró la jueza las sanciones de Trump: Claude regresa a las agencias federales",
+    cat:"IA", source:"Infobae · 28/08/2026",
+    url:"https://www.infobae.com/tecno/2026/08/28/anthropic-gana-batalla-legal-y-claude-podra-volver-a-utilizarse-en-las-agencias-del-gobierno-de-ee-uu/" },
+  { color:"#E6299C", viz:"hire", week:true,
+    title:"La cerveza sostiene un millón de empleos",
+    fig:"1 millón", figsub:"161.000 locales formales, el 5,6% de la PEA: un target de planilla enorme y disperso",
+    cat:"RRHH", source:"Andina · 31/08/2026",
+    url:"https://andina.pe/agencia/noticia-sni-industria-cervecera-genera-mas-un-millon-puestos-trabajo-el-peru-1089764.aspx" },
+  { color:"#FF953A", viz:"building", week:true,
+    title:"El crédito hipotecario acelera y crece 7,6%",
+    fig:"7,6%", figsub:"sube desde 7,4% en junio y el 94,4% de los nuevos créditos se pide en soles",
+    cat:"ECONOMÍA", source:"Andina · 31/08/2026",
+    url:"https://andina.pe/agencia/noticia-bcr-credito-hipotecario-se-acelera-el-peru-y-crece-76-anual-julio-del-2026-1089821.aspx" },
+  { color:"#FF953A", viz:"chart-up", week:true,
+    title:"La CCL sube a 3,2% su proyección para 2026",
+    fig:"3,2%", figsub:"construcción crece 11,2% y la inversión privada 11,7%: ahí está el pipeline del año",
+    cat:"ECONOMÍA", source:"Andina · 30/08/2026",
+    url:"https://andina.pe/agencia/noticia-camara-comercio-lima-eleva-a-32-su-proyeccion-crecimiento-del-peru-para-2026-1089728.aspx" },
+  { color:"#F52055", viz:"ship", week:true,
+    title:"Fijan la cuota de jurel y caballa a diciembre",
+    fig:"102.103 t", figsub:"la RM 302-2026-PRODUCE abre la extracción el 1 de setiembre y ordena la campaña",
+    cat:"LEGAL", source:"Andina · 30/08/2026",
+    url:"https://andina.pe/agencia/noticia-establecen-limite-pesca-del-jurel-y-caballa-para-periodo-setiembrediciembre-2026-1089725.aspx" }
 ],
+
 
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
   IPARTNER: {
@@ -202,7 +203,8 @@ window.NOTICIERO = {
   ]
 
 },
-  DATO: "El 77,6% de los peruanos mayores de 60 que siguen trabajando lo hace en informalidad: <b>1,5 millones</b> de personas fuera de planilla, y fuera de tu pipeline.",
+  DATO: "El <b>99,8%</b> de los locales de restaurantes y afines del Perú son mypes: 161.000 establecimientos formales que casi nadie está trabajando como cartera.",
+
 
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
      Curados por el equipo comercial · última curaduría: 21/07/2026 */
