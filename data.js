@@ -207,7 +207,7 @@ window.NOTICIERO = {
      sin sonido. Para cambiarlo, sube el nuevo .mp4 al repositorio (nombre sin
      espacios ni tildes) y cambia "src". Para sacarlo del aire, deja src:"" y
      desaparece solo. "segundos" es la duración real, sirve de respaldo. */
-  VIDEO: { src:"Cronograma.mp4", titulo:"Cronograma iPartner", segundos:50 }
+  VIDEO: { src:"Cronograma2x1.mp4", titulo:"Cronograma iPartner", segundos:50 }
 
 },
   DATO: "El <b>99,8%</b> de los locales de restaurantes y afines del Perú son mypes: 161.000 establecimientos formales que casi nadie está trabajando como cartera.",
