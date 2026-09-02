@@ -88,33 +88,33 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-08-31 11:30 (Lima) — edición manual",
+  generado: "2026-09-02 08:40 (Lima) — tarea automática",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Claude vuelve al Gobierno de Estados Unidos",
-    fig:"Ilegal", figsub:"así declaró la jueza las sanciones de Trump: Claude regresa a las agencias federales",
-    cat:"IA", source:"Infobae · 28/08/2026",
-    url:"https://www.infobae.com/tecno/2026/08/28/anthropic-gana-batalla-legal-y-claude-podra-volver-a-utilizarse-en-las-agencias-del-gobierno-de-ee-uu/" },
-  { color:"#E6299C", viz:"hire", week:true,
-    title:"La cerveza sostiene un millón de empleos",
-    fig:"1 millón", figsub:"161.000 locales formales, el 5,6% de la PEA: un target de planilla enorme y disperso",
-    cat:"RRHH", source:"Andina · 31/08/2026",
-    url:"https://andina.pe/agencia/noticia-sni-industria-cervecera-genera-mas-un-millon-puestos-trabajo-el-peru-1089764.aspx" },
-  { color:"#FF953A", viz:"building", week:true,
-    title:"El crédito hipotecario acelera y crece 7,6%",
-    fig:"7,6%", figsub:"sube desde 7,4% en junio y el 94,4% de los nuevos créditos se pide en soles",
-    cat:"ECONOMÍA", source:"Andina · 31/08/2026",
-    url:"https://andina.pe/agencia/noticia-bcr-credito-hipotecario-se-acelera-el-peru-y-crece-76-anual-julio-del-2026-1089821.aspx" },
-  { color:"#FF953A", viz:"chart-up", week:true,
-    title:"La CCL sube a 3,2% su proyección para 2026",
-    fig:"3,2%", figsub:"construcción crece 11,2% y la inversión privada 11,7%: ahí está el pipeline del año",
-    cat:"ECONOMÍA", source:"Andina · 30/08/2026",
-    url:"https://andina.pe/agencia/noticia-camara-comercio-lima-eleva-a-32-su-proyeccion-crecimiento-del-peru-para-2026-1089728.aspx" },
-  { color:"#F52055", viz:"ship", week:true,
-    title:"Fijan la cuota de jurel y caballa a diciembre",
-    fig:"102.103 t", figsub:"la RM 302-2026-PRODUCE abre la extracción el 1 de setiembre y ordena la campaña",
-    cat:"LEGAL", source:"Andina · 30/08/2026",
-    url:"https://andina.pe/agencia/noticia-establecen-limite-pesca-del-jurel-y-caballa-para-periodo-setiembrediciembre-2026-1089725.aspx" }
+    title:"Sony y Warner demandan a Anthropic",
+    fig:"US$ 150,000", figsub:"lo que reclaman por obra: acusan el uso de miles de canciones para entrenar a Claude",
+    cat:"IA", source:"Infobae · 01/09/2026",
+    url:"https://www.infobae.com/tecno/2026/09/01/anthropic-es-demandado-por-sony-music-y-warner-chappell-por-el-uso-de-su-catalogo-en-inteligencia-artificial/" },
+  { color:"#E6299C", viz:"training", week:true,
+    title:"El 39% de las habilidades caduca al 2030",
+    fig:"39%", figsub:"el 47% de los capacitados subió de rango salarial: el reskilling ya es un insight de venta",
+    cat:"RRHH", source:"Andina · 01/09/2026",
+    url:"https://andina.pe/agencia/noticia-capacitacion-digital-impulsa-mejores-oportunidades-laborales-para-los-trabajadores-1090049.aspx" },
+  { color:"#FF953A", viz:"cart", week:true,
+    title:"El retail rumbo a S/ 56,000 millones",
+    fig:"+12%", figsub:"así creció la venta minorista en el primer semestre; supermercados lideran el año",
+    cat:"RETAIL", source:"Andina · 31/08/2026",
+    url:"https://andina.pe/agencia/noticia-las-ventas-minoristas-peru-superarian-los-s-56000-millones-durante-2026-1089917.aspx" },
+  { color:"#FF953A", viz:"people", week:true,
+    title:"Exportar sostiene 1 de cada 3 empleos",
+    fig:"1,51 M", figsub:"33,1% del empleo privado formal: agro, minería y agroindustria concentran el 84,8%",
+    cat:"ECONOMÍA", source:"Infobae · 01/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/01/exportaciones-ya-estan-detras-de-1-de-cada-3-empleos-privados-formales-en-peru/" },
+  { color:"#F52055", viz:"gavel", week:true,
+    title:"Nueva escala del Poder Judicial ya rige",
+    fig:"S/ 15,600", figsub:"la escala va de S/ 4,100 a S/ 15,600 y se aplica desde el 1 de setiembre",
+    cat:"LEGAL", source:"Andina · 31/08/2026",
+    url:"https://andina.pe/agencia/noticia-poder-judicial-nueva-escala-remunerativa-para-trabajadores-rige-desde-1-setiembre-1089794.aspx" }
 ],
 
 
@@ -212,7 +212,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "El <b>99,8%</b> de los locales de restaurantes y afines del Perú son mypes: 161.000 establecimientos formales que casi nadie está trabajando como cartera.",
+  DATO: "Las ventas minoristas crecieron <b>12%</b> en el primer semestre y cerrarían el 2026 sobre S/ 56,000 millones: hay caja fresca en el retail para abrir pipeline.",
 
 
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
