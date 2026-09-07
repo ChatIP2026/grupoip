@@ -167,6 +167,8 @@ window.NOTICIERO = {
 
   EXTRA: {
     periodo:"Agosto 2026",
+    /* fondo del escenario animado — lienzo 1920x951 */
+    fondo:"img/extraordinarios/2026-08-escena.jpg",
     cards:[
       { nombre:"Luis Cabanillas", equipo:"Processes/IT", img:"img/extraordinarios/2026-08-1-luis-cabanillas.jpg" },
       { nombre:"Lender Sayago",   equipo:"Finance",      img:"img/extraordinarios/2026-08-2-lender-sayago.jpg" },
