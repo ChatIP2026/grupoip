@@ -166,12 +166,13 @@ window.NOTICIERO = {
   ],
 
   EXTRA: {
-    periodo:"Julio 2026",
+    periodo:"Agosto 2026",
     cards:[
-      { nombre:"Alonso Inga",     equipo:"Renewals", img:"img/extraordinarios/2026-07-1-alonso-inga.jpg" },
-      { nombre:"Andres Castillo", equipo:"Reports",  img:"img/extraordinarios/2026-07-2-andres-castillo.jpg" },
-      { nombre:"Luis Cabanillas", equipo:"Finance",  img:"img/extraordinarios/2026-07-3-luis-cabanillas.jpg" },
-      { nombre:"Hilary Salazar",  equipo:"Business", img:"img/extraordinarios/2026-07-4-hilary-salazar.jpg" }
+      { nombre:"Luis Cabanillas", equipo:"Processes/IT", img:"img/extraordinarios/2026-08-1-luis-cabanillas.jpg" },
+      { nombre:"Lender Sayago",   equipo:"Finance",      img:"img/extraordinarios/2026-08-2-lender-sayago.jpg" },
+      { nombre:"José Salazar",    equipo:"Renewals",     img:"img/extraordinarios/2026-08-3-jose-salazar.jpg" },
+      { nombre:"Jorge Gomez",     equipo:"IT",           img:"img/extraordinarios/2026-08-4-jorge-gomez.jpg" },
+      { nombre:"Sofía Salcedo",   equipo:"Sales",        img:"img/extraordinarios/2026-08-5-sofia-salcedo.jpg" }
     ]
   },
 
