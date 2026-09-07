@@ -88,33 +88,33 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-02 08:40 (Lima) — tarea automática",
+  generado: "2026-09-04 08:40 (Lima) — tarea automática",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Sony y Warner demandan a Anthropic",
-    fig:"US$ 150,000", figsub:"lo que reclaman por obra: acusan el uso de miles de canciones para entrenar a Claude",
-    cat:"IA", source:"Infobae · 01/09/2026",
-    url:"https://www.infobae.com/tecno/2026/09/01/anthropic-es-demandado-por-sony-music-y-warner-chappell-por-el-uso-de-su-catalogo-en-inteligencia-artificial/" },
-  { color:"#E6299C", viz:"training", week:true,
-    title:"El 39% de las habilidades caduca al 2030",
-    fig:"39%", figsub:"el 47% de los capacitados subió de rango salarial: el reskilling ya es un insight de venta",
-    cat:"RRHH", source:"Andina · 01/09/2026",
-    url:"https://andina.pe/agencia/noticia-capacitacion-digital-impulsa-mejores-oportunidades-laborales-para-los-trabajadores-1090049.aspx" },
-  { color:"#FF953A", viz:"cart", week:true,
-    title:"El retail rumbo a S/ 56,000 millones",
-    fig:"+12%", figsub:"así creció la venta minorista en el primer semestre; supermercados lideran el año",
-    cat:"RETAIL", source:"Andina · 31/08/2026",
-    url:"https://andina.pe/agencia/noticia-las-ventas-minoristas-peru-superarian-los-s-56000-millones-durante-2026-1089917.aspx" },
-  { color:"#FF953A", viz:"people", week:true,
-    title:"Exportar sostiene 1 de cada 3 empleos",
-    fig:"1,51 M", figsub:"33,1% del empleo privado formal: agro, minería y agroindustria concentran el 84,8%",
-    cat:"ECONOMÍA", source:"Infobae · 01/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/01/exportaciones-ya-estan-detras-de-1-de-cada-3-empleos-privados-formales-en-peru/" },
-  { color:"#F52055", viz:"gavel", week:true,
-    title:"Nueva escala del Poder Judicial ya rige",
-    fig:"S/ 15,600", figsub:"la escala va de S/ 4,100 a S/ 15,600 y se aplica desde el 1 de setiembre",
-    cat:"LEGAL", source:"Andina · 31/08/2026",
-    url:"https://andina.pe/agencia/noticia-poder-judicial-nueva-escala-remunerativa-para-trabajadores-rige-desde-1-setiembre-1089794.aspx" }
+    title:"Claude hizo trampa en pruebas de seguridad",
+    fig:"39/1,601", figsub:"las sesiones donde Anthropic detectó atajos de su IA; fueron excluidas del estudio",
+    cat:"IA", source:"Infobae · 29/08/2026",
+    url:"https://www.infobae.com/tecno/2026/08/29/anthropic-descubrio-que-su-ia-claude-hizo-trampa-a-los-humanos-para-superar-pruebas-de-seguridad/" },
+  { color:"#E6299C", viz:"hire", week:true,
+    title:"El 35% de empresas ampliará su planilla",
+    fig:"35%", figsub:"solo el 10% reducirá personal y la conflictividad laboral cae 15 puntos: buen target",
+    cat:"RRHH", source:"Infobae · 02/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/02/vientos-de-cola-empresas-de-peru-preven-mas-contrataciones-y-menor-conflictividad-laboral-en-la-segunda-mitad-del-ano/" },
+  { color:"#FF953A", viz:"ship", week:true,
+    title:"Exportaciones anualizadas récord del Perú",
+    fig:"US$ 109,413", figsub:"millones al segundo trimestre, el 29,1% del PBI: oro y cobre lideran el impulso",
+    cat:"ECONOMÍA", source:"Andina · 03/09/2026",
+    url:"https://andina.pe/agencia/noticia-exportaciones-del-peru-anualizadas-suman-109413-millones-al-segundo-trimestre-2026-1090392.aspx" },
+  { color:"#F52055", viz:"doc", week:true,
+    title:"Proponen régimen laboral progresivo",
+    fig:"70%", figsub:"de informalidad: beneficios que suben según la capacidad económica de la empresa",
+    cat:"LEGAL", source:"Infobae · 29/08/2026",
+    url:"https://www.infobae.com/peru/2026/08/29/gobierno-propone-regimen-laboral-de-sueldos-y-derechos-progresivos-para-aumentar-la-formalidad/" },
+  { color:"#FF953A", viz:"search", week:true,
+    title:"El desempleo juvenil llegó a 10,7%",
+    fig:"10,7%", figsub:"el doble del promedio nacional: piden facultades por 120 días para el empleo joven",
+    cat:"ECONOMÍA", source:"Infobae · 04/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/04/facultades-legislativas-y-empleo-juvenil-el-desempleo-juvenil-llego-al-107-y-presiona-el-debate-ante-la-brecha-que-afecta-a-los-jovenes/" }
 ],
 
 
@@ -212,7 +212,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "Las ventas minoristas crecieron <b>12%</b> en el primer semestre y cerrarían el 2026 sobre S/ 56,000 millones: hay caja fresca en el retail para abrir pipeline.",
+  DATO: "El <b>35%</b> de empresas peruanas ampliará su planilla en el segundo semestre y solo el 10% la reducirá: hay pipeline abierto para colocar talento formal.",
 
 
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
