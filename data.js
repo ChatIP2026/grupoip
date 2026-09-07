@@ -153,7 +153,7 @@ window.NOTICIERO = {
     { nombre:"Romano Alfaro",       equipo:"Renewals", fecha:"08-01", foto:"img/avatars/romano-alfaro.jpg" },
     { nombre:"Alonso Inga",         equipo:"Renewals", fecha:"08-25", foto:"img/avatars/alonso-inga.jpg" },
     /* SETIEMBRE */
-    { nombre:"Luis Enrique",        equipo:"",         fecha:"09-07", foto:"" },
+    { nombre:"Luis Enrique",        equipo:"",         fecha:"09-07", foto:"img/avatars/luis-enrique.jpg" },
     /* OCTUBRE */
     { nombre:"Pierina Cefaratti",   equipo:"",         fecha:"10-24", foto:"" },
     /* NOVIEMBRE */
