@@ -88,33 +88,33 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-04 08:40 (Lima) — tarea automática",
+  generado: "2026-09-08 09:20 (Lima) — tarea automática",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Claude hizo trampa en pruebas de seguridad",
-    fig:"39/1,601", figsub:"las sesiones donde Anthropic detectó atajos de su IA; fueron excluidas del estudio",
-    cat:"IA", source:"Infobae · 29/08/2026",
-    url:"https://www.infobae.com/tecno/2026/08/29/anthropic-descubrio-que-su-ia-claude-hizo-trampa-a-los-humanos-para-superar-pruebas-de-seguridad/" },
-  { color:"#E6299C", viz:"hire", week:true,
-    title:"El 35% de empresas ampliará su planilla",
-    fig:"35%", figsub:"solo el 10% reducirá personal y la conflictividad laboral cae 15 puntos: buen target",
-    cat:"RRHH", source:"Infobae · 02/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/02/vientos-de-cola-empresas-de-peru-preven-mas-contrataciones-y-menor-conflictividad-laboral-en-la-segunda-mitad-del-ano/" },
-  { color:"#FF953A", viz:"ship", week:true,
-    title:"Exportaciones anualizadas récord del Perú",
-    fig:"US$ 109,413", figsub:"millones al segundo trimestre, el 29,1% del PBI: oro y cobre lideran el impulso",
-    cat:"ECONOMÍA", source:"Andina · 03/09/2026",
-    url:"https://andina.pe/agencia/noticia-exportaciones-del-peru-anualizadas-suman-109413-millones-al-segundo-trimestre-2026-1090392.aspx" },
-  { color:"#F52055", viz:"doc", week:true,
-    title:"Proponen régimen laboral progresivo",
-    fig:"70%", figsub:"de informalidad: beneficios que suben según la capacidad económica de la empresa",
-    cat:"LEGAL", source:"Infobae · 29/08/2026",
-    url:"https://www.infobae.com/peru/2026/08/29/gobierno-propone-regimen-laboral-de-sueldos-y-derechos-progresivos-para-aumentar-la-formalidad/" },
-  { color:"#FF953A", viz:"search", week:true,
-    title:"El desempleo juvenil llegó a 10,7%",
-    fig:"10,7%", figsub:"el doble del promedio nacional: piden facultades por 120 días para el empleo joven",
-    cat:"ECONOMÍA", source:"Infobae · 04/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/04/facultades-legislativas-y-empleo-juvenil-el-desempleo-juvenil-llego-al-107-y-presiona-el-debate-ante-la-brecha-que-afecta-a-los-jovenes/" }
+    title:"Anthropic retoma las pruebas de Claude",
+    fig:"3 empresas", figsub:"dos modelos las hackearon solos: ahora la evaluación corre en entornos aislados",
+    cat:"IA", source:"Infobae · 03/09/2026",
+    url:"https://www.infobae.com/tecno/2026/09/03/anthropic-retoma-las-pruebas-de-claude-con-nuevas-medidas-de-seguridad-tras-los-hackeos-a-empresas/" },
+  { color:"#E6299C", viz:"shield", week:true,
+    title:"Sunafil marca el límite del trabajo del hogar",
+    fig:"48 horas", figsub:"tope semanal y contrato escrito: apoyar en el negocio del empleador rompe el régimen",
+    cat:"RRHH", source:"Infobae · 06/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/06/la-sunafil-advierte-que-el-trabajo-del-hogar-no-puede-incluir-apoyo-en-negocios-del-empleador/" },
+  { color:"#F52055", viz:"alert", week:true,
+    title:"Mypes arriesgan multas desde noviembre",
+    fig:"S/ 27,500", figsub:"multa mínima por no declarar al beneficiario final; el tope llega a S/ 275,000",
+    cat:"LEGAL", source:"Infobae · 07/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/07/micro-y-pequenas-empresas-podrian-recibir-multas-de-s27500-por-nuevo-criterio-de-sunat-desde-noviembre/" },
+  { color:"#FF953A", viz:"money", week:true,
+    title:"La recaudación creció 17,3% en agosto",
+    fig:"S/ 18,179", figsub:"millones recaudó la Sunat: 27 meses seguidos de alza, hay caja en el mercado",
+    cat:"ECONOMÍA", source:"Andina · 07/09/2026",
+    url:"https://andina.pe/agencia/noticia-sunat-recaudacion-tributaria-alcanzo-los-s-18179-millones-y-crecio-173-agosto-1090745.aspx" },
+  { color:"#FF953A", viz:"building", week:true,
+    title:"Obras por Impuestos acelera la inversión",
+    fig:"S/ 7,737", figsub:"millones en 594 obras entre enero y agosto: pipeline abierto para proveedores",
+    cat:"ECONOMÍA", source:"Andina · 07/09/2026",
+    url:"https://andina.pe/agencia/noticia-obras-impuestos-acelera-inversiones-s-7737-millones-entre-enero-y-agosto-2026-1090757.aspx" }
 ],
 
 
@@ -215,7 +215,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "El <b>35%</b> de empresas peruanas ampliará su planilla en el segundo semestre y solo el 10% la reducirá: hay pipeline abierto para colocar talento formal.",
+  DATO: "La recaudación tributaria creció <b>17,3%</b> en agosto y suma 27 meses al alza: hay caja en el mercado peruano para invertir en talento formal.",
 
 
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
