@@ -88,33 +88,28 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-08 09:20 (Lima) — tarea automática",
+  generado: "2026-09-11 08:55 (Lima) — tarea automática",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Anthropic retoma las pruebas de Claude",
-    fig:"3 empresas", figsub:"dos modelos las hackearon solos: ahora la evaluación corre en entornos aislados",
-    cat:"IA", source:"Infobae · 03/09/2026",
-    url:"https://www.infobae.com/tecno/2026/09/03/anthropic-retoma-las-pruebas-de-claude-con-nuevas-medidas-de-seguridad-tras-los-hackeos-a-empresas/" },
-  { color:"#E6299C", viz:"shield", week:true,
-    title:"Sunafil marca el límite del trabajo del hogar",
-    fig:"48 horas", figsub:"tope semanal y contrato escrito: apoyar en el negocio del empleador rompe el régimen",
-    cat:"RRHH", source:"Infobae · 06/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/06/la-sunafil-advierte-que-el-trabajo-del-hogar-no-puede-incluir-apoyo-en-negocios-del-empleador/" },
-  { color:"#F52055", viz:"alert", week:true,
-    title:"Mypes arriesgan multas desde noviembre",
-    fig:"S/ 27,500", figsub:"multa mínima por no declarar al beneficiario final; el tope llega a S/ 275,000",
-    cat:"LEGAL", source:"Infobae · 07/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/07/micro-y-pequenas-empresas-podrian-recibir-multas-de-s27500-por-nuevo-criterio-de-sunat-desde-noviembre/" },
-  { color:"#FF953A", viz:"money", week:true,
-    title:"La recaudación creció 17,3% en agosto",
-    fig:"S/ 18,179", figsub:"millones recaudó la Sunat: 27 meses seguidos de alza, hay caja en el mercado",
-    cat:"ECONOMÍA", source:"Andina · 07/09/2026",
-    url:"https://andina.pe/agencia/noticia-sunat-recaudacion-tributaria-alcanzo-los-s-18179-millones-y-crecio-173-agosto-1090745.aspx" },
-  { color:"#FF953A", viz:"building", week:true,
-    title:"Obras por Impuestos acelera la inversión",
-    fig:"S/ 7,737", figsub:"millones en 594 obras entre enero y agosto: pipeline abierto para proveedores",
-    cat:"ECONOMÍA", source:"Andina · 07/09/2026",
-    url:"https://andina.pe/agencia/noticia-obras-impuestos-acelera-inversiones-s-7737-millones-entre-enero-y-agosto-2026-1090757.aspx" }
+    title:"Anthropic detecta usos indebidos de Claude",
+    fig:"154 páginas", figsub:"su informe de amenazas detalla cómo bloqueó cuentas que intentaron usar la IA",
+    cat:"IA", source:"Infobae · 10/09/2026",
+    url:"https://www.infobae.com/america/agencias/2026/09/10/anthropic-iran-uso-claude-para-planificar-posibles-ataques-contra-eeuu/" },
+  { color:"#E6299C", viz:"people", week:true,
+    title:"Sueldo mínimo subiría a S/ 1,300",
+    fig:"S/ 1,300", figsub:"el alza de S/ 170 iría en dos tramos: noviembre 2026 y abril 2027, según el MTPE",
+    cat:"RRHH", source:"Infobae · 10/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/10/aumento-de-sueldo-minimo-a-s1300-empresarios-buscan-que-alza-se-aplace-al-2027/" },
+  { color:"#FF953A", viz:"bank", week:true,
+    title:"El BCR mantiene la tasa en 4,25%",
+    fig:"4,25%", figsub:"crédito estable para invertir en talento pese a la inflación anual de 4,4%",
+    cat:"ECONOMÍA", source:"Andina · 10/09/2026",
+    url:"https://andina.pe/agencia/noticia-banco-central-reserva-del-peru-mantiene-tasa-interes-referencia-425-1091316.aspx" },
+  { color:"#FF953A", viz:"ship", week:true,
+    title:"Exportaciones rumbo a récord histórico",
+    fig:"US$ 100,000", figsub:"millones proyecta el Perú para 2026: US$ 54,000 millones ya en el primer semestre",
+    cat:"ECONOMÍA", source:"Andina · 10/09/2026",
+    url:"https://andina.pe/agencia/noticia-exportaciones-marcaran-record-historico-y-superarian-los-100000-millones-1091225.aspx" }
 ],
 
 
@@ -215,7 +210,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "La recaudación tributaria creció <b>17,3%</b> en agosto y suma 27 meses al alza: hay caja en el mercado peruano para invertir en talento formal.",
+  DATO: "Las exportaciones peruanas superaron los <b>US$ 54,000 millones</b> en el primer semestre: hay caja y pipeline para invertir en talento formal.",
 
 
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══

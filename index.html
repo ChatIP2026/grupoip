@@ -1613,7 +1613,13 @@ function loop(){
   }
   /* la pantalla alterna sola: 5 minutos en cada pestaña */
   if(IP_ACTIVE && !switching && Date.now()-tabT0 >= TAB_MS) switchTab(1);
-  /* la escena se dibuja en 1920x951 y se reescala al panel */
+  requestAnimationFrame(loop);
+}
+
+/* la escena de extraordinarios se dibuja en 1920x951 y se reescala al panel.
+   OJO: esto va FUERA de loop(). Cuando estaba dentro, cada cuadro volvia a
+   envolver ipRender y a registrar un listener de resize, y la pantalla
+   terminaba congelandose en el apartado que estuviera a la vista. */
 function escFit(){
   document.querySelectorAll('.esc-fit').forEach(box=>{
     const st = box.querySelector('.esc-stage'); if(!st) return;
@@ -1626,8 +1632,6 @@ addEventListener('resize', escFit);
 const _ipRender0 = ipRender;
 ipRender = function(){ _ipRender0.apply(this, arguments); escFit(); };
 
-requestAnimationFrame(loop);
-}
 requestAnimationFrame(loop);
 
 /* fecha/hora Lima */
