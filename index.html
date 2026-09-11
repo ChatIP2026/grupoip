@@ -1421,7 +1421,6 @@ function ipSlideHTML(sl){
     const G_ORO_K  = 'linear-gradient(180deg,#FFE9A8 10%,#C9902B 100%)';
     const G_BLA_K  = 'linear-gradient(180deg,#FFFFFF 0%,#E6E2EE 100%)';
     return `<div class="ip-slide esc" style="--ip:#E9B94B">
-      <img class="esc-back" src="${e.fondo||''}" alt="">
       <div class="esc-fit"><div class="esc-stage">
         <img class="esc-bg" src="${e.fondo||''}" alt="">
         <div class="esc-halo"></div><div class="esc-beam"></div>
@@ -1624,13 +1623,18 @@ function escFit(){
   document.querySelectorAll('.esc-fit').forEach(box=>{
     const st = box.querySelector('.esc-stage'); if(!st) return;
     const r = box.getBoundingClientRect(); if(!r.width) return;
-    st.style.transform = 'scale(' + Math.min(r.width/1920, r.height/951) + ')';
+    /* modo "llenar", como el cronograma: cubre el panel; si la ventana no tiene la
+       proporción exacta, recorta por abajo (el piso del escenario), nunca el titular */
+    st.style.transform = 'scale(' + Math.max(r.width/1920, r.height/951) + ')';
   });
 }
 escFit();
 addEventListener('resize', escFit);
+/* el panel crece con una transición de 0.6 s al entrar a iPartner: se vuelve a
+   medir cuando termina, para no quedarse con la escala de a medio camino */
+document.getElementById('screen').addEventListener('transitionend', escFit);
 const _ipRender0 = ipRender;
-ipRender = function(){ _ipRender0.apply(this, arguments); escFit(); };
+ipRender = function(){ _ipRender0.apply(this, arguments); escFit(); setTimeout(escFit, 700); };
 
 requestAnimationFrame(loop);
 
