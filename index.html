@@ -1446,13 +1446,20 @@ function ipSlideHTML(sl){
     </div>`;
   }
   const ev = sl.ev;
+  /* con arte, el evento ocupa el panel entero como el cronograma; sin arte,
+     cae en la tarjeta de siempre con el texto */
+  if(ev.img){
+    return `<div class="ip-slide vid" style="--ip:#07F3F4">
+      ${ev.kicker===true ? `<div class="vid-kicker">${esc(ev.titulo||'Evento del mes')}</div>` : ''}
+      <img src="${ev.img}" alt="${esc(ev.titulo||'')}">
+    </div>`;
+  }
   return `<div class="ip-slide" style="--ip:#07F3F4">
     <div class="ip-kicker">EVENTO DEL MES${ev.cuando?' · '+esc(ev.cuando).toUpperCase():''}</div>
-    <div class="ev-img">${ev.img
-      ? `<img src="${ev.img}" alt="${esc(ev.titulo||'')}">`
-      : `<div class="ev-ph"><h2 class="ip-h">${esc(ev.titulo||'')}</h2>
-           ${ev.bajada?`<div class="ev-when">${esc(ev.bajada)}</div>`:''}
-           <i style="font-size:.9vw;opacity:.7">arte del evento pendiente</i></div>`}
+    <div class="ev-img">
+      <div class="ev-ph"><h2 class="ip-h">${esc(ev.titulo||'')}</h2>
+        ${ev.bajada?`<div class="ev-when">${esc(ev.bajada)}</div>`:''}
+        <i style="font-size:.9vw;opacity:.7">arte del evento pendiente</i></div>
     </div>
   </div>`;
 }
@@ -1480,6 +1487,7 @@ function ipRender(){
 /* el video dura lo suyo; el resto de apartados, 15 s */
 function ipDurMs(){
   const s = IP[ipIdx];
+  if(s && s.tipo==='evento' && s.ev && s.ev.img) return (s.ev.segundos||20)*1000;
   if(s && s.tipo==='video'){
     const vd = ipStack.querySelectorAll('.ip-slide')[ipIdx].querySelector('video');
     if(vd && vd.duration && isFinite(vd.duration)) return vd.duration*1000 + 400;
@@ -1491,7 +1499,8 @@ function ipDurMs(){
 function ipNext(){ if(IP.length<2) return; ipIdx=(ipIdx+1)%IP.length; ipT0=Date.now(); ipRender(); }
 function ipPrev(){ if(IP.length<2) return; ipIdx=(ipIdx-1+IP.length)%IP.length; ipT0=Date.now(); ipRender(); }
 function sl_cum(k){ return IP[k] && IP[k].tipo==='cumple'; }
-function sl_vid(k){ return IP[k] && IP[k].tipo==='video'; }
+function sl_vid(k){ const s=IP[k]; if(!s) return false;
+  return s.tipo==='video' || (s.tipo==='evento' && s.ev && s.ev.img); }
 let ipT0 = Date.now();
 ipRender();
 
