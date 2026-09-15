@@ -193,11 +193,11 @@ window.NOTICIERO = {
   },
 
   EVENTOS: [
-    { titulo:"iPartner Awards 2026",
-      bajada:"Una noche para inspirar, conectar y celebrar",
-      cuando:"Viernes 4 de setiembre · 6 a 11 p.m.",
-      fecha:"2026-09-04",
-      img:"img/eventos/2026-09-ipartner-awards.jpg" }
+    { titulo:"Campeonato Deportivo IP",
+      bajada:"Vóley, fútbol y gymkana: un día para compartir y jugar en equipo",
+      cuando:"Viernes 25 de setiembre · Eureka Park",
+      fecha:"2026-09-25",
+      img:"img/eventos/2026-09-campeonato-deportivo.jpg" }
   ],
 
   /* ═══ VIDEO DEL MES ═══
