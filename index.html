@@ -39,7 +39,7 @@ body{
 
 /* ═════ PARED IZQUIERDA: pantalla del set ═════ */
 .wall{
-  position:fixed; left:2vw; top:2.6vh; width:64vw; height:74vh; z-index:2;
+  position:fixed; left:2vw; top:2.6vh; width:64vw; height:68.9vh; z-index:2;
   border-radius:2.6vw; overflow:hidden; touch-action:pan-y; user-select:none; cursor:grab;
   background:radial-gradient(ellipse 120% 100% at 50% 0%, var(--wall0) 0%, var(--wall1) 55%, var(--wall2) 100%);
   border:2px solid rgba(140,150,255,.35);
@@ -269,9 +269,6 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .ip-slide.esc.on{transform:none;}
 .esc-bg{position:absolute; left:0; top:0; width:1920px; height:951px; object-fit:cover;
   transform-origin:50% 55%; animation:escBreath 10s ease-in-out infinite; will-change:transform;}
-/* relleno detras del lienzo, por si la ventana no tiene la proporcion exacta */
-.esc-back{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
-  filter:blur(34px) brightness(.5); transform:scale(1.08);}
 @keyframes escBreath{0%,100%{transform:scale(1.015)}50%{transform:scale(1.027)}}
 .esc-fit{position:absolute; inset:0; overflow:hidden;}
 .esc-stage{position:absolute; left:50%; top:0; margin-left:-960px; width:1920px; height:951px;
@@ -1624,7 +1621,7 @@ function loop(){
   requestAnimationFrame(loop);
 }
 
-/* la escena de extraordinarios se dibuja en 1920x951 y se reescala al panel.
+/* la escena de extraordinarios se dibuja en 1920x951 y se recorta al panel (1920x886) y se reescala al panel.
    OJO: esto va FUERA de loop(). Cuando estaba dentro, cada cuadro volvia a
    envolver ipRender y a registrar un listener de resize, y la pantalla
    terminaba congelandose en el apartado que estuviera a la vista. */
@@ -1634,7 +1631,7 @@ function escFit(){
     const r = box.getBoundingClientRect(); if(!r.width) return;
     /* modo "llenar", como el cronograma: cubre el panel; si la ventana no tiene la
        proporción exacta, recorta por abajo (el piso del escenario), nunca el titular */
-    st.style.transform = 'scale(' + Math.max(r.width/1920, r.height/951) + ')';
+    st.style.transform = 'scale(' + Math.max(r.width/1920, r.height/886) + ')';
   });
 }
 escFit();
