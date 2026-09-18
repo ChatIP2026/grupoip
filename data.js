@@ -88,29 +88,30 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-11 08:55 (Lima) — tarea automática",
+  generado: "2026-09-18 09:55 (Lima) — edición manual",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Anthropic detecta usos indebidos de Claude",
-    fig:"154 páginas", figsub:"su informe de amenazas detalla cómo bloqueó cuentas que intentaron usar la IA",
-    cat:"IA", source:"Infobae · 10/09/2026",
-    url:"https://www.infobae.com/america/agencias/2026/09/10/anthropic-iran-uso-claude-para-planificar-posibles-ataques-contra-eeuu/" },
-  { color:"#E6299C", viz:"people", week:true,
-    title:"Sueldo mínimo subiría a S/ 1,300",
-    fig:"S/ 1,300", figsub:"el alza de S/ 170 iría en dos tramos: noviembre 2026 y abril 2027, según el MTPE",
-    cat:"RRHH", source:"Infobae · 10/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/10/aumento-de-sueldo-minimo-a-s1300-empresarios-buscan-que-alza-se-aplace-al-2027/" },
-  { color:"#FF953A", viz:"bank", week:true,
-    title:"El BCR mantiene la tasa en 4,25%",
-    fig:"4,25%", figsub:"crédito estable para invertir en talento pese a la inflación anual de 4,4%",
-    cat:"ECONOMÍA", source:"Andina · 10/09/2026",
-    url:"https://andina.pe/agencia/noticia-banco-central-reserva-del-peru-mantiene-tasa-interes-referencia-425-1091316.aspx" },
-  { color:"#FF953A", viz:"ship", week:true,
-    title:"Exportaciones rumbo a récord histórico",
-    fig:"US$ 100,000", figsub:"millones proyecta el Perú para 2026: US$ 54,000 millones ya en el primer semestre",
-    cat:"ECONOMÍA", source:"Andina · 10/09/2026",
-    url:"https://andina.pe/agencia/noticia-exportaciones-marcaran-record-historico-y-superarian-los-100000-millones-1091225.aspx" }
+    title:"Claude ya hace el 26% del I+D de Anthropic",
+    fig:"26%", figsub:"de las tareas de investigación, frente a 0% en febrero; 30.000 agentes trabajando",
+    cat:"IA", source:"Infobae · 18/09/2026",
+    url:"https://www.infobae.com/tecno/2026/09/18/claude-ya-puede-encargarse-de-una-cuarta-parte-del-desarrollo-de-nuevos-modelos-de-ia/" },
+  { color:"#E6299C", viz:"hire", week:true,
+    title:"Lima suma 343.000 ocupados en un año",
+    fig:"343.000", figsub:"el empleo crece 6,1% y el desempleo baja de 6% a 4,8%: hay demanda de talento",
+    cat:"RRHH", source:"Andina · 15/09/2026",
+    url:"https://andina.pe/agencia/noticia-inei-empleo-lima-metropolitana-crecio-61-ultimos-tres-meses-del-2026-1091838.aspx" },
+  { color:"#FF953A", viz:"cart", week:true,
+    title:"El retail proyecta crecer hasta 6% en 2027",
+    fig:"US$ 522 M", figsub:"seis centros comerciales nuevos entre 2026 y 2028; provincias ya son el 51%",
+    cat:"RETAIL", source:"Forbes Perú · 17/09/2026",
+    url:"https://forbes.pe/negocios/2026-09-17/retail-proyecta-crecer-hasta-6-en-2027-y-alista-inversiones-por-us522-millones-segun-la-ccl" },
+  { color:"#F52055", viz:"doc", week:true,
+    title:"SUNAT exigirá beneficiario final a las mypes",
+    fig:"S/ 275.000", figsub:"multa máxima desde noviembre; el socio con 10% ya cuenta como beneficiario",
+    cat:"LEGAL", source:"Infobae · 13/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/13/tiene-una-empresa-familiar-si-su-socio-posee-el-10-sunat-podria-perseguirlo-desde-noviembre/" }
 ],
+
 
 
   /* ═══ iPARTNER — pantalla interna (permanente, curada por el equipo) ═══ */
@@ -210,7 +211,8 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "Las exportaciones peruanas superaron los <b>US$ 54,000 millones</b> en el primer semestre: hay caja y pipeline para invertir en talento formal.",
+  DATO: "Lima Metropolitana suma <b>343.000</b> ocupados en un año y el desempleo cae a 4,8%: más contrataciones, más planilla y más pipeline para servicios de personas.",
+
 
 
   /* ═══ ARGUMENTOS DE VENTA — PERMANENTES (no los toca la tarea nocturna) ═══
