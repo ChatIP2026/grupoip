@@ -88,29 +88,30 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-18 09:55 (Lima) — edición manual",
+  generado: "2026-09-21 09:30 (Lima) — edición manual",
   NEWS: [
-  { color:"#D97757", viz:"claude", week:true,
-    title:"Claude ya hace el 26% del I+D de Anthropic",
-    fig:"26%", figsub:"de las tareas de investigación, frente a 0% en febrero; 30.000 agentes trabajando",
-    cat:"IA", source:"Infobae · 18/09/2026",
-    url:"https://www.infobae.com/tecno/2026/09/18/claude-ya-puede-encargarse-de-una-cuarta-parte-del-desarrollo-de-nuevos-modelos-de-ia/" },
-  { color:"#E6299C", viz:"hire", week:true,
-    title:"Lima suma 343.000 ocupados en un año",
-    fig:"343.000", figsub:"el empleo crece 6,1% y el desempleo baja de 6% a 4,8%: hay demanda de talento",
-    cat:"RRHH", source:"Andina · 15/09/2026",
-    url:"https://andina.pe/agencia/noticia-inei-empleo-lima-metropolitana-crecio-61-ultimos-tres-meses-del-2026-1091838.aspx" },
-  { color:"#FF953A", viz:"cart", week:true,
-    title:"El retail proyecta crecer hasta 6% en 2027",
-    fig:"US$ 522 M", figsub:"seis centros comerciales nuevos entre 2026 y 2028; provincias ya son el 51%",
-    cat:"RETAIL", source:"Forbes Perú · 17/09/2026",
-    url:"https://forbes.pe/negocios/2026-09-17/retail-proyecta-crecer-hasta-6-en-2027-y-alista-inversiones-por-us522-millones-segun-la-ccl" },
-  { color:"#F52055", viz:"doc", week:true,
-    title:"SUNAT exigirá beneficiario final a las mypes",
-    fig:"S/ 275.000", figsub:"multa máxima desde noviembre; el socio con 10% ya cuenta como beneficiario",
-    cat:"LEGAL", source:"Infobae · 13/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/13/tiene-una-empresa-familiar-si-su-socio-posee-el-10-sunat-podria-perseguirlo-desde-noviembre/" }
+  { color:"#D97757", viz:"ai", week:true,
+    title:"Demandan a Anthropic, OpenAI y SpaceXAI",
+    fig:"Class action", figsub:"acusan un pacto para frenar la IA tras el ensayo de Amodei del 12 de setiembre",
+    cat:"IA", source:"Infobae · 21/09/2026",
+    url:"https://www.infobae.com/tecno/2026/09/21/demandan-a-spacexai-openai-y-anthropic-por-presunto-pacto-ilegal-para-ralentizar-el-desarrollo-de-la-ia/" },
+  { color:"#E6299C", viz:"shield", week:true,
+    title:"Crean comisión para fortalecer la SUNAFIL",
+    fig:"90 días", figsub:"la RM 297-2026-TR revisará la inspección laboral: se vienen cambios en fiscalización",
+    cat:"RRHH", source:"Andina · 20/09/2026",
+    url:"https://andina.pe/agencia/noticia-ministerio-trabajo-y-promocion-del-empleo-crea-comision-para-fortalecer-sunafil-1092557.aspx" },
+  { color:"#FF953A", viz:"agro", week:true,
+    title:"El ANA destraba 78 proyectos de inversión",
+    fig:"US$ 1.200 M", figsub:"obras de agua que estaban frenadas y ahora entran en marcha en todo el país",
+    cat:"ECONOMÍA", source:"Andina · 21/09/2026",
+    url:"https://andina.pe/agencia/noticia-autoridad-nacional-del-agua-destrabo-78-proyectos-casi-1200-millones-entrevista-1092569.aspx" },
+  { color:"#FF953A", viz:"piggy", week:true,
+    title:"Los fondos mutuos crecen 15,5% en un año",
+    fig:"S/ 64.769 M", figsub:"530.332 partícipes y 14,6% más inversionistas: hay liquidez buscando destino",
+    cat:"ECONOMÍA", source:"Andina · 20/09/2026",
+    url:"https://andina.pe/agencia/noticia-fondos-mutuos-peru-continuan-expansion-patrimonio-y-participes-agosto-2026-1092551.aspx" }
 ],
+
 
 
 
@@ -211,7 +212,8 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "Lima Metropolitana suma <b>343.000</b> ocupados en un año y el desempleo cae a 4,8%: más contrataciones, más planilla y más pipeline para servicios de personas.",
+  DATO: "El patrimonio en fondos mutuos llega a <b>S/ 64.769 millones</b> y crece 15,5% en un año: hay caja buscando destino, y eso abre la puerta a inversión y contratación.",
+
 
 
 
