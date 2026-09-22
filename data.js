@@ -88,29 +88,30 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-21 09:30 (Lima) — edición manual",
+  generado: "2026-09-22 09:35 (Lima) — edición manual",
   NEWS: [
-  { color:"#D97757", viz:"ai", week:true,
-    title:"Demandan a Anthropic, OpenAI y SpaceXAI",
-    fig:"Class action", figsub:"acusan un pacto para frenar la IA tras el ensayo de Amodei del 12 de setiembre",
+  { color:"#D97757", viz:"claude", week:true,
+    title:"Anthropic retrasa su salida a bolsa",
+    fig:"2 billones", figsub:"de dólares valdría; mueve el debut a noviembre para mostrar el tercer trimestre",
     cat:"IA", source:"Infobae · 21/09/2026",
-    url:"https://www.infobae.com/tecno/2026/09/21/demandan-a-spacexai-openai-y-anthropic-por-presunto-pacto-ilegal-para-ralentizar-el-desarrollo-de-la-ia/" },
-  { color:"#E6299C", viz:"shield", week:true,
-    title:"Crean comisión para fortalecer la SUNAFIL",
-    fig:"90 días", figsub:"la RM 297-2026-TR revisará la inspección laboral: se vienen cambios en fiscalización",
-    cat:"RRHH", source:"Andina · 20/09/2026",
-    url:"https://andina.pe/agencia/noticia-ministerio-trabajo-y-promocion-del-empleo-crea-comision-para-fortalecer-sunafil-1092557.aspx" },
-  { color:"#FF953A", viz:"agro", week:true,
-    title:"El ANA destraba 78 proyectos de inversión",
-    fig:"US$ 1.200 M", figsub:"obras de agua que estaban frenadas y ahora entran en marcha en todo el país",
-    cat:"ECONOMÍA", source:"Andina · 21/09/2026",
-    url:"https://andina.pe/agencia/noticia-autoridad-nacional-del-agua-destrabo-78-proyectos-casi-1200-millones-entrevista-1092569.aspx" },
-  { color:"#FF953A", viz:"piggy", week:true,
-    title:"Los fondos mutuos crecen 15,5% en un año",
-    fig:"S/ 64.769 M", figsub:"530.332 partícipes y 14,6% más inversionistas: hay liquidez buscando destino",
-    cat:"ECONOMÍA", source:"Andina · 20/09/2026",
-    url:"https://andina.pe/agencia/noticia-fondos-mutuos-peru-continuan-expansion-patrimonio-y-participes-agosto-2026-1092551.aspx" }
+    url:"https://www.infobae.com/tecno/2026/09/21/por-que-anthropic-retrasaria-su-salida-a-la-bolsa-hasta-noviembr-su-valor-seria-de-2-billones-de-dolares/" },
+  { color:"#FF953A", viz:"money", week:true,
+    title:"El factoring ya mueve S/ 27.019 millones",
+    fig:"84,5%", figsub:"de quienes lo usan son mypes; las facturas negociables crecen 14,6% en el año",
+    cat:"ECONOMÍA", source:"Andina · 22/09/2026",
+    url:"https://andina.pe/agencia/noticia-ministro-de-produccion-se-trabaja-una-ruta-reactivacion-para-las-mypes-entrevista-1092771.aspx" },
+  { color:"#FF953A", viz:"building", week:true,
+    title:"Lima Este: la venta de viviendas sube 34,4%",
+    fig:"34,4%", figsub:"82 unidades en agosto y Santa Anita concentra el 46,3% de las ventas de la zona",
+    cat:"RETAIL", source:"Andina · 22/09/2026",
+    url:"https://andina.pe/agencia/noticia-dinamismo-inmobiliario-lima-este-ventas-viviendas-crecen-344-agosto-2026-1092770.aspx" },
+  { color:"#E6299C", viz:"calendar", week:true,
+    title:"AFP y ONP: traslado libre desde junio 2027",
+    fig:"Junio 2027", figsub:"el trabajador podrá cambiar de sistema: toca revisar saldos y años de aporte",
+    cat:"RRHH", source:"Infobae · 21/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/21/afp-y-onp-desde-junio-de-2027-se-podra-cambiar-de-sistema-de-pensiones-libremente-y-estas-son-las-claves/" }
 ],
+
 
 
 
@@ -212,7 +213,8 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "El patrimonio en fondos mutuos llega a <b>S/ 64.769 millones</b> y crece 15,5% en un año: hay caja buscando destino, y eso abre la puerta a inversión y contratación.",
+  DATO: "El <b>84,5%</b> de quienes usan factoring en el Perú son mypes: empresas chicas que ya manejan liquidez, y que por lo tanto pueden pagar servicios de personas.",
+
 
 
 
