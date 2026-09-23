@@ -88,28 +88,33 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-22 09:35 (Lima) — edición manual",
+  generado: "2026-09-23 09:40 (Lima) — edición manual",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Anthropic retrasa su salida a bolsa",
-    fig:"2 billones", figsub:"de dólares valdría; mueve el debut a noviembre para mostrar el tercer trimestre",
-    cat:"IA", source:"Infobae · 21/09/2026",
-    url:"https://www.infobae.com/tecno/2026/09/21/por-que-anthropic-retrasaria-su-salida-a-la-bolsa-hasta-noviembr-su-valor-seria-de-2-billones-de-dolares/" },
-  { color:"#FF953A", viz:"money", week:true,
-    title:"El factoring ya mueve S/ 27.019 millones",
-    fig:"84,5%", figsub:"de quienes lo usan son mypes; las facturas negociables crecen 14,6% en el año",
-    cat:"ECONOMÍA", source:"Andina · 22/09/2026",
-    url:"https://andina.pe/agencia/noticia-ministro-de-produccion-se-trabaja-una-ruta-reactivacion-para-las-mypes-entrevista-1092771.aspx" },
-  { color:"#FF953A", viz:"building", week:true,
-    title:"Lima Este: la venta de viviendas sube 34,4%",
-    fig:"34,4%", figsub:"82 unidades en agosto y Santa Anita concentra el 46,3% de las ventas de la zona",
-    cat:"RETAIL", source:"Andina · 22/09/2026",
-    url:"https://andina.pe/agencia/noticia-dinamismo-inmobiliario-lima-este-ventas-viviendas-crecen-344-agosto-2026-1092770.aspx" },
-  { color:"#E6299C", viz:"calendar", week:true,
-    title:"AFP y ONP: traslado libre desde junio 2027",
-    fig:"Junio 2027", figsub:"el trabajador podrá cambiar de sistema: toca revisar saldos y años de aporte",
-    cat:"RRHH", source:"Infobae · 21/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/21/afp-y-onp-desde-junio-de-2027-se-podra-cambiar-de-sistema-de-pensiones-libremente-y-estas-son-las-claves/" }
+    title:"Anthropic lanza Claude Opus 5.5",
+    fig:"−40%", figsub:"de costo y 30% más rápido: su modelo top ahora es más accesible para developers",
+    cat:"IA", source:"Infobae · 23/09/2026",
+    url:"https://www.infobae.com/tecno/2026/09/23/anthropic-actualiza-su-modelo-mas-avanzado-asi-es-claude-opus-55-la-version-mas-accesible-y-eficiente-para-desarrolladores/" },
+  { color:"#FF953A", viz:"cart", week:true,
+    title:"Día del Shopping moverá S/ 320 millones",
+    fig:"7 millones", figsub:"de visitas esperan los malls este 26 y 27 de setiembre",
+    cat:"RETAIL", source:"Andina · 23/09/2026",
+    url:"https://andina.pe/agencia/noticia-dia-del-shopping-se-generaran-ventas-s-320-millones-este-26-y-27-setiembre-1092858.aspx" },
+  { color:"#FF953A", viz:"bank", week:true,
+    title:"Moody's mantiene al Perú en Baa1 estable",
+    fig:"3,5%", figsub:"de crecimiento proyectado al 2027, con más inversión pese a El Niño",
+    cat:"ECONOMÍA", source:"Infobae · 23/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/23/moodys-mantiene-calificacion-positiva-de-peru-y-proyecta-mayores-inversiones-pese-a-el-nino/" },
+  { color:"#E6299C", viz:"shield", week:true,
+    title:"MTPE crea comisión para modernizar Sunafil",
+    fig:"90 días", figsub:"tendrá para proponer cómo fortalecer la fiscalización laboral",
+    cat:"RRHH", source:"Andina · 19/09/2026",
+    url:"https://andina.pe/agencia/noticia-ministerio-trabajo-y-promocion-del-empleo-crea-comision-para-fortalecer-sunafil-1092557.aspx" },
+  { color:"#FF953A", viz:"chart-up", week:true,
+    title:"La visita papal movería S/ 300 millones",
+    fig:"800 mil", figsub:"personas se movilizarían; hoteles, transporte y comercio, los más beneficiados",
+    cat:"ECONOMÍA", source:"RPP · 21/09/2026",
+    url:"https://rpp.pe/economia/economia/papa-leon-xiv-en-peru-cual-seria-impacto-economico-y-cuantos-ingresos-podria-generar-noticia-1699987" }
 ],
 
 
@@ -200,7 +205,12 @@ window.NOTICIERO = {
       bajada:"Vóley, fútbol y gymkana: un día para compartir y jugar en equipo",
       cuando:"Viernes 25 de setiembre · Eureka Park",
       fecha:"2026-09-25",
-      img:"img/eventos/2026-09-campeonato-deportivo.jpg" }
+      img:"img/eventos/2026-09-campeonato-deportivo.jpg" },
+    { titulo:"Campeonato Deportivo IP · Reglas y premiación",
+      bajada:"Etapa 1 vóley y fútbol mixto, etapa 2 gymkana, y los tres campeones",
+      cuando:"Viernes 25 de setiembre · Eureka Park",
+      fecha:"2026-09-25",
+      img:"img/eventos/2026-09-campeonato-reglas.jpg" }
   ],
 
   /* ═══ VIDEO DEL MES ═══
@@ -213,7 +223,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "El <b>84,5%</b> de quienes usan factoring en el Perú son mypes: empresas chicas que ya manejan liquidez, y que por lo tanto pueden pagar servicios de personas.",
+  DATO: "Este fin de semana, el <b>Día del Shopping</b> espera 7 millones de visitas: un peak de tráfico que el retail prepara con más personal en tienda.",
 
 
 
