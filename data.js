@@ -88,33 +88,28 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-23 09:40 (Lima) — edición manual",
+  generado: "2026-09-24 10:30 (Lima) — edición manual",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Anthropic lanza Claude Opus 5.5",
-    fig:"−40%", figsub:"de costo y 30% más rápido: su modelo top ahora es más accesible para developers",
-    cat:"IA", source:"Infobae · 23/09/2026",
-    url:"https://www.infobae.com/tecno/2026/09/23/anthropic-actualiza-su-modelo-mas-avanzado-asi-es-claude-opus-55-la-version-mas-accesible-y-eficiente-para-desarrolladores/" },
-  { color:"#FF953A", viz:"cart", week:true,
-    title:"Día del Shopping moverá S/ 320 millones",
-    fig:"7 millones", figsub:"de visitas esperan los malls este 26 y 27 de setiembre",
-    cat:"RETAIL", source:"Andina · 23/09/2026",
-    url:"https://andina.pe/agencia/noticia-dia-del-shopping-se-generaran-ventas-s-320-millones-este-26-y-27-setiembre-1092858.aspx" },
-  { color:"#FF953A", viz:"bank", week:true,
-    title:"Moody's mantiene al Perú en Baa1 estable",
-    fig:"3,5%", figsub:"de crecimiento proyectado al 2027, con más inversión pese a El Niño",
+    title:"Claude ya hace un cuarto del I+D de Anthropic",
+    fig:"26%", figsub:"del trabajo para crear nuevos modelos de IA ya lo hace Claude por sí solo",
+    cat:"IA", source:"Infobae · 18/09/2026",
+    url:"https://www.infobae.com/tecno/2026/09/18/claude-ya-puede-encargarse-de-una-cuarta-parte-del-desarrollo-de-nuevos-modelos-de-ia/" },
+  { color:"#E6299C", viz:"hire", week:true,
+    title:"MTPE coloca a casi 9.000 en empleo formal",
+    fig:"9.000", figsub:"peruanos colocados desde agosto con ferias, maratones y la bolsa de trabajo",
+    cat:"RRHH", source:"Andina · 23/09/2026",
+    url:"https://andina.pe/agencia/noticia-ministerio-trabajo-posibilito-a-casi-9000-peruanos-acceder-a-un-empleo-formal-1093103.aspx" },
+  { color:"#FF953A", viz:"agro", week:true,
+    title:"Agroexportación llegaría a US$ 15.000 millones",
+    fig:"+2,5%", figsub:"crecen las ventas agro a julio; arándanos, palta y uva lideran en 130 mercados",
     cat:"ECONOMÍA", source:"Infobae · 23/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/23/moodys-mantiene-calificacion-positiva-de-peru-y-proyecta-mayores-inversiones-pese-a-el-nino/" },
-  { color:"#E6299C", viz:"shield", week:true,
-    title:"MTPE crea comisión para modernizar Sunafil",
-    fig:"90 días", figsub:"tendrá para proponer cómo fortalecer la fiscalización laboral",
-    cat:"RRHH", source:"Andina · 19/09/2026",
-    url:"https://andina.pe/agencia/noticia-ministerio-trabajo-y-promocion-del-empleo-crea-comision-para-fortalecer-sunafil-1092557.aspx" },
-  { color:"#FF953A", viz:"chart-up", week:true,
-    title:"La visita papal movería S/ 300 millones",
-    fig:"800 mil", figsub:"personas se movilizarían; hoteles, transporte y comercio, los más beneficiados",
-    cat:"ECONOMÍA", source:"RPP · 21/09/2026",
-    url:"https://rpp.pe/economia/economia/papa-leon-xiv-en-peru-cual-seria-impacto-economico-y-cuantos-ingresos-podria-generar-noticia-1699987" }
+    url:"https://www.infobae.com/peru/2026/09/23/agroexportaciones-peruanas-alcanzarian-los-usd-15000-millones-al-cierre-de-2026/" },
+  { color:"#FF953A", viz:"alert", week:true,
+    title:"El Niño: S/ 1.146 millones para prevención",
+    fig:"540", figsub:"puntos críticos atenderá el Ejecutivo antes de noviembre, vía servicios por impuestos",
+    cat:"ECONOMÍA", source:"Andina · 23/09/2026",
+    url:"https://andina.pe/agencia/noticia-ministro-marco-vinelli-recursos-para-servicios-impuestos-sumarian-s-1146-millones-1092979.aspx" }
 ],
 
 
@@ -223,7 +218,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "Este fin de semana, el <b>Día del Shopping</b> espera 7 millones de visitas: un peak de tráfico que el retail prepara con más personal en tienda.",
+  DATO: "Entre agosto y setiembre, el MTPE colocó a casi <b>9.000</b> peruanos en empleo formal: talento que las empresas están sumando a su pipeline de contratación.",
 
 
 
