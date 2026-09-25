@@ -88,28 +88,28 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-24 10:30 (Lima) — edición manual",
+  generado: "2026-09-25 10:00 (Lima) — edición manual",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Claude ya hace un cuarto del I+D de Anthropic",
-    fig:"26%", figsub:"del trabajo para crear nuevos modelos de IA ya lo hace Claude por sí solo",
-    cat:"IA", source:"Infobae · 18/09/2026",
-    url:"https://www.infobae.com/tecno/2026/09/18/claude-ya-puede-encargarse-de-una-cuarta-parte-del-desarrollo-de-nuevos-modelos-de-ia/" },
-  { color:"#E6299C", viz:"hire", week:true,
-    title:"MTPE coloca a casi 9.000 en empleo formal",
-    fig:"9.000", figsub:"peruanos colocados desde agosto con ferias, maratones y la bolsa de trabajo",
-    cat:"RRHH", source:"Andina · 23/09/2026",
-    url:"https://andina.pe/agencia/noticia-ministerio-trabajo-posibilito-a-casi-9000-peruanos-acceder-a-un-empleo-formal-1093103.aspx" },
-  { color:"#FF953A", viz:"agro", week:true,
-    title:"Agroexportación llegaría a US$ 15.000 millones",
-    fig:"+2,5%", figsub:"crecen las ventas agro a julio; arándanos, palta y uva lideran en 130 mercados",
-    cat:"ECONOMÍA", source:"Infobae · 23/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/23/agroexportaciones-peruanas-alcanzarian-los-usd-15000-millones-al-cierre-de-2026/" },
-  { color:"#FF953A", viz:"alert", week:true,
-    title:"El Niño: S/ 1.146 millones para prevención",
-    fig:"540", figsub:"puntos críticos atenderá el Ejecutivo antes de noviembre, vía servicios por impuestos",
-    cat:"ECONOMÍA", source:"Andina · 23/09/2026",
-    url:"https://andina.pe/agencia/noticia-ministro-marco-vinelli-recursos-para-servicios-impuestos-sumarian-s-1146-millones-1092979.aspx" }
+    title:"Claude halla un sistema parecido a CRISPR",
+    fig:"950", figsub:"agentes de Claude revisaron más de 200.000 enzimas en 21 horas",
+    cat:"IA", source:"Infobae · 25/09/2026",
+    url:"https://www.infobae.com/tecno/2026/09/25/claude-hallo-un-sistema-enzimatico-parecido-a-crispr-pero-anthropic-no-sabe-para-que-sirve/" },
+  { color:"#E6299C", viz:"handshake", week:true,
+    title:"Sueldo mínimo tendrá fórmula para sus alzas",
+    fig:"desde 2007", figsub:"estaba pendiente el acuerdo; trabajadores, empresas y Estado lo cerraron en el CNT",
+    cat:"RRHH", source:"Andina · 22/09/2026",
+    url:"https://andina.pe/agencia/noticia-sueldo-minimo-consejo-nacional-del-trabajo-acuerda-establecer-formula-para-futuras-alzas-1092865.aspx" },
+  { color:"#FF953A", viz:"pie", week:true,
+    title:"Sostenibilidad: pocas gerencias se involucran",
+    fig:"36%", figsub:"de grandes empresas logra que todas sus gerencias ejecuten la estrategia",
+    cat:"ECONOMÍA", source:"Infobae · 25/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/25/sostenibilidad-avanza-en-las-grandes-empresas-pero-solo-36-logra-involucrar-a-todas-sus-gerencias/" },
+  { color:"#FF953A", viz:"chart-down", week:true,
+    title:"BCRP baja al 3,2% el crecimiento del 2026",
+    fig:"3,2%", figsub:"proyecta ahora (antes 3,4%) por un Niño costero más fuerte, que golpea agro y pesca",
+    cat:"ECONOMÍA", source:"RPP · 18/09/2026",
+    url:"https://rpp.pe/economia/economia/brcp-disminuye-proyeccion-de-crecimiento-economico-en-peru-en-2026-por-el-fenomeno-el-nino-en-cuanto-noticia-1708207" }
 ],
 
 
@@ -218,7 +218,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "Entre agosto y setiembre, el MTPE colocó a casi <b>9.000</b> peruanos en empleo formal: talento que las empresas están sumando a su pipeline de contratación.",
+  DATO: "El <b>78%</b> de las grandes empresas peruanas ya mide su impacto social, frente al 32% del 2024: la sostenibilidad entró al scorecard de la gerencia.",
 
 
 
