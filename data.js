@@ -88,28 +88,33 @@
    debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
    tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
 window.NOTICIERO = {
-  generado: "2026-09-25 10:00 (Lima) — edición manual",
+  generado: "2026-09-28 10:00 (Lima) — edición manual",
   NEWS: [
   { color:"#D97757", viz:"claude", week:true,
-    title:"Claude halla un sistema parecido a CRISPR",
-    fig:"950", figsub:"agentes de Claude revisaron más de 200.000 enzimas en 21 horas",
+    title:"Corte avala el veto del Pentágono a Claude",
+    fig:"2 a 1", figsub:"votó la corte de apelaciones de EE. UU.; Anthropic aún puede apelar al pleno",
     cat:"IA", source:"Infobae · 25/09/2026",
-    url:"https://www.infobae.com/tecno/2026/09/25/claude-hallo-un-sistema-enzimatico-parecido-a-crispr-pero-anthropic-no-sabe-para-que-sirve/" },
-  { color:"#E6299C", viz:"handshake", week:true,
-    title:"Sueldo mínimo tendrá fórmula para sus alzas",
-    fig:"desde 2007", figsub:"estaba pendiente el acuerdo; trabajadores, empresas y Estado lo cerraron en el CNT",
-    cat:"RRHH", source:"Andina · 22/09/2026",
-    url:"https://andina.pe/agencia/noticia-sueldo-minimo-consejo-nacional-del-trabajo-acuerda-establecer-formula-para-futuras-alzas-1092865.aspx" },
-  { color:"#FF953A", viz:"pie", week:true,
-    title:"Sostenibilidad: pocas gerencias se involucran",
-    fig:"36%", figsub:"de grandes empresas logra que todas sus gerencias ejecuten la estrategia",
-    cat:"ECONOMÍA", source:"Infobae · 25/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/25/sostenibilidad-avanza-en-las-grandes-empresas-pero-solo-36-logra-involucrar-a-todas-sus-gerencias/" },
-  { color:"#FF953A", viz:"chart-down", week:true,
-    title:"BCRP baja al 3,2% el crecimiento del 2026",
-    fig:"3,2%", figsub:"proyecta ahora (antes 3,4%) por un Niño costero más fuerte, que golpea agro y pesca",
-    cat:"ECONOMÍA", source:"RPP · 18/09/2026",
-    url:"https://rpp.pe/economia/economia/brcp-disminuye-proyeccion-de-crecimiento-economico-en-peru-en-2026-por-el-fenomeno-el-nino-en-cuanto-noticia-1708207" }
+    url:"https://www.infobae.com/estados-unidos/2026/09/25/un-tribunal-federal-respaldo-que-el-pentagono-clasifique-a-anthropic-como-un-riesgo-para-la-cadena-de-suministro/" },
+  { color:"#E6299C", viz:"hire", week:true,
+    title:"Feria del MTPE ofrece 1.000 vacantes en Trujillo",
+    fig:"+1.000", figsub:"puestos formales de más de 10 empresas, con foco en talento joven",
+    cat:"RRHH", source:"Andina · 26/09/2026",
+    url:"https://andina.pe/agencia/noticia-mtpe-ofrece-mas-1000-oportunidades-laborales-trujillo-enfasis-los-jovenes-1093534.aspx" },
+  { color:"#FF953A", viz:"cart", week:true,
+    title:"Malls reciben menos visitas que en 2025",
+    fig:"−1,87%", figsub:"cayó el tráfico en agosto (−2,09% en julio), según Poken en 1.300 tiendas",
+    cat:"RETAIL", source:"Infobae · 24/09/2026",
+    url:"https://www.infobae.com/peru/2026/09/24/caida-en-las-visitas-a-los-centros-comerciales-disminucion-se-debe-a-estos-3-eventos/" },
+  { color:"#FF953A", viz:"building", week:true,
+    title:"La industria genera 1,5 millones de empleos",
+    fig:"12%", figsub:"del PBI aporta la manufactura, cinco puntos menos que en 2007, según la SNI",
+    cat:"ECONOMÍA", source:"Andina · 26/09/2026",
+    url:"https://andina.pe/agencia/noticia-sector-industria-aporta-12-del-pbi-y-genera-mas-15-millones-empleos-1093491.aspx" },
+  { color:"#FF953A", viz:"mining", week:true,
+    title:"Sur andino suma US$ 15.000 millones en minería",
+    fig:"86.000", figsub:"empleos directos en seis regiones que producen el 37% del cobre del país",
+    cat:"ECONOMÍA", source:"Andina · 27/09/2026",
+    url:"https://andina.pe/agencia/noticia-mancomunidad-regional-los-andes-tiene-proyectos-mineros-mas-15000-millones-1093602.aspx" }
 ],
 
 
@@ -218,7 +223,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "El <b>78%</b> de las grandes empresas peruanas ya mide su impacto social, frente al 32% del 2024: la sostenibilidad entró al scorecard de la gerencia.",
+  DATO: "La manufactura peruana da trabajo a más de <b>1,5 millones</b> de personas: un target clave para servicios de talento, capacitación y gestión de planillas.",
 
 
 
