@@ -107,33 +107,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-09-28 10:00 (Lima) — edición manual",
+  generado: "2026-09-30 10:30 (Lima) — edición manual (Claude Code)",
   NEWS: [
-  { color:"#D97757", viz:"claude", week:true,
-    title:"Corte avala el veto del Pentágono a Claude",
-    fig:"2 a 1", figsub:"votó la corte de apelaciones de EE. UU.; Anthropic aún puede apelar al pleno",
-    cat:"IA", source:"Infobae · 25/09/2026",
-    url:"https://www.infobae.com/estados-unidos/2026/09/25/un-tribunal-federal-respaldo-que-el-pentagono-clasifique-a-anthropic-como-un-riesgo-para-la-cadena-de-suministro/" },
-  { color:"#E6299C", viz:"hire", week:true,
-    title:"Feria del MTPE ofrece 1.000 vacantes en Trujillo",
-    fig:"+1.000", figsub:"puestos formales de más de 10 empresas, con foco en talento joven",
-    cat:"RRHH", source:"Andina · 26/09/2026",
-    url:"https://andina.pe/agencia/noticia-mtpe-ofrece-mas-1000-oportunidades-laborales-trujillo-enfasis-los-jovenes-1093534.aspx" },
-  { color:"#FF953A", viz:"cart", week:true,
-    title:"Malls reciben menos visitas que en 2025",
-    fig:"−1,87%", figsub:"cayó el tráfico en agosto (−2,09% en julio), según Poken en 1.300 tiendas",
-    cat:"RETAIL", source:"Infobae · 24/09/2026",
-    url:"https://www.infobae.com/peru/2026/09/24/caida-en-las-visitas-a-los-centros-comerciales-disminucion-se-debe-a-estos-3-eventos/" },
-  { color:"#FF953A", viz:"building", week:true,
-    title:"La industria genera 1,5 millones de empleos",
-    fig:"12%", figsub:"del PBI aporta la manufactura, cinco puntos menos que en 2007, según la SNI",
-    cat:"ECONOMÍA", source:"Andina · 26/09/2026",
-    url:"https://andina.pe/agencia/noticia-sector-industria-aporta-12-del-pbi-y-genera-mas-15-millones-empleos-1093491.aspx" },
-  { color:"#FF953A", viz:"mining", week:true,
-    title:"Sur andino suma US$ 15.000 millones en minería",
-    fig:"86.000", figsub:"empleos directos en seis regiones que producen el 37% del cobre del país",
-    cat:"ECONOMÍA", source:"Andina · 27/09/2026",
-    url:"https://andina.pe/agencia/noticia-mancomunidad-regional-los-andes-tiene-proyectos-mineros-mas-15000-millones-1093602.aspx" }
+  { color:"#F52055", viz:"doc", week:false,
+    title:"Sueldo mínimo sube a S/ 1,230 desde el jueves",
+    fig:"S/ 1,230", figsub:"desde el 1 de octubre; el tramo final a S/ 1,300 llega en 2027 (DS 015-2026-TR)",
+    cat:"LEGAL", source:"Andina · 28/09/2026",
+    url:"https://andina.pe/agencia/noticia-gobierno-oficializa-incremento-de-remuneracion-minima-vital-a-s1300-dos-tramos-1093769.aspx" },
+  { color:"#E6299C", viz:"people", week:false,
+    title:"Solo 16% elegiría volver full a la oficina",
+    fig:"41%", figsub:"prefiere un puesto 100% remoto y 43% un esquema híbrido, según Bumeran",
+    cat:"RRHH", source:"Gestión · 30/09/2026",
+    url:"https://gestion.pe/economia/trabajo-remoto-u-oficinas-asi-van-las-preferencias-de-los-trabajadores-en-peru-segun-bumeran-noticia/" },
+  { color:"#10A37F", viz:"openai", week:false,
+    title:"OpenAI lanza Dots, agentes que trabajan solos",
+    fig:"24/7", figsub:"agentes siempre activos que ejecutan tareas sin que el usuario se las pida",
+    cat:"IA", source:"Gestión · 30/09/2026",
+    url:"https://gestion.pe/tecnologia/openai-presenta-dots-su-nuevo-sistema-de-agentes-de-ia-para-delegar-tareas-noticia/" },
+  { color:"#FF953A", viz:"bars-up", week:false,
+    title:"Mass ya supera las 1.580 tiendas en el Perú",
+    fig:"1.580", figsub:"locales del hard discount, frente a 1.345 a inicios de 2025: más tiendas, más staff",
+    cat:"CONSUMO", source:"Perú Retail · 29/09/2026",
+    url:"https://www.peru-retail.com/como-logro-mass-superar-las-1-500-tiendas-en-peru-las-claves-de-su-rapido-crecimiento/" },
+  { color:"#FF953A", viz:"handshake", week:false,
+    title:"Alemania pone la mira en el litio de Puno",
+    fig:"US$ 834 M", figsub:"inversión estimada del proyecto Falchani, que arrancaría en el segundo semestre de 2028",
+    cat:"ECONOMÍA", source:"Gestión · 30/09/2026",
+    url:"https://gestion.pe/economia/litio-en-puno-y-otros-frentes-en-peru-lo-que-llama-la-atencion-de-alemania-para-invertir-en-el-pais-noticia/" }
 ],
 
 
@@ -242,7 +242,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "La manufactura peruana da trabajo a más de <b>1,5 millones</b> de personas: un target clave para servicios de talento, capacitación y gestión de planillas.",
+  DATO: "El <b>32,8%</b> de los peruanos que hoy no es pobre podría caer en pobreza ante un shock adverso: el empleo formal y estable es su mejor seguro.",
 
 
 

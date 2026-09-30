@@ -1,5 +1,5 @@
 {
-    "_nota":  "Registro de noticias publicadas. La tarea diaria lo lee para no repetir (misma URL o mismo hecho en 14 dias) y agrega las nuevas al publicar. \u0027tema\u0027 = etiqueta corta del hecho (ej. sueldo-minimo, bcr-tasa).",
+    "_nota":  "Registro de noticias publicadas. La tarea diaria lo lee para no repetir (misma URL o mismo hecho en 14 dias) y agrega las nuevas al publicar. 'tema' = etiqueta corta del hecho (ej. sueldo-minimo, bcr-tasa).",
     "items":  [
                   {
                       "edicion":  "2026-07-20",
@@ -424,7 +424,7 @@
                   {
                       "edicion":  "2026-08-14",
                       "cat":  "ECONOMÍA",
-                      "title":  "Moody\u0027s eleva proyeccion de crecimiento del Peru",
+                      "title":  "Moody's eleva proyeccion de crecimiento del Peru",
                       "tema":  "",
                       "url":  "https://www.infobae.com/peru/2026/08/13/moodys-eleva-proyeccion-de-crecimiento-de-peru-a-35-en-2026-incluso-con-un-incumplimiento-fiscal-mas-pronunciado/"
                   },
@@ -942,7 +942,7 @@
                   {
                       "edicion":  "2026-09-23",
                       "cat":  "ECONOMÍA",
-                      "title":  "Moody\u0027s mantiene al Perú en Baa1 estable",
+                      "title":  "Moody's mantiene al Perú en Baa1 estable",
                       "tema":  "",
                       "url":  "https://www.infobae.com/peru/2026/09/23/moodys-mantiene-calificacion-positiva-de-peru-y-proyecta-mayores-inversiones-pese-a-el-nino/"
                   },
@@ -1036,6 +1036,41 @@
                       "title":  "Sur andino suma US$ 15.000 millones en minería",
                       "tema":  "",
                       "url":  "https://andina.pe/agencia/noticia-mancomunidad-regional-los-andes-tiene-proyectos-mineros-mas-15000-millones-1093602.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-30",
+                      "cat":  "LEGAL",
+                      "title":  "Sueldo mínimo sube a S/ 1,230 desde el jueves",
+                      "tema":  "sueldo-minimo-oficializacion-1230",
+                      "url":  "https://andina.pe/agencia/noticia-gobierno-oficializa-incremento-de-remuneracion-minima-vital-a-s1300-dos-tramos-1093769.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-30",
+                      "cat":  "RRHH",
+                      "title":  "Solo 16% elegiría volver full a la oficina",
+                      "tema":  "home-office-preferencias-bumeran",
+                      "url":  "https://gestion.pe/economia/trabajo-remoto-u-oficinas-asi-van-las-preferencias-de-los-trabajadores-en-peru-segun-bumeran-noticia/"
+                  },
+                  {
+                      "edicion":  "2026-09-30",
+                      "cat":  "IA",
+                      "title":  "OpenAI lanza Dots, agentes que trabajan solos",
+                      "tema":  "openai-dots-agentes",
+                      "url":  "https://gestion.pe/tecnologia/openai-presenta-dots-su-nuevo-sistema-de-agentes-de-ia-para-delegar-tareas-noticia/"
+                  },
+                  {
+                      "edicion":  "2026-09-30",
+                      "cat":  "CONSUMO",
+                      "title":  "Mass ya supera las 1.580 tiendas en el Perú",
+                      "tema":  "mass-expansion-tiendas",
+                      "url":  "https://www.peru-retail.com/como-logro-mass-superar-las-1-500-tiendas-en-peru-las-claves-de-su-rapido-crecimiento/"
+                  },
+                  {
+                      "edicion":  "2026-09-30",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Alemania pone la mira en el litio de Puno",
+                      "tema":  "litio-puno-inversion-alemana",
+                      "url":  "https://gestion.pe/economia/litio-en-puno-y-otros-frentes-en-peru-lo-que-llama-la-atencion-de-alemania-para-invertir-en-el-pais-noticia/"
                   }
               ]
 }
