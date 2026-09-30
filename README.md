@@ -32,7 +32,8 @@ La página se recarga sola cada 30 minutos, así toma la edición nueva sin toca
 
 | Qué | Cuándo | Cómo |
 |---|---|---|
-| **Noticias diarias + Dato del día** | Lunes a viernes, 8:40 AM (Lima) → la edición se publica esa misma mañana | Tarea programada en Claude (busca, verifica fechas abriendo cada artículo, publica). ⚠️ Requiere que la app Claude esté abierta en la computadora a esa hora; si estaba cerrada, corre al abrirla |
+| **Noticias diarias + Dato del día** | Lunes a viernes, 8:40 AM (Lima) → la edición se publica esa misma mañana, sin aprobación previa | Tarea programada `noticiero-ipartner-diario` en Claude Code (app de escritorio). ⚠️ Requiere que la app Claude esté abierta en la computadora a esa hora |
+| **Diseño, categorías, reglas** | Solo cuando se pide | Por chat en Claude Code: se revisa en el chat y se sube solo con aprobación |
 | **Argumentos de venta** | No rotan: son permanentes | Los cura a mano el equipo comercial (vía Claude + token). La tarea nocturna tiene prohibido tocarlos |
 | **Diseño** | Solo cuando se pide un cambio | Manualmente vía Claude + token |
 
@@ -48,9 +49,24 @@ El mensaje motivacional de los lunes sigue pendiente de aprobación, y sin métr
 
 ## 📋 Categorías de noticias
 
-**Activas:** 🇵🇪 PERÚ·ECONOMÍA (con foco en los 17 rubros donde iPartner tiene clientes, incluido RETAIL) · 💼 RRHH (el corazón: SUNAFIL, normas, talento) · ⚖️ LEGAL · 🤖 IA (últimas noticias y rumores de las IA más importantes; **Claude/Anthropic siempre primero**, luego ChatGPT, Gemini, Grok, etc.; siempre activa, mínimo una por edición; el icono es el isotipo de la IA de la nota con su color de marca) · 🌎 MUNDO (solo lo que toca al Perú; **si no hay nada verificable, la categoría simplemente no sale ese día**) · 🌟 LIBRE (excepcional: solo hitos mundiales de altísimo impacto, puede pasar semanas sin aparecer y eso es correcto).
+Seis categorías (redefinidas el 30/09/2026). El valor de `cat` se escribe exactamente así:
 
-**Pendientes de aprobación (no implementadas):** 🏢 iPARTNER — noticias internas de eventos del equipo (headline emotivo + frase + foto grupal), publicadas al día siguiente del evento, duran 2 días y luego desaparecen por completo (nunca tarjetas vacías); y el mensaje motivacional de los lunes (sin métricas de ventas — eso fue rechazado explícitamente).
+| `cat` | Color | Frecuencia | Qué entra |
+|---|---|---|---|
+| **ECONOMÍA** | `#FF953A` | diaria | Economía peruana con foco en los 17 rubros donde iPartner tiene clientes |
+| **RRHH** | `#E6299C` | diaria | El corazón: SUNAFIL, empleo, talento, normas laborales |
+| **LEGAL** | `#F52055` | solo si hay algo nuevo | Normas, fallos o proyectos de ley que afecten a empresas |
+| **IA** | color de la marca | diaria | Últimas noticias de las IA importantes. **Máximo una nota de Claude/Anthropic cada dos ediciones**; los otros días, ChatGPT, Gemini, Grok, etc. o IA aplicada a RRHH y ventas. Icono = isotipo de la IA |
+| **CONSUMO** | `#FF953A` | cuando haya | Antes RETAIL: retail, consumo masivo, campañas, ventas por canal. Solo con impacto en empleo o ventas |
+| **MUNDO** | `#07F3F4` | opcional | Absorbe a LIBRE: solo lo que afecta al Perú. Si no hay nada verificable, no sale |
+
+## 🔁 Frescura y no repetición
+
+- **Búsqueda por feeds**: se leen primero los feeds RSS o las portadas de sección de cada medio (listan las notas con fecha y hora), no un buscador genérico.
+- **Ventana**: prioridad a notas de las últimas **48 h**. Hasta 7 días solo como respaldo, marcadas `week:true`.
+- **`historial.json`**: registro de todo lo publicado (fecha de edición, categoría, título, tema, URL). La tarea lo lee antes de elegir y agrega las notas nuevas al publicar.
+- **Descarte**: una nota no entra si su URL ya salió, o si cuenta el **mismo hecho** que otra publicada en los últimos **14 días**, en cualquier categoría y de cualquier medio. Excepción: que traiga un dato nuevo real (otra cifra, otra decisión).
+- **Temas que más se repitieron** hasta el 30/09 (vigilar): sueldo mínimo, empleo formal, SUNAFIL y multas, exportaciones, BCR y tasa, Fiestas Patrias, Anthropic/Pentágono.
 
 ## ✍️ Reglas editoriales esenciales
 
@@ -60,7 +76,7 @@ El mensaje motivacional de los lunes sigue pendiente de aprobación, y sin métr
 - **Sin emojis en las noticias**: ni en el titular, ni en el subtexto de la cifra, ni marcas decorativas en la esquina de la tarjeta.
 - El visual (`viz`) se rige por dos reglas: **(1) se elige por lo que cuenta la noticia** —el icono debe tener que ver con el tema, no ponerse al azar— y **(2) debe variar: ningún icono se repite dos días seguidos**. Cuando varios iconos calzan con el tema, se prefiere el que no salió ayer; el significado manda sobre la variedad. La biblioteca es de **30 iconos** y está listada con su uso en la cabecera de `data.js`.
 - La edición puede tener 4 o 5 noticias en vez de 5: si una categoría no tiene nada verificable, no se rellena.
-- Enlaces del botón a fuentes de acceso libre (Infobae, RPP, Andina, BBC, DW, Forbes Perú, Approlog).
+- Enlaces del botón a fuentes de acceso libre: Infobae, RPP, Andina, BBC, DW, Forbes Perú y Approlog, más (desde el 30/09/2026) gob.pe (SUNAFIL, MTPE, MEF), El Peruano, La República, Gestión y Perú Retail, solo notas sin muro de pago.
 - EXCLUSIÓN ABSOLUTA: Adecco, Manpower y Tawa (clientes actuales).
 - Prohibidos: sensacionalistas, espectáculos, deportivos, blogs de proveedores RRHH.
 - Toda noticia debe permitir una acción comercial o de empresa.
@@ -93,6 +109,11 @@ Registro de las decisiones de diseño y contenido, para no perder el porqué.
 - Fuentes de noticias ampliadas con **Forbes Perú** y **Approlog**.
 - **Estilo spanglish** adoptado como norma de marca (ver Reglas editoriales).
 - Caché: `data.js` se refresca en cada recarga de 30 min.
+
+**30/09/2026 — migración a Claude Code y reglas de frescura**
+- La tarea diaria pasa a Claude Code (`noticiero-ipartner-diario`); la del chat anterior se desactiva.
+- Análisis del historial (20/07–28/09, 148 notas): la misma nota casi nunca se repite, pero **sí el tema** (sueldo mínimo 13 notas, empleo formal 15, SUNAFIL 14). IA fue casi solo Claude (14 de 15). MUNDO salió 3 veces y LIBRE nunca. Se publicó una nota de febrero y se usó una fuente fuera de la lista.
+- Cambios: RETAIL → **CONSUMO**; LIBRE se fusiona en **MUNDO**; IA con tope de Claude; nuevo `historial.json` y regla de 14 días; búsqueda por feeds con prioridad de 48 h; fuentes peruanas ampliadas.
 
 ---
 

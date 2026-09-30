@@ -22,7 +22,9 @@
                varios en el mes, cada uno es su propio slide.
 
    ⚠️ FUENTES de acceso libre para las noticias: Infobae, RPP, Andina, BBC,
-   DW, Forbes Perú (forbes.pe) y Approlog (approlog.org/articulos).
+   DW, Forbes Perú (forbes.pe) y Approlog (approlog.org/articulos). Ampliadas
+   el 30/09/2026 con: gob.pe (SUNAFIL, MTPE, MEF), El Peruano (normas
+   legales), La República, Gestión y Perú Retail (solo notas abiertas).
    EXCLUSIÓN ABSOLUTA como fuente o mención: Adecco, Manpower y Tawa.
 
    ⚠️ ESTILO SPANGLISH (norma de marca): usar términos en inglés ya comunes en
@@ -82,11 +84,28 @@
      gemini      isotipo de Gemini/Google (usar color #4C8DF6)
      grok        isotipo de Grok/xAI (usar color #C9D1D9)
 
-   CATEGORIA "IA" (siempre activa): ultimas noticias y rumores de las IA mas
-   importantes. PRIORIDAD: Claude/Anthropic primero; si hay algo de Claude
-   interesante, va antes que otra IA. Luego ChatGPT, Gemini, Grok, etc. El icono
-   debe ser el isotipo de la IA de la noticia con su color de marca; si la IA no
-   tiene isotipo propio, usar "ai". Al menos UNA noticia de IA por edicion. */
+   CATEGORÍAS (30/09/2026) — valor exacto de `cat` y su color:
+     ECONOMÍA  #FF953A  diaria. Foco en los rubros de clientes de iPartner.
+     RRHH      #E6299C  diaria. SUNAFIL, empleo, talento, normas laborales.
+     LEGAL     #F52055  solo si hay norma, fallo o proyecto nuevo.
+     IA        #D97757 (o color de la marca)  diaria. Máximo UNA nota de
+               Claude/Anthropic cada DOS ediciones; los otros días, otra IA
+               (ChatGPT, Gemini, Grok…) o IA aplicada a RRHH/ventas. Icono =
+               isotipo de la IA de la nota; si no tiene, "ai".
+     CONSUMO   #FF953A  (antes RETAIL) retail, consumo masivo, campañas,
+               ventas por canal. Solo con impacto en empleo o ventas.
+     MUNDO     #07F3F4  (absorbe LIBRE) solo lo que afecta al Perú. Opcional.
+   Escribir "ECONOMÍA" con la tilde literal, nunca como Í.
+
+   ⚠️ NO REPETIR: antes de elegir, leer historial.json. Se descarta una nota
+   si su URL ya salió, o si cuenta el MISMO HECHO que otra publicada en los
+   últimos 14 días (en cualquier categoría y de cualquier medio), salvo que
+   traiga un dato nuevo real (otra cifra, otra decisión). Al publicar, agregar
+   cada nota a historial.json con su "tema".
+
+   ⚠️ FRESCURA: priorizar notas de las últimas 48 h, buscadas en los feeds
+   RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
+   (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
   generado: "2026-09-28 10:00 (Lima) — edición manual",
   NEWS: [

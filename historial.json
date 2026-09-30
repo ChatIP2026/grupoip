@@ -1,0 +1,1041 @@
+{
+    "_nota":  "Registro de noticias publicadas. La tarea diaria lo lee para no repetir (misma URL o mismo hecho en 14 dias) y agrega las nuevas al publicar. \u0027tema\u0027 = etiqueta corta del hecho (ej. sueldo-minimo, bcr-tasa).",
+    "items":  [
+                  {
+                      "edicion":  "2026-07-20",
+                      "cat":  "RRHH",
+                      "title":  "SUNAFIL ya no multa por reducir turnos con causa real",
+                      "tema":  "",
+                      "url":  "https://gestion.pe/economia/management-empleo/reducir-la-jornada-laboral-y-sueldo-de-un-trabajador-no-siempre-sera-sancionado-por-sunafil-noticia/"
+                  },
+                  {
+                      "edicion":  "2026-07-20",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Perú con caja récord: clientes con presupuesto",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-mef-peru-consolida-posicion-externa-elevadas-reservas-y-superavit-comercial-1083209.aspx"
+                  },
+                  {
+                      "edicion":  "2026-07-20",
+                      "cat":  "RRHH",
+                      "title":  "Lima contrata a toda máquina",
+                      "tema":  "",
+                      "url":  "https://gestion.pe/economia/empleo-en-lima-crece-75-que-sectores-impulsaron-la-contratacion-noticia/"
+                  },
+                  {
+                      "edicion":  "2026-07-20",
+                      "cat":  "LEGAL",
+                      "title":  "SUNAFIL abre un nuevo frente: trabajo del hogar",
+                      "tema":  "",
+                      "url":  "https://larepublica.pe/economia/2026/07/14/sunafil-propone-nueva-directiva-para-fiscalizar-el-trabajo-del-hogar-hnews-257348"
+                  },
+                  {
+                      "edicion":  "2026-07-20",
+                      "cat":  "RRHH",
+                      "title":  "Lima emplea más y paga mejor",
+                      "tema":  "",
+                      "url":  "https://elcomercio.pe/economia/peru/poblacion-ocupada-aumenta-75-en-lima-metropolitana-durante-el-segundo-trimestre-del-2026-segun-inei-l-ultimas-noticia/"
+                  },
+                  {
+                      "edicion":  "2026-07-20",
+                      "cat":  "LEGAL",
+                      "title":  "SUNAFIL fiscalizará el trabajo del hogar",
+                      "tema":  "",
+                      "url":  "https://elperuano.pe/noticia/300113-sunafil-alista-nueva-directiva-inspectiva"
+                  },
+                  {
+                      "edicion":  "2026-07-20",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Exportaciones vuelan: clientes con caja",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-exportaciones-crecieron-367-entre-enero-y-mayo-impulsados-precios-minerales-1083308.aspx"
+                  },
+                  {
+                      "edicion":  "2026-07-20",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Pesca hunde el PBI: manufactura en alerta",
+                      "tema":  "",
+                      "url":  "https://larepublica.pe/economia/2026/07/16/pbi-peruano-desacelera-a-18-en-mayo-tras-desplome-de-la-pesca-y-caida-de-la-manufactura-hnews-211840"
+                  },
+                  {
+                      "edicion":  "2026-07-21",
+                      "cat":  "RRHH",
+                      "title":  "Despidos golpean a 7 de cada 10 empresas",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/18/crisis-laboral-en-peru-siete-de-cada-diez-entidades-despidieron-trabajadores-por-estas-dos-razones/"
+                  },
+                  {
+                      "edicion":  "2026-07-21",
+                      "cat":  "LEGAL",
+                      "title":  "Grati vencida: multa de hasta S/143 mil",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/gratificacion-julio-2026-peru-cuando-se-paga-y-como-calcular-dinero-a-recibir-en-fiestas-patrias-noticia-1695772"
+                  },
+                  {
+                      "edicion":  "2026-07-21",
+                      "cat":  "ECONOMÍA",
+                      "title":  "BCR ancla la tasa: crédito estable",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-bcr-mantiene-tasa-interes-referencia-425-undecimo-mes-consecutivo-1082982.aspx"
+                  },
+                  {
+                      "edicion":  "2026-07-21",
+                      "cat":  "CONSUMO",
+                      "title":  "Retail crece hasta 5% por Fiestas Patrias",
+                      "tema":  "",
+                      "url":  "https://www.peru-retail.com/sector-retail-proyecta-un-crecimiento-de-las-ventas-de-hasta-5-durante-las-fiestas-patrias/"
+                  },
+                  {
+                      "edicion":  "2026-07-22",
+                      "cat":  "RRHH",
+                      "title":  "Feriados de julio: trabajar cuesta el triple",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/21/los-feriados-en-peru-del-23-28-y-29-de-julio-activan-un-pago-triple-para-los-trabajadores-si-se-cumple-esto/"
+                  },
+                  {
+                      "edicion":  "2026-07-22",
+                      "cat":  "LEGAL",
+                      "title":  "Grati CAS: 10% este año, 100% recién en 2030",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/22/decretan-gratificacion-para-trabajadores-cas-se-paga-el-10-este-ano-sin-bono-essalud/"
+                  },
+                  {
+                      "edicion":  "2026-07-22",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Exportaciones rumbo a récord histórico en 2026",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-adex-proyecta-exportaciones-peruanas-superarian-los-107000-millones-este-ano-1083977.aspx"
+                  },
+                  {
+                      "edicion":  "2026-07-24",
+                      "cat":  "RRHH",
+                      "title":  "Pymes dinamizan el empleo temporal por Fiestas Patrias",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-pymes-proyectan-crecimiento-hasta-8-fiestas-patrias-dinamizan-empleo-temporal-1084840.aspx"
+                  },
+                  {
+                      "edicion":  "2026-07-24",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Empleo formal privado sube 5.4% a mayo",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/america/agencias/2026/07/19/el-empleo-formal-en-peru-acumula-26-meses-de-crecimiento-a-mayo-pasado/"
+                  },
+                  {
+                      "edicion":  "2026-07-24",
+                      "cat":  "CONSUMO",
+                      "title":  "Retail moverá S/ 4,600 millones en Fiestas Patrias",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/america/agencias/2026/07/15/minoristas-esperan-mover-mas-de-1300-millones-de-dolares-por-fiesta-nacional-de-peru/"
+                  },
+                  {
+                      "edicion":  "2026-07-24",
+                      "cat":  "ECONOMÍA",
+                      "title":  "BCR eleva a 3.4% el crecimiento del Perú",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/bcr-eleva-proyeccion-de-crecimiento-de-la-economia-peruana-a-34-para-2026-pese-a-nino-costero-noticia-1693784"
+                  },
+                  {
+                      "edicion":  "2026-07-27",
+                      "cat":  "RRHH",
+                      "title":  "Talent gap: Perú forma la mitad de técnicos",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/26/el-talento-tambien-atrae-inversiones/"
+                  },
+                  {
+                      "edicion":  "2026-07-27",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Exportaciones sostienen 1 de cada 3 empleos formales",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/23/empleos-vinculados-a-las-exportaciones-crecieron-89-y-superaron-los-15-millones/"
+                  },
+                  {
+                      "edicion":  "2026-07-27",
+                      "cat":  "CONSUMO",
+                      "title":  "Gamarra proyecta S/ 18 millones diarios en campaña",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/25/gamarra-espera-recuperarse-en-ventas-de-fiestas-patrias-tras-baja-demanda-por-efectos-del-fenomeno-el-nino/"
+                  },
+                  {
+                      "edicion":  "2026-07-27",
+                      "cat":  "LEGAL",
+                      "title":  "Sunafil endurece la fiscalización del trabajo del hogar",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/13/el-uso-obligatorio-de-uniformes-para-trabajadoras-del-hogar-quedara-prohibido-en-espacios-publicos-de-peru/"
+                  },
+                  {
+                      "edicion":  "2026-07-27",
+                      "cat":  "MUNDO",
+                      "title":  "Arancel de EE. UU. golpea al agro peruano",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/aranceles-de-trump-afectaran-a-las-estrellas-del-agro-peruano-uvas-arandanos-y-esparragos-pagaran-el-impuesto-del-125-noticia-1698708"
+                  },
+                  {
+                      "edicion":  "2026-07-30",
+                      "cat":  "RRHH",
+                      "title":  "El sueldo mínimo sube a S/ 1,300",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-gobierno-anuncia-elevara-remuneracion-minima-vital-a-s-1300-mensuales-1085394.aspx"
+                  },
+                  {
+                      "edicion":  "2026-07-30",
+                      "cat":  "LEGAL",
+                      "title":  "Ley Silla obliga a dar descanso sentado",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/08/la-ley-silla-ya-es-una-realidad-congreso-promulga-norma-para-el-descanso-sentado-de-trabajadores/"
+                  },
+                  {
+                      "edicion":  "2026-07-30",
+                      "cat":  "RRHH",
+                      "title":  "Las mypes ya pagan más que el mínimo",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/29/mypes-no-estan-asustadas-por-incremento-del-sueldo-minimo-todo-dependera-del-bono-anunciado-por-keiko-fujimori/"
+                  },
+                  {
+                      "edicion":  "2026-07-31",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Superávit comercial récord da confianza para invertir",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/12/superavit-comercial-de-peru-marca-maximo-historico-de-usd-44000-millones-en-12-meses/"
+                  },
+                  {
+                      "edicion":  "2026-07-31",
+                      "cat":  "RRHH",
+                      "title":  "La asignación familiar sube a S/ 130",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/29/asignacion-familiar-aumenta-tras-incremento-del-sueldo-minimo-este-es-el-nuevo-monto-que-recibiran-los-padres-y-madres-en-peru/"
+                  },
+                  {
+                      "edicion":  "2026-07-31",
+                      "cat":  "LEGAL",
+                      "title":  "Reforma laboral graduaría CTS y gratificación por sueldo",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/30/ejecutivo-busca-recortar-cts-y-gratificaciones-solo-quienes-ganen-mas-recibirian-los-beneficios-completos/"
+                  },
+                  {
+                      "edicion":  "2026-08-03",
+                      "cat":  "RRHH",
+                      "title":  "Sueldo mínimo a S/ 1,300 encarece cada planilla",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/28/aumento-del-sueldo-minimo-a-s-1300-puede-generar-mayor-informalidad-laboral/"
+                  },
+                  {
+                      "edicion":  "2026-08-03",
+                      "cat":  "LEGAL",
+                      "title":  "Ejecutivo pide 120 días para flexibilizar beneficios",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/politica/gobierno/las-claves-del-pedido-de-facultades-legislativas-de-keiko-fujimori-que-reformas-busca-implementar-el-ejecutivo-noticia-1699321"
+                  },
+                  {
+                      "edicion":  "2026-08-03",
+                      "cat":  "RRHH",
+                      "title":  "Gobiernos regionales fiscalizarán a las microempresas",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/27/la-descentralizacion-de-la-inspeccion-laboral-fortalecera-la-proteccion-de-los-trabajadores/"
+                  },
+                  {
+                      "edicion":  "2026-08-04",
+                      "cat":  "RRHH",
+                      "title":  "Sueldo pretendido llega a S/ 3,475 mensuales",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/03/cuanto-deberias-pedir-de-sueldo-en-2026-pretensiones-salariales-por-experiencia-profesion-y-genero-en-peru-segun-bumeran/"
+                  },
+                  {
+                      "edicion":  "2026-08-04",
+                      "cat":  "LEGAL",
+                      "title":  "Proponen un régimen laboral único y progresivo",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/07/31/trabajadores-privados-podrian-pasar-a-nuevo-regimen-laboral-con-beneficios-y-aportes-a-pensiones-progresivos/"
+                  },
+                  {
+                      "edicion":  "2026-08-04",
+                      "cat":  "RRHH",
+                      "title":  "Trabajar el feriado del jueves se paga triple",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-este-6-agosto-es-feriado-conoce-se-conmemora-y-derechos-laborales-tienes-1085986.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-04",
+                      "cat":  "ECONOMÍA",
+                      "title":  "MTPE ratifica sueldo mínimo de S/ 1,300",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-mtpe-incremento-del-sueldo-minimo-permitira-recuperar-capacidad-adquisitiva-2020-1086077.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-04",
+                      "cat":  "LEGAL",
+                      "title":  "MTPE apunta a formalizar sin recortar derechos",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-mtpe-priorizara-lucha-contra-informalidad-sin-recortar-derechos-laborales-1085937.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-04",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Bono compensatorio para mypes por el sueldo mínimo",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-pymes-destacan-reactivacion-promype-impulso-compras-publicas-y-apoyo-al-credito-1085496.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-04",
+                      "cat":  "RRHH",
+                      "title":  "Las habilidades que la IA no puede reemplazar",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-empleo-estas-son-las-habilidades-que-inteligencia-artificial-no-podra-reemplazar-1085883.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-04",
+                      "cat":  "RRHH",
+                      "title":  "MTPE articula empleo temporal con municipios",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-mtpe-fortalece-alianzas-gobiernos-locales-para-impulsar-empleo-temporal-1086158.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-05",
+                      "cat":  "RRHH",
+                      "title":  "Sueldo mínimo a S/ 1,300 inicia su evaluación",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/05/aumento-del-sueldo-minimo-da-el-primer-paso-mtpe-ratifica-a-secretario-del-consejo-nacional-de-trabajo/"
+                  },
+                  {
+                      "edicion":  "2026-08-05",
+                      "cat":  "LEGAL",
+                      "title":  "Gratificación CAS no puede bajar de S/ 300",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/01/alertan-que-trabajadores-cas-estan-recibiendo-gratificacion-menor-a-s300-por-mala-interpretacion/"
+                  },
+                  {
+                      "edicion":  "2026-08-05",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Vacancia de oficinas en Lima cae a 7.8%",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/05/una-zona-de-lima-se-esta-quedando-sin-oficinas-disponibles-y-no-es-san-isidro-ni-miraflores/"
+                  },
+                  {
+                      "edicion":  "2026-08-05",
+                      "cat":  "ECONOMÍA",
+                      "title":  "El Niño amenaza 78,000 empleos en pesca",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/fenomeno-el-nino-pondria-en-riesgo-mas-de-78000-empleos-pesqueros-advierte-la-sociedad-nacional-de-pesqueria-noticia-1699989"
+                  },
+                  {
+                      "edicion":  "2026-08-05",
+                      "cat":  "CONSUMO",
+                      "title":  "Retail peruano venderá S/ 55,000 millones en 2026",
+                      "tema":  "",
+                      "url":  "https://forbes.pe/economia-y-finanzas/2026-02-10/ventas-minoristas-en-peru-crecerian-alrededor-de-4-este-2026-y-alcanzarian-los-s-55-000-millones"
+                  },
+                  {
+                      "edicion":  "2026-08-07",
+                      "cat":  "RRHH",
+                      "title":  "Sunafil estrena jefatura con enfoque preventivo",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-ministerio-trabajo-designo-a-evelin-coloma-cieza-como-nueva-jefa-sunafil-1086341.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-07",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Inversión privada acelera y arrastra empleo formal",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-peru-presenta-condiciones-para-captar-una-mayor-atencion-inversionistas-internacionales-1085025.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-11",
+                      "cat":  "RRHH",
+                      "title":  "Sueldo mínimo sube a S/ 1,300 en tramos",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/america/agencias/2026/08/10/peru-subira-el-salario-minimo-en-4357-euros-de-manera-escalonada-para-no-alimentar-la-inflacion/"
+                  },
+                  {
+                      "edicion":  "2026-08-11",
+                      "cat":  "LEGAL",
+                      "title":  "Reforma laboral apunta a Sunafil y beneficios",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/ministerio-de-trabajo-completa-su-equipo-que-tendra-a-cargo-el-incremento-del-sueldo-minimo-y-la-reforma-laboral-noticia-1700366"
+                  },
+                  {
+                      "edicion":  "2026-08-11",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Inversión minera crecerá y supera US$ 6,800 millones",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-por-que-peru-sigue-siendo-atractivo-para-las-inversiones-1087031.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-12",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Interbank firma alianza directa con Anthropic",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/12/un-banco-de-peru-ha-suscrito-una-alianza-con-anthropic-para-desplegar-ia-generativa-en-sus-operaciones-como-la-usara/"
+                  },
+                  {
+                      "edicion":  "2026-08-12",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Exportaciones peruanas marcan récord histórico semestral",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/07/cobre-oro-arandanos-y-paltas-son-de-los-productos-peruanos-mas-demandados-en-el-extranjero/"
+                  },
+                  {
+                      "edicion":  "2026-08-12",
+                      "cat":  "LEGAL",
+                      "title":  "MEF llevará cuatro leyes al Tribunal Constitucional",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/08/adios-a-la-gratificacion-cas-aumento-de-pensiones-a-maestros-y-militares-y-homologacion-cafae-mef-las-llevara-al-tc/"
+                  },
+                  {
+                      "edicion":  "2026-08-12",
+                      "cat":  "RRHH",
+                      "title":  "Agentes de IA ya atienden siete de diez consultas",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/07/inteligencia-artificial-en-la-empresa-mas-agentes-mayor-productividad-y-nuevos-retos-en-peru/"
+                  },
+                  {
+                      "edicion":  "2026-08-12",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Conflictos sociales frenan cartera minera de US$ 64,000 millones",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/10/el-camino-hacia-el-dorado-151-conflictos-mineros-amenazan-una-cartera-de-usd-64-mil-millones-en-peru/"
+                  },
+                  {
+                      "edicion":  "2026-08-13",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Sueldo mínimo subirá en dos tramos hasta 2027",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/12/sueldo-minimo-de-s1300-cuando-se-darian-los-dos-aumentos-según-el-gobierno/"
+                  },
+                  {
+                      "edicion":  "2026-08-13",
+                      "cat":  "LEGAL",
+                      "title":  "MEF evalúa régimen laboral con beneficios graduales",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/07/mef-si-evalúara-propuesta-de-nuevo-régimen-laboral-con-gratificacion-cts-y-aportes-a-pensiones-graduales/"
+                  },
+                  {
+                      "edicion":  "2026-08-13",
+                      "cat":  "RRHH",
+                      "title":  "Pretensión salarial peruana toca su nivel más alto",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/sueldo-en-peru-trabajadores-elevan-expectativas-salariales-promedio-supera-los-3400-soles-mensual-noticia-1699645"
+                  },
+                  {
+                      "edicion":  "2026-08-13",
+                      "cat":  "RRHH",
+                      "title":  "Talento joven innova solo, no en equipo",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/innovacion-en-peru-1-de-cada-3-jovenes-tiene-ideas-para-mejorar-su-comunidad-pero-no-son-implementadas-noticia-1701184"
+                  },
+                  {
+                      "edicion":  "2026-08-14",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Moody\u0027s eleva proyeccion de crecimiento del Peru",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/13/moodys-eleva-proyeccion-de-crecimiento-de-peru-a-35-en-2026-incluso-con-un-incumplimiento-fiscal-mas-pronunciado/"
+                  },
+                  {
+                      "edicion":  "2026-08-14",
+                      "cat":  "LEGAL",
+                      "title":  "Feriado del 30 de agosto cae domingo",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/13/que-dia-cae-el-feriado-el-30-de-agosto-y-cuanto-te-deben-pagar-si-trabajas-el-dia-de-santa-rosa-de-lima/"
+                  },
+                  {
+                      "edicion":  "2026-08-14",
+                      "cat":  "RRHH",
+                      "title":  "Empresas peruanas gastan S/150 en alimentacion",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/10/que-tanto-te-quiere-tu-jefe-este-es-el-monto-que-las-empresas-en-peru-destinan-para-beneficios-alimentarios/"
+                  },
+                  {
+                      "edicion":  "2026-08-14",
+                      "cat":  "CONSUMO",
+                      "title":  "Solo 12% de bodegas accede a credito",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/12/mas-de-440-mil-bodegas-no-acceden-a-creditos-bancos-las-consideran-de-alto-riesgo-por-extorsiones/"
+                  },
+                  {
+                      "edicion":  "2026-08-14",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Pagos digitales incluyen a siete millones",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/13/peru-supera-los-200-millones-de-transacciones-interoperables-al-mes-pero-el-80-de-los-pagos-aun-son-en-efectivo/"
+                  },
+                  {
+                      "edicion":  "2026-08-17",
+                      "cat":  "LEGAL",
+                      "title":  "Sueldo minimo sube en dos tramos",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/17/keiko-fujimori-confirma-que-sueldo-minimo-subira-en-dos-tramos-la-segunda-etapa-sera-despues-del-fenomeno-el-nino/"
+                  },
+                  {
+                      "edicion":  "2026-08-17",
+                      "cat":  "RRHH",
+                      "title":  "MEF alista combo tributario laboral para formalizar",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-mef-alista-combo-tributariolaboral-para-facilitar-formalizacion-1087878.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-17",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Mercado laboral empuja el credito de consumo",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-agentes-economicos-confianza-y-consumo-impulsan-economia-peruana-1087850.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-17",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Economia peruana crecio 3,05% en el semestre",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/15/economia-peruana-crecio-mediocre-305-este-primer-semestre-y-aun-se-viene-el-fenomeno-el-nino-global/"
+                  },
+                  {
+                      "edicion":  "2026-08-18",
+                      "cat":  "ECONOMÍA",
+                      "title":  "MEF proyecta crecimiento estable hasta el 2029",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/09/economia-peruana-crecera-32-en-2026-y-mantendra-ritmo-similar-hasta-2029-segun-el-mef/"
+                  },
+                  {
+                      "edicion":  "2026-08-18",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Subsidio al diesel corre por tres meses",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/el-gobierno-oficializo-un-subsidio-de-s-105-millones-para-el-transporte-terrestre-ante-el-incremento-en-el-costo-del-combustible-noticia-1701819"
+                  },
+                  {
+                      "edicion":  "2026-08-18",
+                      "cat":  "MUNDO",
+                      "title":  "Arancel de EEUU aprieta margenes exportadores peruanos",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/18/aranceles-de-estados-unidos-como-puede-el-peru-proteger-la-competitividad-de-sus-exportaciones/"
+                  },
+                  {
+                      "edicion":  "2026-08-19",
+                      "cat":  "LEGAL",
+                      "title":  "Formalización entra al pedido de facultades",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/15/estos-son-los-ejes-del-mef-en-el-pedido-de-facultades-que-presentara-el-gobierno/"
+                  },
+                  {
+                      "edicion":  "2026-08-19",
+                      "cat":  "ECONOMÍA",
+                      "title":  "BCR mantiene su tasa doce meses seguidos",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/14/bcr-deja-tasa-de-referencia-en-425-y-ya-van-12-meses-que-se-mantiene/"
+                  },
+                  {
+                      "edicion":  "2026-08-19",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Paro total de transportes el 25 de agosto",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/18/anuncian-paro-de-transportistas-para-el-martes-25-de-agosto-ante-nula-comunicacion-con-keiko-fujimori/"
+                  },
+                  {
+                      "edicion":  "2026-08-20",
+                      "cat":  "RRHH",
+                      "title":  "La IA entra a la selección de personal",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/19/reclutamiento-con-inteligencia-artificial-como-la-tecnologia-esta-cambiando-la-seleccion-de-personal/"
+                  },
+                  {
+                      "edicion":  "2026-08-20",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Inversión minera crece 42,7% en el semestre",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/19/inversion-minera-supera-los-usd-3300-millones-y-crece-427-en-el-primer-semestre-de-2026/"
+                  },
+                  {
+                      "edicion":  "2026-08-20",
+                      "cat":  "ECONOMÍA",
+                      "title":  "MEF apunta a 4%, el mercado ve 3,3%",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/15/mef-ve-posible-lograr-pbi-de-4-para-2026-pero-analistas-y-empresas-no-opinan-lo-mismo/"
+                  },
+                  {
+                      "edicion":  "2026-08-20",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Brecha de vivienda frena la meta del sector",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/20/meta-de-125-millones-de-viviendas-capeco-pide-ampliar-oferta-de-suelo-servicios-e-infraestructura/"
+                  },
+                  {
+                      "edicion":  "2026-08-21",
+                      "cat":  "RRHH",
+                      "title":  "Empleo crece 1,8% entre desigualdades regionales",
+                      "tema":  "",
+                      "url":  "https://larepublica.pe/economia/2026/08/18/empleo-en-peru-crece-18-pero-nueve-ciudades-pierden-trabajadores-cajamarca-lidera-la-caida-hnews-1500480"
+                  },
+                  {
+                      "edicion":  "2026-08-21",
+                      "cat":  "LEGAL",
+                      "title":  "Transportistas paran: 460 empresas por seguridad",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/lima/actualidad/sector-de-transportistas-anuncia-paro-para-este-21-de-agosto-noticia-1651315"
+                  },
+                  {
+                      "edicion":  "2026-08-21",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Credicorp: utilidad neta sube 8,8%, PBI 3,2%",
+                      "tema":  "",
+                      "url":  "https://forbes.pe/negocios/2026-08-17/credicorp-reporto-que-su-utilidad-neta-crecio-88-en-el-segundo-trimestre/"
+                  },
+                  {
+                      "edicion":  "2026-08-24",
+                      "cat":  "RRHH",
+                      "title":  "Job hugging: 78% teme perder su empleo",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/23/el-miedo-a-perder-el-empleo-domina-a-los-trabajadores-de-peru-segun-estudio-regional-8-de-cada-10-teme-quedarse-en-la-calle/"
+                  },
+                  {
+                      "edicion":  "2026-08-24",
+                      "cat":  "RRHH",
+                      "title":  "Sueldo mínimo a S/ 1.300 entra a debate",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/22/aumento-de-sueldo-minimo-cuando-iniciarian-las-discusiones-en-el-consejo-nacional-de-trabajo/"
+                  },
+                  {
+                      "edicion":  "2026-08-24",
+                      "cat":  "LEGAL",
+                      "title":  "Demanda busca gratificación CAS al 100%",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/21/gratificacion-y-cts-para-cas-poder-judicial-admite-demanda-que-busca-eliminar-la-gradualidad-del-pago/"
+                  },
+                  {
+                      "edicion":  "2026-08-24",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Fibra de vicuña supera USD 330 por kilo",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/24/oro-de-los-andes-la-fibra-de-vicuna-rompe-la-barrera-de-usd-330-por-kilo-y-pone-a-peru-al-centro-del-mercado-textil-de-lujo/"
+                  },
+                  {
+                      "edicion":  "2026-08-26",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Inversión privada crece 17,6% en el año",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/24/imparable-la-fiebre-por-invertir-en-peru-alcanza-su-mayor-nivel-en-16-anos-segun-el-gobierno-gracias-a-estas-dos-razones/"
+                  },
+                  {
+                      "edicion":  "2026-08-26",
+                      "cat":  "LEGAL",
+                      "title":  "Feriado del 30: pago triple o multa",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/26/feriado-por-santa-rosa-de-lima-este-30-de-agosto-aplica-para-trabajadores-publicos-y-privados/"
+                  },
+                  {
+                      "edicion":  "2026-08-26",
+                      "cat":  "RRHH",
+                      "title":  "Marcaciones mal registradas suben el costo",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/25/olvidaste-marcar-ingreso-tranquilo-si-cumpliste-tu-jornada-la-ley-te-protege-el-sueldo/"
+                  },
+                  {
+                      "edicion":  "2026-08-26",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Dólar toca su nivel más bajo en seis años",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/25/dolar-cae-a-su-valor-mas-bajo-en-peru-en-mas-de-seis-anos-antes-del-inicio-de-la-pandemia/"
+                  },
+                  {
+                      "edicion":  "2026-08-26",
+                      "cat":  "IA",
+                      "title":  "Claude marcará sus textos con marca de agua",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/america/agencias/2026/08/17/anthropic-aclara-las-dudas-sobre-la-marca-de-agua-que-claude-aplicara-a-sus-textos/"
+                  },
+                  {
+                      "edicion":  "2026-08-27",
+                      "cat":  "IA",
+                      "title":  "Anthropic va a Wall Street este año",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/economia/2026/08/26/anthropic-se-prepara-para-salir-a-cotizar-en-wall-street-este-ano-y-busca-batir-el-record-de-spacex/"
+                  },
+                  {
+                      "edicion":  "2026-08-27",
+                      "cat":  "RRHH",
+                      "title":  "Sueldo mínimo sube a S/ 1.300 sin fecha",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/sueldo-minimo-en-peru-a-1300-soles-ministro-juan-sheput-asegura-no-tiene-fecha-definida-aun-noticia-1703873"
+                  },
+                  {
+                      "edicion":  "2026-08-27",
+                      "cat":  "LEGAL",
+                      "title":  "El MEF anuncia el fin del RUS y el RER",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/elmer-cuba-anuncia-fin-de-regimenes-tributarios-para-mypes-como-el-rus-y-el-rer-ha-llegado-la-hora-de-cambiarlos-noticia-1703727"
+                  },
+                  {
+                      "edicion":  "2026-08-27",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Anillo Vial cierra US$ 190 M para terrenos",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-proinversion-anillo-vial-asegura-190-millones-para-liberar-terrenos-y-avanzar-obras-1089183.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-27",
+                      "cat":  "RRHH",
+                      "title":  "La mitad de los mayores de 60 sigue activa",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/dia-del-adulto-mayor-la-mitad-de-peruanos-de-mas-de-60-anos-siguen-trabajando-y-uno-de-cada-cuatro-es-jefe-de-hogar-noticia-1703750"
+                  },
+                  {
+                      "edicion":  "2026-08-31",
+                      "cat":  "IA",
+                      "title":  "Claude vuelve al Gobierno de Estados Unidos",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/tecno/2026/08/28/anthropic-gana-batalla-legal-y-claude-podra-volver-a-utilizarse-en-las-agencias-del-gobierno-de-ee-uu/"
+                  },
+                  {
+                      "edicion":  "2026-08-31",
+                      "cat":  "RRHH",
+                      "title":  "La cerveza sostiene un millón de empleos",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-sni-industria-cervecera-genera-mas-un-millon-puestos-trabajo-el-peru-1089764.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-31",
+                      "cat":  "ECONOMÍA",
+                      "title":  "El crédito hipotecario acelera y crece 7,6%",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-bcr-credito-hipotecario-se-acelera-el-peru-y-crece-76-anual-julio-del-2026-1089821.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-31",
+                      "cat":  "ECONOMÍA",
+                      "title":  "La CCL sube a 3,2% su proyección para 2026",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-camara-comercio-lima-eleva-a-32-su-proyeccion-crecimiento-del-peru-para-2026-1089728.aspx"
+                  },
+                  {
+                      "edicion":  "2026-08-31",
+                      "cat":  "LEGAL",
+                      "title":  "Fijan la cuota de jurel y caballa a diciembre",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-establecen-limite-pesca-del-jurel-y-caballa-para-periodo-setiembrediciembre-2026-1089725.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-02",
+                      "cat":  "IA",
+                      "title":  "Sony y Warner demandan a Anthropic",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/tecno/2026/09/01/anthropic-es-demandado-por-sony-music-y-warner-chappell-por-el-uso-de-su-catalogo-en-inteligencia-artificial/"
+                  },
+                  {
+                      "edicion":  "2026-09-02",
+                      "cat":  "RRHH",
+                      "title":  "El 39% de las habilidades caduca al 2030",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-capacitacion-digital-impulsa-mejores-oportunidades-laborales-para-los-trabajadores-1090049.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-02",
+                      "cat":  "CONSUMO",
+                      "title":  "El retail rumbo a S/ 56,000 millones",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-las-ventas-minoristas-peru-superarian-los-s-56000-millones-durante-2026-1089917.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-02",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Exportar sostiene 1 de cada 3 empleos",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/01/exportaciones-ya-estan-detras-de-1-de-cada-3-empleos-privados-formales-en-peru/"
+                  },
+                  {
+                      "edicion":  "2026-09-02",
+                      "cat":  "LEGAL",
+                      "title":  "Nueva escala del Poder Judicial ya rige",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-poder-judicial-nueva-escala-remunerativa-para-trabajadores-rige-desde-1-setiembre-1089794.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-07",
+                      "cat":  "IA",
+                      "title":  "Claude hizo trampa en pruebas de seguridad",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/tecno/2026/08/29/anthropic-descubrio-que-su-ia-claude-hizo-trampa-a-los-humanos-para-superar-pruebas-de-seguridad/"
+                  },
+                  {
+                      "edicion":  "2026-09-07",
+                      "cat":  "RRHH",
+                      "title":  "El 35% de empresas ampliará su planilla",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/02/vientos-de-cola-empresas-de-peru-preven-mas-contrataciones-y-menor-conflictividad-laboral-en-la-segunda-mitad-del-ano/"
+                  },
+                  {
+                      "edicion":  "2026-09-07",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Exportaciones anualizadas récord del Perú",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-exportaciones-del-peru-anualizadas-suman-109413-millones-al-segundo-trimestre-2026-1090392.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-07",
+                      "cat":  "LEGAL",
+                      "title":  "Proponen régimen laboral progresivo",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/08/29/gobierno-propone-regimen-laboral-de-sueldos-y-derechos-progresivos-para-aumentar-la-formalidad/"
+                  },
+                  {
+                      "edicion":  "2026-09-07",
+                      "cat":  "ECONOMÍA",
+                      "title":  "El desempleo juvenil llegó a 10,7%",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/04/facultades-legislativas-y-empleo-juvenil-el-desempleo-juvenil-llego-al-107-y-presiona-el-debate-ante-la-brecha-que-afecta-a-los-jovenes/"
+                  },
+                  {
+                      "edicion":  "2026-09-08",
+                      "cat":  "IA",
+                      "title":  "Anthropic retoma las pruebas de Claude",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/tecno/2026/09/03/anthropic-retoma-las-pruebas-de-claude-con-nuevas-medidas-de-seguridad-tras-los-hackeos-a-empresas/"
+                  },
+                  {
+                      "edicion":  "2026-09-08",
+                      "cat":  "RRHH",
+                      "title":  "Sunafil marca el límite del trabajo del hogar",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/06/la-sunafil-advierte-que-el-trabajo-del-hogar-no-puede-incluir-apoyo-en-negocios-del-empleador/"
+                  },
+                  {
+                      "edicion":  "2026-09-08",
+                      "cat":  "LEGAL",
+                      "title":  "Mypes arriesgan multas desde noviembre",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/07/micro-y-pequenas-empresas-podrian-recibir-multas-de-s27500-por-nuevo-criterio-de-sunat-desde-noviembre/"
+                  },
+                  {
+                      "edicion":  "2026-09-08",
+                      "cat":  "ECONOMÍA",
+                      "title":  "La recaudación creció 17,3% en agosto",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-sunat-recaudacion-tributaria-alcanzo-los-s-18179-millones-y-crecio-173-agosto-1090745.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-08",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Obras por Impuestos acelera la inversión",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-obras-impuestos-acelera-inversiones-s-7737-millones-entre-enero-y-agosto-2026-1090757.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-11",
+                      "cat":  "IA",
+                      "title":  "Anthropic detecta usos indebidos de Claude",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/america/agencias/2026/09/10/anthropic-iran-uso-claude-para-planificar-posibles-ataques-contra-eeuu/"
+                  },
+                  {
+                      "edicion":  "2026-09-11",
+                      "cat":  "RRHH",
+                      "title":  "Sueldo mínimo subiría a S/ 1,300",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/10/aumento-de-sueldo-minimo-a-s1300-empresarios-buscan-que-alza-se-aplace-al-2027/"
+                  },
+                  {
+                      "edicion":  "2026-09-11",
+                      "cat":  "ECONOMÍA",
+                      "title":  "El BCR mantiene la tasa en 4,25%",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-banco-central-reserva-del-peru-mantiene-tasa-interes-referencia-425-1091316.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-11",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Exportaciones rumbo a récord histórico",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-exportaciones-marcaran-record-historico-y-superarian-los-100000-millones-1091225.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-18",
+                      "cat":  "IA",
+                      "title":  "Claude ya hace el 26% del I+D de Anthropic",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/tecno/2026/09/18/claude-ya-puede-encargarse-de-una-cuarta-parte-del-desarrollo-de-nuevos-modelos-de-ia/"
+                  },
+                  {
+                      "edicion":  "2026-09-18",
+                      "cat":  "RRHH",
+                      "title":  "Lima suma 343.000 ocupados en un año",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-inei-empleo-lima-metropolitana-crecio-61-ultimos-tres-meses-del-2026-1091838.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-18",
+                      "cat":  "CONSUMO",
+                      "title":  "El retail proyecta crecer hasta 6% en 2027",
+                      "tema":  "",
+                      "url":  "https://forbes.pe/negocios/2026-09-17/retail-proyecta-crecer-hasta-6-en-2027-y-alista-inversiones-por-us522-millones-segun-la-ccl"
+                  },
+                  {
+                      "edicion":  "2026-09-18",
+                      "cat":  "LEGAL",
+                      "title":  "SUNAT exigirá beneficiario final a las mypes",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/13/tiene-una-empresa-familiar-si-su-socio-posee-el-10-sunat-podria-perseguirlo-desde-noviembre/"
+                  },
+                  {
+                      "edicion":  "2026-09-21",
+                      "cat":  "IA",
+                      "title":  "Demandan a Anthropic, OpenAI y SpaceXAI",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/tecno/2026/09/21/demandan-a-spacexai-openai-y-anthropic-por-presunto-pacto-ilegal-para-ralentizar-el-desarrollo-de-la-ia/"
+                  },
+                  {
+                      "edicion":  "2026-09-21",
+                      "cat":  "RRHH",
+                      "title":  "Crean comisión para fortalecer la SUNAFIL",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-ministerio-trabajo-y-promocion-del-empleo-crea-comision-para-fortalecer-sunafil-1092557.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-21",
+                      "cat":  "ECONOMÍA",
+                      "title":  "El ANA destraba 78 proyectos de inversión",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-autoridad-nacional-del-agua-destrabo-78-proyectos-casi-1200-millones-entrevista-1092569.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-21",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Los fondos mutuos crecen 15,5% en un año",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-fondos-mutuos-peru-continuan-expansion-patrimonio-y-participes-agosto-2026-1092551.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-22",
+                      "cat":  "IA",
+                      "title":  "Anthropic retrasa su salida a bolsa",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/tecno/2026/09/21/por-que-anthropic-retrasaria-su-salida-a-la-bolsa-hasta-noviembr-su-valor-seria-de-2-billones-de-dolares/"
+                  },
+                  {
+                      "edicion":  "2026-09-22",
+                      "cat":  "ECONOMÍA",
+                      "title":  "El factoring ya mueve S/ 27.019 millones",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-ministro-de-produccion-se-trabaja-una-ruta-reactivacion-para-las-mypes-entrevista-1092771.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-22",
+                      "cat":  "CONSUMO",
+                      "title":  "Lima Este: la venta de viviendas sube 34,4%",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-dinamismo-inmobiliario-lima-este-ventas-viviendas-crecen-344-agosto-2026-1092770.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-22",
+                      "cat":  "RRHH",
+                      "title":  "AFP y ONP: traslado libre desde junio 2027",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/21/afp-y-onp-desde-junio-de-2027-se-podra-cambiar-de-sistema-de-pensiones-libremente-y-estas-son-las-claves/"
+                  },
+                  {
+                      "edicion":  "2026-09-23",
+                      "cat":  "IA",
+                      "title":  "Anthropic lanza Claude Opus 5.5",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/tecno/2026/09/23/anthropic-actualiza-su-modelo-mas-avanzado-asi-es-claude-opus-55-la-version-mas-accesible-y-eficiente-para-desarrolladores/"
+                  },
+                  {
+                      "edicion":  "2026-09-23",
+                      "cat":  "CONSUMO",
+                      "title":  "Día del Shopping moverá S/ 320 millones",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-dia-del-shopping-se-generaran-ventas-s-320-millones-este-26-y-27-setiembre-1092858.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-23",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Moody\u0027s mantiene al Perú en Baa1 estable",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/23/moodys-mantiene-calificacion-positiva-de-peru-y-proyecta-mayores-inversiones-pese-a-el-nino/"
+                  },
+                  {
+                      "edicion":  "2026-09-23",
+                      "cat":  "ECONOMÍA",
+                      "title":  "La visita papal movería S/ 300 millones",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/papa-leon-xiv-en-peru-cual-seria-impacto-economico-y-cuantos-ingresos-podria-generar-noticia-1699987"
+                  },
+                  {
+                      "edicion":  "2026-09-24",
+                      "cat":  "RRHH",
+                      "title":  "MTPE coloca a casi 9.000 en empleo formal",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-ministerio-trabajo-posibilito-a-casi-9000-peruanos-acceder-a-un-empleo-formal-1093103.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-24",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Agroexportación llegaría a US$ 15.000 millones",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/23/agroexportaciones-peruanas-alcanzarian-los-usd-15000-millones-al-cierre-de-2026/"
+                  },
+                  {
+                      "edicion":  "2026-09-24",
+                      "cat":  "ECONOMÍA",
+                      "title":  "El Niño: S/ 1.146 millones para prevención",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-ministro-marco-vinelli-recursos-para-servicios-impuestos-sumarian-s-1146-millones-1092979.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-25",
+                      "cat":  "IA",
+                      "title":  "Claude halla un sistema parecido a CRISPR",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/tecno/2026/09/25/claude-hallo-un-sistema-enzimatico-parecido-a-crispr-pero-anthropic-no-sabe-para-que-sirve/"
+                  },
+                  {
+                      "edicion":  "2026-09-25",
+                      "cat":  "RRHH",
+                      "title":  "Sueldo mínimo tendrá fórmula para sus alzas",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-sueldo-minimo-consejo-nacional-del-trabajo-acuerda-establecer-formula-para-futuras-alzas-1092865.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-25",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Sostenibilidad: pocas gerencias se involucran",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/25/sostenibilidad-avanza-en-las-grandes-empresas-pero-solo-36-logra-involucrar-a-todas-sus-gerencias/"
+                  },
+                  {
+                      "edicion":  "2026-09-25",
+                      "cat":  "ECONOMÍA",
+                      "title":  "BCRP baja al 3,2% el crecimiento del 2026",
+                      "tema":  "",
+                      "url":  "https://rpp.pe/economia/economia/brcp-disminuye-proyeccion-de-crecimiento-economico-en-peru-en-2026-por-el-fenomeno-el-nino-en-cuanto-noticia-1708207"
+                  },
+                  {
+                      "edicion":  "2026-09-28",
+                      "cat":  "IA",
+                      "title":  "Corte avala el veto del Pentágono a Claude",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/estados-unidos/2026/09/25/un-tribunal-federal-respaldo-que-el-pentagono-clasifique-a-anthropic-como-un-riesgo-para-la-cadena-de-suministro/"
+                  },
+                  {
+                      "edicion":  "2026-09-28",
+                      "cat":  "RRHH",
+                      "title":  "Feria del MTPE ofrece 1.000 vacantes en Trujillo",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-mtpe-ofrece-mas-1000-oportunidades-laborales-trujillo-enfasis-los-jovenes-1093534.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-28",
+                      "cat":  "CONSUMO",
+                      "title":  "Malls reciben menos visitas que en 2025",
+                      "tema":  "",
+                      "url":  "https://www.infobae.com/peru/2026/09/24/caida-en-las-visitas-a-los-centros-comerciales-disminucion-se-debe-a-estos-3-eventos/"
+                  },
+                  {
+                      "edicion":  "2026-09-28",
+                      "cat":  "ECONOMÍA",
+                      "title":  "La industria genera 1,5 millones de empleos",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-sector-industria-aporta-12-del-pbi-y-genera-mas-15-millones-empleos-1093491.aspx"
+                  },
+                  {
+                      "edicion":  "2026-09-28",
+                      "cat":  "ECONOMÍA",
+                      "title":  "Sur andino suma US$ 15.000 millones en minería",
+                      "tema":  "",
+                      "url":  "https://andina.pe/agencia/noticia-mancomunidad-regional-los-andes-tiene-proyectos-mineros-mas-15000-millones-1093602.aspx"
+                  }
+              ]
+}
