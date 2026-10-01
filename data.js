@@ -107,33 +107,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-09-30 10:30 (Lima) — edición manual (Claude Code)",
+  generado: "2026-10-01 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#F52055", viz:"doc", week:false,
-    title:"Sueldo mínimo sube a S/ 1,230 desde el jueves",
-    fig:"S/ 1,230", figsub:"desde el 1 de octubre; el tramo final a S/ 1,300 llega en 2027 (DS 015-2026-TR)",
-    cat:"LEGAL", source:"Andina · 28/09/2026",
-    url:"https://andina.pe/agencia/noticia-gobierno-oficializa-incremento-de-remuneracion-minima-vital-a-s1300-dos-tramos-1093769.aspx" },
-  { color:"#E6299C", viz:"people", week:false,
-    title:"Solo 16% elegiría volver full a la oficina",
-    fig:"41%", figsub:"prefiere un puesto 100% remoto y 43% un esquema híbrido, según Bumeran",
-    cat:"RRHH", source:"Gestión · 30/09/2026",
-    url:"https://gestion.pe/economia/trabajo-remoto-u-oficinas-asi-van-las-preferencias-de-los-trabajadores-en-peru-segun-bumeran-noticia/" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"OpenAI lanza Dots, agentes que trabajan solos",
-    fig:"24/7", figsub:"agentes siempre activos que ejecutan tareas sin que el usuario se las pida",
-    cat:"IA", source:"Gestión · 30/09/2026",
-    url:"https://gestion.pe/tecnologia/openai-presenta-dots-su-nuevo-sistema-de-agentes-de-ia-para-delegar-tareas-noticia/" },
-  { color:"#FF953A", viz:"bars-up", week:false,
-    title:"Mass ya supera las 1.580 tiendas en el Perú",
-    fig:"1.580", figsub:"locales del hard discount, frente a 1.345 a inicios de 2025: más tiendas, más staff",
-    cat:"CONSUMO", source:"Perú Retail · 29/09/2026",
-    url:"https://www.peru-retail.com/como-logro-mass-superar-las-1-500-tiendas-en-peru-las-claves-de-su-rapido-crecimiento/" },
-  { color:"#FF953A", viz:"handshake", week:false,
-    title:"Alemania pone la mira en el litio de Puno",
-    fig:"US$ 834 M", figsub:"inversión estimada del proyecto Falchani, que arrancaría en el segundo semestre de 2028",
-    cat:"ECONOMÍA", source:"Gestión · 30/09/2026",
-    url:"https://gestion.pe/economia/litio-en-puno-y-otros-frentes-en-peru-lo-que-llama-la-atencion-de-alemania-para-invertir-en-el-pais-noticia/" }
+  { color:"#FF953A", viz:"chart-down", week:false,
+    title:"Gobierno declara en emergencia al sector textil",
+    fig:"120 días", figsub:"plan de reactivación en 15 días hábiles con crédito y compras públicas para MYPE",
+    cat:"ECONOMÍA", source:"RPP · 01/10/2026",
+    url:"https://rpp.pe/politica/gobierno/gobierno-declaro-en-emergencia-el-sector-textil-y-confecciones-que-medidas-se-ejecutaran-noticia-1710237" },
+  { color:"#E6299C", viz:"piggy", week:false,
+    title:"AFP: podrás cambiar el tipo de comisión",
+    fig:"1,8 M", figsub:"afiliados podrán migrar a comisión sobre saldo del 14/12/2026 al 14/05/2027, según la SBS",
+    cat:"RRHH", source:"RPP · 30/09/2026",
+    url:"https://rpp.pe/economia/economia/afp-afiliados-podran-cambiar-tipo-de-comision-que-pagan-de-que-trata-y-cuales-son-los-plazos-noticia-1710155" },
+  { color:"#4C8DF6", viz:"gemini", week:false,
+    title:"Google presenta Gemini 4 Argon, su IA top",
+    fig:"0,7%", figsub:"de ataques exitosos: el modelo más resistente; acceso inicial solo a ciberseguridad",
+    cat:"IA", source:"Infobae · 01/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/01/gemini-4-argon-la-nueva-ia-de-google-por-que-los-primeros-en-usarla-son-expertos-en-ciberseguridad/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Tottus renueva sus tiendas en el Perú",
+    fig:"6 tiendas", figsub:"ya con nuevo formato (Jockey Plaza, La Fontana…); el despliegue nacional sigue escalonado",
+    cat:"CONSUMO", source:"Perú Retail · 30/09/2026",
+    url:"https://www.peru-retail.com/tottus-remodela-sus-tiendas-en-peru-con-nuevos-espacios-servicios-y-surtido-que-cambios-trae/" }
 ],
 
 
@@ -242,7 +237,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "El <b>32,8%</b> de los peruanos que hoy no es pobre podría caer en pobreza ante un shock adverso: el empleo formal y estable es su mejor seguro.",
+  DATO: "Con <b>120 días</b> de emergencia, las MYPE textiles tendrán financiamiento y compras públicas: un lead caliente para planillas y outsourcing de iPartner.",
 
 
 
