@@ -107,28 +107,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-01 08:30 (Lima) — tarea automática",
+  generado: "2026-10-02 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-down", week:false,
-    title:"Gobierno declara en emergencia al sector textil",
-    fig:"120 días", figsub:"plan de reactivación en 15 días hábiles con crédito y compras públicas para MYPE",
-    cat:"ECONOMÍA", source:"RPP · 01/10/2026",
-    url:"https://rpp.pe/politica/gobierno/gobierno-declaro-en-emergencia-el-sector-textil-y-confecciones-que-medidas-se-ejecutaran-noticia-1710237" },
-  { color:"#E6299C", viz:"piggy", week:false,
-    title:"AFP: podrás cambiar el tipo de comisión",
-    fig:"1,8 M", figsub:"afiliados podrán migrar a comisión sobre saldo del 14/12/2026 al 14/05/2027, según la SBS",
-    cat:"RRHH", source:"RPP · 30/09/2026",
-    url:"https://rpp.pe/economia/economia/afp-afiliados-podran-cambiar-tipo-de-comision-que-pagan-de-que-trata-y-cuales-son-los-plazos-noticia-1710155" },
-  { color:"#4C8DF6", viz:"gemini", week:false,
-    title:"Google presenta Gemini 4 Argon, su IA top",
-    fig:"0,7%", figsub:"de ataques exitosos: el modelo más resistente; acceso inicial solo a ciberseguridad",
-    cat:"IA", source:"Infobae · 01/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/01/gemini-4-argon-la-nueva-ia-de-google-por-que-los-primeros-en-usarla-son-expertos-en-ciberseguridad/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Tottus renueva sus tiendas en el Perú",
-    fig:"6 tiendas", figsub:"ya con nuevo formato (Jockey Plaza, La Fontana…); el despliegue nacional sigue escalonado",
-    cat:"CONSUMO", source:"Perú Retail · 30/09/2026",
-    url:"https://www.peru-retail.com/tottus-remodela-sus-tiendas-en-peru-con-nuevos-espacios-servicios-y-surtido-que-cambios-trae/" }
+  { color:"#FF953A", viz:"chart-up", week:false,
+    title:"Inflación de Lima sube a 4,55% anual",
+    fig:"4,55%", figsub:"anual a setiembre; combustibles y transporte presionan precios, según La República",
+    cat:"ECONOMÍA", source:"La República · 01/10/2026",
+    url:"https://larepublica.pe/economia/2026/10/01/inflacion-en-lima-llega-a-455-anual-y-supera-ampliamente-el-registro-de-anos-anteriores-hnews-73290" },
+  { color:"#E6299C", viz:"alert", week:false,
+    title:"SUNAFIL puede pasar practicantes a planilla",
+    fig:"S/ 1,230", figsub:"subsidio mínimo del practicante desde octubre; incumplirlo o exceder jornada da riesgo",
+    cat:"RRHH", source:"Gestión · 02/10/2026",
+    url:"https://gestion.pe/economia/management-empleo/practicantes-los-casos-en-que-sunafil-podria-ordenar-que-ingresen-a-la-planilla-de-la-empresa-noticia/" },
+  { color:"#10A37F", viz:"openai", week:false,
+    title:"ChatGPT lanza Try On para probarse ropa",
+    fig:"Try On", figsub:"OpenAI permite subir una selfie y ver cómo queda la prenda antes de comprar",
+    cat:"IA", source:"Infobae · 02/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/02/chatgpt-ahora-permite-que-los-usuarios-se-prueben-ropa-virtualmente/" },
+  { color:"#FF953A", viz:"building", week:false,
+    title:"Mallplaza prepara nuevo centro en San Isidro",
+    fig:"51%", figsub:"de participación para Mallplaza en el proyecto de Falabella; faltan contratos",
+    cat:"CONSUMO", source:"Perú Retail · 01/10/2026",
+    url:"https://www.peru-retail.com/mallplaza-tomara-el-control-de-seis-activos-de-falabella-valorizados-en-us-200-millones/" }
 ],
 
 
@@ -237,7 +237,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "Con <b>120 días</b> de emergencia, las MYPE textiles tendrán financiamiento y compras públicas: un lead caliente para planillas y outsourcing de iPartner.",
+  DATO: "Con <b>4,55%</b> de inflación, los clientes buscan control de costos: ofrece a retail y textil un pipeline de outsourcing y planilla ordenada, sin riesgo SUNAFIL con practicantes.",
 
 
 
