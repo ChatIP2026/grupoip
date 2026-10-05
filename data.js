@@ -107,28 +107,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-02 08:30 (Lima) — tarea automática",
+  generado: "2026-10-05 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-up", week:false,
-    title:"Inflación de Lima sube a 4,55% anual",
-    fig:"4,55%", figsub:"anual a setiembre; combustibles y transporte presionan precios, según La República",
-    cat:"ECONOMÍA", source:"La República · 01/10/2026",
-    url:"https://larepublica.pe/economia/2026/10/01/inflacion-en-lima-llega-a-455-anual-y-supera-ampliamente-el-registro-de-anos-anteriores-hnews-73290" },
-  { color:"#E6299C", viz:"alert", week:false,
-    title:"SUNAFIL puede pasar practicantes a planilla",
-    fig:"S/ 1,230", figsub:"subsidio mínimo del practicante desde octubre; incumplirlo o exceder jornada da riesgo",
-    cat:"RRHH", source:"Gestión · 02/10/2026",
-    url:"https://gestion.pe/economia/management-empleo/practicantes-los-casos-en-que-sunafil-podria-ordenar-que-ingresen-a-la-planilla-de-la-empresa-noticia/" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"ChatGPT lanza Try On para probarse ropa",
-    fig:"Try On", figsub:"OpenAI permite subir una selfie y ver cómo queda la prenda antes de comprar",
-    cat:"IA", source:"Infobae · 02/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/02/chatgpt-ahora-permite-que-los-usuarios-se-prueben-ropa-virtualmente/" },
-  { color:"#FF953A", viz:"building", week:false,
-    title:"Mallplaza prepara nuevo centro en San Isidro",
-    fig:"51%", figsub:"de participación para Mallplaza en el proyecto de Falabella; faltan contratos",
-    cat:"CONSUMO", source:"Perú Retail · 01/10/2026",
-    url:"https://www.peru-retail.com/mallplaza-tomara-el-control-de-seis-activos-de-falabella-valorizados-en-us-200-millones/" }
+  { color:"#FF953A", viz:"agro", week:false,
+    title:"Mehadrin apunta a 1.000 hectáreas de palta",
+    fig:"1.000 ha", figsub:"meta del exportador israelí; hoy tiene 150-200 ha en Chincha y vende a Europa y Asia",
+    cat:"ECONOMÍA", source:"Gestión · 05/10/2026",
+    url:"https://gestion.pe/economia/empresas/agroexportadora-israeli-mehadrin-apunta-a-llevar-a-1000-hectareas-sus-cultivos-de-palta-en-peru-y-ya-exporta-a-asia-y-europa-noticia/" },
+  { color:"#E6299C", viz:"calendar", week:false,
+    title:"Feriado del 8 de octubre: cuánto se paga",
+    fig:"S/ 82", figsub:"extra por trabajar el feriado sin día de descanso sustituto, con RMV de S/ 1,230",
+    cat:"RRHH", source:"Infobae · 05/10/2026",
+    url:"https://www.infobae.com/peru/2026/10/05/feriado-del-8-de-octubre-cuanto-cobraran-quienes-trabajen-el-feriado-del-8-de-octubre-con-la-nueva-rmv-de-s-1230/" },
+  { color:"#0866FF", viz:"ai", week:false,
+    title:"Meta IA: US$ 4,52 por cada dólar invertido",
+    fig:"US$ 4,52", figsub:"de ventas por dólar con Advantage+; WhatsApp Business sube la conversión de leads en 84%",
+    cat:"IA", source:"Gestión · 04/10/2026",
+    url:"https://gestion.pe/economia/meta-ia-y-su-herramienta-que-cuadruplica-a-us-452-cada-dolar-invertido-en-publicidad-su-impacto-en-el-turismo-noticia" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Juan Valdez y Gelarti abrirán 6 tiendas",
+    fig:"26 tiendas", figsub:"hoy en el país; 6 aperturas en el último trimestre y más de 10 en 2027",
+    cat:"CONSUMO", source:"Gestión · 05/10/2026",
+    url:"https://gestion.pe/economia/empresas/juan-valdez-y-gelarti-aceleran-expansion-en-peru-nuevas-tiendas-y-planes-para-2027-noticia/" }
 ],
 
 
@@ -237,7 +237,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "Con <b>4,55%</b> de inflación, los clientes buscan control de costos: ofrece a retail y textil un pipeline de outsourcing y planilla ordenada, sin riesgo SUNAFIL con practicantes.",
+  DATO: "El feriado del jueves 8 obliga a elegir entre pagar S/ 82 extra o dar día sustituto: ofrece a tus leads un follow-up con planilla y turnos ordenados, sin riesgo SUNAFIL.",
 
 
 
