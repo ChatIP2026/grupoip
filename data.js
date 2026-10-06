@@ -107,28 +107,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-05 08:30 (Lima) — tarea automática",
+  generado: "2026-10-06 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"agro", week:false,
-    title:"Mehadrin apunta a 1.000 hectáreas de palta",
-    fig:"1.000 ha", figsub:"meta del exportador israelí; hoy tiene 150-200 ha en Chincha y vende a Europa y Asia",
-    cat:"ECONOMÍA", source:"Gestión · 05/10/2026",
-    url:"https://gestion.pe/economia/empresas/agroexportadora-israeli-mehadrin-apunta-a-llevar-a-1000-hectareas-sus-cultivos-de-palta-en-peru-y-ya-exporta-a-asia-y-europa-noticia/" },
-  { color:"#E6299C", viz:"calendar", week:false,
-    title:"Feriado del 8 de octubre: cuánto se paga",
-    fig:"S/ 82", figsub:"extra por trabajar el feriado sin día de descanso sustituto, con RMV de S/ 1,230",
-    cat:"RRHH", source:"Infobae · 05/10/2026",
-    url:"https://www.infobae.com/peru/2026/10/05/feriado-del-8-de-octubre-cuanto-cobraran-quienes-trabajen-el-feriado-del-8-de-octubre-con-la-nueva-rmv-de-s-1230/" },
-  { color:"#0866FF", viz:"ai", week:false,
-    title:"Meta IA: US$ 4,52 por cada dólar invertido",
-    fig:"US$ 4,52", figsub:"de ventas por dólar con Advantage+; WhatsApp Business sube la conversión de leads en 84%",
-    cat:"IA", source:"Gestión · 04/10/2026",
-    url:"https://gestion.pe/economia/meta-ia-y-su-herramienta-que-cuadruplica-a-us-452-cada-dolar-invertido-en-publicidad-su-impacto-en-el-turismo-noticia" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Juan Valdez y Gelarti abrirán 6 tiendas",
-    fig:"26 tiendas", figsub:"hoy en el país; 6 aperturas en el último trimestre y más de 10 en 2027",
-    cat:"CONSUMO", source:"Gestión · 05/10/2026",
-    url:"https://gestion.pe/economia/empresas/juan-valdez-y-gelarti-aceleran-expansion-en-peru-nuevas-tiendas-y-planes-para-2027-noticia/" }
+  { color:"#FF953A", viz:"chart-up", week:false,
+    title:"MEF proyecta que el PBI crecerá 3,4%",
+    fig:"3,4%", figsub:"crecimiento 2026 según el MEF; inversión privada +15% y demanda interna cerca de +6%",
+    cat:"ECONOMÍA", source:"Perú Retail · 06/10/2026",
+    url:"https://www.peru-retail.com/mef-preve-que-economia-peruana-crecera-entre-25-y-3-en-los-meses-que-quedan-de-2026/" },
+  { color:"#E6299C", viz:"training", week:false,
+    title:"Talento no encaja en textil, agro y retail",
+    fig:"7 de 10", figsub:"trabajadores informales; faltan operarios, técnicos de frío y soft skills",
+    cat:"RRHH", source:"Gestión · 06/10/2026",
+    url:"https://gestion.pe/economia/talento-laboral-y-profesionales-de-peru-no-encajan-en-estos-sectores-la-brecha-que-preocupa-al-empresario-noticia/" },
+  { color:"#F52055", viz:"piggy", week:false,
+    title:"Nuevo proyecto de retiro AFP de 4 UIT",
+    fig:"4 UIT", figsub:"tope del noveno retiro propuesto; conservaría el derecho a pensión mínima con 240 aportes",
+    cat:"LEGAL", source:"Gestión · 06/10/2026",
+    url:"https://gestion.pe/tu-dinero/finanzas-personales/nuevo-retiro-de-afp-se-debatira-en-el-congreso-se-perderia-el-acceso-a-la-pension-minima-noticia/" },
+  { color:"#10A37F", viz:"openai", week:false,
+    title:"ChatGPT marcará sus textos en la UE",
+    fig:"95%", figsub:"detección con marca invisible en 400 palabras; baja a 17% si se cambia 25% del texto",
+    cat:"IA", source:"Infobae · 05/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/06/openai-empezara-a-poner-marcas-de-agua-invisibles-a-los-textos-de-chatgpt-y-codex-en-la-union-europea/" },
+  { color:"#FF953A", viz:"ship", week:false,
+    title:"Indecopi frena inodoros chinos con aranceles",
+    fig:"US$ 14,30", figsub:"antidumping máximo por unidad durante 5 años; Vainsa y Trebol perdieron 17,6% de ventas",
+    cat:"CONSUMO", source:"Infobae · 06/10/2026",
+    url:"https://www.infobae.com/peru/2026/10/06/trebol-y-vainsa-vencen-a-china-ante-indecopi-y-bloquean-el-ingreso-de-inodoros-asiaticos-al-peru-subiran-los-precios/" }
 ],
 
 
@@ -237,7 +242,7 @@ window.NOTICIERO = {
   VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
 
 },
-  DATO: "El feriado del jueves 8 obliga a elegir entre pagar S/ 82 extra o dar día sustituto: ofrece a tus leads un follow-up con planilla y turnos ordenados, sin riesgo SUNAFIL.",
+  DATO: "Con 7 de cada 10 trabajadores informales y brechas en textil, agro y retail, ofrece a tus leads un pipeline de talento ya capacitado y en planilla.",
 
 
 
