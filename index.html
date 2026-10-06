@@ -275,7 +275,10 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .esc-stage{position:absolute; left:50%; top:0; margin-left:-960px; width:1920px; height:951px;
   transform-origin:50% 0%; font-family:'Montserrat',sans-serif;}
 
-.esc-frame{position:absolute; top:296px; width:265px; height:438px; overflow:hidden;
+/* tamaño y posición salen de variables que calcula escFit() según la forma del
+   panel: --ft (arriba), --fh (alto), --fw (ancho); --i/--n = índice y total */
+.esc-frame,.esc-plate{left:calc(960px + (var(--i) - (var(--n) - 1) / 2) * (var(--fw,265px) + 56px) - var(--fw,265px) / 2); width:var(--fw,265px);}
+.esc-frame{position:absolute; top:var(--ft,296px); height:var(--fh,438px); overflow:hidden;
   border-radius:16px; border:2.5px solid rgba(233,185,75,.72);
   box-shadow:0 0 22px rgba(233,185,75,.26), 0 18px 42px rgba(0,0,0,.55);
   background:linear-gradient(180deg,#2A1247 0%,#1B0B2E 58%,#0D0617 100%);
@@ -286,7 +289,7 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 @keyframes escBob{0%,100%{transform:translate3d(0,-5px,0)}50%{transform:translate3d(0,5px,0)}}
 @keyframes escGlow{0%,100%{opacity:.35}50%{opacity:1}}
 
-.esc-plate{position:absolute; top:746px; width:265px; height:56px; border-radius:10px;
+.esc-plate{position:absolute; top:calc(var(--ft,296px) + var(--fh,438px) + 12px); height:56px; border-radius:10px;
   border:1.5px solid rgba(233,185,75,.62);
   background:linear-gradient(180deg,rgba(28,12,46,.94) 0%,rgba(12,6,20,.94) 100%);
   box-shadow:0 0 16px rgba(233,185,75,.18), 0 10px 24px rgba(0,0,0,.5);
@@ -318,7 +321,7 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .esc-mono{position:absolute; left:50%; top:190px; transform:translateX(-50%);
   font:900 560px/1 'Montserrat',sans-serif; letter-spacing:-.06em; color:transparent;
   -webkit-text-stroke:3px rgba(170,110,255,.22); text-shadow:0 0 60px rgba(150,80,255,.25);}
-.esc-floor{position:absolute; left:50%; top:770px; width:1700px; height:170px; margin-left:-850px; border-radius:50%;
+.esc-floor{position:absolute; left:50%; top:calc(var(--ft,296px) + var(--fh,438px) + 30px); width:1700px; height:170px; margin-left:-850px; border-radius:50%;
   background:radial-gradient(ellipse at 50% 40%, rgba(150,80,255,.55) 0%, rgba(70,25,140,.5) 40%, rgba(10,4,20,0) 72%);
   box-shadow:inset 0 6px 0 rgba(255,170,70,.55), 0 0 60px rgba(150,80,255,.35);}
 .esc-floor::after{content:''; position:absolute; inset:28px 120px; border-radius:50%;
@@ -1453,12 +1456,12 @@ function ipSlideHTML(sl){
         <div class="esc-dust">${Array.from({length:40},(_,k)=>`<i style="left:${(k*47.3)%100}%; animation-duration:${9+(k*7)%9}s; animation-delay:-${(k*1.37)%14}s"></i>`).join('')}</div>`}
         <div class="esc-halo"></div><div class="esc-beam"></div>
         ${cards.map((c,i)=>`
-          <div class="esc-frame" style="left:${X[i]}px; animation-delay:${(-1.8*i).toFixed(2)}s">
+          <div class="esc-frame" style="--i:${i}; --n:${cards.length}; animation-delay:${(-1.8*i).toFixed(2)}s">
             <img src="${c.img}" alt="${esc(c.nombre||'')}"${AF}>
             <div class="gl" style="animation-delay:${(-0.75*i).toFixed(2)}s"></div>
           </div>`).join('')}
         ${e.afiche ? '' : cards.map((c,i)=>`
-          <div class="esc-plate" style="left:${X[i]}px; animation-delay:${(-1.8*i).toFixed(2)}s">
+          <div class="esc-plate" style="--i:${i}; --n:${cards.length}; animation-delay:${(-1.8*i).toFixed(2)}s">
             <b>${esc(c.nombre||'')}</b>
             <span>${esc((c.equipo||'').toUpperCase())}${/DEPARTMENT/i.test(c.equipo||'')?'':' DEPARTMENT'}</span>
           </div>`).join('')}
@@ -1662,10 +1665,20 @@ function escFit(){
     const r = box.getBoundingClientRect(); if(!r.width) return;
     /* modo "llenar", como el cronograma: cubre el panel; si la ventana no tiene la
        proporción exacta, recorta por abajo (el piso del escenario), nunca el titular */
-    /* pero titular, tarjetas y placas (hasta y=830) deben verse enteros: en
-       ventanas apaisadas (sin F11) se escala por alto y los costados los cubre
-       el cielo de .esc-fit */
-    st.style.transform = 'scale(' + Math.min(Math.max(r.width/1920, r.height/886), r.height/830) + ')';
+    /* el lienzo mide siempre 1920 de ancho y su alto sigue la forma del panel;
+       las tarjetas (proporción 3:4, como las fotos) crecen hasta llenar el alto
+       libre entre el titular y el borde, sin pasarse del ancho disponible */
+    const s = r.width/1920, H = r.height/s;
+    const n = st.querySelectorAll('.esc-frame').length || 1;
+    const ft = 218, libre = H - ft - 12 - 56 - 28;
+    let fh = Math.max(260, libre), fw = fh*0.75;
+    const maxW = (1760 - 56*(n-1))/n;
+    if(fw > maxW){ fw = maxW; fh = fw/0.75; }
+    st.style.height = H + 'px';
+    st.style.setProperty('--ft', ft + 'px');
+    st.style.setProperty('--fh', Math.round(fh) + 'px');
+    st.style.setProperty('--fw', Math.round(fw) + 'px');
+    st.style.transform = 'scale(' + s + ')';
   });
 }
 escFit();
