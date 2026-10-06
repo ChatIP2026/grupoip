@@ -306,6 +306,27 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 @keyframes escSway{0%,100%{transform:rotate(-3.2deg)}50%{transform:rotate(3.2deg)}}
 @keyframes escSway2{0%,100%{transform:rotate(-4.5deg) scaleX(1.06)}50%{transform:rotate(4.5deg) scaleX(.94)}}
 
+/* escena dibujada en CSS (sin imagen de fondo): se usa cuando EXTRA no trae "fondo" */
+.esc-sky{position:absolute; inset:0;
+  background:radial-gradient(ellipse 70% 55% at 50% 38%, #3B1670 0%, #1E0A3C 45%, #0B0418 80%),
+             linear-gradient(180deg,#120628 0%,#08040E 100%);}
+.esc-rays{position:absolute; inset:0; pointer-events:none; opacity:.55;
+  background:repeating-conic-gradient(from 180deg at 50% -8%, rgba(190,130,255,.10) 0deg 4deg, rgba(0,0,0,0) 4deg 11deg);
+  -webkit-mask:linear-gradient(180deg,#000 0%,rgba(0,0,0,.6) 45%,transparent 80%); mask:linear-gradient(180deg,#000 0%,rgba(0,0,0,.6) 45%,transparent 80%);
+  animation:escSway 18s ease-in-out infinite; transform-origin:50% 0;}
+.esc-mono{position:absolute; left:50%; top:190px; transform:translateX(-50%);
+  font:900 560px/1 'Montserrat',sans-serif; letter-spacing:-.06em; color:transparent;
+  -webkit-text-stroke:3px rgba(170,110,255,.22); text-shadow:0 0 60px rgba(150,80,255,.25);}
+.esc-floor{position:absolute; left:50%; top:770px; width:1700px; height:170px; margin-left:-850px; border-radius:50%;
+  background:radial-gradient(ellipse at 50% 40%, rgba(150,80,255,.55) 0%, rgba(70,25,140,.5) 40%, rgba(10,4,20,0) 72%);
+  box-shadow:inset 0 6px 0 rgba(255,170,70,.55), 0 0 60px rgba(150,80,255,.35);}
+.esc-floor::after{content:''; position:absolute; inset:28px 120px; border-radius:50%;
+  border:2px solid rgba(255,190,90,.55); box-shadow:0 0 24px rgba(255,170,70,.4);}
+.esc-dust{position:absolute; inset:0; pointer-events:none; overflow:hidden;}
+.esc-dust i{position:absolute; top:-10px; width:4px; height:4px; border-radius:50%;
+  background:#FFD98A; box-shadow:0 0 8px #FFC14D; opacity:0; animation:escFall linear infinite;}
+@keyframes escFall{0%{transform:translateY(0); opacity:0} 10%{opacity:.9} 90%{opacity:.7} 100%{transform:translateY(960px); opacity:0}}
+
 .esc-head{position:absolute; left:0; right:0; top:40px; display:flex; flex-direction:column; align-items:center;}
 .esc-k{font:600 30px/1 'Montserrat',sans-serif; letter-spacing:.34em;}
 .esc-rule{width:560px; height:2px; margin-top:10px;
@@ -1409,8 +1430,13 @@ function ipSlideHTML(sl){
   }
   if(sl.tipo==='extra'){
     const e = sl.e;
-    const X = [201, 514, 827, 1140, 1453];
     const cards = (e.cards||[]).slice(0,5);
+    /* huecos de 313 px centrados en el lienzo de 1920: con 5 tarjetas da
+       201, 514, 827, 1140, 1453; con menos, el grupo queda al centro */
+    const X = cards.map((_,i)=>Math.round(960 - 132.5 + (i-(cards.length-1)/2)*313));
+    /* afiche completo (1055x1491, ya trae nombre y área): se encuadra la
+       persona con su placa y se oculta la placa propia para no repetirla */
+    const AF = e.afiche ? ' style="inset:auto;width:352px;height:498px;left:-43px;top:-62px;object-fit:fill"' : '';
     const per = (e.periodo||'').trim().split(/\s+/);
     const mes = (per[0]||'').toUpperCase(), anio = per[1]||'';
     const G_BLANCO = 'linear-gradient(180deg,#FFFFFF 28%,#B7B2C4 100%)';
@@ -1419,14 +1445,18 @@ function ipSlideHTML(sl){
     const G_BLA_K  = 'linear-gradient(180deg,#FFFFFF 0%,#E6E2EE 100%)';
     return `<div class="ip-slide esc" style="--ip:#E9B94B">
       <div class="esc-fit"><div class="esc-stage">
-        <img class="esc-bg" src="${e.fondo||''}" alt="">
+        ${e.fondo ? `<img class="esc-bg" src="${e.fondo}" alt="">` : `
+        <div class="esc-sky"></div><div class="esc-rays"></div>
+        <div class="esc-mono">iP</div>
+        <div class="esc-floor"></div>
+        <div class="esc-dust">${Array.from({length:40},(_,k)=>`<i style="left:${(k*47.3)%100}%; animation-duration:${9+(k*7)%9}s; animation-delay:-${(k*1.37)%14}s"></i>`).join('')}</div>`}
         <div class="esc-halo"></div><div class="esc-beam"></div>
         ${cards.map((c,i)=>`
           <div class="esc-frame" style="left:${X[i]}px; animation-delay:${(-1.8*i).toFixed(2)}s">
-            <img src="${c.img}" alt="${esc(c.nombre||'')}">
+            <img src="${c.img}" alt="${esc(c.nombre||'')}"${AF}>
             <div class="gl" style="animation-delay:${(-0.75*i).toFixed(2)}s"></div>
           </div>`).join('')}
-        ${cards.map((c,i)=>`
+        ${e.afiche ? '' : cards.map((c,i)=>`
           <div class="esc-plate" style="left:${X[i]}px; animation-delay:${(-1.8*i).toFixed(2)}s">
             <b>${esc(c.nombre||'')}</b>
             <span>${esc((c.equipo||'').toUpperCase())}${/DEPARTMENT/i.test(c.equipo||'')?'':' DEPARTMENT'}</span>
