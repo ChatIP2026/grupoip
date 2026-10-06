@@ -236,7 +236,10 @@ window.NOTICIERO = {
      Para cambiarlo, sube el archivo nuevo al repositorio (nombre sin espacios
      ni tildes) y cambia "src". Para sacarlo del aire, deja src:"" y desaparece
      solo. "segundos" es cuánto dura en pantalla; en video, su duración manda. */
-  VIDEO: { src:"Cronograma.png", titulo:"Cronograma de pagos 2026", segundos:20, kicker:false }
+  /* "crono" dibuja el cronograma en HTML (ya no usa imagen): un día de pago por
+     mes, de enero a diciembre. El mes en curso se resalta solo. */
+  VIDEO: { titulo:"Cronograma de pagos 2026", segundos:20, kicker:false,
+    crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
   DATO: "Con 7 de cada 10 trabajadores informales y brechas en textil, agro y retail, ofrece a tus leads un pipeline de talento ya capacitado y en planilla.",

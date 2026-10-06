@@ -310,6 +310,35 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 @keyframes escSway{0%,100%{transform:rotate(-3.2deg)}50%{transform:rotate(3.2deg)}}
 @keyframes escSway2{0%,100%{transform:rotate(-4.5deg) scaleX(1.06)}50%{transform:rotate(4.5deg) scaleX(.94)}}
 
+/* ═════ CRONOGRAMA DE PAGOS (HTML, lienzo 1600x760 que escala escFit) ═════ */
+.ip-slide.cr{width:100%; height:100%; top:0; left:0; transform:none; padding:0; gap:0;
+  border:none; border-radius:0; overflow:hidden;
+  background:radial-gradient(ellipse 45% 55% at 100% 0%, rgba(110,40,200,.45) 0%, rgba(0,0,0,0) 70%),
+             radial-gradient(ellipse 40% 50% at 0% 100%, rgba(255,120,40,.22) 0%, rgba(0,0,0,0) 70%), #0C0A12;}
+.ip-slide.cr.on{transform:none;}
+.ip-slide.cr::before{content:''; position:absolute; inset:0; pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:56px 56px;}
+.cr-fit{position:absolute; inset:0; overflow:hidden;}
+.cr-stage{position:absolute; left:50%; top:0; width:1600px; height:800px; margin-left:-800px;
+  transform-origin:50% 0; font-family:'Sora',sans-serif; padding:78px 70px 0;}
+.cr-k{font-weight:700; font-size:22px; letter-spacing:.32em; color:#FF953A;}
+.cr-t{font-weight:800; font-size:76px; line-height:1.05; letter-spacing:-.01em; color:#F4F2F8; margin-top:4px;}
+.cr-t span{color:#FF953A;}
+.cr-rule{width:350px; height:4px; border-radius:4px; margin:16px 0 30px;
+  background:linear-gradient(90deg,#FF953A 0%,#7B2FF2 100%);}
+.cr-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px 24px;}
+.cr-m{height:116px; border-radius:16px; padding:0 30px; display:flex; align-items:center; justify-content:space-between;
+  border:1px solid rgba(255,255,255,.09); background:linear-gradient(160deg,#1C1A24 0%,#121018 100%);}
+.cr-m small{display:block; font-weight:600; font-size:19px; letter-spacing:.16em; color:#8C8798;}
+.cr-m b{display:block; font-weight:700; font-size:25px; letter-spacing:.06em; color:#8C8798; margin-top:6px;}
+.cr-m strong{font-weight:800; font-size:62px; color:#6E6A78; letter-spacing:-.02em;}
+.cr-m.fut{background:linear-gradient(160deg,#3A1680 0%,#1B0C3A 100%); border-color:rgba(140,80,255,.35);}
+.cr-m.fut small{color:#C9C2DA;} .cr-m.fut b{color:#FF953A;} .cr-m.fut strong{color:#FFFFFF;}
+.cr-m.hoy{background:linear-gradient(160deg,#3A1680 0%,#1B0C3A 100%); border:1.5px solid #FF953A;
+  box-shadow:0 0 26px rgba(255,149,58,.45);}
+.cr-m.hoy small{color:#E3DDF0;} .cr-m.hoy b,.cr-m.hoy strong{color:#FF953A;}
+
 /* escena dibujada en CSS (sin imagen de fondo): se usa cuando EXTRA no trae "fondo" */
 .esc-sky{position:absolute; inset:0;
   background:radial-gradient(ellipse 70% 55% at 50% 38%, #3B1670 0%, #1E0A3C 45%, #0B0418 80%),
@@ -1140,7 +1169,7 @@ if(IPD.ADN && (IPD.ADN.hitos||[]).length){
 (IPD.EVENTOS||[]).filter(ev=>{ const f=fechaDia(ev.fecha); return !f || f>=hoyLima(); })
   .forEach(ev=>IP.push({tipo:'evento', ev}));
 /* 5) video institucional: se muestra si existe IPARTNER.VIDEO.src */
-if(IPD.VIDEO && IPD.VIDEO.src) IP.push({tipo:'video', v:IPD.VIDEO});
+if(IPD.VIDEO && (IPD.VIDEO.src || IPD.VIDEO.crono)) IP.push({tipo:'video', v:IPD.VIDEO});
 const IP_ACTIVE = IP.length>0;
 
 /* ARGUMENTOS DE VENTA — permanentes, los cura el equipo comercial */
@@ -1419,6 +1448,23 @@ function ipSlideHTML(sl){
       </div>
     </div>`;
   }
+  if(sl.tipo==='video' && sl.v.crono){
+    /* cronograma de pagos dibujado en HTML: meses pasados en gris, el mes en
+       curso resaltado en naranja y los que vienen en morado */
+    const c = sl.v.crono, hoy = hoyLima(), mesHoy = hoy.getMonth();
+    const M = ['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SEPTIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE'];
+    const C = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SET','OCT','NOV','DIC'];
+    const anioHoy = hoy.getFullYear(), anio = +c.anio || anioHoy;
+    return `<div class="ip-slide cr" style="--ip:#FF953A"><div class="cr-fit"><div class="cr-stage">
+      <div class="cr-k">${anio}</div>
+      <div class="cr-t">CRONOGRAMA <span>DE PAGOS</span></div>
+      <div class="cr-rule"></div>
+      <div class="cr-grid">${(c.dias||[]).slice(0,12).map((d,i)=>{
+        const est = anio<anioHoy || (anio===anioHoy && i<mesHoy) ? 'pas' : (anio===anioHoy && i===mesHoy ? 'hoy' : 'fut');
+        return `<div class="cr-m ${est}"><div><small>${M[i]}</small><b>${C[i]}</b></div><strong>${d}</strong></div>`;
+      }).join('')}</div>
+    </div></div></div>`;
+  }
   if(sl.tipo==='video'){
     const v = sl.v;
     const esImagen = /\.(png|jpe?g|webp|gif|avif)$/i.test(v.src||'');
@@ -1660,6 +1706,12 @@ function loop(){
    envolver ipRender y a registrar un listener de resize, y la pantalla
    terminaba congelandose en el apartado que estuviera a la vista. */
 function escFit(){
+  /* cronograma: el lienzo 1600x760 entra completo en el panel */
+  document.querySelectorAll('.cr-fit').forEach(box=>{
+    const st = box.querySelector('.cr-stage'), r = box.getBoundingClientRect(); if(!st || !r.width) return;
+    const s = Math.min(r.width/1600, r.height/800);
+    st.style.transform = 'scale(' + s + ')'; st.style.top = Math.max(0,(r.height-800*s)/2) + 'px';
+  });
   document.querySelectorAll('.esc-fit').forEach(box=>{
     const st = box.querySelector('.esc-stage'); if(!st) return;
     const r = box.getBoundingClientRect(); if(!r.width) return;
