@@ -270,7 +270,8 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .esc-bg{position:absolute; left:0; top:0; width:1920px; height:951px; object-fit:cover;
   transform-origin:50% 55%; animation:escBreath 10s ease-in-out infinite; will-change:transform;}
 @keyframes escBreath{0%,100%{transform:scale(1.015)}50%{transform:scale(1.027)}}
-.esc-fit{position:absolute; inset:0; overflow:hidden;}
+.esc-fit{position:absolute; inset:0; overflow:hidden;
+  background:radial-gradient(ellipse 60% 70% at 50% 38%, #2A0F52 0%, #160830 50%, #08040E 85%);}
 .esc-stage{position:absolute; left:50%; top:0; margin-left:-960px; width:1920px; height:951px;
   transform-origin:50% 0%; font-family:'Montserrat',sans-serif;}
 
@@ -1661,7 +1662,10 @@ function escFit(){
     const r = box.getBoundingClientRect(); if(!r.width) return;
     /* modo "llenar", como el cronograma: cubre el panel; si la ventana no tiene la
        proporción exacta, recorta por abajo (el piso del escenario), nunca el titular */
-    st.style.transform = 'scale(' + Math.max(r.width/1920, r.height/886) + ')';
+    /* pero titular, tarjetas y placas (hasta y=830) deben verse enteros: en
+       ventanas apaisadas (sin F11) se escala por alto y los costados los cubre
+       el cielo de .esc-fit */
+    st.style.transform = 'scale(' + Math.min(Math.max(r.width/1920, r.height/886), r.height/830) + ')';
   });
 }
 escFit();
