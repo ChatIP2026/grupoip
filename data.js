@@ -107,33 +107,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-06 08:30 (Lima) — tarea automática",
+  generado: "2026-10-07 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-up", week:false,
-    title:"MEF proyecta que el PBI crecerá 3,4%",
-    fig:"3,4%", figsub:"crecimiento 2026 según el MEF; inversión privada +15% y demanda interna cerca de +6%",
-    cat:"ECONOMÍA", source:"Perú Retail · 06/10/2026",
-    url:"https://www.peru-retail.com/mef-preve-que-economia-peruana-crecera-entre-25-y-3-en-los-meses-que-quedan-de-2026/" },
-  { color:"#E6299C", viz:"training", week:false,
-    title:"Talento no encaja en textil, agro y retail",
-    fig:"7 de 10", figsub:"trabajadores informales; faltan operarios, técnicos de frío y soft skills",
-    cat:"RRHH", source:"Gestión · 06/10/2026",
-    url:"https://gestion.pe/economia/talento-laboral-y-profesionales-de-peru-no-encajan-en-estos-sectores-la-brecha-que-preocupa-al-empresario-noticia/" },
-  { color:"#F52055", viz:"piggy", week:false,
-    title:"Nuevo proyecto de retiro AFP de 4 UIT",
-    fig:"4 UIT", figsub:"tope del noveno retiro propuesto; conservaría el derecho a pensión mínima con 240 aportes",
-    cat:"LEGAL", source:"Gestión · 06/10/2026",
-    url:"https://gestion.pe/tu-dinero/finanzas-personales/nuevo-retiro-de-afp-se-debatira-en-el-congreso-se-perderia-el-acceso-a-la-pension-minima-noticia/" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"ChatGPT marcará sus textos en la UE",
-    fig:"95%", figsub:"detección con marca invisible en 400 palabras; baja a 17% si se cambia 25% del texto",
-    cat:"IA", source:"Infobae · 05/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/06/openai-empezara-a-poner-marcas-de-agua-invisibles-a-los-textos-de-chatgpt-y-codex-en-la-union-europea/" },
-  { color:"#FF953A", viz:"ship", week:false,
-    title:"Indecopi frena inodoros chinos con aranceles",
-    fig:"US$ 14,30", figsub:"antidumping máximo por unidad durante 5 años; Vainsa y Trebol perdieron 17,6% de ventas",
-    cat:"CONSUMO", source:"Infobae · 06/10/2026",
-    url:"https://www.infobae.com/peru/2026/10/06/trebol-y-vainsa-vencen-a-china-ante-indecopi-y-bloquean-el-ingreso-de-inodoros-asiaticos-al-peru-subiran-los-precios/" }
+  { color:"#FF953A", viz:"bars-up", week:false,
+    title:"Banco Mundial: Perú crecería 3,2% en 2026",
+    fig:"3,2%", figsub:"crecimiento 2026, de 2,7% en junio; Perú sería 4.º en Sudamérica",
+    cat:"ECONOMÍA", source:"Gestión · 07/10/2026",
+    url:"https://gestion.pe/economia/banco-mundial-economia-de-peru-creceria-32-este-ano-como-queda-frente-al-resto-de-la-region-noticia/" },
+  { color:"#E6299C", viz:"search", week:false,
+    title:"2 de 3 vacantes piden habilidad tecnológica",
+    fig:"64%", figsub:"de 8.078 vacantes pide skills digitales; Diseño 86%, Marketing 75%, Administración 72%",
+    cat:"RRHH", source:"Gestión · 07/10/2026",
+    url:"https://gestion.pe/economia/management-empleo/dos-de-cada-tres-ofertas-laborales-en-peru-requieren-al-menos-una-habilidad-tecnologica-noticia/" },
+  { color:"#F52055", viz:"gavel", week:false,
+    title:"Diputados aprueban facultades acotadas",
+    fig:"20 medidas", figsub:"solo seguridad y El Niño; quedan fuera lo laboral, empleo juvenil y mypes",
+    cat:"LEGAL", source:"Infobae · 07/10/2026",
+    url:"https://www.infobae.com/peru/2026/10/07/camara-de-diputados-aprobo-otorgar-facultades-legislativas-a-gobierno-de-keiko-fujimori-en-seguridad-y-fenomeno-el-nino/" },
+  { color:"#4C8DF6", viz:"gemini", week:false,
+    title:"Gemini crea imágenes gratis con Nano Banana 2",
+    fig:"1K gratis", figsub:"resolución sin suscripción; 2K con plan de pago de Google",
+    cat:"IA", source:"Infobae · 07/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/07/puedo-usar-gemini-gratis-google-deja-descargar-y-crear-fotos-sin-pagar/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Minna abrirá hasta 5 tiendas K-Beauty",
+    fig:"8 tiendas", figsub:"hoy operan; 3 a 5 aperturas en 2027, foco en provincias; local desde S/ 250.000",
+    cat:"CONSUMO", source:"Gestión · 07/10/2026",
+    url:"https://gestion.pe/economia/empresas/minna-cadena-peruana-de-k-beauty-alista-hasta-cinco-nuevas-tiendas-para-2027-foco-en-provincias-y-formato-premium-noticia/" },
 ],
 
 
@@ -242,7 +242,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con 7 de cada 10 trabajadores informales y brechas en textil, agro y retail, ofrece a tus leads un pipeline de talento ya capacitado y en planilla.",
+  DATO: "Con 64% de las vacantes pidiendo skills digitales y apertura de tiendas en provincias, ofrece a tus leads perfiles ya evaluados y listos para escalar su planilla.",
 
 
 
