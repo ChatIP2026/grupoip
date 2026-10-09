@@ -107,28 +107,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-08 08:30 (Lima) — tarea automática",
+  generado: "2026-10-09 08:25 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"agro", week:false,
-    title:"El Niño llegaría a un récord en diciembre",
-    fig:"+3,7 °C", figsub:"anomalía prevista en el Pacífico; supera el récord de 2,6 °C de 2015-2016",
-    cat:"ECONOMÍA", source:"Andina · 08/10/2026",
-    url:"https://andina.pe/agencia/noticia-el-nino-se-intensificara-hasta-alcanzar-su-maximo-diciembre-alerta-onu-1095121.aspx" },
-  { color:"#E6299C", viz:"handshake", week:false,
-    title:"Capeco y obreros firman acuerdo con la OIT",
-    fig:"Adenda 1", figsub:"convenio de diálogo social en construcción civil; la OIT dice que es replicable",
-    cat:"RRHH", source:"Andina · 08/10/2026",
-    url:"https://andina.pe/agencia/noticia-sector-construccion-oit-destaca-dialogo-entre-empleadores-y-trabajadores-por-pais-1095053.aspx" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"OpenAI lanza GPT-6 con interfaz interactiva",
-    fig:"1.200 M", figsub:"de usuarios semanales de ChatGPT; Plus, Pro, Business y Enterprise primero",
-    cat:"IA", source:"Infobae · 08/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/08/openai-lanzo-gpt-6-y-una-interfaz-que-llena-las-respuestas-de-chatgpt-con-graficos-y-botones/" },
-  { color:"#FF953A", viz:"money", week:false,
-    title:"Bigbox apuesta por comprar más veces al año",
-    fig:"+35%", figsub:"ventas acumuladas a agosto; Q4 concentra casi 50% del año; ticket de S/ 220",
-    cat:"CONSUMO", source:"Gestión · 08/10/2026",
-    url:"https://gestion.pe/economia/empresas/la-apuesta-de-bigbox-en-peru-por-comprar-mas-veces-los-regalos-ya-no-solo-por-fechas-noticia/" },
+  { color:"#FF953A", viz:"alert", week:false,
+    title:"Plaga de la papa amenaza 125.000 hectáreas",
+    fig:"US$ 109 M", figsub:"pérdida potencial: 17% de la producción nacional; la punta morada ya llegó a Áncash",
+    cat:"ECONOMÍA", source:"Gestión · 09/10/2026",
+    url:"https://gestion.pe/economia/papa-de-peru-y-su-produccion-125000-hectareas-peligran-por-plaga-que-anula-hasta-el-100-de-cosecha-noticia/" },
+  { color:"#E6299C", viz:"piggy", week:false,
+    title:"CTS: desde 2027 solo se retiraría el 50%",
+    fig:"50%", figsub:"tope de retiro libre desde 2027; el 100% rige solo hasta el 31/12/2026",
+    cat:"RRHH", source:"Infobae · 09/10/2026",
+    url:"https://www.infobae.com/peru/2026/10/09/el-retiro-de-cts-acaba-en-2027-no-esto-es-lo-que-pasara-con-el-seguro-de-desempleo/" },
+  { color:"#4C8DF6", viz:"gemini", week:false,
+    title:"Gemini podrá llamar por ti a tus contactos",
+    fig:"Call for Me", figsub:"función filtrada en Android; hoy gestiona reservas y citas con empresas",
+    cat:"IA", source:"Infobae · 09/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/09/google-crea-una-funcion-para-llamar-automaticamente-a-familiares-y-amigos-ya-no-hablaras/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"K-Beauty casi se duplica en el mercado peruano",
+    fig:"S/ 340 M", figsub:"facturación proyectada 2026 de cosmética coreana, frente a S/ 160 M en 2025",
+    cat:"CONSUMO", source:"Gestión · 09/10/2026",
+    url:"https://gestion.pe/economia/empresas/k-beauty-en-peru-marcas-coreanas-apuntan-al-tratamiento-facial-que-hay-detras-ccl-skincare-belleza-noticia/" },
 ],
 
 
@@ -237,7 +237,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con ventas +35% en regalos y el Q4 como pico del año, ofrece a tus leads equipos temporales ya evaluados antes de la campaña.",
+  DATO: "Con la CTS al 100% solo hasta el 31/12, anticipa rotación y reemplazos en enero: ofrece a tus leads un pipeline de talento ya evaluado.",
 
 
 
