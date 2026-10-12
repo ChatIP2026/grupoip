@@ -107,28 +107,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-09 08:25 (Lima) — tarea automática",
+  generado: "2026-10-12 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"alert", week:false,
-    title:"Plaga de la papa amenaza 125.000 hectáreas",
-    fig:"US$ 109 M", figsub:"pérdida potencial: 17% de la producción nacional; la punta morada ya llegó a Áncash",
-    cat:"ECONOMÍA", source:"Gestión · 09/10/2026",
-    url:"https://gestion.pe/economia/papa-de-peru-y-su-produccion-125000-hectareas-peligran-por-plaga-que-anula-hasta-el-100-de-cosecha-noticia/" },
-  { color:"#E6299C", viz:"piggy", week:false,
-    title:"CTS: desde 2027 solo se retiraría el 50%",
-    fig:"50%", figsub:"tope de retiro libre desde 2027; el 100% rige solo hasta el 31/12/2026",
-    cat:"RRHH", source:"Infobae · 09/10/2026",
-    url:"https://www.infobae.com/peru/2026/10/09/el-retiro-de-cts-acaba-en-2027-no-esto-es-lo-que-pasara-con-el-seguro-de-desempleo/" },
-  { color:"#4C8DF6", viz:"gemini", week:false,
-    title:"Gemini podrá llamar por ti a tus contactos",
-    fig:"Call for Me", figsub:"función filtrada en Android; hoy gestiona reservas y citas con empresas",
-    cat:"IA", source:"Infobae · 09/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/09/google-crea-una-funcion-para-llamar-automaticamente-a-familiares-y-amigos-ya-no-hablaras/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"K-Beauty casi se duplica en el mercado peruano",
-    fig:"S/ 340 M", figsub:"facturación proyectada 2026 de cosmética coreana, frente a S/ 160 M en 2025",
-    cat:"CONSUMO", source:"Gestión · 09/10/2026",
-    url:"https://gestion.pe/economia/empresas/k-beauty-en-peru-marcas-coreanas-apuntan-al-tratamiento-facial-que-hay-detras-ccl-skincare-belleza-noticia/" },
+  { color:"#FF953A", viz:"agro", week:false,
+    title:"Agroexportaciones frenan: solo crecen 1,9%",
+    fig:"US$ 8.005 M", figsub:"envíos a agosto, frente a +21% en 2025; El Niño amenaza mango, palta y uva",
+    cat:"ECONOMÍA", source:"La República · 11/10/2026",
+    url:"https://larepublica.pe/economia/2026/10/11/agroexportaciones-peruanas-crecen-solo-19-a-agosto-y-se-alejan-de-los-avances-de-anos-anteriores-hnews-512556" },
+  { color:"#E6299C", viz:"pie", week:false,
+    title:"Informalidad supera 60% en el norte del país",
+    fig:"70,5%", figsub:"de informalidad laboral en Tumbes; Chiclayo, Piura y Trujillo también pasan el 62%",
+    cat:"RRHH", source:"La República · 10/10/2026",
+    url:"https://larepublica.pe/economia/2026/10/10/afp-informalidad-superior-al-60-en-ciudades-del-norte-limita-el-alcance-del-nuevo-retiro-advierte-la-ccl-hnews-421587" },
+  { color:"#00A4EF", viz:"ai", week:false,
+    title:"Microsoft pide un freno de emergencia para la IA",
+    fig:"Kill switch", figsub:"Nadella propone que una persona autorizada pueda pausar un modelo en plena tarea",
+    cat:"IA", source:"Infobae · 11/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/11/ceo-de-microsoft-pidio-crear-un-freno-de-emergencia-para-detener-a-la-ia-en-pleno-funcionamiento/" },
+  { color:"#FF953A", viz:"building", week:false,
+    title:"Visitas a malls caen 12% en setiembre",
+    fig:"-12,09%", figsub:"afluencia frente a agosto, más fuerte en moda, belleza y tecnología; bebidas sí suben 16%",
+    cat:"CONSUMO", source:"La República · 11/10/2026",
+    url:"https://larepublica.pe/economia/2026/10/10/centros-comerciales-visitas-caen-12-en-setiembre-y-el-nino-empieza-a-cambiar-las-compras-hnews-71998" },
 ],
 
 
@@ -237,7 +237,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con la CTS al 100% solo hasta el 31/12, anticipa rotación y reemplazos en enero: ofrece a tus leads un pipeline de talento ya evaluado.",
+  DATO: "Con la informalidad sobre 60% en el norte, tu pipeline en Piura, Chiclayo y Trujillo gana si ofreces planilla formal y outsourcing: el cliente que se formaliza reduce riesgo SUNAFIL.",
 
 
 
