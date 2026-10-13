@@ -1201,12 +1201,12 @@ const VIZ = {
     </svg>`; },
   'openai': c => `
     <svg viewBox="0 0 300 170">
-      <g fill="none" stroke="${c}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" class="viz-spin" style="transform-origin:150px 86px; animation-duration:34s">
-        <path d="M150 40 a30 30 0 0 1 30 52 a30 30 0 0 1 -60 0 a30 30 0 0 1 30 -52z"/>
-        <path d="M99 71 a30 30 0 0 1 60 -6 a30 30 0 0 1 -30 52 a30 30 0 0 1 -30 -46z" transform="rotate(120 150 86)"/>
-        <path d="M99 71 a30 30 0 0 1 60 -6 a30 30 0 0 1 -30 52 a30 30 0 0 1 -30 -46z" transform="rotate(240 150 86)"/>
+      <!-- logo oficial (blanco sobre negro) como máscara, igual que grok -->
+      <defs><mask id="mOpenai" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="170">
+        <image href="img/ia/openai.jpg" x="70" y="5" width="160" height="160"/></mask></defs>
+      <g class="viz-spin" style="transform-origin:150px 85px; animation-duration:40s">
+        <rect width="300" height="170" fill="${c}" mask="url(#mOpenai)"/>
       </g>
-      <circle cx="150" cy="86" r="6" fill="${c}"/>
     </svg>`,
   'gemini': c => `
     <svg viewBox="0 0 300 170">
@@ -1215,10 +1215,12 @@ const VIZ = {
     </svg>`,
   'grok': c => `
     <svg viewBox="0 0 300 170">
-      <g fill="${c}">
-        <path d="M108 34 h30 l58 100 h-30 z"/>
-        <path d="M192 34 h30 l-40 68 -15 -26 z"/>
-        <path d="M108 138 h30 l22 -38 -15 -26 z"/>
+      <!-- logo oficial (blanco sobre negro) usado como máscara: el negro queda
+           transparente y el trazo toma el color de la tarjeta -->
+      <defs><mask id="mGrok" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="170">
+        <image href="img/ia/grok.png" x="20" y="-45" width="260" height="260"/></mask></defs>
+      <g class="viz-pulse" style="transform-origin:150px 85px">
+        <rect width="300" height="170" fill="${c}" mask="url(#mGrok)"/>
       </g>
     </svg>`,
   'clock': c => `
