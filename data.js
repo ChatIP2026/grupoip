@@ -1,4 +1,4 @@
-﻿/* DATOS DEL NOTICIERO iPARTNER — la tarea nocturna regenera NEWS y DATO.
+/* DATOS DEL NOTICIERO iPARTNER — la tarea nocturna regenera NEWS y DATO.
    El diseño vive en index.html; aquí solo cambia el contenido.
 
    ⚠️ SILVER (Argumentos de Venta) es PERMANENTE: lo cura a mano el equipo
