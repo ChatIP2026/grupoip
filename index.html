@@ -369,10 +369,16 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .cb-p span{font-weight:600;} .cb-p b{font-weight:700; font-size:16px;}
 .cb-m.fut{background:linear-gradient(160deg,#3A1680 0%,#1B0C3A 100%); border-color:rgba(140,80,255,.35);}
 .cb-m.fut .cb-h{color:#FF953A;} .cb-m.fut .cb-p{color:#F1EDF8;}
-.cb-m.hoy{background:linear-gradient(160deg,#5A1460 0%,#2A0B3A 100%); border:1.5px solid #E6299C; box-shadow:0 0 26px rgba(230,41,156,.45);}
+.cb-m.hoy{background:linear-gradient(160deg,#5A1460 0%,#2A0B3A 100%); border:1.5px solid #E6299C;
+  animation:cbTwinkle 2.4s ease-in-out infinite;}
+/* tintineo del mes en curso para atraer la mirada */
+@keyframes cbTwinkle{0%,100%{box-shadow:0 0 18px rgba(230,41,156,.35); border-color:#E6299C}
+  50%{box-shadow:0 0 42px rgba(255,122,200,.85), 0 0 0 3px rgba(255,122,200,.25); border-color:#FF9BD6}}
 .cb-m.hoy .cb-h{color:#FF7AC8;} .cb-m.hoy .cb-p{color:#FFFFFF;}
 .cb-m.vacio .cb-p{opacity:.35;}
-.cb-p.prox{color:#FFD98A!important;} .cb-p.prox span::after{content:' · próximo'; font-size:13px; font-weight:700; color:#FF953A; letter-spacing:.06em;}
+/* el próximo cumpleaños solo cambia de color; los que ya pasaron este mes van en gris */
+.cb-p.prox{color:#FFD98A!important;}
+.cb-p.ya{color:#6E6A78!important;}
 .cb-p.hoyc{color:#FF7AC8!important;} .cb-p.hoyc span::after{content:' · ¡hoy!'; font-size:13px; font-weight:800; color:#FF7AC8;}
 
 /* escena dibujada en CSS (sin imagen de fondo): se usa cuando EXTRA no trae "fondo" */
@@ -1612,7 +1618,7 @@ function ipSlideHTML(sl){
         const ps = L.filter(p=>p.m===i);
         const est = i<mesHoy ? 'pas' : (i===mesHoy ? 'hoy' : 'fut');
         return `<div class="cb-m ${est}${ps.length?'':' vacio'}"><div class="cb-h">${mes}</div>${
-          ps.length ? ps.map(p=>`<div class="cb-p${p===prox?' prox':''}${p.m===mesHoy&&p.d===diaHoy?' hoyc':''}"><span>${esc(p.n)}</span><b>${String(p.d).padStart(2,'0')} ${C[i]}</b></div>`).join('')
+          ps.length ? ps.map(p=>`<div class="cb-p${p===prox?' prox':''}${p.m===mesHoy&&p.d===diaHoy?' hoyc':''}${p.m===mesHoy&&p.d<diaHoy?' ya':''}"><span>${esc(p.n)}</span><b>${String(p.d).padStart(2,'0')} ${C[i]}</b></div>`).join('')
                     : '<div class="cb-p"><span>—</span></div>'
         }</div>`;
       }).join('')}</div>
