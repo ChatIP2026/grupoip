@@ -1,4 +1,4 @@
-/* DATOS DEL NOTICIERO iPARTNER — la tarea nocturna regenera NEWS y DATO.
+﻿/* DATOS DEL NOTICIERO iPARTNER — la tarea nocturna regenera NEWS y DATO.
    El diseño vive en index.html; aquí solo cambia el contenido.
 
    ⚠️ SILVER (Argumentos de Venta) es PERMANENTE: lo cura a mano el equipo
@@ -48,11 +48,15 @@
    noticia, no siempre el mismo. Regla: ningún visual puede repetirse dos días
    seguidos — antes de reescribir este archivo, mira qué "viz" tiene la edición
    anterior y elige otros.
-   Biblioteca disponible en index.html — 30 iconos:
+   Biblioteca disponible en index.html — 38 iconos:
      chart-up    línea que sube (crecimiento, proyecciones al alza)
      chart-down  línea que baja (caída, contracción, retroceso)
      bars-up     barras que crecen (comparativos, series)
      pie         gráfico circular (porcentajes, participación)
+     analysis    lupa sobre barras (estudios, encuestas, reportes, informes)
+     compare     barras antes vs. hoy (comparación con el año anterior)
+     gauge       velocímetro (índices: confianza, inflación, riesgo)
+     ranking     podio 1-2-3 (rankings, "top" de empresas o países)
      target      diana con flecha (metas, objetivos, proyecciones)
      money       monedas + S/ (dinero, sueldos, caja)
      piggy       alcancía (ahorro, CTS, AFP, gratificación)
