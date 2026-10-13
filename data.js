@@ -155,7 +155,8 @@ window.NOTICIERO = {
     /* ENERO */
     { nombre:"Sofía Salcedo",       equipo:"",         fecha:"01-30", foto:"" },
     /* MARZO */
-    { nombre:"Mauricio",            equipo:"",         fecha:"03-17", foto:"" },
+    { nombre:"Ariana",              equipo:"",         fecha:"03-10", foto:"" },
+    { nombre:"Mauricio",           equipo:"",         fecha:"03-17", foto:"" },
     { nombre:"Nicol de la Cruz",    equipo:"",         fecha:"03-23", foto:"" },
     /* ABRIL */
     { nombre:"Darwin Hoyos",        equipo:"Renewals", fecha:"04-07", foto:"" },
@@ -186,7 +187,9 @@ window.NOTICIERO = {
     { nombre:"Flor Mendez",         equipo:"",         fecha:"11-05", foto:"" },
     { nombre:"Kassandra Lopez",     equipo:"",         fecha:"11-15", foto:"" },
     /* DICIEMBRE */
-    { nombre:"Gustavo Aspajo",      equipo:"",         fecha:"12-05", foto:"" },
+    { nombre:"Diego",               equipo:"",         fecha:"11-17", foto:"" },
+    { nombre:"Antonio",             equipo:"",         fecha:"11-21", foto:"" },
+    { nombre:"Gustavo Aspajo",     equipo:"",         fecha:"12-05", foto:"" },
     { nombre:"Paola Quevedo",       equipo:"",         fecha:"12-13", foto:"" },
     { nombre:"Susana Mora",         equipo:"",         fecha:"12-13", foto:"" }
   ],

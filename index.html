@@ -325,7 +325,21 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .ip-slide.cr::before{content:''; position:absolute; inset:0; pointer-events:none;
   background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
   background-size:56px 56px;}
-.cr-fit{position:absolute; inset:0; overflow:hidden;}
+/* el fondo va en .cr-fit porque ipRender reescribe las clases de .ip-slide */
+.cr-fit{position:absolute; inset:0; overflow:hidden;
+  background:radial-gradient(ellipse 45% 55% at 100% 0%, rgba(110,40,200,.45) 0%, rgba(0,0,0,0) 70%),
+             radial-gradient(ellipse 40% 50% at 0% 100%, rgba(255,120,40,.22) 0%, rgba(0,0,0,0) 70%), #0C0A12;}
+.cr-fit::before{content:''; position:absolute; inset:0; pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:56px 56px;}
+/* cumpleaños: luces rosadas y moradas + confeti suave */
+.cr-fit.cb{background:radial-gradient(ellipse 50% 60% at 0% 0%, rgba(230,41,156,.38) 0%, rgba(0,0,0,0) 70%),
+  radial-gradient(ellipse 50% 60% at 100% 100%, rgba(123,47,242,.45) 0%, rgba(0,0,0,0) 70%),
+  radial-gradient(ellipse 60% 40% at 50% 0%, rgba(255,149,58,.14) 0%, rgba(0,0,0,0) 70%), #120A1E;}
+.cb-conf{position:absolute; inset:0; pointer-events:none; overflow:hidden;}
+.cb-conf i{position:absolute; top:-12px; width:8px; height:14px; border-radius:2px; opacity:.0;
+  animation:cbFall linear infinite;}
+@keyframes cbFall{0%{transform:translateY(0) rotate(0); opacity:0} 10%{opacity:.75} 90%{opacity:.5} 100%{transform:translateY(110vh) rotate(540deg); opacity:0}}
 .cr-stage{position:absolute; left:50%; top:0; width:1600px; height:800px; margin-left:-800px;
   transform-origin:50% 0; font-family:'Sora',sans-serif; padding:78px 70px 0;}
 .cr-k{font-weight:700; font-size:22px; letter-spacing:.32em; color:#FF953A;}
@@ -344,6 +358,22 @@ body.tab-ip .livechip{top:2vh; left:2.2vw;}
 .cr-m.hoy{background:linear-gradient(160deg,#3A1680 0%,#1B0C3A 100%); border:1.5px solid #FF953A;
   box-shadow:0 0 26px rgba(255,149,58,.45);}
 .cr-m.hoy small{color:#E3DDF0;} .cr-m.hoy b,.cr-m.hoy strong{color:#FF953A;}
+
+/* calendario de cumpleaños: usa el lienzo del cronograma */
+.cb-grid{display:grid; grid-template-columns:repeat(6,1fr); gap:18px 18px;}
+.cb-m{height:196px; border-radius:16px; padding:12px 18px; backdrop-filter:blur(2px); overflow:hidden;
+  border:1px solid rgba(255,255,255,.09); background:linear-gradient(160deg,#1C1A24 0%,#121018 100%);}
+.cb-h{font-weight:800; font-size:18px; letter-spacing:.16em; color:#8C8798; margin-bottom:5px;
+  padding-bottom:5px; border-bottom:1px dashed rgba(255,255,255,.14);}
+.cb-p{display:flex; justify-content:space-between; align-items:baseline; font-size:18px; line-height:1.33; color:#6E6A78;}
+.cb-p span{font-weight:600;} .cb-p b{font-weight:700; font-size:16px;}
+.cb-m.fut{background:linear-gradient(160deg,#3A1680 0%,#1B0C3A 100%); border-color:rgba(140,80,255,.35);}
+.cb-m.fut .cb-h{color:#FF953A;} .cb-m.fut .cb-p{color:#F1EDF8;}
+.cb-m.hoy{background:linear-gradient(160deg,#5A1460 0%,#2A0B3A 100%); border:1.5px solid #E6299C; box-shadow:0 0 26px rgba(230,41,156,.45);}
+.cb-m.hoy .cb-h{color:#FF7AC8;} .cb-m.hoy .cb-p{color:#FFFFFF;}
+.cb-m.vacio .cb-p{opacity:.35;}
+.cb-p.prox{color:#FFD98A!important;} .cb-p.prox span::after{content:' · próximo'; font-size:13px; font-weight:700; color:#FF953A; letter-spacing:.06em;}
+.cb-p.hoyc{color:#FF7AC8!important;} .cb-p.hoyc span::after{content:' · ¡hoy!'; font-size:13px; font-weight:800; color:#FF7AC8;}
 
 /* escena dibujada en CSS (sin imagen de fondo): se usa cuando EXTRA no trae "fondo" */
 .esc-sky{position:absolute; inset:0;
@@ -1270,6 +1300,8 @@ const IP = [];
   .forEach(x=>IP.push({tipo:'cumple', dias:x.dias, p:x.p}));
 /* 2) extraordinarios del mes: todo el mes que corresponda */
 if(IPD.EXTRA && (IPD.EXTRA.cards||[]).length) IP.push({tipo:'extra', e:IPD.EXTRA});
+/* calendario anual de cumpleaños: siempre visible si hay cumpleaños cargados */
+if((IPD.CUMPLES||[]).length) IP.push({tipo:'calcump'});
 /* 3) ADN comercial: encendido todo el mes */
 if(IPD.ADN && (IPD.ADN.hitos||[]).length){
   const f = fechaDia(IPD.ADN.hasta);
@@ -1509,6 +1541,7 @@ function ipTitulo(sl){
   if(sl.tipo==='extra') return 'Los extraordinarios del mes · ' + (sl.e.periodo||'');
   if(sl.tipo==='adn') return 'Foco del mes: ' + (sl.a.foco||'Nuestro ADN comercial');
   if(sl.tipo==='video') return sl.v.titulo || 'Video del mes';
+  if(sl.tipo==='calcump') return 'Calendario de cumpleaños';
   return sl.ev.titulo || 'Evento del mes';
 }
 
@@ -1557,6 +1590,33 @@ function ipSlideHTML(sl){
         </div>
       </div>
     </div>`;
+  }
+  if(sl.tipo==='calcump'){
+    /* calendario anual de cumpleaños (mismo lienzo y estilo que el cronograma):
+       meses pasados en gris, mes en curso resaltado y el próximo cumpleaños marcado */
+    const hoy = hoyLima(), mesHoy = hoy.getMonth(), diaHoy = hoy.getDate();
+    const M = ['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SETIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE'];
+    const C = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Set','Oct','Nov','Dic'];
+    const L = (IPD.CUMPLES||[]).filter(p=>/^\d\d-\d\d$/.test(p.fecha||''))
+      .map(p=>({n:(p.nombre||'').split(' ')[0], m:+p.fecha.slice(0,2)-1, d:+p.fecha.slice(3)}))
+      .sort((a,b)=>a.m-b.m||a.d-b.d);
+    const prox = L.find(p=>p.m>mesHoy||(p.m===mesHoy&&p.d>=diaHoy)) || L[0];
+    const CONF = ['#E6299C','#FF953A','#07F3F4','#FFD98A','#9B5CFF'];
+    return `<div class="ip-slide cr" style="--ip:#E6299C"><div class="cr-fit cb">
+      <div class="cb-conf">${Array.from({length:26},(_,k)=>`<i style="left:${(k*37.7)%100}%; background:${CONF[k%5]}; animation-duration:${10+(k*7)%9}s; animation-delay:-${(k*1.9)%16}s"></i>`).join('')}</div>
+      <div class="cr-stage">
+      <div class="cr-k" style="color:#E6299C">CALENDARIO DE CELEBRACIONES</div>
+      <div class="cr-t">CUMPLEAÑOS <span style="color:#E6299C">iPARTNER</span></div>
+      <div class="cr-rule" style="background:linear-gradient(90deg,#E6299C,#7B2FF2)"></div>
+      <div class="cb-grid">${M.map((mes,i)=>{
+        const ps = L.filter(p=>p.m===i);
+        const est = i<mesHoy ? 'pas' : (i===mesHoy ? 'hoy' : 'fut');
+        return `<div class="cb-m ${est}${ps.length?'':' vacio'}"><div class="cb-h">${mes}</div>${
+          ps.length ? ps.map(p=>`<div class="cb-p${p===prox?' prox':''}${p.m===mesHoy&&p.d===diaHoy?' hoyc':''}"><span>${esc(p.n)}</span><b>${String(p.d).padStart(2,'0')} ${C[i]}</b></div>`).join('')
+                    : '<div class="cb-p"><span>—</span></div>'
+        }</div>`;
+      }).join('')}</div>
+    </div></div></div>`;
   }
   if(sl.tipo==='video' && sl.v.crono){
     /* cronograma de pagos dibujado en HTML: meses pasados en gris, el mes en
@@ -1687,7 +1747,7 @@ function ipNext(){ if(IP.length<2) return; ipIdx=(ipIdx+1)%IP.length; ipT0=Date.
 function ipPrev(){ if(IP.length<2) return; ipIdx=(ipIdx-1+IP.length)%IP.length; ipT0=Date.now(); ipRender(); }
 function sl_cum(k){ return IP[k] && IP[k].tipo==='cumple'; }
 function sl_vid(k){ const s=IP[k]; if(!s) return false;
-  return s.tipo==='video' || (s.tipo==='evento' && s.ev && s.ev.img); }
+  return s.tipo==='video' || s.tipo==='calcump' || (s.tipo==='evento' && s.ev && s.ev.img); }
 let ipT0 = Date.now();
 ipRender();
 
@@ -1819,7 +1879,10 @@ function escFit(){
   /* cronograma: el lienzo 1600x760 entra completo en el panel */
   document.querySelectorAll('.cr-fit').forEach(box=>{
     const st = box.querySelector('.cr-stage'), r = box.getBoundingClientRect(); if(!st || !r.width) return;
-    const s = Math.min(r.width/1600, r.height/800);
+    /* en paneles apaisados el lienzo se ensancha (hasta 2200) para usar los costados */
+    const W = Math.min(2200, Math.max(1600, 800*r.width/r.height));
+    const s = Math.min(r.width/W, r.height/800);
+    st.style.width = W + 'px'; st.style.marginLeft = (-W/2) + 'px';
     st.style.transform = 'scale(' + s + ')'; st.style.top = Math.max(0,(r.height-800*s)/2) + 'px';
   });
   document.querySelectorAll('.esc-fit').forEach(box=>{
