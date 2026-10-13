@@ -107,28 +107,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-12 08:40 (Lima) — tarea automática",
+  generado: "2026-10-13 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"agro", week:false,
-    title:"Agroexportaciones frenan: solo crecen 1,9%",
-    fig:"US$ 8.005 M", figsub:"envíos a agosto, frente a +21% en 2025; El Niño amenaza mango, palta y uva",
-    cat:"ECONOMÍA", source:"La República · 11/10/2026",
-    url:"https://larepublica.pe/economia/2026/10/11/agroexportaciones-peruanas-crecen-solo-19-a-agosto-y-se-alejan-de-los-avances-de-anos-anteriores-hnews-512556" },
-  { color:"#E6299C", viz:"pie", week:false,
-    title:"Informalidad supera 60% en el norte del país",
-    fig:"70,5%", figsub:"de informalidad laboral en Tumbes; Chiclayo, Piura y Trujillo también pasan el 62%",
-    cat:"RRHH", source:"La República · 10/10/2026",
-    url:"https://larepublica.pe/economia/2026/10/10/afp-informalidad-superior-al-60-en-ciudades-del-norte-limita-el-alcance-del-nuevo-retiro-advierte-la-ccl-hnews-421587" },
-  { color:"#00A4EF", viz:"ai", week:false,
-    title:"Microsoft pide un freno de emergencia para la IA",
-    fig:"Kill switch", figsub:"Nadella propone que una persona autorizada pueda pausar un modelo en plena tarea",
-    cat:"IA", source:"Infobae · 11/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/11/ceo-de-microsoft-pidio-crear-un-freno-de-emergencia-para-detener-a-la-ia-en-pleno-funcionamiento/" },
-  { color:"#FF953A", viz:"building", week:false,
-    title:"Visitas a malls caen 12% en setiembre",
-    fig:"-12,09%", figsub:"afluencia frente a agosto, más fuerte en moda, belleza y tecnología; bebidas sí suben 16%",
-    cat:"CONSUMO", source:"La República · 11/10/2026",
-    url:"https://larepublica.pe/economia/2026/10/10/centros-comerciales-visitas-caen-12-en-setiembre-y-el-nino-empieza-a-cambiar-las-compras-hnews-71998" },
+  { color:"#FF953A", viz:"mining", week:false,
+    title:"Minería: Gobierno recortará 40% de trámites",
+    fig:"-40%", figsub:"en permisos mineros: 27 se eliminan y 14 pasan a declaración jurada",
+    cat:"ECONOMÍA", source:"Andina · 13/10/2026",
+    url:"https://andina.pe/agencia/noticia-sector-minero-gobierno-reducira-tramitologia-40-para-favorecer-inversiones-1095700.aspx" },
+  { color:"#E6299C", viz:"clock", week:false,
+    title:"Marcar asistencia por WhatsApp ya es realidad",
+    fig:"230.000", figsub:"trabajadores marcan en GeoVictoria Perú; la empresa crece 50% en 2026",
+    cat:"RRHH", source:"Gestión · 13/10/2026",
+    url:"https://gestion.pe/economia/empresas/marcar-asistencia-por-whatsapp-la-firma-que-crece-50-y-ya-entro-a-las-universidades-en-peru-noticia/" },
+  { color:"#FF9900", viz:"people", week:false,
+    title:"Amazon pasa 1 millón de robots y sigue contratando",
+    fig:"1 millón", figsub:"de robots en sus depósitos; entrenó a 700.000 empleados para trabajar con ellos",
+    cat:"IA", source:"Infobae · 13/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/13/amazon-supero-el-millon-de-robots-en-sus-depositos-y-no-dejo-de-contratar-personas/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Consumo de hogares pierde impulso en setiembre",
+    fig:"+9,3%", figsub:"gasto con tarjetas, con inflación en 4,5%; moda y belleza lidera con +25,3%",
+    cat:"CONSUMO", source:"Gestión · 13/10/2026",
+    url:"https://gestion.pe/economia/consumo-de-hogares-perdio-impulso-en-septiembre-en-que-gastaron-los-peruanos-con-tarjetas-noticia/" },
 ],
 
 
@@ -237,7 +237,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con la informalidad sobre 60% en el norte, tu pipeline en Piura, Chiclayo y Trujillo gana si ofreces planilla formal y outsourcing: el cliente que se formaliza reduce riesgo SUNAFIL.",
+  DATO: "Con el consumo enfriándose y la inflación en 4,5%, el retail ajusta planilla: ofrece personal por campaña y outsourcing flexible, y suma control de asistencia digital al paquete.",
 
 
 
