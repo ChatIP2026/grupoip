@@ -858,6 +858,56 @@ const VIZ = {
       <circle cx="205" cy="85" r="52" fill="none" stroke="${c}" stroke-width="7" class="viz-pulse"/>
       <text x="205" y="108" text-anchor="middle" font-size="64" font-weight="800" fill="${c}" font-family="Sora,sans-serif">S/</text>
     </svg>`,
+  'bills': c => `
+    <svg viewBox="0 0 300 170">
+      <g class="viz-scale" style="transform-origin:150px 150px">
+        <rect x="70" y="62" width="160" height="80" rx="8" fill="${c}" opacity=".45" transform="rotate(-8 150 102)"/>
+        <rect x="70" y="52" width="160" height="80" rx="8" fill="${c}" opacity=".7" transform="rotate(-3 150 92)"/>
+        <rect x="70" y="44" width="160" height="80" rx="8" fill="${c}"/>
+        <circle cx="150" cy="84" r="24" fill="none" stroke="#1B0C3A" stroke-width="5"/>
+        <text x="150" y="94" text-anchor="middle" font-size="26" font-weight="800" fill="#1B0C3A" font-family="Sora,sans-serif">S/</text>
+        <circle cx="92" cy="84" r="6" fill="#1B0C3A"/><circle cx="208" cy="84" r="6" fill="#1B0C3A"/>
+      </g>
+    </svg>`,
+  'dollar': c => `
+    <svg viewBox="0 0 300 170">
+      <circle cx="95" cy="85" r="50" fill="none" stroke="${c}" stroke-width="7" class="viz-pulse"/>
+      <text x="95" y="106" text-anchor="middle" font-size="58" font-weight="800" fill="${c}" font-family="Sora,sans-serif">$</text>
+      <circle cx="225" cy="85" r="40" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="6"/>
+      <text x="225" y="100" text-anchor="middle" font-size="38" font-weight="800" fill="rgba(255,255,255,.7)" font-family="Sora,sans-serif">S/</text>
+      <g class="viz-bar"><path d="M150 66 h22 l-8 -9 M172 66" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M172 104 h-22 l8 9" stroke="rgba(255,255,255,.6)" stroke-width="5" fill="none" stroke-linecap="round"/></g>
+    </svg>`,
+  'card': c => `
+    <svg viewBox="0 0 300 170">
+      <g class="viz-scale" style="transform-origin:150px 140px">
+        <rect x="65" y="32" width="170" height="106" rx="14" fill="${c}"/>
+        <rect x="65" y="54" width="170" height="20" fill="#1B0C3A" opacity=".8"/>
+        <rect x="85" y="92" width="34" height="24" rx="4" fill="#FFE9A8"/>
+        <rect x="140" y="104" width="76" height="8" rx="4" fill="#1B0C3A" opacity=".55"/>
+      </g>
+      <circle cx="232" cy="40" r="14" fill="#fff" class="viz-pulse"/>
+    </svg>`,
+  'invest': c => `
+    <svg viewBox="0 0 300 170">
+      <g fill="${c}">
+        <rect class="viz-bar" x="50"  y="118" width="46" height="24" rx="10" opacity=".6"/>
+        <rect class="viz-bar" x="110" y="96"  width="46" height="46" rx="10" opacity=".75"/>
+        <rect class="viz-bar" x="170" y="70"  width="46" height="72" rx="10" opacity=".9"/>
+      </g>
+      <path d="M50 100 L130 70 L190 52 L255 22" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" class="viz-line"/>
+      <circle cx="255" cy="22" r="9" fill="#fff" class="viz-pulse"/>
+    </svg>`,
+  'tax': c => `
+    <svg viewBox="0 0 300 170">
+      <g class="viz-scale" style="transform-origin:140px 150px">
+        <path d="M95 18 h80 l30 30 v104 h-110z" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round"/>
+        <path d="M175 18 v30 h30" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round"/>
+        <text x="150" y="118" text-anchor="middle" font-size="56" font-weight="800" fill="${c}" font-family="Sora,sans-serif">%</text>
+      </g>
+      <circle cx="232" cy="120" r="24" fill="${c}" class="viz-pulse"/>
+      <text x="232" y="129" text-anchor="middle" font-size="24" font-weight="800" fill="#1B0C3A" font-family="Sora,sans-serif">S/</text>
+    </svg>`,
   'legal': c => `
     <svg viewBox="0 0 300 170">
       <g class="viz-scale">
@@ -1040,17 +1090,18 @@ const VIZ = {
     </svg>`,
   'piggy': c => `
     <svg viewBox="0 0 300 170">
-      <g fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round">
-        <path d="M92 122 a54 46 0 0 1 -14 -34 a54 46 0 0 1 56 -44 h26 a54 46 0 0 1 50 34 l24 8 v26 l-18 4 a54 46 0 0 1 -22 24"/>
-        <path d="M92 122 v20 h20 v-16"/>
-        <path d="M194 138 v14 h20 v-22"/>
-        <path d="M118 46 l-8 -22 l30 12"/>
+      <!-- alcancía de perfil, un solo trazo: cuerpo elíptico (70x46) con la oreja,
+           las patas y el hocico salidos del mismo contorno -->
+      <g class="viz-scale" style="transform-origin:160px 156px" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M92.4 88 A70 46 0 0 1 119.8 62.3 L120 38 L141.9 55.6 A70 46 0 0 1 200.2 137.7 L200 156 L184 156 L183.9 143.2 A70 46 0 0 1 136 143.2 L136 156 L120 156 L119.8 137.7 A70 46 0 0 1 92.4 112"/>
+        <path d="M92.4 88 H80 Q76 88 76 92 V108 Q76 112 80 112 H92.4"/>
+        <path d="M229 92 Q250 90 246 66"/>
+        <circle cx="111" cy="90" r="4" fill="${c}" stroke="none"/>
       </g>
-      <ellipse cx="228" cy="98" rx="12" ry="15" fill="none" stroke="${c}" stroke-width="6"/>
-      <circle cx="228" cy="98" r="4" fill="${c}"/>
-      <circle cx="150" cy="86" r="7" fill="${c}"/>
-      <rect x="128" y="46" width="40" height="8" rx="4" fill="${c}"/>
-      <circle class="viz-coin" cx="148" cy="26" r="11" fill="${c}"/>
+      <g class="viz-coin">
+        <circle cx="168" cy="24" r="17" fill="none" stroke="${c}" stroke-width="5"/>
+        <text x="168" y="31" text-anchor="middle" font-size="18" font-weight="800" fill="${c}" font-family="Sora,sans-serif">S/</text>
+      </g>
       <style>.viz-coin{animation:coinDrop 2.2s ease-in infinite}@keyframes coinDrop{0%{transform:translateY(-16px);opacity:0}25%{opacity:1}100%{transform:translateY(22px);opacity:0}}</style>
     </svg>`,
   'search': c => `

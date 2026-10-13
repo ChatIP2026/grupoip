@@ -48,7 +48,7 @@
    noticia, no siempre el mismo. Regla: ningún visual puede repetirse dos días
    seguidos — antes de reescribir este archivo, mira qué "viz" tiene la edición
    anterior y elige otros.
-   Biblioteca disponible en index.html — 38 iconos:
+   Biblioteca disponible en index.html — 43 iconos:
      chart-up    línea que sube (crecimiento, proyecciones al alza)
      chart-down  línea que baja (caída, contracción, retroceso)
      bars-up     barras que crecen (comparativos, series)
@@ -60,6 +60,11 @@
      target      diana con flecha (metas, objetivos, proyecciones)
      money       monedas + S/ (dinero, sueldos, caja)
      piggy       alcancía (ahorro, CTS, AFP, gratificación)
+     bills       fajo de billetes (sueldos, pagos, bonos, gratificación)
+     dollar      $ ⇄ S/ (tipo de cambio, dólar)
+     card        tarjeta (crédito, consumo, deuda, banca)
+     invest      monedas que suben (inversión, rentabilidad, AFP)
+     tax         documento con % (impuestos, SUNAT, tributos)
      bank        edificio con columnas (BCR, banca, tasas, política monetaria)
      layoff      persona con X roja (despidos, ceses, rotación)
      hire        persona con check (contratación, empleo formal)
