@@ -116,28 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-13 08:40 (Lima) — tarea automática",
+  generado: "2026-10-14 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"mining", week:false,
-    title:"Minería: Gobierno recortará 40% de trámites",
-    fig:"-40%", figsub:"en permisos mineros: 27 se eliminan y 14 pasan a declaración jurada",
-    cat:"ECONOMÍA", source:"Andina · 13/10/2026",
-    url:"https://andina.pe/agencia/noticia-sector-minero-gobierno-reducira-tramitologia-40-para-favorecer-inversiones-1095700.aspx" },
-  { color:"#E6299C", viz:"clock", week:false,
-    title:"Marcar asistencia por WhatsApp ya es realidad",
-    fig:"230.000", figsub:"trabajadores marcan en GeoVictoria Perú; la empresa crece 50% en 2026",
-    cat:"RRHH", source:"Gestión · 13/10/2026",
-    url:"https://gestion.pe/economia/empresas/marcar-asistencia-por-whatsapp-la-firma-que-crece-50-y-ya-entro-a-las-universidades-en-peru-noticia/" },
-  { color:"#FF9900", viz:"people", week:false,
-    title:"Amazon pasa 1 millón de robots y sigue contratando",
-    fig:"1 millón", figsub:"de robots en sus depósitos; entrenó a 700.000 empleados para trabajar con ellos",
-    cat:"IA", source:"Infobae · 13/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/13/amazon-supero-el-millon-de-robots-en-sus-depositos-y-no-dejo-de-contratar-personas/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Consumo de hogares pierde impulso en setiembre",
-    fig:"+9,3%", figsub:"gasto con tarjetas, con inflación en 4,5%; moda y belleza lidera con +25,3%",
-    cat:"CONSUMO", source:"Gestión · 13/10/2026",
-    url:"https://gestion.pe/economia/consumo-de-hogares-perdio-impulso-en-septiembre-en-que-gastaron-los-peruanos-con-tarjetas-noticia/" },
+  { color:"#FF953A", viz:"chart-down", week:false,
+    title:"Exportación de prendas cae 5,7% a agosto",
+    fig:"-5,7%", figsub:"US$764 millones de enero a agosto; Perú es el proveedor 19 de EE. UU.",
+    cat:"ECONOMÍA", source:"La República · 13/10/2026",
+    url:"https://larepublica.pe/economia/2026/10/13/exportaciones-peruanas-de-prendas-de-vestir-caen-57-y-peru-pierde-terreno-en-estados-unidos-hnews-779077" },
+  { color:"#E6299C", viz:"shield", week:false,
+    title:"Red norcoreana infiltró 70 empresas con falsos",
+    fig:"70+", figsub:"empresas contrataron trabajadores remotos con identidad falsa; 14 acusados",
+    cat:"RRHH", source:"Infobae · 14/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/14/estados-unidos-desarticulo-una-red-norcoreana-que-infiltro-mas-de-70-empresas-con-identidades-robadas/" },
+  { color:"#4C8DF6", viz:"ai", week:false,
+    title:"Shopify deja que cualquier IA compre",
+    fig:"1.000 M", figsub:"de productos en su catálogo ya se pueden comprar desde asistentes de IA",
+    cat:"IA", source:"Infobae · 14/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/14/shopify-permite-que-cualquier-asistente-de-ia-compre-dentro-de-su-catalogo-de-mil-millones-de-productos/" },
+  { color:"#FF953A", viz:"tax", week:false,
+    title:"SNI: Temu y apps deben pagar impuestos",
+    fig:"US$1.000 M", figsub:"en compras por plataformas digitales no tributan, según la SNI",
+    cat:"CONSUMO", source:"RPP · 13/10/2026",
+    url:"https://rpp.pe/economia/economia/temu-y-otras-plataformas-de-comercio-tienen-que-pagar-impuestos-exige-sin-movimientos-1000-millones-no-son-tributados-noticia-1712332" },
 ],
 
 
@@ -249,7 +249,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con el consumo enfriándose y la inflación en 4,5%, el retail ajusta planilla: ofrece personal por campaña y outsourcing flexible, y suma control de asistencia digital al paquete.",
+  DATO: "Con la competencia digital sin tributar y el e-commerce abierto a la IA, el retail pelea por cada venta: ofrece verificación de identidad y selección de personal de campaña como diferencial.",
 
 
 
