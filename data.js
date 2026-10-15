@@ -116,28 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-14 08:30 (Lima) — tarea automática",
+  generado: "2026-10-15 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-down", week:false,
-    title:"Exportación de prendas cae 5,7% a agosto",
-    fig:"-5,7%", figsub:"US$764 millones de enero a agosto; Perú es el proveedor 19 de EE. UU.",
-    cat:"ECONOMÍA", source:"La República · 13/10/2026",
-    url:"https://larepublica.pe/economia/2026/10/13/exportaciones-peruanas-de-prendas-de-vestir-caen-57-y-peru-pierde-terreno-en-estados-unidos-hnews-779077" },
-  { color:"#E6299C", viz:"shield", week:false,
-    title:"Red norcoreana infiltró 70 empresas con falsos",
-    fig:"70+", figsub:"empresas contrataron trabajadores remotos con identidad falsa; 14 acusados",
-    cat:"RRHH", source:"Infobae · 14/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/14/estados-unidos-desarticulo-una-red-norcoreana-que-infiltro-mas-de-70-empresas-con-identidades-robadas/" },
-  { color:"#4C8DF6", viz:"ai", week:false,
-    title:"Shopify deja que cualquier IA compre",
-    fig:"1.000 M", figsub:"de productos en su catálogo ya se pueden comprar desde asistentes de IA",
-    cat:"IA", source:"Infobae · 14/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/14/shopify-permite-que-cualquier-asistente-de-ia-compre-dentro-de-su-catalogo-de-mil-millones-de-productos/" },
-  { color:"#FF953A", viz:"tax", week:false,
-    title:"SNI: Temu y apps deben pagar impuestos",
-    fig:"US$1.000 M", figsub:"en compras por plataformas digitales no tributan, según la SNI",
-    cat:"CONSUMO", source:"RPP · 13/10/2026",
-    url:"https://rpp.pe/economia/economia/temu-y-otras-plataformas-de-comercio-tienen-que-pagar-impuestos-exige-sin-movimientos-1000-millones-no-son-tributados-noticia-1712332" },
+  { color:"#FF953A", viz:"bank", week:false,
+    title:"MEF alista política fiscal contracíclica",
+    fig:"3 choques", figsub:"El Niño, petróleo caro y tasas altas; el MEF busca sostener inversión y empleo",
+    cat:"ECONOMÍA", source:"Gestión · 15/10/2026",
+    url:"https://gestion.pe/economia/mef-alista-con-keiko-fujimori-politica-fiscal-contraciclica-para-evitar-desaceleracion-de-la-economia-frente-a-tres-choques-noticia/" },
+  { color:"#E6299C", viz:"calendar", week:false,
+    title:"Feriado por visita del papa sigue en espera",
+    fig:"11-16 nov", figsub:"El Ministerio de Trabajo aguarda al Vaticano antes de oficializar el feriado",
+    cat:"RRHH", source:"La República · 13/10/2026",
+    url:"https://larepublica.pe/economia/2026/10/12/feriado-por-visita-del-papa-leon-xiv-ministro-de-trabajo-espera-pronunciamiento-del-vaticano-antes-de-anunciarlo-hnews-616272" },
+  { color:"#4C8DF6", viz:"gemini", week:false,
+    title:"Google recorta Gemini Pro en su plan básico",
+    fig:"13 nov", figsub:"AI Plus pierde los modelos Pro; Gemini 4 Argon queda solo para AI Pro y Ultra",
+    cat:"IA", source:"Infobae · 15/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/15/google-reorganiza-sus-planes-ia-los-modelos-gemini-pro-pasaran-a-ser-exclusivos-de-la-tarifa-pro/" },
+  { color:"#FF953A", viz:"bills", week:false,
+    title:"Indecopi: no se puede rechazar billetes de S/200",
+    fig:"S/ 200", figsub:"El efectivo es de aceptación forzosa; un comercio de Chimbote lo rechazaba",
+    cat:"CONSUMO", source:"RPP · 14/10/2026",
+    url:"https://rpp.pe/economia/economia/indecopi-negocios-no-pueden-rechazar-pagos-en-efectivo-con-monedas-o-billetes-noticia-1712658" },
 ],
 
 
@@ -249,7 +249,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con la competencia digital sin tributar y el e-commerce abierto a la IA, el retail pelea por cada venta: ofrece verificación de identidad y selección de personal de campaña como diferencial.",
+  DATO: "Con El Niño, petróleo caro y feriado papal aún en el aire, las empresas planifican turnos y caja: ofrece staffing flexible y reemplazos para cubrir la campaña de fin de año.",
 
 
 
