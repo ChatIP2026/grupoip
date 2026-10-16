@@ -116,29 +116,30 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-15 08:30 (Lima) — tarea automática",
+  generado: "2026-10-16 08:10 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"bank", week:false,
-    title:"MEF alista política fiscal contracíclica",
-    fig:"3 choques", figsub:"El Niño, petróleo caro y tasas altas; el MEF busca sostener inversión y empleo",
-    cat:"ECONOMÍA", source:"Gestión · 15/10/2026",
-    url:"https://gestion.pe/economia/mef-alista-con-keiko-fujimori-politica-fiscal-contraciclica-para-evitar-desaceleracion-de-la-economia-frente-a-tres-choques-noticia/" },
-  { color:"#E6299C", viz:"calendar", week:false,
-    title:"Feriado por visita del papa sigue en espera",
-    fig:"11-16 nov", figsub:"El Ministerio de Trabajo aguarda al Vaticano antes de oficializar el feriado",
-    cat:"RRHH", source:"La República · 13/10/2026",
-    url:"https://larepublica.pe/economia/2026/10/12/feriado-por-visita-del-papa-leon-xiv-ministro-de-trabajo-espera-pronunciamiento-del-vaticano-antes-de-anunciarlo-hnews-616272" },
-  { color:"#4C8DF6", viz:"gemini", week:false,
-    title:"Google recorta Gemini Pro en su plan básico",
-    fig:"13 nov", figsub:"AI Plus pierde los modelos Pro; Gemini 4 Argon queda solo para AI Pro y Ultra",
-    cat:"IA", source:"Infobae · 15/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/15/google-reorganiza-sus-planes-ia-los-modelos-gemini-pro-pasaran-a-ser-exclusivos-de-la-tarifa-pro/" },
-  { color:"#FF953A", viz:"bills", week:false,
-    title:"Indecopi: no se puede rechazar billetes de S/200",
-    fig:"S/ 200", figsub:"El efectivo es de aceptación forzosa; un comercio de Chimbote lo rechazaba",
-    cat:"CONSUMO", source:"RPP · 14/10/2026",
-    url:"https://rpp.pe/economia/economia/indecopi-negocios-no-pueden-rechazar-pagos-en-efectivo-con-monedas-o-billetes-noticia-1712658" },
+  { color:"#FF953A", viz:"chart-up", week:false,
+    title:"Economía crece 3,2% en agosto, minería cae",
+    fig:"3,2%", figsub:"Comercio sube 6,8% y construcción 10,3%; minería cae 5,5% y pesca 17,3%",
+    cat:"ECONOMÍA", source:"RPP · 15/10/2026",
+    url:"https://rpp.pe/economia/economia/economia-peruana-crecio-32-en-agosto-pero-la-caida-de-la-mineria-freno-un-mayor-avance-noticia-1712766" },
+  { color:"#E6299C", viz:"people", week:false,
+    title:"Empleo en Lima sube 6%, pero sueldo real cae",
+    fig:"-3,8%", figsub:"Hay 339 mil empleos más en el trimestre; el ingreso real baja por segunda vez seguida",
+    cat:"RRHH", source:"Gestión · 16/10/2026",
+    url:"https://gestion.pe/economia/empleo-en-lima-crecio-mas-gracias-a-empresas-grandes-pero-con-puestos-de-baja-calidad-noticia/" },
+  { color:"#10A37F", viz:"openai", week:false,
+    title:"ChatGPT ya controla varias pestañas de Chrome",
+    fig:"Modo Work", figsub:"Completa formularios, envía mensajes y descarga archivos desde el navegador",
+    cat:"IA", source:"Infobae · 16/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/16/chatgpt-ya-puede-leer-y-controlar-las-pestanas-abiertas-en-chrome/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Plaza Vea, Bimbo y Mifarma crean marcas nuevas",
+    fig:"3 grupos", figsub:"Registran marcas en cereales, snacks y suplementos; aún sin fechas de lanzamiento",
+    cat:"CONSUMO", source:"Gestión · 15/10/2026",
+    url:"https://gestion.pe/economia/empresas/que-preparan-bimbo-plaza-vea-y-mifarma-las-nuevas-marcas-que-apuntan-a-cereales-snacks-y-suplementos-noticia/" },
 ],
+
 
 
 
@@ -249,7 +250,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con El Niño, petróleo caro y feriado papal aún en el aire, las empresas planifican turnos y caja: ofrece staffing flexible y reemplazos para cubrir la campaña de fin de año.",
+  DATO: "Sube el empleo en Lima pero el sueldo real cae 3,8%: las empresas buscan costos variables. Ofrece staffing flexible para la campaña y mide el performance por resultado.",
 
 
 
