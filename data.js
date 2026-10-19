@@ -116,28 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-16 08:10 (Lima) — tarea automática",
+  generado: "2026-10-19 08:15 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-up", week:false,
-    title:"Economía crece 3,2% en agosto, minería cae",
-    fig:"3,2%", figsub:"Comercio sube 6,8% y construcción 10,3%; minería cae 5,5% y pesca 17,3%",
-    cat:"ECONOMÍA", source:"RPP · 15/10/2026",
-    url:"https://rpp.pe/economia/economia/economia-peruana-crecio-32-en-agosto-pero-la-caida-de-la-mineria-freno-un-mayor-avance-noticia-1712766" },
-  { color:"#E6299C", viz:"people", week:false,
-    title:"Empleo en Lima sube 6%, pero sueldo real cae",
-    fig:"-3,8%", figsub:"Hay 339 mil empleos más en el trimestre; el ingreso real baja por segunda vez seguida",
-    cat:"RRHH", source:"Gestión · 16/10/2026",
-    url:"https://gestion.pe/economia/empleo-en-lima-crecio-mas-gracias-a-empresas-grandes-pero-con-puestos-de-baja-calidad-noticia/" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"ChatGPT ya controla varias pestañas de Chrome",
-    fig:"Modo Work", figsub:"Completa formularios, envía mensajes y descarga archivos desde el navegador",
-    cat:"IA", source:"Infobae · 16/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/16/chatgpt-ya-puede-leer-y-controlar-las-pestanas-abiertas-en-chrome/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Plaza Vea, Bimbo y Mifarma crean marcas nuevas",
-    fig:"3 grupos", figsub:"Registran marcas en cereales, snacks y suplementos; aún sin fechas de lanzamiento",
-    cat:"CONSUMO", source:"Gestión · 15/10/2026",
-    url:"https://gestion.pe/economia/empresas/que-preparan-bimbo-plaza-vea-y-mifarma-las-nuevas-marcas-que-apuntan-a-cereales-snacks-y-suplementos-noticia/" },
+  { color:"#FF953A", viz:"mining", week:false,
+    title:"Inversión minera crece 34% y lidera el rebote",
+    fig:"+34%", figsub:"Cemento sube 12,9% y el crédito empresarial 10%, su mayor ritmo desde 2014",
+    cat:"ECONOMÍA", source:"Gestión · 19/10/2026",
+    url:"https://gestion.pe/economia/inversion-minera-lograria-este-ano-su-mejor-registro-desde-2014-de-que-se-trata-noticia/" },
+  { color:"#E6299C", viz:"bills", week:false,
+    title:"Bono de S/100 por trabajador para mypes",
+    fig:"144 mil", figsub:"Microempresas de 2 a 10 trabajadores lo recibirían a fines de octubre; costo S/30 millones",
+    cat:"RRHH", source:"Infobae · 17/10/2026",
+    url:"https://www.infobae.com/peru/2026/10/17/bono-de-s100-por-trabajador-ira-para-144-mil-microempresas-fecha-tentativa-y-requisitos/" },
+  { color:"#F52055", viz:"gavel", week:false,
+    title:"Corte Suprema: laptop de empresa no es planilla",
+    fig:"Autonomía", figsub:"Usar laptop y oficina de la empresa no basta para probar relación laboral",
+    cat:"LEGAL", source:"Gestión · 19/10/2026",
+    url:"https://gestion.pe/economia/management-empleo/trabajadores-por-recibo-por-honorarios-las-incidencias-que-evidencian-una-relacion-laboral-para-trabajo-en-planilla-horarios-y-uso-de-equipos-noticia/" },
+  { color:"#10A37F", viz:"ai", week:false,
+    title:"OpenAI confirma su robot humanoide con ChatGPT",
+    fig:"Demo 2027", figsub:"Altman dice que no habrá robots en las calles por varios años más",
+    cat:"IA", source:"Infobae · 19/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/19/sam-altman-confirmo-un-robot-humanoide-creado-por-openai-y-con-chatgpt/" },
+  { color:"#FF953A", viz:"building", week:false,
+    title:"Visita a tiendas rompe racha de tres caídas",
+    fig:"+0,07%", figsub:"Decohogar sube 3,07% en afluencia; moda infantil y tecnología siguen creciendo",
+    cat:"CONSUMO", source:"Gestión · 19/10/2026",
+    url:"https://gestion.pe/economia/empresas/tiendas-en-calles-y-malls-en-peru-vuelven-a-llenarse-visita-a-locales-crece-luego-de-tres-caidas-consecutivas-y-nuevo-rubro-eleva-afluencia-noticia/" }
 ],
 
 
@@ -250,7 +255,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Sube el empleo en Lima pero el sueldo real cae 3,8%: las empresas buscan costos variables. Ofrece staffing flexible para la campaña y mide el performance por resultado.",
+  DATO: "Fallo de la Corte Suprema: el recibo por honorarios sigue válido si hay autonomía real. Ofrece a tus clientes staffing en planilla con el riesgo laboral cubierto.",
 
 
 
