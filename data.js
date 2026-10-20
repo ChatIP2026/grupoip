@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-19 08:15 (Lima) — tarea automática",
+  generado: "2026-10-20 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"mining", week:false,
-    title:"Inversión minera crece 34% y lidera el rebote",
-    fig:"+34%", figsub:"Cemento sube 12,9% y el crédito empresarial 10%, su mayor ritmo desde 2014",
+  { color:"#FF953A", viz:"agro", week:false,
+    title:"Agro crece 3,4% en agosto; arándano sube 29,8%",
+    fig:"+3,4%", figsub:"Maíz choclo +87% y cacao +17,7%, pero enero-agosto aún cae 0,2%",
     cat:"ECONOMÍA", source:"Gestión · 19/10/2026",
-    url:"https://gestion.pe/economia/inversion-minera-lograria-este-ano-su-mejor-registro-desde-2014-de-que-se-trata-noticia/" },
-  { color:"#E6299C", viz:"bills", week:false,
-    title:"Bono de S/100 por trabajador para mypes",
-    fig:"144 mil", figsub:"Microempresas de 2 a 10 trabajadores lo recibirían a fines de octubre; costo S/30 millones",
-    cat:"RRHH", source:"Infobae · 17/10/2026",
-    url:"https://www.infobae.com/peru/2026/10/17/bono-de-s100-por-trabajador-ira-para-144-mil-microempresas-fecha-tentativa-y-requisitos/" },
-  { color:"#F52055", viz:"gavel", week:false,
-    title:"Corte Suprema: laptop de empresa no es planilla",
-    fig:"Autonomía", figsub:"Usar laptop y oficina de la empresa no basta para probar relación laboral",
-    cat:"LEGAL", source:"Gestión · 19/10/2026",
-    url:"https://gestion.pe/economia/management-empleo/trabajadores-por-recibo-por-honorarios-las-incidencias-que-evidencian-una-relacion-laboral-para-trabajo-en-planilla-horarios-y-uso-de-equipos-noticia/" },
-  { color:"#10A37F", viz:"ai", week:false,
-    title:"OpenAI confirma su robot humanoide con ChatGPT",
-    fig:"Demo 2027", figsub:"Altman dice que no habrá robots en las calles por varios años más",
-    cat:"IA", source:"Infobae · 19/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/19/sam-altman-confirmo-un-robot-humanoide-creado-por-openai-y-con-chatgpt/" },
-  { color:"#FF953A", viz:"building", week:false,
-    title:"Visita a tiendas rompe racha de tres caídas",
-    fig:"+0,07%", figsub:"Decohogar sube 3,07% en afluencia; moda infantil y tecnología siguen creciendo",
+    url:"https://gestion.pe/economia/agroexportacion-de-peru-crecio-34-en-agosto-que-cultivos-impulsaron-la-produccion-noticia/" },
+  { color:"#E6299C", viz:"people", week:false,
+    title:"Solo 1 de 10 trabajadores en Lima es joven",
+    fig:"10,5%", figsub:"Mínimo histórico de ocupados de 14 a 24 años; 630 800 empleos, -1,6% anual",
+    cat:"RRHH", source:"RPP · 19/10/2026",
+    url:"https://rpp.pe/economia/economia/trabajo-en-lima-participacion-de-jovenes-cae-a-minimo-historico-en-mercado-laboral-1-de-cada-10-trabajadores-tiene-menos-de-25-anos-noticia-1713378" },
+  { color:"#F52055", viz:"legal", week:false,
+    title:"Ley MAPE: el Reinfo cerraría el 31 de diciembre",
+    fig:"31.574", figsub:"Inscritos en el Reinfo; nuevo Formape y 18 meses para formalizarse hasta 2028",
+    cat:"LEGAL", source:"RPP · 19/10/2026",
+    url:"https://rpp.pe/economia/economia/gobierno-presenta-proyecto-de-ley-mape-para-cerrar-el-reinfo-y-crear-el-formape-nueva-entidad-de-formalizacion-minera-noticia-1713435" },
+  { color:"#4C8DF6", viz:"gemini", week:false,
+    title:"Gemini convierte los Gems en Skills",
+    fig:"17 nov", figsub:"Tareas automáticas: hasta 15 procesos a la vez con Google AI Pro o Ultra",
+    cat:"IA", source:"Infobae · 20/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/20/gemini-cambia-sus-herramientas-que-pasara-con-gems-skills-y-las-tareas-automaticas-desde-de-noviembre/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Mallplaza amplía centros y alista otro outlet",
+    fig:"US$ 6,1 M", figsub:"Outlet Atocongo ya abrió; Trujillo suma 70 marcas a fines de 2026",
     cat:"CONSUMO", source:"Gestión · 19/10/2026",
-    url:"https://gestion.pe/economia/empresas/tiendas-en-calles-y-malls-en-peru-vuelven-a-llenarse-visita-a-locales-crece-luego-de-tres-caidas-consecutivas-y-nuevo-rubro-eleva-afluencia-noticia/" }
+    url:"https://gestion.pe/g-de-gestion/mallplaza-prepara-una-nueva-ola-de-proyectos-en-peru-donde-abrira-su-segundo-outlet-y-que-otros-planes-tiene-noticia/" }
 ],
 
 
@@ -255,7 +255,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Fallo de la Corte Suprema: el recibo por honorarios sigue válido si hay autonomía real. Ofrece a tus clientes staffing en planilla con el riesgo laboral cubierto.",
+  DATO: "Solo 1 de 10 trabajadores en Lima tiene entre 14 y 24 años: el talento joven escasea. Ofrece a tus clientes un pipeline de jóvenes con coaching y onboarding para retener su performance.",
 
 
 
