@@ -188,7 +188,7 @@ window.NOTICIERO = {
     /* SETIEMBRE */
     { nombre:"Luis Enrique",        equipo:"",         fecha:"09-07", foto:"img/avatars/luis-enrique.jpg" },
     /* OCTUBRE */
-    { nombre:"Pierina Cefaratti",   equipo:"",         fecha:"10-24", foto:"" },
+    { nombre:"Pierina Cefaratti",   equipo:"",         fecha:"10-24", foto:"img/avatars/pierina-cefaratti.jpg" },
     /* NOVIEMBRE */
     { nombre:"Flor Mendez",         equipo:"",         fecha:"11-05", foto:"" },
     { nombre:"Kassandra Lopez",     equipo:"",         fecha:"11-15", foto:"" },
