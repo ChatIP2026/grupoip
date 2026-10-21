@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-20 08:40 (Lima) — tarea automática",
+  generado: "2026-10-21 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"agro", week:false,
-    title:"Agro crece 3,4% en agosto; arándano sube 29,8%",
-    fig:"+3,4%", figsub:"Maíz choclo +87% y cacao +17,7%, pero enero-agosto aún cae 0,2%",
-    cat:"ECONOMÍA", source:"Gestión · 19/10/2026",
-    url:"https://gestion.pe/economia/agroexportacion-de-peru-crecio-34-en-agosto-que-cultivos-impulsaron-la-produccion-noticia/" },
-  { color:"#E6299C", viz:"people", week:false,
-    title:"Solo 1 de 10 trabajadores en Lima es joven",
-    fig:"10,5%", figsub:"Mínimo histórico de ocupados de 14 a 24 años; 630 800 empleos, -1,6% anual",
-    cat:"RRHH", source:"RPP · 19/10/2026",
-    url:"https://rpp.pe/economia/economia/trabajo-en-lima-participacion-de-jovenes-cae-a-minimo-historico-en-mercado-laboral-1-de-cada-10-trabajadores-tiene-menos-de-25-anos-noticia-1713378" },
-  { color:"#F52055", viz:"legal", week:false,
-    title:"Ley MAPE: el Reinfo cerraría el 31 de diciembre",
-    fig:"31.574", figsub:"Inscritos en el Reinfo; nuevo Formape y 18 meses para formalizarse hasta 2028",
-    cat:"LEGAL", source:"RPP · 19/10/2026",
-    url:"https://rpp.pe/economia/economia/gobierno-presenta-proyecto-de-ley-mape-para-cerrar-el-reinfo-y-crear-el-formape-nueva-entidad-de-formalizacion-minera-noticia-1713435" },
-  { color:"#4C8DF6", viz:"gemini", week:false,
-    title:"Gemini convierte los Gems en Skills",
-    fig:"17 nov", figsub:"Tareas automáticas: hasta 15 procesos a la vez con Google AI Pro o Ultra",
+  { color:"#FF953A", viz:"ship", week:false,
+    title:"Superávit comercial llega a US$ 47.723 M",
+    fig:"US$ 47.723 M", figsub:"Exportaciones de agosto +36,9% por precios (+30,3%); importaciones +18,8%",
+    cat:"ECONOMÍA", source:"Gestión · 20/10/2026",
+    url:"https://gestion.pe/economia/bcrp-superavit-comercial-llego-a-us-47723-millones-hasta-agosto-que-lo-impulso-noticia/" },
+  { color:"#E6299C", viz:"piggy", week:false,
+    title:"Retiro AFP de 4 UIT avanza en el Congreso",
+    fig:"S/ 22.000", figsub:"Pagos de 1 UIT cada 30 días; Economía pide opinión a MEF, BCRP y SBS",
+    cat:"RRHH", source:"Infobae · 21/10/2026",
+    url:"https://www.infobae.com/peru/2026/10/19/retiro-de-afp-de-4-uit-avanza-comision-de-economia-pide-opinion-a-estas-seis-instituciones/" },
+  { color:"#F52055", viz:"tax", week:false,
+    title:"Sunat posterga impuestos en zonas de El Niño",
+    fig:"19 distritos", figsub:"Aplazo automático para empresas e independientes en Lima; no condona deuda",
+    cat:"LEGAL", source:"Infobae · 21/10/2026",
+    url:"https://www.infobae.com/peru/2026/10/21/sunat-anuncia-que-independientes-y-empresas-dejaran-de-pagar-impuestos-por-el-fenomeno-el-nino/" },
+  { color:"#C9D1D9", viz:"ai", week:false,
+    title:"World de Altman lanza ID contra deepfakes",
+    fig:"US$ 40.000 M", figsub:"Fraude con IA proyectado a 2027 (Deloitte); verifica personas en Zoom",
     cat:"IA", source:"Infobae · 20/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/20/gemini-cambia-sus-herramientas-que-pasara-con-gems-skills-y-las-tareas-automaticas-desde-de-noviembre/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Mallplaza amplía centros y alista otro outlet",
-    fig:"US$ 6,1 M", figsub:"Outlet Atocongo ya abrió; Trujillo suma 70 marcas a fines de 2026",
-    cat:"CONSUMO", source:"Gestión · 19/10/2026",
-    url:"https://gestion.pe/g-de-gestion/mallplaza-prepara-una-nueva-ola-de-proyectos-en-peru-donde-abrira-su-segundo-outlet-y-que-otros-planes-tiene-noticia/" }
+    url:"https://www.infobae.com/tecno/2026/10/21/sam-altman-creador-de-chatgpt-ahora-lanza-herramientas-para-distinguir-humanos-de-deepfakes-en-bancos-y-videollamadas/" },
+  { color:"#FF953A", viz:"building", week:false,
+    title:"Turrones Calderón proyecta nueva planta",
+    fig:"+30%", figsub:"Meta de ventas 2026; retail supera +100% y alista 3 tiendas más en 2027",
+    cat:"CONSUMO", source:"Gestión · 21/10/2026",
+    url:"https://gestion.pe/economia/empresas/turrones-calderon-alista-su-expansion-abrira-tiendas-fuera-de-lima-y-lanzara-nuevas-marcas-noticia/" }
 ],
 
 
@@ -255,7 +255,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Solo 1 de 10 trabajadores en Lima tiene entre 14 y 24 años: el talento joven escasea. Ofrece a tus clientes un pipeline de jóvenes con coaching y onboarding para retener su performance.",
+  DATO: "Sunat aplaza impuestos en 19 distritos de Lima por El Niño: contacta a clientes afectados y ofrece outsourcing de planilla para cuidar su caja y su pipeline de contratación.",
 
 
 
