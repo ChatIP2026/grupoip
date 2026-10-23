@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-22 08:30 (Lima) — tarea automática",
+  generado: "2026-10-23 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"layoff", week:false,
-    title:"Pesca paralizada por El Niño: 100.000 empleos",
-    fig:"100.000", figsub:"Empleos en riesgo entre 2026 y 2027 (Apoyo para SNP); 81.000 se perderían este año",
-    cat:"ECONOMÍA", source:"RPP · 21/10/2026",
-    url:"https://rpp.pe/economia/economia/sociedad-nacional-de-pesqueria-hay-una-pandemia-de-la-pesca-por-el-nino-y-advierte-que-se-perderan-100000-empleos-en-el-sector-noticia-1713739" },
-  { color:"#E6299C", viz:"hire", week:false,
-    title:"Casi 9 de 10 empleos nuevos son formales",
-    fig:"~90%", figsub:"De 299.000 empleos nuevos; desempleo en Lima en 4,4%, mínimo desde 2001 (IPE)",
-    cat:"RRHH", source:"Andina · 22/10/2026",
-    url:"https://andina.pe/agencia/noticia-ipe-cerca-del-90-nuevos-empleos-creados-ultimo-ano-seria-formal-1096894.aspx" },
-  { color:"#F52055", viz:"doc", week:false,
-    title:"Compras públicas: certificación hasta 2028",
-    fig:"30/04/2028", figsub:"Nuevo plazo del DS 222-2026-EF para el modelo de certificación del OECE",
-    cat:"LEGAL", source:"Infobae · 22/10/2026",
-    url:"https://www.infobae.com/peru/2026/10/22/oece-los-funcionarios-encargados-de-comprar-con-dinero-del-estado-seguiran-con-permiso-temporal-hasta-2028/" },
-  { color:"#D97757", viz:"claude", week:false,
-    title:"Claude Duet trabaja con el celular apagado",
-    fig:"US$ 20/mes", figsub:"Agente de Anthropic para pymes: resumen diario y follow-up a clientes (solo EE.UU.)",
-    cat:"IA", source:"Infobae · 22/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/22/anthropic-presento-claude-duet-un-asistente-de-ia-que-sigue-trabajando-con-el-telefono-apagado/" },
-  { color:"#FF953A", viz:"truck", week:false,
-    title:"Suelo industrial en Lima: vacancia de 20,8%",
-    fig:"20,8%", figsub:"328 hectáreas disponibles y precio promedio de US$ 123 por m² (Cushman & Wakefield)",
-    cat:"ECONOMÍA", source:"Infobae · 22/10/2026",
-    url:"https://www.infobae.com/peru/2026/10/22/terrenos-para-almacenes-se-multiplican-en-lima-cada-vez-hay-mas-suelo-industrial-disponible-y-los-precios-se-enfrian/" }
+  { color:"#FF953A", viz:"building", week:false,
+    title:"Heidelberg compra 70% de Cementos Inka",
+    fig:"70%", figsub:"Participación adquirida; 2 plantas en Lima y Pisco, 270 trabajadores y ~8% del despacho nacional",
+    cat:"ECONOMÍA", source:"Gestión · 22/10/2026",
+    url:"https://gestion.pe/economia/empresas/heidelberg-materials-cierra-compra-de-cementos-inka-en-peru-noticia/" },
+  { color:"#E6299C", viz:"clock", week:false,
+    title:"Suspensión perfecta de labores por El Niño",
+    fig:"90 días", figsub:"Tope legal por fuerza mayor; el MTPE evalúa una norma que lo amplíe hasta seis meses",
+    cat:"RRHH", source:"Gestión · 23/10/2026",
+    url:"https://gestion.pe/economia/management-empleo/que-implica-una-suspension-perfecta-de-labores-gobierno-evalua-esta-medida-ante-el-nino-noticia/" },
+  { color:"#F52055", viz:"gavel", week:false,
+    title:"Facultades: 90 días para legislar",
+    fig:"90 días", figsub:"El Ejecutivo legisla en seguridad y El Niño; menos trabas para abrir negocios y más APP (35 votos a favor)",
+    cat:"LEGAL", source:"Gestión · 23/10/2026",
+    url:"https://gestion.pe/peru/facultades-legislativas-aprobadas-en-seguridad-y-fenomeno-de-el-nino-las-reglas-que-regirian-para-las-personas-y-negocios-noticia/" },
+  { color:"#C9D1D9", viz:"ai", week:false,
+    title:"30 grandes empresas recortan personal por IA",
+    fig:"30+", figsub:"Firmas globales despiden mientras redirigen inversión a IA; HSBC evalúa hasta 20.000 recortes",
+    cat:"IA", source:"Infobae · 23/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/23/mas-de-30-grandes-empresas-despidieron-personal-este-ano-mientras-redirigen-su-inversion-a-la-ia/" },
+  { color:"#FF953A", viz:"card", week:false,
+    title:"Mypes financian la Navidad con más deuda",
+    fig:"48%", figsub:"De las mypes elevó su deuda en 3 meses; 76% espera igualar o subir ventas en campaña",
+    cat:"CONSUMO", source:"RPP · 22/10/2026",
+    url:"https://rpp.pe/economia/economia/mypes-se-preparan-para-la-campana-navidena-financiandose-con-mas-deuda-y-preocupacion-por-el-fenomeno-el-nino-noticia-1713972" }
 ],
 
 
@@ -255,7 +255,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Pesca paralizada por El Niño pone en riesgo 100.000 empleos: ofrece a tus clientes del norte outsourcing flexible y reubicación de planilla para proteger su caja.",
+  DATO: "Gobierno evalúa suspensión perfecta de labores por El Niño: hasta 90 días sin sueldo ni CTS; ofrece a tus clientes outsourcing flexible como alternativa a frenar planilla.",
 
 
 
