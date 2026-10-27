@@ -116,33 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-26 08:30 (Lima) — tarea automática",
+  generado: "2026-10-27 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-up", week:false,
-    title:"Citi: Perú crecerá 3,1% pese a El Niño",
-    fig:"3,1%", figsub:"Proyección de Citi para 2026 y 3,3% en 2027; Chile crecería 1,1% y Colombia 2,3%",
-    cat:"ECONOMÍA", source:"Andina · 26/10/2026",
-    url:"https://andina.pe/agencia/noticia-economia-peruana-continuara-expansion-pese-a-nino-1097267.aspx" },
-  { color:"#E6299C", viz:"piggy", week:false,
-    title:"Pensión por consumo: 15 millones de cuentas",
-    fig:"15 M", figsub:"Afiliados con cuenta antes del 31/12; aporte de 1% por boletas con DNI, tope S/ 440 al año",
-    cat:"RRHH", source:"Infobae · 26/10/2026",
-    url:"https://www.infobae.com/peru/2026/10/26/pension-por-consumo-15-millones-de-peruanos-pasaran-a-tener-una-cuenta-en-diciembre-pero-impacto-fiscal-se-conocera-en-2028/" },
-  { color:"#F52055", viz:"legal", week:false,
-    title:"MEF usa fallo del TC contra leyes de gasto",
-    fig:"S/ 11.400 M", figsub:"Costo anual de 7 leyes del Congreso anterior, según el Consejo Fiscal",
-    cat:"LEGAL", source:"Gestión · 26/10/2026",
-    url:"https://gestion.pe/economia/leyes-que-elevan-gasto-del-estado-peruano-que-dice-el-mef-sobre-las-dos-que-mas-preocupan-para-el-bolsillo-del-pais-noticia/" },
-  { color:"#C9D1D9", viz:"chart-down", week:false,
-    title:"LinkedIn recorta 40% posts genéricos de IA",
-    fig:"-40%", figsub:"Caída de vistas de contenido genérico hecho con IA; el filtro declara 94% de precisión",
-    cat:"IA", source:"Infobae · 25/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/25/linkedin-redujo-un-40-las-vistas-de-publicaciones-genericas-hechas-con-inteligencia-artificial/" },
-  { color:"#FF953A", viz:"truck", week:false,
-    title:"Colombina duplicó su facturación en Perú",
-    fig:"x2", figsub:"En menos de 5 años; 90 distribuidores y solo 24 personas en la filial local",
-    cat:"CONSUMO", source:"Gestión · 26/10/2026",
-    url:"https://gestion.pe/economia/empresas/colombina-duena-de-bon-bon-bum-crece-de-la-mano-de-mass-y-prepara-su-salto-a-alimentos-en-el-peru-noticia/" }
+  { color:"#FF953A", viz:"invest", week:false,
+    title:"inPerú: APP por US$ 55.000 M hasta 2030",
+    fig:"US$ 55 mil M", figsub:"Proyectos vía APP que el MEF adjudicará hasta 2030; busca inversionistas en Nueva York",
+    cat:"ECONOMÍA", source:"RPP · 26/10/2026",
+    url:"https://rpp.pe/economia/economia/inperu-2026-elmer-cuba-anuncia-adjudicacion-de-proyectos-via-app-por-us-55000-millones-hasta-2030-y-llama-a-inversionistas-en-nueva-york-noticia-1714561" },
+  { color:"#E6299C", viz:"bills", week:false,
+    title:"Jefaturas piden S/ 5.710 de sueldo",
+    fig:"S/ 3.553", figsub:"Sueldo pretendido promedio en setiembre (+7,22% anual); jefes y supervisores, S/ 5.710",
+    cat:"RRHH", source:"Perú Retail · 26/10/2026",
+    url:"https://www.peru-retail.com/sueldo-pretendido-en-peru-que-puestos-registraron-los-salarios-mas-altos-en-septiembre-de-2026/" },
+  { color:"#10A37F", viz:"openai", week:false,
+    title:"OpenAI quiere que dots pague por ti",
+    fig:"4.000+", figsub:"Apps conectadas a dots, el asistente de ChatGPT; negocia con procesadores de pagos",
+    cat:"IA", source:"Infobae · 27/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/27/openai-busca-ampliar-su-nuevo-asistente-dots-mantiene-conversaciones-con-procesadores-de-pagos/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Steren apuesta por B2B y 20 tiendas",
+    fig:"+12%", figsub:"Ventas de Steren Perú en setiembre; hoy 2 tiendas y meta de hasta 20 al 2030",
+    cat:"CONSUMO", source:"Perú Retail · 27/10/2026",
+    url:"https://www.peru-retail.com/mexicana-steren-apuesta-por-el-canal-b2b-y-proyecta-tener-hasta-20-tiendas-en-peru-al-2030/" },
 ],
 
 
@@ -255,7 +250,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Pensión por consumo: desde enero de 2027 cada boleta con DNI aporta 1% al fondo del cliente final; asesora a tus clientes retail en boletaje electrónico y atención en caja.",
+  DATO: "Con sueldos pretendidos de S/ 5.710 en jefaturas, ofrece a tus clientes un benchmark salarial y un pipeline de talento para cubrir vacantes de supervisión con menos rotación.",
 
 
 
