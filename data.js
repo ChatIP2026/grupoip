@@ -116,28 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-27 08:30 (Lima) — tarea automática",
+  generado: "2026-10-28 08:10 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"invest", week:false,
-    title:"inPerú: APP por US$ 55.000 M hasta 2030",
-    fig:"US$ 55 mil M", figsub:"Proyectos vía APP que el MEF adjudicará hasta 2030; busca inversionistas en Nueva York",
-    cat:"ECONOMÍA", source:"RPP · 26/10/2026",
-    url:"https://rpp.pe/economia/economia/inperu-2026-elmer-cuba-anuncia-adjudicacion-de-proyectos-via-app-por-us-55000-millones-hasta-2030-y-llama-a-inversionistas-en-nueva-york-noticia-1714561" },
-  { color:"#E6299C", viz:"bills", week:false,
-    title:"Jefaturas piden S/ 5.710 de sueldo",
-    fig:"S/ 3.553", figsub:"Sueldo pretendido promedio en setiembre (+7,22% anual); jefes y supervisores, S/ 5.710",
-    cat:"RRHH", source:"Perú Retail · 26/10/2026",
-    url:"https://www.peru-retail.com/sueldo-pretendido-en-peru-que-puestos-registraron-los-salarios-mas-altos-en-septiembre-de-2026/" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"OpenAI quiere que dots pague por ti",
-    fig:"4.000+", figsub:"Apps conectadas a dots, el asistente de ChatGPT; negocia con procesadores de pagos",
-    cat:"IA", source:"Infobae · 27/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/27/openai-busca-ampliar-su-nuevo-asistente-dots-mantiene-conversaciones-con-procesadores-de-pagos/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Steren apuesta por B2B y 20 tiendas",
-    fig:"+12%", figsub:"Ventas de Steren Perú en setiembre; hoy 2 tiendas y meta de hasta 20 al 2030",
+  { color:"#FF953A", viz:"ship", week:false,
+    title:"TLC con China se actualiza el 1 de noviembre",
+    fig:"32%", figsub:"Del comercio peruano es con China; el protocolo suma e-commerce y reglas para mypes",
+    cat:"ECONOMÍA", source:"Infobae · 28/10/2026",
+    url:"https://www.infobae.com/peru/2026/10/28/peru-activara-desde-noviembre-la-actualizacion-de-su-tlc-con-china/" },
+  { color:"#E6299C", viz:"clock", week:false,
+    title:"Planillas: 1.344 horas al año en trámites",
+    fig:"3.181 h", figsub:"Al año dedica una pyme a trámites; Perú es 2.º en burocracia de 27 países",
+    cat:"RRHH", source:"Gestión · 28/10/2026",
+    url:"https://gestion.pe/peru/peru-es-el-segundo-pais-con-mas-trabas-burocraticas-para-las-pequenas-empresas-noticia/" },
+  { color:"#D97757", viz:"claude", week:false,
+    title:"Anthropic compra Mithril, firma de 1 persona",
+    fig:"1 persona", figsub:"Con Claude coordinó 11 laboratorios y llegó a resultados en ratones en menos de 18 meses",
+    cat:"IA", source:"Infobae · 28/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/28/anthropic-compra-empresa-de-una-sola-persona-que-uso-claude-para-desarrollar-tratamientos-medicos/" },
+  { color:"#FF953A", viz:"building", week:false,
+    title:"Nike abre su segundo Rise en Lima",
+    fig:"500 m²", figsub:"Tienda Nike Rise en Larcomar, tres meses después de Jockey Plaza; suma la línea Jordan",
     cat:"CONSUMO", source:"Perú Retail · 27/10/2026",
-    url:"https://www.peru-retail.com/mexicana-steren-apuesta-por-el-canal-b2b-y-proyecta-tener-hasta-20-tiendas-en-peru-al-2030/" },
+    url:"https://www.peru-retail.com/nike-inaugura-una-tienda-en-peru-con-su-nuevo-formato-global-como-es/" },
 ],
 
 
@@ -250,7 +250,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con sueldos pretendidos de S/ 5.710 en jefaturas, ofrece a tus clientes un benchmark salarial y un pipeline de talento para cubrir vacantes de supervisión con menos rotación.",
+  DATO: "Una pyme gasta 1.344 horas al año en planillas y obligaciones laborales: ofrécele outsourcing de payroll para que su equipo vuelva al core del negocio.",
 
 
 
