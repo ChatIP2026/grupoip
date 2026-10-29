@@ -116,28 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-28 08:10 (Lima) — tarea automática",
+  generado: "2026-10-29 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"ship", week:false,
-    title:"TLC con China se actualiza el 1 de noviembre",
-    fig:"32%", figsub:"Del comercio peruano es con China; el protocolo suma e-commerce y reglas para mypes",
-    cat:"ECONOMÍA", source:"Infobae · 28/10/2026",
-    url:"https://www.infobae.com/peru/2026/10/28/peru-activara-desde-noviembre-la-actualizacion-de-su-tlc-con-china/" },
-  { color:"#E6299C", viz:"clock", week:false,
-    title:"Planillas: 1.344 horas al año en trámites",
-    fig:"3.181 h", figsub:"Al año dedica una pyme a trámites; Perú es 2.º en burocracia de 27 países",
-    cat:"RRHH", source:"Gestión · 28/10/2026",
-    url:"https://gestion.pe/peru/peru-es-el-segundo-pais-con-mas-trabas-burocraticas-para-las-pequenas-empresas-noticia/" },
-  { color:"#D97757", viz:"claude", week:false,
-    title:"Anthropic compra Mithril, firma de 1 persona",
-    fig:"1 persona", figsub:"Con Claude coordinó 11 laboratorios y llegó a resultados en ratones en menos de 18 meses",
-    cat:"IA", source:"Infobae · 28/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/28/anthropic-compra-empresa-de-una-sola-persona-que-uso-claude-para-desarrollar-tratamientos-medicos/" },
-  { color:"#FF953A", viz:"building", week:false,
-    title:"Nike abre su segundo Rise en Lima",
-    fig:"500 m²", figsub:"Tienda Nike Rise en Larcomar, tres meses después de Jockey Plaza; suma la línea Jordan",
-    cat:"CONSUMO", source:"Perú Retail · 27/10/2026",
-    url:"https://www.peru-retail.com/nike-inaugura-una-tienda-en-peru-con-su-nuevo-formato-global-como-es/" },
+  { color:"#FF953A", viz:"bank", week:false,
+    title:"Congreso aprueba S/ 8.288 M ante El Niño",
+    fig:"S/ 8.288 M", figsub:"En créditos suplementarios: S/ 703 M para El Niño y S/ 3.620 M para Línea 2 y obras",
+    cat:"ECONOMÍA", source:"RPP · 28/10/2026",
+    url:"https://rpp.pe/politica/congreso/congreso-aprueba-credito-suplementario-por-s-8-mil-millones-para-financiar-acciones-ante-el-nino-servicios-e-infraestructura-noticia-1714952" },
+  { color:"#E6299C", viz:"doc", week:false,
+    title:"Sunat actualiza planilla por sueldo mínimo",
+    fig:"S/ 1.300", figsub:"RMV final: S/ 100 más en octubre y S/ 70 en 2027; PDT Planilla v4.7 desde el 30/10",
+    cat:"RRHH", source:"Andina · 29/10/2026",
+    url:"https://andina.pe/agencia/noticia-sunat-aprobo-nueva-version-planilla-electronica-para-adecuarla-al-alza-sueldo-minimo-1097756.aspx" },
+  { color:"#10A37F", viz:"openai", week:false,
+    title:"OpenAI lanza Terra para automatizar oficinas",
+    fig:"-58%", figsub:"Menor tarifa por token; opera apps, llena formularios y redacta propuestas comerciales",
+    cat:"IA", source:"Infobae · 29/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/29/openai-lanza-gpt-61-terra-para-automatizar-oficinas-con-tarifas-hasta-un-58-menores/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Grupo San Antonio proyecta S/ 180 M en 2026",
+    fig:"S/ 180 M", figsub:"Facturación prevista; holding de 7 unidades y meta de 40 locales de pastelería en Lima",
+    cat:"CONSUMO", source:"Perú Retail · 28/10/2026",
+    url:"https://www.peru-retail.com/grupo-san-antonio-facturara-s-180-millones-en-2026-y-prepara-su-gestora-de-fondos-para-2027/" }
 ],
 
 
@@ -250,7 +250,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Una pyme gasta 1.344 horas al año en planillas y obligaciones laborales: ofrécele outsourcing de payroll para que su equipo vuelva al core del negocio.",
+  DATO: "Con el sueldo mínimo en S/ 1.300 y la planilla Sunat v4.7, cada pyme recalcula su payroll: ofrécele outsourcing de planillas para evitar errores y multas.",
 
 
 
