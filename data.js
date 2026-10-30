@@ -130,7 +130,7 @@ window.NOTICIERO = {
     url:"https://www.infobae.com/peru/2026/10/30/dile-al-jefe-que-ya-no-respire-tan-tranquilo-sunafil-recibe-nuevos-sueldos-de-hasta-s15600-y-la-huelga-podria-haber-terminado/" },
   { color:"#C9D1D9", viz:"ai", week:false,
     title:"Wikipedia pide límites a la IA ante tribunal",
-    fig:"NYT vs OpenAI", figsub:"Wikimedia: entrenar con textos es válido, pero sin que el chatbot los reproduzca",
+    fig:"NYT/OpenAI", figsub:"Wikimedia: entrenar con textos es válido, pero sin que el chatbot los reproduzca",
     cat:"IA", source:"Infobae · 30/10/2026",
     url:"https://www.infobae.com/tecno/2026/10/30/wikipedia-pidio-a-un-tribunal-que-la-ia-deje-de-reproducir-sus-articulos/" },
   { color:"#FF953A", viz:"compare", week:false,
