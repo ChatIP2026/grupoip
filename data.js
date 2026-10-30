@@ -116,29 +116,29 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-29 08:30 (Lima) — tarea automática",
+  generado: "2026-10-30 08:45 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"bank", week:false,
-    title:"Congreso aprueba S/ 8.288 M ante El Niño",
-    fig:"S/ 8.288 M", figsub:"En créditos suplementarios: S/ 703 M para El Niño y S/ 3.620 M para Línea 2 y obras",
-    cat:"ECONOMÍA", source:"RPP · 28/10/2026",
-    url:"https://rpp.pe/politica/congreso/congreso-aprueba-credito-suplementario-por-s-8-mil-millones-para-financiar-acciones-ante-el-nino-servicios-e-infraestructura-noticia-1714952" },
-  { color:"#E6299C", viz:"doc", week:false,
-    title:"Sunat actualiza planilla por sueldo mínimo",
-    fig:"S/ 1.300", figsub:"RMV final: S/ 100 más en octubre y S/ 70 en 2027; PDT Planilla v4.7 desde el 30/10",
-    cat:"RRHH", source:"Andina · 29/10/2026",
-    url:"https://andina.pe/agencia/noticia-sunat-aprobo-nueva-version-planilla-electronica-para-adecuarla-al-alza-sueldo-minimo-1097756.aspx" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"OpenAI lanza Terra para automatizar oficinas",
-    fig:"-58%", figsub:"Menor tarifa por token; opera apps, llena formularios y redacta propuestas comerciales",
-    cat:"IA", source:"Infobae · 29/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/29/openai-lanza-gpt-61-terra-para-automatizar-oficinas-con-tarifas-hasta-un-58-menores/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Grupo San Antonio proyecta S/ 180 M en 2026",
-    fig:"S/ 180 M", figsub:"Facturación prevista; holding de 7 unidades y meta de 40 locales de pastelería en Lima",
-    cat:"CONSUMO", source:"Perú Retail · 28/10/2026",
-    url:"https://www.peru-retail.com/grupo-san-antonio-facturara-s-180-millones-en-2026-y-prepara-su-gestora-de-fondos-para-2027/" }
-],
+  { color:"#FF953A", viz:"alert", week:false,
+    title:"Interbank prevé 200 mil clientes en apuros",
+    fig:"S/ 670 M", figsub:"Para reprogramar deudas por El Niño; 54% de los negocios no aguantaría un mes sin ingresos",
+    cat:"ECONOMÍA", source:"RPP · 29/10/2026",
+    url:"https://rpp.pe/economia/economia/el-nino-acorrala-las-finanzas-del-50-de-hogares-y-pymes-mas-de-200-mil-necesitaran-auxilio-bancario-preve-interbank-noticia-1715054" },
+  { color:"#E6299C", viz:"shield", week:false,
+    title:"Sunafil fija nueva escala y cierra huelga",
+    fig:"S/ 15.600", figsub:"Sueldo máximo (Directivo 5) desde el 1/12; el decreto garantiza CTS y gratificaciones",
+    cat:"RRHH", source:"Infobae · 30/10/2026",
+    url:"https://www.infobae.com/peru/2026/10/30/dile-al-jefe-que-ya-no-respire-tan-tranquilo-sunafil-recibe-nuevos-sueldos-de-hasta-s15600-y-la-huelga-podria-haber-terminado/" },
+  { color:"#C9D1D9", viz:"ai", week:false,
+    title:"Wikipedia pide límites a la IA ante tribunal",
+    fig:"NYT vs OpenAI", figsub:"Wikimedia: entrenar con textos es válido, pero sin que el chatbot los reproduzca",
+    cat:"IA", source:"Infobae · 30/10/2026",
+    url:"https://www.infobae.com/tecno/2026/10/30/wikipedia-pidio-a-un-tribunal-que-la-ia-deje-de-reproducir-sus-articulos/" },
+  { color:"#FF953A", viz:"compare", week:false,
+    title:"Alicorp vende 14,2% más, pero gana menos",
+    fig:"+14,2%", figsub:"Ventas de S/ 3.435 M en el 3T26; la utilidad neta cae 2,94% por mayor costo de ventas",
+    cat:"CONSUMO", source:"Perú Retail · 30/10/2026",
+    url:"https://www.peru-retail.com/alicorp-ventas-crecieron-14-2-en-el-tercer-trimestre-de-2026-pero-la-utilidad-neta-cayo-2-94/" }
+  ],
 
 
 
@@ -250,7 +250,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con el sueldo mínimo en S/ 1.300 y la planilla Sunat v4.7, cada pyme recalcula su payroll: ofrécele outsourcing de planillas para evitar errores y multas.",
+  DATO: "Sunafil sube sueldos desde el 1/12 y El Niño aprieta a las pymes: ofrece compliance laboral preventivo y outsourcing para convertir costo fijo en variable.",
 
 
 
