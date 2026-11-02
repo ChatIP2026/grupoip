@@ -116,29 +116,30 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-10-30 08:45 (Lima) — tarea automática",
+  generado: "2026-11-02 08:15 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"alert", week:false,
-    title:"Interbank prevé 200 mil clientes en apuros",
-    fig:"S/ 670 M", figsub:"Para reprogramar deudas por El Niño; 54% de los negocios no aguantaría un mes sin ingresos",
-    cat:"ECONOMÍA", source:"RPP · 29/10/2026",
-    url:"https://rpp.pe/economia/economia/el-nino-acorrala-las-finanzas-del-50-de-hogares-y-pymes-mas-de-200-mil-necesitaran-auxilio-bancario-preve-interbank-noticia-1715054" },
-  { color:"#E6299C", viz:"shield", week:false,
-    title:"Sunafil fija nueva escala y cierra huelga",
-    fig:"S/ 15.600", figsub:"Sueldo máximo (Directivo 5) desde el 1/12; el decreto garantiza CTS y gratificaciones",
-    cat:"RRHH", source:"Infobae · 30/10/2026",
-    url:"https://www.infobae.com/peru/2026/10/30/dile-al-jefe-que-ya-no-respire-tan-tranquilo-sunafil-recibe-nuevos-sueldos-de-hasta-s15600-y-la-huelga-podria-haber-terminado/" },
-  { color:"#C9D1D9", viz:"ai", week:false,
-    title:"Wikipedia pide límites a la IA ante tribunal",
-    fig:"NYT/OpenAI", figsub:"Wikimedia: entrenar con textos es válido, pero sin que el chatbot los reproduzca",
-    cat:"IA", source:"Infobae · 30/10/2026",
-    url:"https://www.infobae.com/tecno/2026/10/30/wikipedia-pidio-a-un-tribunal-que-la-ia-deje-de-reproducir-sus-articulos/" },
-  { color:"#FF953A", viz:"compare", week:false,
-    title:"Alicorp vende 14,2% más, pero gana menos",
-    fig:"+14,2%", figsub:"Ventas de S/ 3.435 M en el 3T26; la utilidad neta cae 2,94% por mayor costo de ventas",
-    cat:"CONSUMO", source:"Perú Retail · 30/10/2026",
-    url:"https://www.peru-retail.com/alicorp-ventas-crecieron-14-2-en-el-tercer-trimestre-de-2026-pero-la-utilidad-neta-cayo-2-94/" }
+  { color:"#FF953A", viz:"gauge", week:false,
+    title:"Inflación Lima llega a 5,25%, máximo desde 2023",
+    fig:"5,25%", figsub:"Inflación anual de octubre, sobre el 4,2% que proyectó el BCRP; alimentos y transporte presionan",
+    cat:"ECONOMÍA", source:"La República · 01/11/2026",
+    url:"https://larepublica.pe/economia/2026/11/01/inflacion-en-lima-supera-el-5-y-se-aleja-de-la-proyeccion-del-bcrp-alimentos-y-transporte-presionan-los-precios-57201" },
+  { color:"#E6299C", viz:"health", week:false,
+    title:"MTPE aprueba protocolo SST ante El Niño",
+    fig:"R.M. 341", figsub:"Guía para que el empleador integre prevención y respuesta al Niño en su sistema de SST",
+    cat:"RRHH", source:"Gestión · 02/11/2026",
+    url:"https://gestion.pe/economia/el-nino-aprueban-protocolo-de-seguridad-y-salud-en-el-trabajo-para-enfrentar-el-fenomeno-noticia/" },
+  { color:"#C9D1D9", viz:"money", week:false,
+    title:"Nvidia cobrará US$ 2.000 por GPU en agentes",
+    fig:"US$ 2.000", figsub:"Por GPU al año por el software para correr agentes de IA, según Jensen Huang",
+    cat:"IA", source:"Infobae · 02/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/02/el-director-ejecutivo-de-nvidia-calculo-en-usd-2000-por-chip-al-ano-la-licencia-del-software-de-agentes/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Oxxo evalúa robots para reducir gastos",
+    fig:"46 h", figsub:"Jornada semanal en México desde 2027 empuja a Femsa a automatizar inventario en tiendas",
+    cat:"CONSUMO", source:"Perú Retail · 31/10/2026",
+    url:"https://www.peru-retail.com/oxxo-evalua-implementar-robots-en-sus-tiendas-para-optimizar-operaciones-y-reducir-gastos/" },
   ],
+
 
 
 
@@ -250,7 +251,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Sunafil sube sueldos desde el 1/12 y El Niño aprieta a las pymes: ofrece compliance laboral preventivo y outsourcing para convertir costo fijo en variable.",
+  DATO: "Inflación de 5,25% y protocolo SST por El Niño: ofrece a tus leads outsourcing que absorba costos laborales y compliance de seguridad preventivo, antes de que lo resuelvan con automatización.",
 
 
 
