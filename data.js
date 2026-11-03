@@ -116,28 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-02 08:15 (Lima) — tarea automática",
+  generado: "2026-11-03 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"gauge", week:false,
-    title:"Inflación Lima llega a 5,25%, máximo desde 2023",
-    fig:"5,25%", figsub:"Inflación anual de octubre, sobre el 4,2% que proyectó el BCRP; alimentos y transporte presionan",
-    cat:"ECONOMÍA", source:"La República · 01/11/2026",
-    url:"https://larepublica.pe/economia/2026/11/01/inflacion-en-lima-supera-el-5-y-se-aleja-de-la-proyeccion-del-bcrp-alimentos-y-transporte-presionan-los-precios-57201" },
-  { color:"#E6299C", viz:"health", week:false,
-    title:"MTPE aprueba protocolo SST ante El Niño",
-    fig:"R.M. 341", figsub:"Guía para que el empleador integre prevención y respuesta al Niño en su sistema de SST",
-    cat:"RRHH", source:"Gestión · 02/11/2026",
-    url:"https://gestion.pe/economia/el-nino-aprueban-protocolo-de-seguridad-y-salud-en-el-trabajo-para-enfrentar-el-fenomeno-noticia/" },
-  { color:"#C9D1D9", viz:"money", week:false,
-    title:"Nvidia cobrará US$ 2.000 por GPU en agentes",
-    fig:"US$ 2.000", figsub:"Por GPU al año por el software para correr agentes de IA, según Jensen Huang",
+  { color:"#FF953A", viz:"bars-up", week:false,
+    title:"Presupuesto 2027: S/ 266.506 M avanza",
+    fig:"S/ 266.506 M", figsub:"Alza de 3,5% sobre 2026; 9,2% se financia con deuda, con bonos soberanos hasta S/ 17.221 M",
+    cat:"ECONOMÍA", source:"La República · 02/11/2026",
+    url:"https://larepublica.pe/economia/2026/11/02/presupuesto-2027-comision-bicameral-aprueba-leyes-de-endeudamiento-y-equilibrio-financiero-35984" },
+  { color:"#E6299C", viz:"people", week:false,
+    title:"Doe Run: 3.500 trabajadores aún sin pago",
+    fig:"3.500", figsub:"Esperan pago tras 15 años de liquidación; un reclamo de US$ 14,5 M amenaza los fondos",
+    cat:"RRHH", source:"La República · 02/11/2026",
+    url:"https://larepublica.pe/economia/2026/11/02/doe-run-peru-reclamo-de-us145-millones-amenaza-fondos-pendientes-para-3500-trabajadores-hnews-74834" },
+  { color:"#10A37F", viz:"clock", week:false,
+    title:"Quien usa IA trabaja 90 minutos más",
+    fig:"90 min", figsub:"Más al día que quien no la usa, según ActivTrak (9.140 oficinistas); el foco cae 22%",
     cat:"IA", source:"Infobae · 02/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/02/el-director-ejecutivo-de-nvidia-calculo-en-usd-2000-por-chip-al-ano-la-licencia-del-software-de-agentes/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Oxxo evalúa robots para reducir gastos",
-    fig:"46 h", figsub:"Jornada semanal en México desde 2027 empuja a Femsa a automatizar inventario en tiendas",
-    cat:"CONSUMO", source:"Perú Retail · 31/10/2026",
-    url:"https://www.peru-retail.com/oxxo-evalua-implementar-robots-en-sus-tiendas-para-optimizar-operaciones-y-reducir-gastos/" },
+    url:"https://www.infobae.com/tecno/2026/11/03/los-empleados-que-usan-ia-trabajan-hasta-90-minutos-mas-por-dia-que-quienes-no-la-usan/" },
+  { color:"#FF953A", viz:"building", week:false,
+    title:"Cinco malls abren antes de fin de año",
+    fig:"5 malls", figsub:"Jockey Outlet, The Square y Marina City suman tiendas; CCL ve US$ 522 M hasta 2028",
+    cat:"CONSUMO", source:"Perú Retail · 02/11/2026",
+    url:"https://www.peru-retail.com/cinco-malls-abriran-antes-de-fin-de-ano-y-otros-proyectos-avanzan-hacia-2028-que-se-viene/" },
   ],
 
 
@@ -251,7 +251,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Inflación de 5,25% y protocolo SST por El Niño: ofrece a tus leads outsourcing que absorba costos laborales y compliance de seguridad preventivo, antes de que lo resuelvan con automatización.",
+  DATO: "Doe Run, aperturas de malls y 90 minutos extra por IA: ofrece a tus leads de retail un pool de staffing para las campañas de fin de año, con performance medible y sin riesgo de pasivos laborales.",
 
 
 
