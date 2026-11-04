@@ -116,28 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-03 08:30 (Lima) — tarea automática",
+  generado: "2026-11-04 08:10 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"bars-up", week:false,
-    title:"Presupuesto 2027: S/ 266.506 M avanza",
-    fig:"S/ 266.506 M", figsub:"Alza de 3,5% sobre 2026; 9,2% se financia con deuda, con bonos soberanos hasta S/ 17.221 M",
-    cat:"ECONOMÍA", source:"La República · 02/11/2026",
-    url:"https://larepublica.pe/economia/2026/11/02/presupuesto-2027-comision-bicameral-aprueba-leyes-de-endeudamiento-y-equilibrio-financiero-35984" },
-  { color:"#E6299C", viz:"people", week:false,
-    title:"Doe Run: 3.500 trabajadores aún sin pago",
-    fig:"3.500", figsub:"Esperan pago tras 15 años de liquidación; un reclamo de US$ 14,5 M amenaza los fondos",
-    cat:"RRHH", source:"La República · 02/11/2026",
-    url:"https://larepublica.pe/economia/2026/11/02/doe-run-peru-reclamo-de-us145-millones-amenaza-fondos-pendientes-para-3500-trabajadores-hnews-74834" },
-  { color:"#10A37F", viz:"clock", week:false,
-    title:"Quien usa IA trabaja 90 minutos más",
-    fig:"90 min", figsub:"Más al día que quien no la usa, según ActivTrak (9.140 oficinistas); el foco cae 22%",
-    cat:"IA", source:"Infobae · 02/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/03/los-empleados-que-usan-ia-trabajan-hasta-90-minutos-mas-por-dia-que-quienes-no-la-usan/" },
-  { color:"#FF953A", viz:"building", week:false,
-    title:"Cinco malls abren antes de fin de año",
-    fig:"5 malls", figsub:"Jockey Outlet, The Square y Marina City suman tiendas; CCL ve US$ 522 M hasta 2028",
-    cat:"CONSUMO", source:"Perú Retail · 02/11/2026",
-    url:"https://www.peru-retail.com/cinco-malls-abriran-antes-de-fin-de-ano-y-otros-proyectos-avanzan-hacia-2028-que-se-viene/" },
+  { color:"#FF953A", viz:"chart-up", week:false,
+    title:"Balón de gas sube S/ 2,50 en una semana",
+    fig:"S/ 60", figsub:"Precio en Tacna; el GLP importado cubre 46% del consumo y El Niño presiona la oferta",
+    cat:"ECONOMÍA", source:"Infobae · 04/11/2026",
+    url:"https://www.infobae.com/peru/2026/11/04/fenomeno-el-nino-podria-complicar-el-abastecimiento-de-glp-y-elevar-la-presion-sobre-los-precios-mientras-amas-de-casa-ya-pagan-60-soles-por-balon/" },
+  { color:"#E6299C", viz:"bills", week:false,
+    title:"MEF no frenaría la grati CAS",
+    fig:"Ley 32563", figsub:"Gratificación y CTS para trabajadores CAS seguirían en diciembre; el MEF ya no iría al TC",
+    cat:"RRHH", source:"Infobae · 03/11/2026",
+    url:"https://www.infobae.com/peru/2026/11/03/mef-ya-no-iria-contra-la-ley-de-gratificacion-y-cts-para-cas-ni-contempla-inconstitucionalidad/" },
+  { color:"#F52055", viz:"health", week:false,
+    title:"Olvido oncológico: reglamento ya es oficial",
+    fig:"5 años", figsub:"Sin recaída, las aseguradoras no podrán negar cobertura ni subir la prima (Ley 32357)",
+    cat:"LEGAL", source:"Infobae · 04/11/2026",
+    url:"https://www.infobae.com/peru/2026/11/04/es-oficial-seguros-de-salud-ya-no-podran-rechazar-a-pacientes-que-superaron-el-cancer-hace-cinco-anos/" },
+  { color:"#D97757", viz:"claude", week:false,
+    title:"Anthropic firma US$ 895.400 M en cómputo",
+    fig:"895.400 M", figsub:"En data centers y chips, casi 7 veces su caja, según su documento SEC para salir a bolsa",
+    cat:"IA", source:"Infobae · 04/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/04/anthropic-se-comprometio-a-gastar-usd-895000-millones-en-centros-de-datos-casi-7-veces-su-efectivo/" },
+  { color:"#FF953A", viz:"handshake", week:false,
+    title:"Alicorp cierra compra de Flora Food",
+    fig:"US$ 150,5 M", figsub:"Valor de empresa; suma La Danesa y siete países, incluido Perú, al portafolio de Alicorp",
+    cat:"CONSUMO", source:"Perú Retail · 03/11/2026",
+    url:"https://www.peru-retail.com/alicorp-completa-la-compra-de-la-danesa-y-flora-food-en-siete-mercados-de-america-latina/" },
   ],
 
 
@@ -251,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Doe Run, aperturas de malls y 90 minutos extra por IA: ofrece a tus leads de retail un pool de staffing para las campañas de fin de año, con performance medible y sin riesgo de pasivos laborales.",
+  DATO: "Grati y CTS de CAS siguen firmes, el balón de gas sube y Alicorp se expande: usa este insight para abrir follow-up con leads de consumo masivo y ofrecer staffing flexible para la campaña de diciembre.",
 
 
 
