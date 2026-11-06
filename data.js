@@ -116,33 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-05 08:15 (Lima) — tarea automática",
+  generado: "2026-11-06 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"agro", week:false,
-    title:"Agroexportación de frutas crece 15%",
-    fig:"US$ 4.799 M", figsub:"Ene-ago 2026: +15,1% interanual; son 63,5% de la agro no tradicional",
-    cat:"ECONOMÍA", source:"Gestión · 05/11/2026",
-    url:"https://gestion.pe/economia/frutas-y-hortalizas-envios-crecieron-15-a-agosto-por-cerca-de-us5000-millones-noticia/" },
-  { color:"#E6299C", viz:"analysis", week:false,
-    title:"Sueldos 2027: el operativo sube más",
-    fig:"6,13%", figsub:"PwC: 79% de empresas dará aumentos en 2027; gerencias suben solo 5,44%",
-    cat:"RRHH", source:"Gestión · 05/11/2026",
-    url:"https://gestion.pe/g-de-gestion/reportaje/pwc-peru-sueldos-en-peru-en-2027-para-ceo-altos-ejecutivos-gerentes-donde-se-preve-un-mayor-incremento-noticia/" },
-  { color:"#F52055", viz:"clock", week:false,
-    title:"Lluvias: MTPE da 2 horas de tolerancia",
-    fig:"2 horas", figsub:"Ingreso flexible hoy para trabajadores de VMT, VES, SJM y Chorrillos",
-    cat:"LEGAL", source:"Gestión · 05/11/2026",
-    url:"https://gestion.pe/peru/lluvias-en-lima-disponen-tolerancia-laboral-para-trabajadores-de-vmt-ves-sjm-y-chorrillos-noticia/" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"OpenAI ya vende más a empresas",
-    fig:"900 M", figsub:"Usuarios semanales de ChatGPT; el negocio empresarial superó al de consumidores",
-    cat:"IA", source:"Infobae · 05/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/05/openai-ya-vende-mas-a-empresas-que-a-usuarios-y-su-presidente-ve-posible-salir-a-bolsa-en-2027/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Intercorp duplica ventas de mypes",
-    fig:"S/ 36 M", figsub:"Ventas de 280 mypes en sus canales en 2025, el doble que en 2024",
-    cat:"CONSUMO", source:"Perú Retail · 04/11/2026",
-    url:"https://www.peru-retail.com/plaza-vea-oechsle-promart-y-real-plaza-como-impulsa-intercorp-las-ventas-de-las-mypes/" },
+  { color:"#FF953A", viz:"ship", week:false,
+    title:"Perú rumbo a US$ 120.000 M en exportaciones",
+    fig:"US$120.000 M", figsub:"MEF: ya suma US$ 83.000 M a setiembre; superaría a Chile y Argentina",
+    cat:"ECONOMÍA", source:"Andina · 06/11/2026",
+    url:"https://andina.pe/agencia/noticia-peru-proyecta-exportaciones-mas-120000-millones-dolares-al-cierre-del-2026-1098706.aspx" },
+  { color:"#E6299C", viz:"layoff", week:false,
+    title:"El Niño borra 162.900 empleos primarios",
+    fig:"162.900", figsub:"Agro, pesca y minería, 1.er semestre 2026; pesca cae 31,7% al tercer trimestre",
+    cat:"RRHH", source:"La República · 05/11/2026",
+    url:"https://larepublica.pe/economia/2026/11/05/sectores-primarios-pierden-162900-empleos-y-respuesta-ante-el-nino-deja-vacios-de-proteccion-laboral-374870" },
+  { color:"#C9D1D9", viz:"ai", week:false,
+    title:"Meta lanza llamadas con su IA Muse",
+    fig:"Video IA", figsub:"Muse Voice: avatar que conversa en tiempo real, ya abierto a todo EE. UU.",
+    cat:"IA", source:"Infobae · 06/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/06/meta-habilita-llamadas-y-video-con-su-ia-muse-para-los-usuarios-de-estados-unidos/" },
+  { color:"#FF953A", viz:"card", week:false,
+    title:"Yape: 2 millones de créditos y va por seguros",
+    fig:"2 M créditos", figsub:"Billetera con más de 20 millones de usuarios ya vende SOAT y seguro de tarjetas",
+    cat:"CONSUMO", source:"RPP · 05/11/2026",
+    url:"https://rpp.pe/economia/economia/tras-colocar-mas-de-dos-millones-de-creditos-yape-ahora-apunta-a-facilitar-el-acceso-a-seguros-a-sus-usuarios-noticia-1716179" },
   ],
 
 
@@ -256,7 +251,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "PwC proyecta 6,13% de alza al personal operativo en 2027 y el agro exporta +15%: usa este insight para abrir follow-up con leads agroexportadores y ofrecer staffing flexible.",
+  DATO: "Lima exporta rumbo a US$ 120.000 M, pero El Niño ya borró 162.900 empleos primarios: abre pipeline con exportadoras que necesitan reponer talento y staffing flexible.",
 
 
 
