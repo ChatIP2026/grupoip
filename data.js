@@ -116,28 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-06 08:30 (Lima) — tarea automática",
+  generado: "2026-11-09 08:15 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"ship", week:false,
-    title:"Perú rumbo a US$ 120.000 M en exportaciones",
-    fig:"US$120.000 M", figsub:"MEF: ya suma US$ 83.000 M a setiembre; superaría a Chile y Argentina",
-    cat:"ECONOMÍA", source:"Andina · 06/11/2026",
-    url:"https://andina.pe/agencia/noticia-peru-proyecta-exportaciones-mas-120000-millones-dolares-al-cierre-del-2026-1098706.aspx" },
-  { color:"#E6299C", viz:"layoff", week:false,
-    title:"El Niño borra 162.900 empleos primarios",
-    fig:"162.900", figsub:"Agro, pesca y minería, 1.er semestre 2026; pesca cae 31,7% al tercer trimestre",
-    cat:"RRHH", source:"La República · 05/11/2026",
-    url:"https://larepublica.pe/economia/2026/11/05/sectores-primarios-pierden-162900-empleos-y-respuesta-ante-el-nino-deja-vacios-de-proteccion-laboral-374870" },
-  { color:"#C9D1D9", viz:"ai", week:false,
-    title:"Meta lanza llamadas con su IA Muse",
-    fig:"Video IA", figsub:"Muse Voice: avatar que conversa en tiempo real, ya abierto a todo EE. UU.",
-    cat:"IA", source:"Infobae · 06/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/06/meta-habilita-llamadas-y-video-con-su-ia-muse-para-los-usuarios-de-estados-unidos/" },
-  { color:"#FF953A", viz:"card", week:false,
-    title:"Yape: 2 millones de créditos y va por seguros",
-    fig:"2 M créditos", figsub:"Billetera con más de 20 millones de usuarios ya vende SOAT y seguro de tarjetas",
-    cat:"CONSUMO", source:"RPP · 05/11/2026",
-    url:"https://rpp.pe/economia/economia/tras-colocar-mas-de-dos-millones-de-creditos-yape-ahora-apunta-a-facilitar-el-acceso-a-seguros-a-sus-usuarios-noticia-1716179" },
+  { color:"#FF953A", viz:"truck", week:false,
+    title:"Industria acopia: 73% sube sus inventarios",
+    fig:"73%", figsub:"SNI: fabricantes refuerzan stock y almacenes ante cortes logísticos por El Niño",
+    cat:"ECONOMÍA", source:"Gestión · 09/11/2026",
+    url:"https://gestion.pe/economia/el-nino-industria-de-peru-se-prepara-en-caso-de-problemas-o-interrupciones-logisticas-y-su-foco-esta-en-esta-medida-segun-encuesta-de-la-sni-noticia/" },
+  { color:"#E6299C", viz:"people", week:false,
+    title:"MEF alista despido flexible para sueldos altos",
+    fig:"Micro: 90%", figsub:"Cuba: sin recortes en micro; propone bajar aportes a EsSalud y pensiones",
+    cat:"RRHH", source:"RPP · 08/11/2026",
+    url:"https://rpp.pe/economia/economia/elmer-cuba-descarta-recortes-de-beneficios-laborales-en-microempresas-y-preve-ajustes-en-aportes-al-seguro-y-pensiones-noticia-1716729" },
+  { color:"#F52055", viz:"tax", week:false,
+    title:"Proyecto busca acelerar cobros de la Sunat",
+    fig:"S/123.000 M", figsub:"Deuda tributaria total; Sunat solo proyecta cobrar S/ 11.900 M (9,2%)",
+    cat:"LEGAL", source:"Gestión · 09/11/2026",
+    url:"https://gestion.pe/economia/deudas-y-controversias-tributarias-congreso-quiere-ayudar-a-sunat-a-cobrar-hasta-s-123000-millones-como-noticia/" },
+  { color:"#C9D1D9", viz:"doc", week:false,
+    title:"Marcas de moda piden IA sin pagar a modelos",
+    fig:"340 puestos", figsub:"Zalando cerró 2 estudios en Berlín; borradores de contrato piden usar imágenes con IA",
+    cat:"IA", source:"Infobae · 09/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/09/marcas-de-moda-piden-en-borradores-de-contratos-usar-imagenes-de-modelos-alterados-con-ia-sin-pagar-mas/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Gloria apunta a crecer 10% con panetones",
+    fig:"8% a 10%", figsub:"Segunda en el mercado; planifica la campaña navideña con un año de anticipación",
+    cat:"CONSUMO", source:"Gestión · 09/11/2026",
+    url:"https://gestion.pe/economia/empresas/que-hay-detras-del-paneton-gloria-asi-prepara-su-negocio-para-navidad-y-busca-crecer-hasta-10-noticia/" },
   ],
 
 
@@ -251,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Lima exporta rumbo a US$ 120.000 M, pero El Niño ya borró 162.900 empleos primarios: abre pipeline con exportadoras que necesitan reponer talento y staffing flexible.",
+  DATO: "Con 73% de la industria acopiando stock por El Niño y la campaña navideña en marcha, ofrece staffing temporal de almacén, logística y ventas: arma el pipeline antes de diciembre.",
 
 
 
