@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-09 08:15 (Lima) — tarea automática",
+  generado: "2026-11-10 08:15 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"truck", week:false,
-    title:"Industria acopia: 73% sube sus inventarios",
-    fig:"73%", figsub:"SNI: fabricantes refuerzan stock y almacenes ante cortes logísticos por El Niño",
-    cat:"ECONOMÍA", source:"Gestión · 09/11/2026",
-    url:"https://gestion.pe/economia/el-nino-industria-de-peru-se-prepara-en-caso-de-problemas-o-interrupciones-logisticas-y-su-foco-esta-en-esta-medida-segun-encuesta-de-la-sni-noticia/" },
-  { color:"#E6299C", viz:"people", week:false,
-    title:"MEF alista despido flexible para sueldos altos",
-    fig:"Micro: 90%", figsub:"Cuba: sin recortes en micro; propone bajar aportes a EsSalud y pensiones",
-    cat:"RRHH", source:"RPP · 08/11/2026",
-    url:"https://rpp.pe/economia/economia/elmer-cuba-descarta-recortes-de-beneficios-laborales-en-microempresas-y-preve-ajustes-en-aportes-al-seguro-y-pensiones-noticia-1716729" },
-  { color:"#F52055", viz:"tax", week:false,
-    title:"Proyecto busca acelerar cobros de la Sunat",
-    fig:"S/123.000 M", figsub:"Deuda tributaria total; Sunat solo proyecta cobrar S/ 11.900 M (9,2%)",
-    cat:"LEGAL", source:"Gestión · 09/11/2026",
-    url:"https://gestion.pe/economia/deudas-y-controversias-tributarias-congreso-quiere-ayudar-a-sunat-a-cobrar-hasta-s-123000-millones-como-noticia/" },
-  { color:"#C9D1D9", viz:"doc", week:false,
-    title:"Marcas de moda piden IA sin pagar a modelos",
-    fig:"340 puestos", figsub:"Zalando cerró 2 estudios en Berlín; borradores de contrato piden usar imágenes con IA",
-    cat:"IA", source:"Infobae · 09/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/09/marcas-de-moda-piden-en-borradores-de-contratos-usar-imagenes-de-modelos-alterados-con-ia-sin-pagar-mas/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Gloria apunta a crecer 10% con panetones",
-    fig:"8% a 10%", figsub:"Segunda en el mercado; planifica la campaña navideña con un año de anticipación",
-    cat:"CONSUMO", source:"Gestión · 09/11/2026",
-    url:"https://gestion.pe/economia/empresas/que-hay-detras-del-paneton-gloria-asi-prepara-su-negocio-para-navidad-y-busca-crecer-hasta-10-noticia/" },
+  { color:"#FF953A", viz:"invest", week:false,
+    title:"Perú coloca bono récord por US$ 4.500 M",
+    fig:"US$ 4.500 M", figsub:"Demanda superó US$ 21.000 M; tasas de 6,06% a 12 años y 6,45% a 30 años",
+    cat:"ECONOMÍA", source:"RPP · 10/11/2026",
+    url:"https://rpp.pe/economia/economia/peru-consigue-us4500-millones-en-prestamo-internacional-y-recibe-ofertas-por-mas-de-us21000-millones-noticia-1716966" },
+  { color:"#E6299C", viz:"training", week:false,
+    title:"Empresas ven pirámide de juniors hecha rombo",
+    fig:"Pirámide", figsub:"Interbank prevé menos juniors por IA; Credicorp y Oliver Wyman: sin recorte de personal",
+    cat:"RRHH", source:"Gestión · 10/11/2026",
+    url:"https://gestion.pe/tu-dinero/inteligencia-artificial-empresas-contrataran-menos-trabajadores-junior-ante-su-avance-como-son-reemplazados-noticia/" },
+  { color:"#F52055", viz:"calendar", week:false,
+    title:"Papa: días no laborables compensables",
+    fig:"11 al 16 nov", figsub:"DS 020-2026-TR: Lima y Callao desde las 13:00; las horas se recuperan por acuerdo",
+    cat:"LEGAL", source:"Andina · 10/11/2026",
+    url:"https://andina.pe/agencia/noticia-papa-leon-xiv-dias-son-no-laborables-y-como-regira-para-sector-publico-y-privado-1097045.aspx" },
+  { color:"#C9D1D9", viz:"ai", week:false,
+    title:"Bancos ya evalúan créditos con agentes de IA",
+    fig:"68%", figsub:"Lo usa en créditos (Experian); en Perú, 35% teme sesgos en el modelo",
+    cat:"IA", source:"Infobae · 10/11/2026",
+    url:"https://www.infobae.com/peru/2026/11/10/la-ia-ya-interviene-en-siete-de-cada-10-creditos-emitidos-por-un-banco-puede-negarlos/" },
+  { color:"#FF953A", viz:"building", week:false,
+    title:"Parque La Molina vende 30,5% más",
+    fig:"+30,5%", figsub:"Ventas a agosto; ocupación de 85% con meta de 93% al cierre de 2026",
+    cat:"CONSUMO", source:"Gestión · 10/11/2026",
+    url:"https://gestion.pe/economia/empresas/parque-la-molina-a-dos-anos-del-nuevo-larcomar-las-marcas-que-se-van-y-las-que-llegan-noticia/" }
   ],
 
 
@@ -256,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con 73% de la industria acopiando stock por El Niño y la campaña navideña en marcha, ofrece staffing temporal de almacén, logística y ventas: arma el pipeline antes de diciembre.",
+  DATO: "Con la visita del papa y días no laborables compensables del 11 al 16, ofrece a tus clientes staffing de reemplazo y turnos extra para cubrir las horas, antes del cierre de diciembre.",
 
 
 
