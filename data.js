@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-10 08:15 (Lima) — tarea automática",
+  generado: "2026-11-11 08:15 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"invest", week:false,
-    title:"Perú coloca bono récord por US$ 4.500 M",
-    fig:"US$ 4.500 M", figsub:"Demanda superó US$ 21.000 M; tasas de 6,06% a 12 años y 6,45% a 30 años",
-    cat:"ECONOMÍA", source:"RPP · 10/11/2026",
-    url:"https://rpp.pe/economia/economia/peru-consigue-us4500-millones-en-prestamo-internacional-y-recibe-ofertas-por-mas-de-us21000-millones-noticia-1716966" },
-  { color:"#E6299C", viz:"training", week:false,
-    title:"Empresas ven pirámide de juniors hecha rombo",
-    fig:"Pirámide", figsub:"Interbank prevé menos juniors por IA; Credicorp y Oliver Wyman: sin recorte de personal",
-    cat:"RRHH", source:"Gestión · 10/11/2026",
-    url:"https://gestion.pe/tu-dinero/inteligencia-artificial-empresas-contrataran-menos-trabajadores-junior-ante-su-avance-como-son-reemplazados-noticia/" },
-  { color:"#F52055", viz:"calendar", week:false,
-    title:"Papa: días no laborables compensables",
-    fig:"11 al 16 nov", figsub:"DS 020-2026-TR: Lima y Callao desde las 13:00; las horas se recuperan por acuerdo",
-    cat:"LEGAL", source:"Andina · 10/11/2026",
-    url:"https://andina.pe/agencia/noticia-papa-leon-xiv-dias-son-no-laborables-y-como-regira-para-sector-publico-y-privado-1097045.aspx" },
-  { color:"#C9D1D9", viz:"ai", week:false,
-    title:"Bancos ya evalúan créditos con agentes de IA",
-    fig:"68%", figsub:"Lo usa en créditos (Experian); en Perú, 35% teme sesgos en el modelo",
-    cat:"IA", source:"Infobae · 10/11/2026",
-    url:"https://www.infobae.com/peru/2026/11/10/la-ia-ya-interviene-en-siete-de-cada-10-creditos-emitidos-por-un-banco-puede-negarlos/" },
-  { color:"#FF953A", viz:"building", week:false,
-    title:"Parque La Molina vende 30,5% más",
-    fig:"+30,5%", figsub:"Ventas a agosto; ocupación de 85% con meta de 93% al cierre de 2026",
-    cat:"CONSUMO", source:"Gestión · 10/11/2026",
-    url:"https://gestion.pe/economia/empresas/parque-la-molina-a-dos-anos-del-nuevo-larcomar-las-marcas-que-se-van-y-las-que-llegan-noticia/" }
+  { color:"#FF953A", viz:"chart-down", week:false,
+    title:"Textil sigue en caída y recibe salvavidas",
+    fig:"-6,1%", figsub:"Caída del sector; garantía de hasta 80% y S/ 973 M en créditos vía Fodemi",
+    cat:"ECONOMÍA", source:"Gestión · 11/11/2026",
+    url:"https://gestion.pe/economia/textil-y-confecciones-plan-para-reactivar-al-sector-en-el-peru-impulsara-3-medidas-de-financiamiento-noticia/" },
+  { color:"#E6299C", viz:"shield", week:false,
+    title:"El Niño: pagar sueldo si paralizas",
+    fig:"90 días", figsub:"Suspensión perfecta posible si un huaico destruye la sede; el peligro inminente se paga",
+    cat:"RRHH", source:"Gestión · 11/11/2026",
+    url:"https://gestion.pe/economia/el-nino-pone-a-prueba-reglas-laborales-que-pasa-con-sueldos-paralizaciones-y-estres-de-los-trabajadores-durante-el-fenomeno-noticia/" },
+  { color:"#F52055", viz:"legal", week:false,
+    title:"Fuga de datos: multa pese a prevención",
+    fig:"16,88 UIT", figsub:"Multa de S/ 92.840 a un banco: no probó corregir todas las fallas de seguridad",
+    cat:"LEGAL", source:"Gestión · 11/11/2026",
+    url:"https://gestion.pe/economia/filtracion-de-datos-personales-de-clientes-nuevo-criterio-cambiaria-la-responsabilidad-de-las-empresas-noticia/" },
+  { color:"#C9D1D9", viz:"grok", week:false,
+    title:"35.000 apps de Grok quedaron abiertas",
+    fig:"94,7%", figsub:"De las apps probadas se abrían sin login; había datos de empleados y planillas",
+    cat:"IA", source:"Infobae · 11/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/11/mas-de-35000-aplicaciones-creadas-con-grok-quedaron-abiertas-a-cualquiera-con-datos-medicos-y-de-empleados/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Tambo suma 24 tiendas y roza las 1.000",
+    fig:"952", figsub:"Locales a octubre; abrió 24 en un mes frente a 15-20 habituales",
+    cat:"CONSUMO", source:"Perú Retail · 10/11/2026",
+    url:"https://www.peru-retail.com/tambo-refuerza-su-presencia-con-24-nuevas-aperturas-en-solo-un-mes-donde-se-ubican/" }
   ],
 
 
@@ -256,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con la visita del papa y días no laborables compensables del 11 al 16, ofrece a tus clientes staffing de reemplazo y turnos extra para cubrir las horas, antes del cierre de diciembre.",
+  DATO: "Con El Niño y las fugas de datos al alza, ofrece a tus clientes staffing de reemplazo y perfiles de TI y compliance; pregunta qué data de planilla guardan en apps de IA.",
 
 
 
