@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-11 08:15 (Lima) — tarea automática",
+  generado: "2026-11-12 08:20 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-down", week:false,
-    title:"Textil sigue en caída y recibe salvavidas",
-    fig:"-6,1%", figsub:"Caída del sector; garantía de hasta 80% y S/ 973 M en créditos vía Fodemi",
-    cat:"ECONOMÍA", source:"Gestión · 11/11/2026",
-    url:"https://gestion.pe/economia/textil-y-confecciones-plan-para-reactivar-al-sector-en-el-peru-impulsara-3-medidas-de-financiamiento-noticia/" },
-  { color:"#E6299C", viz:"shield", week:false,
-    title:"El Niño: pagar sueldo si paralizas",
-    fig:"90 días", figsub:"Suspensión perfecta posible si un huaico destruye la sede; el peligro inminente se paga",
-    cat:"RRHH", source:"Gestión · 11/11/2026",
-    url:"https://gestion.pe/economia/el-nino-pone-a-prueba-reglas-laborales-que-pasa-con-sueldos-paralizaciones-y-estres-de-los-trabajadores-durante-el-fenomeno-noticia/" },
-  { color:"#F52055", viz:"legal", week:false,
-    title:"Fuga de datos: multa pese a prevención",
-    fig:"16,88 UIT", figsub:"Multa de S/ 92.840 a un banco: no probó corregir todas las fallas de seguridad",
+  { color:"#FF953A", viz:"bars-up", week:false,
+    title:"Visita papal: comercio podría duplicar ventas",
+    fig:"x2", figsub:"Negocios del centro de Lima; hoteles al 100% de ocupación frente al 60% habitual (CAMTUR)",
+    cat:"ECONOMÍA", source:"Gestión · 12/11/2026",
+    url:"https://gestion.pe/economia/empresas/visita-del-papa-leon-xiv-moveria-millones-en-turismo-comercio-y-transporte-en-peru-noticia/" },
+  { color:"#E6299C", viz:"piggy", week:false,
+    title:"CTS: depósito vence el lunes 16",
+    fig:"16 nov", figsub:"Plazo para depositar el semestre mayo-octubre; el 15 cae domingo y se traslada",
+    cat:"RRHH", source:"RPP · 11/11/2026",
+    url:"https://rpp.pe/economia/economia/segunda-cts-del-2026-empresas-tienen-hasta-el-lunes-16-de-noviembre-para-depositar-quienes-reciben-y-como-calcular-el-monto-noticia-1717176" },
+  { color:"#F52055", viz:"doc", week:false,
+    title:"ONP a AFP: traslados desde junio 2027",
+    fig:"1 jun 2027", figsub:"ONP publicó el reglamento operativo; el afiliado podrá pasar de régimen de forma informada",
     cat:"LEGAL", source:"Gestión · 11/11/2026",
-    url:"https://gestion.pe/economia/filtracion-de-datos-personales-de-clientes-nuevo-criterio-cambiaria-la-responsabilidad-de-las-empresas-noticia/" },
-  { color:"#C9D1D9", viz:"grok", week:false,
-    title:"35.000 apps de Grok quedaron abiertas",
-    fig:"94,7%", figsub:"De las apps probadas se abrían sin login; había datos de empleados y planillas",
-    cat:"IA", source:"Infobae · 11/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/11/mas-de-35000-aplicaciones-creadas-con-grok-quedaron-abiertas-a-cualquiera-con-datos-medicos-y-de-empleados/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Tambo suma 24 tiendas y roza las 1.000",
-    fig:"952", figsub:"Locales a octubre; abrió 24 en un mes frente a 15-20 habituales",
-    cat:"CONSUMO", source:"Perú Retail · 10/11/2026",
-    url:"https://www.peru-retail.com/tambo-refuerza-su-presencia-con-24-nuevas-aperturas-en-solo-un-mes-donde-se-ubican/" }
+    url:"https://gestion.pe/tu-dinero/finanzas-personales/de-onp-a-afp-los-pasos-publicaan-reglamento-para-traslado-de-afiliados-desde-el-1-de-junio-del-2027-noticia/" },
+  { color:"#4C8DF6", viz:"search", week:false,
+    title:"Workday, demandado por filtrar con IA",
+    fig:"15.000+", figsub:"Demanda por edad; acusan sesgo de raza, sexo y discapacidad en su software de IA",
+    cat:"IA", source:"Infobae · 12/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/12/demandan-a-workday-por-presunta-discriminacion-de-su-software-de-ia-la-empresa-busca-frenar-los-reclamos-colectivos/" },
+  { color:"#FF953A", viz:"ship", week:false,
+    title:"Temu y Shein pagarían IGV desde US$ 50",
+    fig:"US$ 50", figsub:"El MEF evalúa bajar el tope libre de US$ 200 o subir el IGV a microimportaciones",
+    cat:"CONSUMO", source:"Perú Retail · 11/11/2026",
+    url:"https://www.peru-retail.com/compras-en-temu-amazon-y-shein-podrian-pagar-mas-impuestos-que-cambios-analiza-el-mef/" }
   ],
 
 
@@ -256,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con El Niño y las fugas de datos al alza, ofrece a tus clientes staffing de reemplazo y perfiles de TI y compliance; pregunta qué data de planilla guardan en apps de IA.",
+  DATO: "La CTS vence el 16/11: ofrece a tus clientes revisión de planilla; y con Workday en juicio por sesgo, pregunta cómo auditan sus filtros de IA al seleccionar.",
 
 
 
