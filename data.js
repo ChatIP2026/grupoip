@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-12 08:20 (Lima) — tarea automática",
+  generado: "2026-11-13 08:35 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"bars-up", week:false,
-    title:"Visita papal: comercio podría duplicar ventas",
-    fig:"x2", figsub:"Negocios del centro de Lima; hoteles al 100% de ocupación frente al 60% habitual (CAMTUR)",
-    cat:"ECONOMÍA", source:"Gestión · 12/11/2026",
-    url:"https://gestion.pe/economia/empresas/visita-del-papa-leon-xiv-moveria-millones-en-turismo-comercio-y-transporte-en-peru-noticia/" },
-  { color:"#E6299C", viz:"piggy", week:false,
-    title:"CTS: depósito vence el lunes 16",
-    fig:"16 nov", figsub:"Plazo para depositar el semestre mayo-octubre; el 15 cae domingo y se traslada",
+  { color:"#FF953A", viz:"bank", week:false,
+    title:"BCR sube la tasa por primera vez en 14 meses",
+    fig:"4,50%", figsub:"Sube 25 pb desde 4,25%; la inflación de octubre llegó a 5,3% por alimentos y energía",
+    cat:"ECONOMÍA", source:"RPP · 13/11/2026",
+    url:"https://rpp.pe/economia/economia/bcr-sube-la-tasa-de-interes-de-referencia-a-45-luego-de-14-meses-ante-repunte-de-la-inflacion-noticia-1717536" },
+  { color:"#E6299C", viz:"pie", week:false,
+    title:"AFP: seguro más barato desde enero 2027",
+    fig:"1,12%", figsub:"Prima baja desde 1,37% de la remuneración hasta 2028; ahorro estimado de S/ 678 millones",
     cat:"RRHH", source:"RPP · 11/11/2026",
-    url:"https://rpp.pe/economia/economia/segunda-cts-del-2026-empresas-tienen-hasta-el-lunes-16-de-noviembre-para-depositar-quienes-reciben-y-como-calcular-el-monto-noticia-1717176" },
-  { color:"#F52055", viz:"doc", week:false,
-    title:"ONP a AFP: traslados desde junio 2027",
-    fig:"1 jun 2027", figsub:"ONP publicó el reglamento operativo; el afiliado podrá pasar de régimen de forma informada",
-    cat:"LEGAL", source:"Gestión · 11/11/2026",
-    url:"https://gestion.pe/tu-dinero/finanzas-personales/de-onp-a-afp-los-pasos-publicaan-reglamento-para-traslado-de-afiliados-desde-el-1-de-junio-del-2027-noticia/" },
-  { color:"#4C8DF6", viz:"search", week:false,
-    title:"Workday, demandado por filtrar con IA",
-    fig:"15.000+", figsub:"Demanda por edad; acusan sesgo de raza, sexo y discapacidad en su software de IA",
-    cat:"IA", source:"Infobae · 12/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/12/demandan-a-workday-por-presunta-discriminacion-de-su-software-de-ia-la-empresa-busca-frenar-los-reclamos-colectivos/" },
-  { color:"#FF953A", viz:"ship", week:false,
-    title:"Temu y Shein pagarían IGV desde US$ 50",
-    fig:"US$ 50", figsub:"El MEF evalúa bajar el tope libre de US$ 200 o subir el IGV a microimportaciones",
-    cat:"CONSUMO", source:"Perú Retail · 11/11/2026",
-    url:"https://www.peru-retail.com/compras-en-temu-amazon-y-shein-podrian-pagar-mas-impuestos-que-cambios-analiza-el-mef/" }
+    url:"https://rpp.pe/economia/economia/afp-afiliados-pagaran-menos-por-el-seguro-desde-enero-de-2027-su-tarifa-mas-baja-en-13-anos-noticia-1717254" },
+  { color:"#F52055", viz:"building", week:false,
+    title:"MTPE: no más teletrabajo total a directivos",
+    fig:"4 grupos", figsub:"Proyecto para el sector público: restringe el 100% remoto; 15 días para comentarios",
+    cat:"LEGAL", source:"RPP · 11/11/2026",
+    url:"https://rpp.pe/economia/economia/gobierno-apunta-a-reducir-el-teletrabajo-en-el-sector-publico-que-trabajadores-estatales-ya-no-podran-laborar-100-desde-casa-noticia-1717257" },
+  { color:"#FF953A", viz:"ai", week:false,
+    title:"EE. UU. usará IA para reordenar sus vuelos",
+    fig:"22 centros", figsub:"La FAA extiende el sistema SMART: 180 vuelos desviados, 10 minutos menos por vuelo",
+    cat:"IA", source:"Infobae · 13/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/13/estados-unidos-usara-ia-en-todo-su-espacio-aereo-para-reordenar-vuelos-y-reducir-demoras/" },
+  { color:"#FF953A", viz:"handshake", week:false,
+    title:"Millicom negocia comprar Entel Perú",
+    fig:"10,49 M", figsub:"Líneas móviles de Entel a setiembre; la oferta no vinculante sigue en negociación avanzada",
+    cat:"CONSUMO", source:"Perú Retail · 13/11/2026",
+    url:"https://www.peru-retail.com/entel-confirma-oferta-de-millicom-por-peru-revela-que-negociaciones-estan-avanzadas/" }
   ],
 
 
@@ -256,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "La CTS vence el 16/11: ofrece a tus clientes revisión de planilla; y con Workday en juicio por sesgo, pregunta cómo auditan sus filtros de IA al seleccionar.",
+  DATO: "BCR sube la tasa a 4,5% y el crédito se encarece: ofrece a tus clientes planilla y selección tercerizada como <b>costo variable</b>, sin inmovilizar caja.",
 
 
 
