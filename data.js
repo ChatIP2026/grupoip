@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-13 08:35 (Lima) — tarea automática",
+  generado: "2026-11-16 08:15 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"bank", week:false,
-    title:"BCR sube la tasa por primera vez en 14 meses",
-    fig:"4,50%", figsub:"Sube 25 pb desde 4,25%; la inflación de octubre llegó a 5,3% por alimentos y energía",
-    cat:"ECONOMÍA", source:"RPP · 13/11/2026",
-    url:"https://rpp.pe/economia/economia/bcr-sube-la-tasa-de-interes-de-referencia-a-45-luego-de-14-meses-ante-repunte-de-la-inflacion-noticia-1717536" },
-  { color:"#E6299C", viz:"pie", week:false,
-    title:"AFP: seguro más barato desde enero 2027",
-    fig:"1,12%", figsub:"Prima baja desde 1,37% de la remuneración hasta 2028; ahorro estimado de S/ 678 millones",
-    cat:"RRHH", source:"RPP · 11/11/2026",
-    url:"https://rpp.pe/economia/economia/afp-afiliados-pagaran-menos-por-el-seguro-desde-enero-de-2027-su-tarifa-mas-baja-en-13-anos-noticia-1717254" },
-  { color:"#F52055", viz:"building", week:false,
-    title:"MTPE: no más teletrabajo total a directivos",
-    fig:"4 grupos", figsub:"Proyecto para el sector público: restringe el 100% remoto; 15 días para comentarios",
-    cat:"LEGAL", source:"RPP · 11/11/2026",
-    url:"https://rpp.pe/economia/economia/gobierno-apunta-a-reducir-el-teletrabajo-en-el-sector-publico-que-trabajadores-estatales-ya-no-podran-laborar-100-desde-casa-noticia-1717257" },
-  { color:"#FF953A", viz:"ai", week:false,
-    title:"EE. UU. usará IA para reordenar sus vuelos",
-    fig:"22 centros", figsub:"La FAA extiende el sistema SMART: 180 vuelos desviados, 10 minutos menos por vuelo",
-    cat:"IA", source:"Infobae · 13/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/13/estados-unidos-usara-ia-en-todo-su-espacio-aereo-para-reordenar-vuelos-y-reducir-demoras/" },
-  { color:"#FF953A", viz:"handshake", week:false,
-    title:"Millicom negocia comprar Entel Perú",
-    fig:"10,49 M", figsub:"Líneas móviles de Entel a setiembre; la oferta no vinculante sigue en negociación avanzada",
-    cat:"CONSUMO", source:"Perú Retail · 13/11/2026",
-    url:"https://www.peru-retail.com/entel-confirma-oferta-de-millicom-por-peru-revela-que-negociaciones-estan-avanzadas/" }
+  { color:"#FF953A", viz:"chart-down", week:false,
+    title:"Economía frena: PBI crece solo 2,43%",
+    fig:"2,43%", figsub:"PBI de septiembre, segunda desaceleración seguida; caen agro, minería y manufactura",
+    cat:"ECONOMÍA", source:"Perú Retail · 16/11/2026",
+    url:"https://www.peru-retail.com/economia-peruana-pierde-impulso-en-septiembre-tres-sectores-registraron-caidas/" },
+  { color:"#E6299C", viz:"people", week:false,
+    title:"Cepal: productividad laboral repunta en Perú",
+    fig:"20 años", figsub:"La mejora de productividad se sostiene hace dos décadas; el empleo se mantiene estable",
+    cat:"RRHH", source:"Andina · 16/11/2026",
+    url:"https://andina.pe/agencia/noticia-cepal-productividad-de-economia-peruana-y-empleo-repuntan-1100101.aspx" },
+  { color:"#F52055", viz:"calendar", week:false,
+    title:"Sunat posterga el ITAN por El Niño",
+    fig:"Abril 2027", figsub:"Textil y pesca con ingresos en caída de 30% o más difieren las 2 últimas cuotas",
+    cat:"LEGAL", source:"La República · 15/11/2026",
+    url:"https://larepublica.pe/economia/2026/11/15/sunat-posterga-pago-del-itan-hasta-abril-de-2027-y-amplia-plazo-para-pagar-deudas-tributarias-por-el-nino-hnews-918495" },
+  { color:"#10A37F", viz:"openai", week:false,
+    title:"OpenAI retira los ChatGPT personalizados",
+    fig:"11 dic", figsub:"Los GPT personalizados se acaban; OpenAI propone proyectos y complementos como reemplazo",
+    cat:"IA", source:"Gestión · 16/11/2026",
+    url:"https://gestion.pe/tecnologia/openai-eliminara-los-chatgpt-personalizados-desde-el-11-de-diciembre-que-cambiara-noticia/" },
+  { color:"#FF953A", viz:"card", week:false,
+    title:"Yape llega a 17 millones de usuarios",
+    fig:"17 M", figsub:"Usuarios activos al 3T: 71 transacciones por usuario al mes; el ritmo de altas se frena",
+    cat:"CONSUMO", source:"Perú Retail · 14/11/2026",
+    url:"https://www.peru-retail.com/yape-tiene-17-millones-de-usuarios-activos-las-nuevas-lineas-de-negocio-que-busca-desarrollar/" }
   ],
 
 
@@ -256,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "BCR sube la tasa a 4,5% y el crédito se encarece: ofrece a tus clientes planilla y selección tercerizada como <b>costo variable</b>, sin inmovilizar caja.",
+  DATO: "El PBI se enfría a 2,43% y las empresas cuidan caja: propón a tus clientes planilla tercerizada y selección por demanda como <b>costo variable</b> para esta campaña.",
 
 
 
