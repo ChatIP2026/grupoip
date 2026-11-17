@@ -116,33 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-16 08:15 (Lima) — tarea automática",
+  generado: "2026-11-17 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-down", week:false,
-    title:"Economía frena: PBI crece solo 2,43%",
-    fig:"2,43%", figsub:"PBI de septiembre, segunda desaceleración seguida; caen agro, minería y manufactura",
-    cat:"ECONOMÍA", source:"Perú Retail · 16/11/2026",
-    url:"https://www.peru-retail.com/economia-peruana-pierde-impulso-en-septiembre-tres-sectores-registraron-caidas/" },
-  { color:"#E6299C", viz:"people", week:false,
-    title:"Cepal: productividad laboral repunta en Perú",
-    fig:"20 años", figsub:"La mejora de productividad se sostiene hace dos décadas; el empleo se mantiene estable",
-    cat:"RRHH", source:"Andina · 16/11/2026",
-    url:"https://andina.pe/agencia/noticia-cepal-productividad-de-economia-peruana-y-empleo-repuntan-1100101.aspx" },
-  { color:"#F52055", viz:"calendar", week:false,
-    title:"Sunat posterga el ITAN por El Niño",
-    fig:"Abril 2027", figsub:"Textil y pesca con ingresos en caída de 30% o más difieren las 2 últimas cuotas",
-    cat:"LEGAL", source:"La República · 15/11/2026",
-    url:"https://larepublica.pe/economia/2026/11/15/sunat-posterga-pago-del-itan-hasta-abril-de-2027-y-amplia-plazo-para-pagar-deudas-tributarias-por-el-nino-hnews-918495" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"OpenAI retira los ChatGPT personalizados",
-    fig:"11 dic", figsub:"Los GPT personalizados se acaban; OpenAI propone proyectos y complementos como reemplazo",
-    cat:"IA", source:"Gestión · 16/11/2026",
-    url:"https://gestion.pe/tecnologia/openai-eliminara-los-chatgpt-personalizados-desde-el-11-de-diciembre-que-cambiara-noticia/" },
-  { color:"#FF953A", viz:"card", week:false,
-    title:"Yape llega a 17 millones de usuarios",
-    fig:"17 M", figsub:"Usuarios activos al 3T: 71 transacciones por usuario al mes; el ritmo de altas se frena",
-    cat:"CONSUMO", source:"Perú Retail · 14/11/2026",
-    url:"https://www.peru-retail.com/yape-tiene-17-millones-de-usuarios-activos-las-nuevas-lineas-de-negocio-que-busca-desarrollar/" }
+  { color:"#FF953A", viz:"compare", week:false,
+    title:"Agroexportación casi se estanca: +1,2%",
+    fig:"US$ 9 898 M", figsub:"Envíos de enero a septiembre; Midagri proyecta cerrar el año cerca de US$ 15 000 M",
+    cat:"ECONOMÍA", source:"RPP · 16/11/2026",
+    url:"https://rpp.pe/economia/economia/agroexportaciones-peruanas-alcanzan-los-us-9-898-millones-entre-enero-y-septiembre-del-2026-noticia-1718098" },
+  { color:"#E6299C", viz:"pie", week:false,
+    title:"Informalidad laboral baja a 69,1%",
+    fig:"69,1%", figsub:"Trabajadores informales (oct 2025 - sep 2026); entre jóvenes de 14 a 24 años llega a 83,4%",
+    cat:"RRHH", source:"Gestión · 17/11/2026",
+    url:"https://gestion.pe/economia/management-empleo/informalidad-cae-a-691-en-peru-pero-aun-8-de-cada-10-jovenes-no-salen-de-esta-situacion-noticia/" },
+  { color:"#C9D1D9", viz:"shield", week:false,
+    title:"FBI alerta: Artex hackea con agentes de IA",
+    fig:"3 horas", figsub:"Tiempo en que Artex pasa de elegir víctima a tener acceso de administrador, según el FBI",
+    cat:"IA", source:"Infobae · 17/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/17/el-fbi-alerto-que-la-herramienta-de-ia-artex-permite-hackear-empresas-en-menos-de-tres-horas/" },
+  { color:"#FF953A", viz:"invest", week:false,
+    title:"Falabella invertirá US$ 1 100 M en 2027",
+    fig:"US$ 1 100 M", figsub:"Su mayor inversión histórica: 45% activos físicos, 35% tecnología y logística, 20% tiendas",
+    cat:"CONSUMO", source:"Gestión · 16/11/2026",
+    url:"https://gestion.pe/economia/empresas/grupo-falabella-invertira-us1100-millones-en-2027-en-que-negocios-noticia/" }
   ],
 
 
@@ -256,7 +251,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "El PBI se enfría a 2,43% y las empresas cuidan caja: propón a tus clientes planilla tercerizada y selección por demanda como <b>costo variable</b> para esta campaña.",
+  DATO: "Falabella invertirá más que nunca y el agro apenas crece: ofrece a retailers y agroexportadoras un <b>pipeline de talento</b> flexible para la campaña de fin de año.",
 
 
 
