@@ -116,28 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-17 08:40 (Lima) — tarea automática",
+  generado: "2026-11-18 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"compare", week:false,
-    title:"Agroexportación casi se estanca: +1,2%",
-    fig:"US$ 9 898 M", figsub:"Envíos de enero a septiembre; Midagri proyecta cerrar el año cerca de US$ 15 000 M",
-    cat:"ECONOMÍA", source:"RPP · 16/11/2026",
-    url:"https://rpp.pe/economia/economia/agroexportaciones-peruanas-alcanzan-los-us-9-898-millones-entre-enero-y-septiembre-del-2026-noticia-1718098" },
-  { color:"#E6299C", viz:"pie", week:false,
-    title:"Informalidad laboral baja a 69,1%",
-    fig:"69,1%", figsub:"Trabajadores informales (oct 2025 - sep 2026); entre jóvenes de 14 a 24 años llega a 83,4%",
-    cat:"RRHH", source:"Gestión · 17/11/2026",
-    url:"https://gestion.pe/economia/management-empleo/informalidad-cae-a-691-en-peru-pero-aun-8-de-cada-10-jovenes-no-salen-de-esta-situacion-noticia/" },
-  { color:"#C9D1D9", viz:"shield", week:false,
-    title:"FBI alerta: Artex hackea con agentes de IA",
-    fig:"3 horas", figsub:"Tiempo en que Artex pasa de elegir víctima a tener acceso de administrador, según el FBI",
+  { color:"#FF953A", viz:"truck", week:false,
+    title:"Emergencia nacional de combustibles por El Niño",
+    fig:"67%", figsub:"Peso de los hidrocarburos en la matriz energética; emergencia por hasta 8 meses",
+    cat:"ECONOMÍA", source:"Infobae · 18/11/2026",
+    url:"https://www.infobae.com/peru/2026/11/18/gobierno-declara-en-emergencia-el-abastecimiento-nacional-de-combustibles-no-hay-suficiente-capacidad-instalada/" },
+  { color:"#E6299C", viz:"bills", week:false,
+    title:"Bono MYPE: S/ 100 por trabajador",
+    fig:"S/ 100", figsub:"Subsidio único por empleado en microempresas de 2 a 10 trabajadores (DU 017-2026)",
+    cat:"RRHH", source:"Andina · 18/11/2026",
+    url:"https://andina.pe/agencia/noticia-gobierno-entregara-subsidio-extraordinario-s-100-cada-trabajador-microempresas-1100480.aspx" },
+  { color:"#10A37F", viz:"openai", week:false,
+    title:"GPT-6.2 llega con candado en ciberseguridad",
+    fig:"-20%", figsub:"Baja el precio de Astra en la API; nivel Crítico de riesgo en ciberseguridad",
     cat:"IA", source:"Infobae · 17/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/17/el-fbi-alerto-que-la-herramienta-de-ia-artex-permite-hackear-empresas-en-menos-de-tres-horas/" },
-  { color:"#FF953A", viz:"invest", week:false,
-    title:"Falabella invertirá US$ 1 100 M en 2027",
-    fig:"US$ 1 100 M", figsub:"Su mayor inversión histórica: 45% activos físicos, 35% tecnología y logística, 20% tiendas",
-    cat:"CONSUMO", source:"Gestión · 16/11/2026",
-    url:"https://gestion.pe/economia/empresas/grupo-falabella-invertira-us1100-millones-en-2027-en-que-negocios-noticia/" }
+    url:"https://www.infobae.com/tecno/2026/11/18/openai-lanzo-gpt-62-y-limito-su-ayuda-en-ciberseguridad-por-el-riesgo-de-que-sirva-para-atacar/" },
+  { color:"#FF953A", viz:"building", week:false,
+    title:"Ripley gana 53,2% más con impulso de Perú",
+    fig:"+53,2%", figsub:"Utilidad neta de Ripley Corp. en el 3T; ventas de locatarios de Mall Aventura suben 10,2%",
+    cat:"CONSUMO", source:"Perú Retail · 18/11/2026",
+    url:"https://www.peru-retail.com/ripley-corp-eleva-sus-ganancias-532-en-el-tercer-trimestre-peru-fue-clave-en-sus-resultados/" },
   ],
 
 
@@ -251,7 +251,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Falabella invertirá más que nunca y el agro apenas crece: ofrece a retailers y agroexportadoras un <b>pipeline de talento</b> flexible para la campaña de fin de año.",
+  DATO: "Bono MYPE de S/ 100 y combustibles en emergencia: ofrece a las mypes con campaña de fin de año un <b>pack de planilla flexible</b> de iPartner para vender más sin cargar costo fijo.",
 
 
 
