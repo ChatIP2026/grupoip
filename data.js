@@ -116,28 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-18 08:40 (Lima) — tarea automática",
+  generado: "2026-11-19 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"truck", week:false,
-    title:"Emergencia nacional de combustibles por El Niño",
-    fig:"67%", figsub:"Peso de los hidrocarburos en la matriz energética; emergencia por hasta 8 meses",
-    cat:"ECONOMÍA", source:"Infobae · 18/11/2026",
-    url:"https://www.infobae.com/peru/2026/11/18/gobierno-declara-en-emergencia-el-abastecimiento-nacional-de-combustibles-no-hay-suficiente-capacidad-instalada/" },
-  { color:"#E6299C", viz:"bills", week:false,
-    title:"Bono MYPE: S/ 100 por trabajador",
-    fig:"S/ 100", figsub:"Subsidio único por empleado en microempresas de 2 a 10 trabajadores (DU 017-2026)",
-    cat:"RRHH", source:"Andina · 18/11/2026",
-    url:"https://andina.pe/agencia/noticia-gobierno-entregara-subsidio-extraordinario-s-100-cada-trabajador-microempresas-1100480.aspx" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"GPT-6.2 llega con candado en ciberseguridad",
-    fig:"-20%", figsub:"Baja el precio de Astra en la API; nivel Crítico de riesgo en ciberseguridad",
-    cat:"IA", source:"Infobae · 17/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/18/openai-lanzo-gpt-62-y-limito-su-ayuda-en-ciberseguridad-por-el-riesgo-de-que-sirva-para-atacar/" },
-  { color:"#FF953A", viz:"building", week:false,
-    title:"Ripley gana 53,2% más con impulso de Perú",
-    fig:"+53,2%", figsub:"Utilidad neta de Ripley Corp. en el 3T; ventas de locatarios de Mall Aventura suben 10,2%",
+  { color:"#FF953A", viz:"mining", week:false,
+    title:"Minería: US$ 5.100 M de inversión en 2027",
+    fig:"US$ 5.100 M", figsub:"Meta minera 2027; en 2025 fue US$ 6.279 M y a setiembre 2026 ya suma US$ 5.522 M",
+    cat:"ECONOMÍA", source:"Gestión · 18/11/2026",
+    url:"https://gestion.pe/economia/inversion-minera-en-peru-sumaria-us-5100-millones-el-proximo-ano-pierde-ritmo-esto-dijo-el-sector-energia-y-minas-noticia/" },
+  { color:"#E6299C", viz:"search", week:false,
+    title:"Sheput: Sunafil dejará de vivir de multas",
+    fig:"KPI: multas", figsub:"El MTPE quiere una Sunafil orientadora y preventiva, que acompañe a las empresas",
+    cat:"RRHH", source:"Gestión · 18/11/2026",
+    url:"https://gestion.pe/economia/sunafil-ministro-juan-sheput-anuncia-que-buscaran-reformular-al-fiscalizador-laboral-de-peru-noticia/" },
+  { color:"#F52055", viz:"calendar", week:false,
+    title:"Feriados 2027: 16 fechas con descanso pagado",
+    fig:"16", figsub:"Feriados nacionales en 2027; si se trabaja, toca descanso sustitutorio o pago adicional",
+    cat:"LEGAL", source:"Gestión · 19/11/2026",
+    url:"https://gestion.pe/peru/feriados-2027-lista-de-fechas-festivas-y-no-laborables-para-este-ano-noticia/" },
+  { color:"#4C8DF6", viz:"gemini", week:false,
+    title:"Gemini 4 Neon: IA frontera más barata",
+    fig:"50-80%", figsub:"Menos costo por tarea que sus rivales, según Google; US$ 3 por millón de tokens de entrada",
+    cat:"IA", source:"Infobae · 18/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/19/google-lanzo-gemini-4-neon-un-modelo-de-ia-mas-rapido-y-barato/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Jockey Premium Outlet abre con 75 marcas",
+    fig:"75", figsub:"Marcas en el nuevo outlet de Surco; inversión de más de S/ 50 millones",
     cat:"CONSUMO", source:"Perú Retail · 18/11/2026",
-    url:"https://www.peru-retail.com/ripley-corp-eleva-sus-ganancias-532-en-el-tercer-trimestre-peru-fue-clave-en-sus-resultados/" },
+    url:"https://www.peru-retail.com/jockey-premium-outlet-abre-sus-puertas-en-lima-como-es-y-que-ofrece-el-nuevo-formato-comercial/" },
   ],
 
 
@@ -251,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Bono MYPE de S/ 100 y combustibles en emergencia: ofrece a las mypes con campaña de fin de año un <b>pack de planilla flexible</b> de iPartner para vender más sin cargar costo fijo.",
+  DATO: "Sunafil quiere ser orientadora y 2027 trae 16 feriados: ofrece a tus clientes un <b>calendario de planilla y cumplimiento</b> de iPartner para planificar coberturas sin riesgo.",
 
 
 
