@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-19 08:40 (Lima) — tarea automática",
+  generado: "2026-11-20 08:15 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"mining", week:false,
-    title:"Minería: US$ 5.100 M de inversión en 2027",
-    fig:"US$ 5.100 M", figsub:"Meta minera 2027; en 2025 fue US$ 6.279 M y a setiembre 2026 ya suma US$ 5.522 M",
-    cat:"ECONOMÍA", source:"Gestión · 18/11/2026",
-    url:"https://gestion.pe/economia/inversion-minera-en-peru-sumaria-us-5100-millones-el-proximo-ano-pierde-ritmo-esto-dijo-el-sector-energia-y-minas-noticia/" },
-  { color:"#E6299C", viz:"search", week:false,
-    title:"Sheput: Sunafil dejará de vivir de multas",
-    fig:"KPI: multas", figsub:"El MTPE quiere una Sunafil orientadora y preventiva, que acompañe a las empresas",
-    cat:"RRHH", source:"Gestión · 18/11/2026",
-    url:"https://gestion.pe/economia/sunafil-ministro-juan-sheput-anuncia-que-buscaran-reformular-al-fiscalizador-laboral-de-peru-noticia/" },
-  { color:"#F52055", viz:"calendar", week:false,
-    title:"Feriados 2027: 16 fechas con descanso pagado",
-    fig:"16", figsub:"Feriados nacionales en 2027; si se trabaja, toca descanso sustitutorio o pago adicional",
-    cat:"LEGAL", source:"Gestión · 19/11/2026",
-    url:"https://gestion.pe/peru/feriados-2027-lista-de-fechas-festivas-y-no-laborables-para-este-ano-noticia/" },
-  { color:"#4C8DF6", viz:"gemini", week:false,
-    title:"Gemini 4 Neon: IA frontera más barata",
-    fig:"50-80%", figsub:"Menos costo por tarea que sus rivales, según Google; US$ 3 por millón de tokens de entrada",
-    cat:"IA", source:"Infobae · 18/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/19/google-lanzo-gemini-4-neon-un-modelo-de-ia-mas-rapido-y-barato/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Jockey Premium Outlet abre con 75 marcas",
-    fig:"75", figsub:"Marcas en el nuevo outlet de Surco; inversión de más de S/ 50 millones",
-    cat:"CONSUMO", source:"Perú Retail · 18/11/2026",
-    url:"https://www.peru-retail.com/jockey-premium-outlet-abre-sus-puertas-en-lima-como-es-y-que-ofrece-el-nuevo-formato-comercial/" },
+  { color:"#FF953A", viz:"ship", week:false,
+    title:"TLC con Tailandia: 94% sin arancel",
+    fig:"94%", figsub:"De los productos peruanos entrará sin arancel; antes era cerca del 60%",
+    cat:"ECONOMÍA", source:"Gestión · 20/11/2026",
+    url:"https://gestion.pe/economia/peru-suscribe-tlc-con-tailandia-este-es-el-top-de-productos-de-exportacion-que-emocionan-al-mincetur-noticia/" },
+  { color:"#E6299C", viz:"training", week:false,
+    title:"92% pide perfiles multidisciplinarios",
+    fig:"92%", figsub:"De limeños cree clave dominar más de una materia para crecer (Ipsos para UPC)",
+    cat:"RRHH", source:"Gestión · 19/11/2026",
+    url:"https://gestion.pe/peru/el-92-de-limenos-considera-clave-dominar-mas-de-una-disciplina-para-progresar-laboralmente-noticia/" },
+  { color:"#F52055", viz:"health", week:false,
+    title:"Licencia de 4 horas para acompañar a familiares",
+    fig:"4 h", figsub:"Por atención de salud, hasta 8 veces al año: dictamen aprobado en comisión",
+    cat:"LEGAL", source:"Infobae · 19/11/2026",
+    url:"https://www.infobae.com/peru/2026/11/19/aprueban-licencia-remunerada-de-hasta-32-horas-al-ano-para-acompanar-a-familiares-con-enfermedades-o-accidentes/" },
+  { color:"#C9D1D9", viz:"ai", week:false,
+    title:"Microsoft suma 50 millones de agentes de IA",
+    fig:"50 M", figsub:"Agentes autónomos en Agent 365; ahora se mide el retorno de la inversión en IA",
+    cat:"IA", source:"Infobae · 19/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/19/el-plan-de-microsoft-ya-suma-50-millones-de-agentes-ia-para-empresas/" },
+  { color:"#FF953A", viz:"chart-up", week:false,
+    title:"Visitas a tiendas crecen por segundo mes",
+    fig:"+0,47%", figsub:"Más visitas a tiendas y malls en octubre; la campaña navideña arranca con impulso",
+    cat:"CONSUMO", source:"Gestión · 19/11/2026",
+    url:"https://gestion.pe/economia/empresas/visita-a-tiendas-y-malls-crece-en-octubre-y-tendencia-se-mantiene-en-inicio-de-campana-de-navidad-con-impulso-de-visita-de-leon-xiv-noticia/" },
   ],
 
 
@@ -256,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Sunafil quiere ser orientadora y 2027 trae 16 feriados: ofrece a tus clientes un <b>calendario de planilla y cumplimiento</b> de iPartner para planificar coberturas sin riesgo.",
+  DATO: "Más visitas a tiendas y licencias por familiar en camino: ofrece a retail <b>personal para campaña navideña</b> y cobertura de ausencias, con lead time corto.",
 
 
 
