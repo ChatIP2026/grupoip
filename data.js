@@ -116,28 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-23 08:40 (Lima) — tarea automática",
+  generado: "2026-11-24 08:30 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-down", week:false,
-    title:"Bolsa de Lima cae 21% en 40 días",
-    fig:"-21%", figsub:"Peor caída desde 2021: cobre, alza de la Fed y temor a burbuja de IA",
-    cat:"ECONOMÍA", source:"Gestión · 23/11/2026",
-    url:"https://gestion.pe/tu-dinero/bolsa-de-valores-de-lima-sufre-peor-caida-en-5-anos-arrastrada-por-wall-street-y-cobre-vienen-mas-perdidas-noticia/" },
-  { color:"#E6299C", viz:"piggy", week:false,
-    title:"CAS: Presupuesto 2027 sin CTS completa",
-    fig:"10%", figsub:"De CTS por año de servicio en 2026; el pago total recién llega en 2030",
-    cat:"RRHH", source:"La República · 22/11/2026",
-    url:"https://larepublica.pe/economia/2026/11/22/congreso-aprueba-presupuesto-2027-sin-cts-completa-para-cas-ni-pase-a-regimen-728-1864346" },
-  { color:"#C9D1D9", viz:"people", week:false,
-    title:"AWS: la IA no elimina a los juniors",
-    fig:"Reloj", figsub:"Estructura de reloj de arena: más decisores y juniors potenciados con IA",
-    cat:"IA", source:"Gestión · 23/11/2026",
-    url:"https://gestion.pe/tu-dinero/amazon-trabajadores-junior-perderan-su-puesto-por-la-ia-noticia/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Mia Beauty Bar llega a 10 tiendas",
-    fig:"10", figsub:"Tiendas de belleza de InRetail en su primer año; 6 de ellas en provincias",
-    cat:"CONSUMO", source:"Gestión · 23/11/2026",
-    url:"https://gestion.pe/economia/empresas/mia-beauty-bar-de-la-duena-de-inkafarma-apuesta-por-el-k-beauty-y-alista-nuevas-tiendas-noticia/" },
+  { color:"#FF953A", viz:"pie", week:false,
+    title:"7 de cada 10 concursos terminan en quiebra",
+    fig:"71,6%", figsub:"De 211 decisiones de acreedores (2020-2025) fue liquidación; solo 22,3% reestructuró",
+    cat:"ECONOMÍA", source:"La República · 23/11/2026",
+    url:"https://larepublica.pe/economia/2026/11/23/siete-de-cada-diez-empresas-que-entraron-a-concurso-de-acreedores-terminaron-en-liquidacion-2093391" },
+  { color:"#E6299C", viz:"mining", week:false,
+    title:"Moquegua paga más, Pasco publica más avisos",
+    fig:"S/ 8.464", figsub:"Ingreso mensual de mineros con título en Moquegua; Pasco lidera en vacantes",
+    cat:"RRHH", source:"Gestión · 24/11/2026",
+    url:"https://gestion.pe/economia/management-empleo/sueldos-y-mineria-mientras-moquegua-paga-mas-a-trabajadores-mineros-pasco-publica-mas-avisos-noticia/" },
+  { color:"#F52055", viz:"shield", week:false,
+    title:"Nueva Estrategia Nacional de Ciberseguridad",
+    fig:"2030", figsub:"RM 384-2026-PCM rige a entidades públicas y Fonafe; crece la demanda de talento en ciberseguridad",
+    cat:"LEGAL", source:"Andina · 24/11/2026",
+    url:"https://andina.pe/agencia/noticia-estas-son-las-normas-legales-mas-importantes-del-martes-24-noviembre-2026-1101191.aspx" },
+  { color:"#10A37F", viz:"openai", week:false,
+    title:"OpenAI paga a quien enseñe ChatGPT a pymes",
+    fig:"US$ 8.000", figsub:"Al mes por especialista del piloto OpenWorks en 20 ciudades de EE. UU.; 3 meses gratis",
+    cat:"IA", source:"Infobae · 24/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/24/openai-pagara-hasta-usd-8000-al-mes-a-quienes-ensenen-chatgpt-a-pequenos-negocios-de-estados-unidos/" },
+  { color:"#FF953A", viz:"calendar", week:false,
+    title:"Wong y Metro revive su Gran Corso navideño",
+    fig:"13 dic", figsub:"Cencosud lo retoma tras 7 años (última edición 2019) en Jesús María, con emisión en TV",
+    cat:"CONSUMO", source:"Perú Retail · 23/11/2026",
+    url:"https://www.peru-retail.com/gran-corso-de-wong-y-metro-regresa-despues-de-siete-anos-cuando-y-donde-sera-el-desfile-navideno/" },
   ],
 
 
@@ -251,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con cada apertura, retail necesita equipos de piso: ofrece a Mia Beauty Bar y cadenas en expansión <b>personal para campaña navideña</b> y un pipeline de reclutamiento en provincias.",
+  DATO: "Con mineras pagando hasta S/ 8.464 y Pasco concentrando vacantes, ofrece <b>headhunting regional</b> y un pipeline de perfiles técnicos antes del pico de enero.",
 
 
 
