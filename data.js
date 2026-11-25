@@ -116,33 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-24 08:30 (Lima) — tarea automática",
+  generado: "2026-11-25 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"pie", week:false,
-    title:"7 de cada 10 concursos terminan en quiebra",
-    fig:"71,6%", figsub:"De 211 decisiones de acreedores (2020-2025) fue liquidación; solo 22,3% reestructuró",
-    cat:"ECONOMÍA", source:"La República · 23/11/2026",
-    url:"https://larepublica.pe/economia/2026/11/23/siete-de-cada-diez-empresas-que-entraron-a-concurso-de-acreedores-terminaron-en-liquidacion-2093391" },
-  { color:"#E6299C", viz:"mining", week:false,
-    title:"Moquegua paga más, Pasco publica más avisos",
-    fig:"S/ 8.464", figsub:"Ingreso mensual de mineros con título en Moquegua; Pasco lidera en vacantes",
-    cat:"RRHH", source:"Gestión · 24/11/2026",
-    url:"https://gestion.pe/economia/management-empleo/sueldos-y-mineria-mientras-moquegua-paga-mas-a-trabajadores-mineros-pasco-publica-mas-avisos-noticia/" },
-  { color:"#F52055", viz:"shield", week:false,
-    title:"Nueva Estrategia Nacional de Ciberseguridad",
-    fig:"2030", figsub:"RM 384-2026-PCM rige a entes públicos y Fonafe; crece la demanda de talento cyber",
-    cat:"LEGAL", source:"Andina · 24/11/2026",
-    url:"https://andina.pe/agencia/noticia-estas-son-las-normas-legales-mas-importantes-del-martes-24-noviembre-2026-1101191.aspx" },
-  { color:"#10A37F", viz:"openai", week:false,
-    title:"OpenAI paga a quien enseñe ChatGPT a pymes",
-    fig:"US$ 8.000", figsub:"Al mes por especialista del piloto OpenWorks en 20 ciudades de EE. UU.; 3 meses gratis",
-    cat:"IA", source:"Infobae · 24/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/24/openai-pagara-hasta-usd-8000-al-mes-a-quienes-ensenen-chatgpt-a-pequenos-negocios-de-estados-unidos/" },
-  { color:"#FF953A", viz:"calendar", week:false,
-    title:"Wong y Metro revive su Gran Corso navideño",
-    fig:"13 dic", figsub:"Cencosud lo retoma tras 7 años (último en 2019) en Jesús María, con emisión en TV",
-    cat:"CONSUMO", source:"Perú Retail · 23/11/2026",
-    url:"https://www.peru-retail.com/gran-corso-de-wong-y-metro-regresa-despues-de-siete-anos-cuando-y-donde-sera-el-desfile-navideno/" },
+  { color:"#FF953A", viz:"chart-down", week:false,
+    title:"MEF recorta el PBI 2026 a 3,1%",
+    fig:"3,1%", figsub:"Proyección de crecimiento 2026, antes 3,4%; pesca caería 40,5% por El Niño",
+    cat:"ECONOMÍA", source:"RPP · 24/11/2026",
+    url:"https://rpp.pe/economia/economia/mef-baja-sus-expectativas-de-crecimiento-para-la-economia-por-el-nino-reduce-su-proyeccion-de-34-a-31-al-cierre-del-2026-noticia-1719465" },
+  { color:"#E6299C", viz:"training", week:false,
+    title:"Macroconsult: crecer más exige capital humano",
+    fig:"90%", figsub:"Probabilidad de que un joven de 19 años termine en empleo informal",
+    cat:"RRHH", source:"La República · 24/11/2026",
+    url:"https://larepublica.pe/economia/2026/11/24/cade-2026-peru-puede-crecer-mas-de-4-pero-debe-resolver-sus-problemas-de-capital-humano-advierte-macroconsult-hnews-1701912" },
+  { color:"#F52055", viz:"doc", week:false,
+    title:"Mintra lanza plataforma Perú Certifica",
+    fig:"RM 368", figsub:"Sistema oficial para certificar competencias laborales, publicado hoy en El Peruano",
+    cat:"LEGAL", source:"Andina · 25/11/2026",
+    url:"https://andina.pe/agencia/noticia-estas-son-las-normas-legales-mas-importantes-del-25-noviembre-2026-1101337.aspx" },
+  { color:"#D97757", viz:"claude", week:false,
+    title:"Anthropic puso trampas a sus agentes",
+    fig:"68-96%", figsub:"Menos intentos de fuga con seis reglas en el prompt de sistema",
+    cat:"IA", source:"Infobae · 25/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/25/anthropic-puso-trampas-a-sus-agentes-de-ia-para-ver-si-escapan-de-su-entorno-aislado/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Tambo abre tienda navideña en Arequipa",
+    fig:"1ra", figsub:"Tienda temática de Tambo fuera de Lima, con Coca-Cola, en Yanahuara",
+    cat:"CONSUMO", source:"Perú Retail · 24/11/2026",
+    url:"https://www.peru-retail.com/tambo-abre-su-primera-tienda-insignia-fuera-de-lima-en-alianza-con-coca-cola-donde-se-ubica/" },
   ],
 
 
@@ -256,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con mineras pagando hasta S/ 8.464 y Pasco concentrando vacantes, ofrece <b>headhunting regional</b> y un pipeline de perfiles técnicos antes del pico de enero.",
+  DATO: "Con el PBI en 3,1% y el 90% de jóvenes en informalidad, ofrece <b>talento certificado</b> vía Perú Certifica: menos riesgo de rotación y un pipeline listo para campaña.",
 
 
 
