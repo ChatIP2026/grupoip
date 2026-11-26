@@ -116,33 +116,28 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-25 08:40 (Lima) — tarea automática",
+  generado: "2026-11-26 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"chart-down", week:false,
-    title:"MEF recorta el PBI 2026 a 3,1%",
-    fig:"3,1%", figsub:"Proyección de crecimiento 2026, antes 3,4%; pesca caería 40,5% por El Niño",
-    cat:"ECONOMÍA", source:"RPP · 24/11/2026",
-    url:"https://rpp.pe/economia/economia/mef-baja-sus-expectativas-de-crecimiento-para-la-economia-por-el-nino-reduce-su-proyeccion-de-34-a-31-al-cierre-del-2026-noticia-1719465" },
-  { color:"#E6299C", viz:"training", week:false,
-    title:"Macroconsult: crecer más exige capital humano",
-    fig:"90%", figsub:"Probabilidad de que un joven de 19 años termine en empleo informal",
-    cat:"RRHH", source:"La República · 24/11/2026",
-    url:"https://larepublica.pe/economia/2026/11/24/cade-2026-peru-puede-crecer-mas-de-4-pero-debe-resolver-sus-problemas-de-capital-humano-advierte-macroconsult-hnews-1701912" },
-  { color:"#F52055", viz:"doc", week:false,
-    title:"Mintra lanza plataforma Perú Certifica",
-    fig:"RM 368", figsub:"Sistema oficial para certificar competencias laborales, publicado hoy en El Peruano",
-    cat:"LEGAL", source:"Andina · 25/11/2026",
-    url:"https://andina.pe/agencia/noticia-estas-son-las-normas-legales-mas-importantes-del-25-noviembre-2026-1101337.aspx" },
-  { color:"#D97757", viz:"claude", week:false,
-    title:"Anthropic puso trampas a sus agentes",
-    fig:"68-96%", figsub:"Menos intentos de fuga con seis reglas en el prompt de sistema",
-    cat:"IA", source:"Infobae · 25/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/25/anthropic-puso-trampas-a-sus-agentes-de-ia-para-ver-si-escapan-de-su-entorno-aislado/" },
-  { color:"#FF953A", viz:"cart", week:false,
-    title:"Tambo abre tienda navideña en Arequipa",
-    fig:"1ra", figsub:"Tienda temática de Tambo fuera de Lima, con Coca-Cola, en Yanahuara",
-    cat:"CONSUMO", source:"Perú Retail · 24/11/2026",
-    url:"https://www.peru-retail.com/tambo-abre-su-primera-tienda-insignia-fuera-de-lima-en-alianza-con-coca-cola-donde-se-ubica/" },
+  { color:"#FF953A", viz:"gauge", week:false,
+    title:"Velarde: El Niño presionará los precios",
+    fig:"+50%", figsub:"Alza del choclo en octubre; la inflación de noviembre superaría a la de octubre",
+    cat:"ECONOMÍA", source:"Perú Retail · 25/11/2026",
+    url:"https://www.peru-retail.com/julio-velarde-advierte-sobre-el-impacto-del-fenomeno-el-nino-en-peru-el-dano-puede-ser-fuerte/" },
+  { color:"#E6299C", viz:"bills", week:false,
+    title:"Gratificación: la RMV sube a S/ 1,230",
+    fig:"15 dic", figsub:"Fecha máxima de pago; atraso o monto menor es infracción grave ante Sunafil",
+    cat:"RRHH", source:"Andina · 26/11/2026",
+    url:"https://andina.pe/agencia/noticia-gratificacion-2026-como-influye-aumento-del-sueldo-minimo-el-calculo-1101447.aspx" },
+  { color:"#F52055", viz:"piggy", week:false,
+    title:"Cuentas AFP por consumo abren en diciembre",
+    fig:"1%", figsub:"Del consumo con boleta electrónica irá a la pensión; tope anual de S/ 440",
+    cat:"LEGAL", source:"Infobae · 26/11/2026",
+    url:"https://www.infobae.com/peru/2026/11/26/pension-por-consumo-cuentas-afp-para-iniciar-aportes-con-igv-se-abriran-en-diciembre/" },
+  { color:"#C9D1D9", viz:"ai", week:false,
+    title:"Nvidia frena servidores IA al sudeste asiático",
+    fig:"90 días", figsub:"Plazo para obtener licencia de EE. UU. y exportar chips avanzados a 4 países",
+    cat:"IA", source:"Infobae · 26/11/2026",
+    url:"https://www.infobae.com/tecno/2026/11/26/nvidia-freno-el-envio-de-servidores-con-chips-de-ia-a-cuatro-paises-del-sudeste-asiatico/" },
   ],
 
 
@@ -256,7 +251,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con el PBI en 3,1% y el 90% de jóvenes en informalidad, ofrece <b>talento certificado</b> vía Perú Certifica: menos riesgo de rotación y un pipeline listo para campaña.",
+  DATO: "Con la <b>gratificación del 15 de dic</b> y la inflación al alza por El Niño, ofrece planilla ordenada y <b>talento flexible</b> para campaña: el cliente cuida su caja y cumple a tiempo.",
 
 
 
