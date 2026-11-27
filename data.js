@@ -116,28 +116,33 @@
    RSS / portadas de sección de cada medio. Hasta 7 días solo como respaldo
    (y marcadas week:true). Fecha verificada abriendo la nota. */
 window.NOTICIERO = {
-  generado: "2026-11-26 08:40 (Lima) — tarea automática",
+  generado: "2026-11-27 08:40 (Lima) — tarea automática",
   NEWS: [
-  { color:"#FF953A", viz:"gauge", week:false,
-    title:"Velarde: El Niño presionará los precios",
-    fig:"+50%", figsub:"Alza del choclo en octubre; la inflación de noviembre superaría a la de octubre",
-    cat:"ECONOMÍA", source:"Perú Retail · 25/11/2026",
-    url:"https://www.peru-retail.com/julio-velarde-advierte-sobre-el-impacto-del-fenomeno-el-nino-en-peru-el-dano-puede-ser-fuerte/" },
-  { color:"#E6299C", viz:"bills", week:false,
-    title:"Gratificación: la RMV sube a S/ 1,230",
-    fig:"15 dic", figsub:"Fecha máxima de pago; atraso o monto menor es infracción grave ante Sunafil",
-    cat:"RRHH", source:"Andina · 26/11/2026",
-    url:"https://andina.pe/agencia/noticia-gratificacion-2026-como-influye-aumento-del-sueldo-minimo-el-calculo-1101447.aspx" },
-  { color:"#F52055", viz:"piggy", week:false,
-    title:"Cuentas AFP por consumo abren en diciembre",
-    fig:"1%", figsub:"Del consumo con boleta electrónica irá a la pensión; tope anual de S/ 440",
-    cat:"LEGAL", source:"Infobae · 26/11/2026",
-    url:"https://www.infobae.com/peru/2026/11/26/pension-por-consumo-cuentas-afp-para-iniciar-aportes-con-igv-se-abriran-en-diciembre/" },
-  { color:"#C9D1D9", viz:"ai", week:false,
-    title:"Nvidia frena servidores IA al sudeste asiático",
-    fig:"90 días", figsub:"Plazo para obtener licencia de EE. UU. y exportar chips avanzados a 4 países",
-    cat:"IA", source:"Infobae · 26/11/2026",
-    url:"https://www.infobae.com/tecno/2026/11/26/nvidia-freno-el-envio-de-servidores-con-chips-de-ia-a-cuatro-paises-del-sudeste-asiatico/" },
+  { color:"#FF953A", viz:"bank", week:false,
+    title:"BCP: empresas fijan tasas ante alza",
+    fig:"450", figsub:"Empresas que el BCP monitorea por El Niño; corporativos cierran deuda a 2-3 años",
+    cat:"ECONOMÍA", source:"Gestión · 27/11/2026",
+    url:"https://gestion.pe/tu-dinero/empresas-se-preparan-ante-expectativa-de-alza-de-tasas-que-medidas-toman-noticia/" },
+  { color:"#E6299C", viz:"people", week:false,
+    title:"CCL propone régimen juvenil con menos beneficios",
+    fig:"350 mil", figsub:"Jóvenes que ingresan cada año al empleo; la CCL cuestiona gratificación y CTS",
+    cat:"RRHH", source:"Perú Retail · 26/11/2026",
+    url:"https://www.peru-retail.com/somos-el-unico-pais-en-el-mundo-presidente-de-la-ccl-cuestiona-los-beneficios-laborales-en-peru/" },
+  { color:"#F52055", viz:"health", week:false,
+    title:"Ley Silla: registro de descansos del personal",
+    fig:"3 horas", figsub:"De pie o más obliga a asientos y registro; proyecto MTPE abierto 15 días",
+    cat:"LEGAL", source:"RPP · 26/11/2026",
+    url:"https://rpp.pe/economia/economia/ley-silla-empresas-deberan-llevar-un-registro-de-los-descansos-que-utilizan-sus-trabajadores-segun-proyecto-del-mtpe-noticia-1720047" },
+  { color:"#C9D1D9", viz:"layoff", week:false,
+    title:"SAP recortaría 10.000 empleos por la IA",
+    fig:"10.000", figsub:"Puestos en riesgo, al menos 9% de la plantilla; foco en producto, ingeniería y ventas",
+    cat:"IA", source:"Gestión · 27/11/2026",
+    url:"https://gestion.pe/mundo/internacional/sap-prepara-recorte-de-al-menos-10000-empleos-para-transformar-su-negocio-en-era-de-ia-noticia/" },
+  { color:"#FF953A", viz:"cart", week:false,
+    title:"Dollarcity ya suma 128 tiendas en Perú",
+    fig:"128", figsub:"Locales: eran 79 en 2024; apuntan a 1.050 en la región hacia 2031",
+    cat:"CONSUMO", source:"Perú Retail · 26/11/2026",
+    url:"https://www.peru-retail.com/dollarcity-abre-su-tienda-numero-128-en-peru-conoce-donde-se-ubica-y-que-ofrece/" },
   ],
 
 
@@ -251,7 +256,7 @@ window.NOTICIERO = {
     crono:{ anio:2026, dias:[29,27,30,30,30,29,30,28,30,30,27,30] } }
 
 },
-  DATO: "Con la <b>gratificación del 15 de dic</b> y la inflación al alza por El Niño, ofrece planilla ordenada y <b>talento flexible</b> para campaña: el cliente cuida su caja y cumple a tiempo.",
+  DATO: "Con la <b>gratificación de diciembre</b> y las empresas fijando deuda ante el alza de tasas, ofrece <b>talento flexible</b> para campaña: el cliente cuida su caja y escala el equipo sin planilla fija.",
 
 
 
